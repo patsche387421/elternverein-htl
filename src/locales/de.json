@@ -1,0 +1,261 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "news": "Aktuelles",
+        "services": "Services",
+        "projects": "Projekte",
+        "about": "Über Uns",
+        "contact": "Kontakt",
+        "login": "Anmelden",
+        "logout": "Abmelden",
+        "profile": "Mein Profil",
+        "serviceItems": {
+            "support": "Soziale Unterstützung",
+            "tutoring": "Nachhilfe",
+            "courses": "Kursangebot"
+        }
+    },
+    "footer": {
+        "links": "Quick Links",
+        "legal": "Rechtliches",
+        "socials": "Verbinden Sie sich",
+        "impressum": "Impressum",
+        "privacy": "Datenschutzerklärung",
+        "terms": "Geschäftsordnung"
+    },
+    "news": {
+        "title": "Aktuelles & Termine",
+        "desc": "Bleiben Sie auf dem Laufenden.",
+        "filters": {
+            "all": "Alle",
+            "news": "News",
+            "event": "Events",
+            "protocol": "Protokolle"
+        },
+        "items": {
+            "agm": {
+                "title": "Jahreshauptversammlung 2025",
+                "desc": "Einladung zur ordentlichen Jahreshauptversammlung des Elternvereins."
+            },
+            "sga": {
+                "title": "Protokoll SGA Sitzung",
+                "desc": "Das Protokoll der letzten Schulgemeinschaftsausschuss-Sitzung ist nun online."
+            },
+            "funding": {
+                "title": "Neue Fördermöglichkeiten",
+                "desc": "Ab sofort können Anträge für Projektförderungen digital eingereicht werden."
+            },
+            "parentsDay": {
+                "title": "Elternsprechtag",
+                "desc": "Informationen zum kommenden Elternsprechtag und Terminbuchung."
+            },
+            "festival": {
+                "title": "Schulfest 2026",
+                "desc": "Jährliches Sommerfest für alle Schüler und Eltern."
+            },
+            "jhv": {
+                "title": "JHV Protokoll 2025",
+                "desc": "Protokoll der letzten Jahreshauptversammlung. Wichtige Abstimmungsergebnisse."
+            },
+            "mentalHealth": {
+                "title": "Mental Health Days",
+                "desc": "Neue Workshop-Serie startet nächsten Monat."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Medieninhaber & Herausgeber",
+        "contact": "Kontakt",
+        "zvr": "ZVR-Zahl",
+        "purpose": "Vereinszweck",
+        "purposeDesc": "Wahrung der Interessen der Vereinspartner bezüglich der Unterrichts- und Erziehungsarbeit an der Schule sowie Förderung der Zusammenarbeit von Elternhaus und Schule."
+    },
+    "privacy": {
+        "intro": "Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Nachfolgend informieren wir Sie über die Verarbeitung Ihrer Daten.",
+        "responsible": "1. Verantwortlicher",
+        "collection": "2. Erhebung und Verarbeitung von Daten",
+        "collectionDesc": "Wir verarbeiten personenbezogene Daten, die wir im Rahmen der Mitgliedschaft oder durch Ihre Kontaktaufnahme erhalten.",
+        "rights": "3. Ihre Rechte",
+        "rightsDesc": "Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu."
+    },
+    "home": {
+        "heroTitle": "Verbindung von Eltern, Lehrern und Schülern",
+        "heroDesc": "Der Elternverein widmet sich der Unterstützung der Schulgemeinschaft durch aktive Teilnahme, Finanzierung und offene Kommunikation.",
+        "getInvolved": "Mitmachen",
+        "learnMore": "Mehr erfahren",
+        "latestNews": "Aktuelles",
+        "insightsUpdates": "Einblicke & Neuigkeiten",
+        "viewAll": "Alle ansehen",
+        "tags": {
+            "event": "Events",
+            "protocol": "Protokolle",
+            "news": "News"
+        }
+    },
+    "about": {
+        "title": "Über den Elternverein",
+        "desc": "Der Elternverein ist eine freiwillige Organisation von Eltern und Erziehungsberechtigten, die sich der Förderung des Wohlergehens der Schüler und der Schule widmet.",
+        "mission": "Unsere Mission",
+        "missionDesc": "Eine enge Beziehung zwischen Elternhaus und Schule zu fördern, damit Eltern und Lehrer bei der Erziehung ihrer Kinder intelligent zusammenarbeiten können.",
+        "whatWeDo": "Was wir tun",
+        "points": [
+            "Veranstaltungen und Spendenaktionen organisieren",
+            "Schulprojekte finanziell unterstützen",
+            "Elterninteressen in Schulgremien vertreten",
+            "Kommunikation zwischen Eltern und Schule erleichtern"
+        ]
+    },
+    "costs": {
+        "title": "Mitgliedschaft & Kosten",
+        "desc": "Transparenter Umgang mit Ihren Beiträgen.",
+        "membership": "Mitgliedsbeitrag",
+        "allocation": "Mittelverwendung",
+        "details": "Der Mitgliedsbeitrag wird zu 100% zum Wohle der Schüler verwendet.",
+        "membershipPerYear": "Jahr pro Familie"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "subtitle": "Schreiben Sie uns",
+        "desc": "Haben Sie Fragen oder möchten Sie sich engagieren? Kontaktieren Sie uns direkt oder füllen Sie das Formular aus.",
+        "form": {
+            "name": "Name",
+            "email": "E-Mail",
+            "message": "Nachricht",
+            "send": "Nachricht senden"
+        }
+    },
+    "login": {
+        "title": "Anmelden",
+        "subtitle": "Zugang zum internen Bereich für Eltern und Lehrer.",
+        "email": "E-Mail Adresse",
+        "password": "Passwort",
+        "submit": "Anmelden",
+        "register": "Noch kein Konto? Registrieren",
+        "forgot": "Passwort vergessen?",
+        "closeButton": "Schließen"
+    },
+    "services": {
+        "title": "Unsere Services",
+        "desc": "Wir unterstützen Schüler und Familien mit finanzieller Hilfe, Nachhilfeprogrammen und Bildungsangeboten.",
+        "support": "Soziale Unterstützung",
+        "supportDesc": "Finanzielle Unterstützung für Schulveranstaltungen und Materialien.",
+        "supportPoints": [
+            "Zuschüsse für Schulwochen",
+            "Unterstützung bei Materialkosten",
+            "Diskrete finanzielle Hilfe"
+        ],
+        "tutoring": "Nachhilfeliste",
+        "tutoringDesc": "Vermittlung von qualifizierten Nachhilfelehrern.",
+        "tutoringPoints": [
+            "Peer-to-Peer Nachhilfenetzwerk",
+            "Geprüfte Qualität",
+            "Faire Konditionen"
+        ],
+        "courses": "Kursangebot",
+        "coursesDesc": "Zusätzliche Bildungsmöglichkeiten.",
+        "coursesPoints": [
+            "ECDL Zertifizierungen",
+            "Spritzgusstechnik-Kurse",
+            "Prüfungsvorbereitung"
+        ],
+        "learnMore": "Mehr erfahren"
+    },
+    "projects": {
+        "title": "Projekte",
+        "currentTitle": "Aktuelle Projekte",
+        "desc": "Eine Historie der geförderten Projekte und Initiativen.",
+        "archive": "Projektarchiv",
+        "viewArchive": "Zum Archiv",
+        "overview": "Projektübersicht",
+        "viewOverview": "Status der Anträge",
+        "backToCurrent": "Zurück zur Übersicht",
+        "archiveDesc": "Historie der vergangenen Schuljahre.",
+        "year": "Schuljahr",
+        "fundedProjects": "Geförderte Projekte",
+        "items": {
+            "physics": {
+                "title": "Neue Laborausstattung für Physik",
+                "status": "In Arbeit"
+            },
+            "library": {
+                "title": "Lernbereich Modernisierung",
+                "status": "Genehmigt"
+            },
+            "garden": {
+                "title": "Sitzgelegenheiten für den Schulgarten",
+                "status": "Abgeschlossen"
+            }
+        },
+        "apply": {
+            "title": "Projektantrag einreichen",
+            "desc": "Nutzen Sie dieses Formular für die digitale Einreichung Ihres Förderantrags.",
+            "button": "Neuen Antrag stellen",
+            "form": {
+                "title": "Projektbezeichnung",
+                "applicant": "Antragsteller / Abteilung",
+                "description": "Detaillierte Projektbeschreibung",
+                "costs": "Finanzierungsbedarf (€)",
+                "files": "Dateianhänge (Angebote, Pläne)",
+                "submit": "Diesen Antrag einreichen",
+                "success": "Ihr Antrag wurde erfolgreich übermittelt!"
+            }
+        },
+        "overviewTable": {
+            "title": "Eingereichte Anträge (2025/26)",
+            "headers": {
+                "project": "Projekt",
+                "applicant": "Antragsteller",
+                "department": "Abteilung",
+                "date": "Datum",
+                "cost": "Kosten",
+                "status": "Status"
+            },
+            "filters": {
+                "label": "Filter:",
+                "search": "Projekte suchen...",
+                "allStatus": "Alle Status",
+                "allDepts": "Alle Abteilungen"
+            },
+            "departments": {
+                "IT": "Informationstechnologie",
+                "ME": "Maschinenbau",
+                "ET": "Elektrotechnik",
+                "GEN": "Allgemein",
+                "BAU": "Bautechnik",
+                "SP": "Sport",
+                "FIN": "Finanzen"
+            },
+            "status": {
+                "approved": "Genehmigt",
+                "pending": "In Prüfung",
+                "rejected": "Abgelehnt"
+            }
+        }
+    },
+    "board": {
+        "title": "Der Vorstand",
+        "desc": "Das engagierte Team hinter dem Elternverein.",
+        "roles": {
+            "chair": "Obmann/Obfrau",
+            "viceChair": "Stellvertreter",
+            "treasurer": "Kassier",
+            "secretary": "Schriftführer",
+            "member": "Kooptiertes Mitglied",
+            "auditor": "Rechnungsprüfer"
+        }
+    },
+    "statutes": {
+        "title": "Statuten",
+        "desc": "Die rechtliche Grundlage unseres Vereins.",
+        "download": "PDF Herunterladen"
+    },
+    "terms": {
+        "title": "Geschäftsordnung",
+        "desc": "Regeln und Bestimmungen."
+    },
+    "cookieBanner": {
+        "text": "Wir nutzen nur technisch notwendige Cookies, um die Spracheinstellung und den Login zu ermöglichen.",
+        "accept": "Verstanden",
+        "privacyLink": "Datenschutzerklärung"
+    }
+}

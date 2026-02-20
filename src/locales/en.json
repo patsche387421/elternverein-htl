@@ -1,0 +1,261 @@
+{
+    "nav": {
+        "home": "Home",
+        "news": "News",
+        "services": "Services",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact",
+        "login": "Login",
+        "logout": "Logout",
+        "profile": "My Profile",
+        "serviceItems": {
+            "support": "Social Support",
+            "tutoring": "Tutoring",
+            "courses": "Courses"
+        }
+    },
+    "footer": {
+        "links": "Quick Links",
+        "legal": "Legal",
+        "socials": "Connect with us",
+        "impressum": "Impressum",
+        "privacy": "Privacy Policy",
+        "terms": "Terms & Conditions"
+    },
+    "news": {
+        "title": "News & Events",
+        "desc": "Stay up to date with the latest from the Parents' Association.",
+        "filters": {
+            "all": "All",
+            "news": "News",
+            "event": "Events",
+            "protocol": "Protocols"
+        },
+        "items": {
+            "agm": {
+                "title": "Annual General Meeting 2025",
+                "desc": "Invitation to the ordinary general meeting of the Parents' Association."
+            },
+            "sga": {
+                "title": "SGA Meeting Minutes",
+                "desc": "The minutes of the last School Community Committee meeting are now online."
+            },
+            "funding": {
+                "title": "New Funding Opportunities",
+                "desc": "Applications for project funding can now be submitted digitally."
+            },
+            "parentsDay": {
+                "title": "Parents' Day",
+                "desc": "Information about the upcoming Parents' Day and appointment booking."
+            },
+            "festival": {
+                "title": "School Festival 2026",
+                "desc": "Annual summer gathering for all students and parents."
+            },
+            "jhv": {
+                "title": "JHV Protocol 2025",
+                "desc": "Minutes from the last General Assembly. Important voting results."
+            },
+            "mentalHealth": {
+                "title": "Mental Health Days",
+                "desc": "New workshop series starting next month."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Media Owner & Publisher",
+        "contact": "Contact",
+        "zvr": "ZVR Number",
+        "purpose": "Association Purpose",
+        "purposeDesc": "Safeguarding the interests of the association partners regarding teaching and educational work at the school as well as promoting cooperation between home and school."
+    },
+    "privacy": {
+        "intro": "We take the protection of your personal data very seriously. Below we inform you about the processing of your data.",
+        "responsible": "1. Responsible Party",
+        "collection": "2. Data Collection and Processing",
+        "collectionDesc": "We process personal data that we receive as part of the membership or through your contact.",
+        "rights": "3. Your Rights",
+        "rightsDesc": "You generally have the rights to information, correction, deletion, restriction, data portability, revocation and objection."
+    },
+    "home": {
+        "heroTitle": "Connecting Parents, Teachers, and Students",
+        "heroDesc": "The Elternverein is dedicated to supporting the school community through active participation, funding, and open communication.",
+        "getInvolved": "Get Involved",
+        "learnMore": "Learn More",
+        "latestNews": "Latest News",
+        "insightsUpdates": "Insights & Updates",
+        "viewAll": "View All",
+        "tags": {
+            "event": "Event",
+            "protocol": "Protocol",
+            "news": "News"
+        }
+    },
+    "about": {
+        "title": "About the Elternverein",
+        "desc": "The Parents' Association is a voluntary organization of parents and guardians dedicated to promoting the welfare of the students and the school.",
+        "mission": "Our Mission",
+        "missionDesc": "To foster a close relationship between home and school, so that parents and teachers may cooperate intelligently in the education of their children.",
+        "whatWeDo": "What We Do",
+        "points": [
+            "Organize events and fundraisers",
+            "Support school projects financially",
+            "Represent parents' interests in school committees",
+            "Facilitate communication between parents and school"
+        ]
+    },
+    "costs": {
+        "title": "Membership & Costs",
+        "desc": "Transparent handling of your contributions.",
+        "membership": "Membership Fee",
+        "allocation": "Funds Allocation",
+        "details": "The membership fee is used 100% for the benefit of the students.",
+        "membershipPerYear": "Year per Family"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in Touch",
+        "desc": "Have questions or want to get involved? Reach out to us directly or fill out the form.",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send Message"
+        }
+    },
+    "login": {
+        "title": "Login",
+        "subtitle": "Access the internal area for parents and teachers.",
+        "email": "Email Address",
+        "password": "Password",
+        "submit": "Sign In",
+        "register": "No account? Register",
+        "forgot": "Forgot password?",
+        "closeButton": "Close"
+    },
+    "services": {
+        "title": "Our Services",
+        "desc": "We support students and families with financial aid, tutoring programs, and educational courses.",
+        "support": "Social Support",
+        "supportDesc": "Financial assistance for school events and materials.",
+        "supportPoints": [
+            "Grants for school weeks",
+            "Support for material costs",
+            "Discreet financial aid"
+        ],
+        "tutoring": "Tutoring List",
+        "tutoringDesc": "Connect with qualified tutors.",
+        "tutoringPoints": [
+            "Peer-to-peer tutoring network",
+            "Verified student tutors",
+            "Fair conditions"
+        ],
+        "courses": "Courses",
+        "coursesDesc": "Additional educational opportunities.",
+        "coursesPoints": [
+            "ECDL certifications",
+            "Injection molding courses",
+            "Exam preparation"
+        ],
+        "learnMore": "Learn More"
+    },
+    "projects": {
+        "title": "Projects",
+        "currentTitle": "Current Projects",
+        "desc": "A history of funded projects and initiatives.",
+        "archive": "Project Archive",
+        "viewArchive": "View Archive",
+        "overview": "Project Overview",
+        "viewOverview": "Application Status",
+        "backToCurrent": "Back to Overview",
+        "archiveDesc": "History of past school years.",
+        "year": "Year",
+        "fundedProjects": "Funded Projects",
+        "items": {
+            "physics": {
+                "title": "New Physics Lab Equipment",
+                "status": "In Progress"
+            },
+            "library": {
+                "title": "Library Modernization",
+                "status": "Approved"
+            },
+            "garden": {
+                "title": "School Garden Seating",
+                "status": "Completed"
+            }
+        },
+        "apply": {
+            "title": "Submit Project Proposal",
+            "desc": "Use this form to digitally submit your funding application.",
+            "button": "Start New Application",
+            "form": {
+                "title": "Project Title",
+                "applicant": "Applicant / Department",
+                "description": "Detailed Project Description",
+                "costs": "Funding Required (€)",
+                "files": "Attachments (Quotes, Plans)",
+                "submit": "Submit Proposal",
+                "success": "Your proposal has been successfully submitted!"
+            }
+        },
+        "overviewTable": {
+            "title": "Submitted Proposals (2025/26)",
+            "headers": {
+                "project": "Project",
+                "applicant": "Applicant",
+                "department": "Department",
+                "date": "Date",
+                "cost": "Cost",
+                "status": "Status"
+            },
+            "filters": {
+                "label": "Filters:",
+                "search": "Search projects...",
+                "allStatus": "All Statuses",
+                "allDepts": "All Departments"
+            },
+            "departments": {
+                "IT": "Information Technology",
+                "ME": "Mechanical Engineering",
+                "ET": "Electrical Engineering",
+                "GEN": "General",
+                "BAU": "Civil Engineering",
+                "SP": "Sport",
+                "FIN": "Finance"
+            },
+            "status": {
+                "approved": "Approved",
+                "pending": "Pending",
+                "rejected": "Rejected"
+            }
+        }
+    },
+    "board": {
+        "title": "Our Board",
+        "desc": "The dedicated team behind the Parents' Association.",
+        "roles": {
+            "chair": "Chairperson",
+            "viceChair": "Vice Chairperson",
+            "treasurer": "Treasurer",
+            "secretary": "Secretary",
+            "member": "Co-opted Member",
+            "auditor": "Auditor"
+        }
+    },
+    "statutes": {
+        "title": "Statutes",
+        "desc": "The legal foundation of our association.",
+        "download": "Download PDF"
+    },
+    "terms": {
+        "title": "Terms & Conditions",
+        "desc": "Rules and regulations."
+    },
+    "cookieBanner": {
+        "text": "We only use technically necessary cookies to enable language settings and the login.",
+        "accept": "Understood",
+        "privacyLink": "Privacy Policy"
+    }
+}

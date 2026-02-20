@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+
+  /* One-Color Engine Base Styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight text-foreground;
+  }
+
+  a {
+    @apply text-primary hover:text-primary-dark transition-colors;
+  }
+
+  button {
+    @apply transition-all duration-200 active:scale-[0.98];
+  }
+}
+
+@layer components {
+  .card-premium {
+    @apply bg-card border border-border rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow;
+  }
+}
