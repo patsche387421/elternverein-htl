@@ -1,11 +1,7 @@
 import { ArrowRight, Calendar, Users, Heart, FileText, Activity } from 'lucide-react';
-import { Suspense, lazy } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-
-// Lazy-load Spline: nicht beim initialen Bundle, sondern erst wenn Hero mountet
-const Spline = lazy(() => import('@splinetool/react-spline'));
 
 const Home = () => {
     const { t } = useTranslation();
@@ -55,66 +51,55 @@ const Home = () => {
                 description={t('home.heroDesc')}
             />
 
-            {/* ── Spline Hero Section ── */}
-            <section
-                className="relative flex items-center justify-center overflow-hidden rounded-b-[3rem] shadow-2xl text-white"
-                style={{ minHeight: 'max(100svh, 700px)' }}
-            >
-                {/* [z-0] Spline 3D Scene – Background Layer */}
-                <div className="absolute inset-0 z-0" aria-hidden="true">
-                    <Suspense fallback={
-                        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900" />
-                    }>
-                        <Spline
-                            scene="https://prod.spline.design/FCo08iJfWrlXumxc/scene.splinecode"
-                            style={{ width: '100%', height: '100%' }}
-                        />
-                    </Suspense>
+            {/* ── Hero Section ── */}
+            <section className="relative w-full overflow-hidden rounded-b-[3rem] shadow-2xl bg-white dark:bg-slate-950
+                                h-[60vh] md:h-screen">
+
+                {/* BACKGROUND LAYER: Image
+                    object-cover and object-center ensure the focus remains on the building.
+                    A subtle gradient overlay ensures text readability. */}
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="/src/assets/hero-bg.jpg"
+                        alt="HTL Mödling Building"
+                        className="w-full h-full object-cover object-center"
+                    />
+                    {/* Gradient Overlay for Readability */}
+                    <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/20 to-transparent dark:from-black/80 dark:via-black/40 dark:to-transparent" />
                 </div>
 
-                {/* [z-1] Gradient overlay für Lesbarkeit */}
-                <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/40 via-transparent to-black/70 pointer-events-none" />
+                {/* CONTENT LAYER: Text & Buttons */}
+                <div className="relative z-10 flex flex-col justify-center h-full px-10 md:px-20">
+                    <div className="max-w-2xl">
+                        <h1 className="text-5xl md:text-8xl font-extrabold tracking-tighter leading-none">
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400
+                                             animate-gradient-x"
+                                style={{ backgroundSize: '200% 200%' }}>
+                                Elternverein
+                            </span>
+                            <span className="block text-white drop-shadow-lg text-3xl md:text-5xl font-bold mt-3">
+                                HTL Mödling
+                            </span>
+                        </h1>
 
-                {/* [z-10] Content Layer */}
-                <div className="container mx-auto px-4 relative z-10 text-center space-y-8">
+                        <p className="mt-6 text-lg md:text-xl text-white/90 font-medium max-w-md drop-shadow-md">
+                            {t('home.heroDesc')}
+                        </p>
 
-                    {/* Animated Gradient Headline */}
-                    <h1 className="text-5xl md:text-8xl font-black tracking-tight animate-fade-up">
-                        <span
-                            className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient-x"
-                            style={{ backgroundSize: '200% 200%' }}
-                        >
-                            Elternverein
-                        </span>
-                        <br />
-                        <span className="text-white/90 drop-shadow-lg text-3xl md:text-5xl font-bold mt-2 block">
-                            HTL Mödling
-                        </span>
-                    </h1>
-
-                    <p
-                        className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-md animate-fade-up"
-                        style={{ animationDelay: '0.18s', opacity: 0 }}
-                    >
-                        {t('home.heroDesc')}
-                    </p>
-
-                    <div
-                        className="pt-6 flex flex-col sm:flex-row gap-4 justify-center animate-fade-up"
-                        style={{ animationDelay: '0.34s', opacity: 0 }}
-                    >
-                        <Link
-                            to="/contact"
-                            className="bg-primary text-primary-foreground px-10 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all transform hover:scale-105 shadow-xl shadow-primary/30 border border-white/10"
-                        >
-                            {t('home.getInvolved')}
-                        </Link>
-                        <Link
-                            to="/about"
-                            className="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all shadow-lg"
-                        >
-                            {t('home.learnMore')}
-                        </Link>
+                        {/* INTERACTION LAYER */}
+                        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                            <Link to="/contact"
+                                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground
+                                           rounded-full font-bold hover:scale-105 transition-transform shadow-xl shadow-primary/25">
+                                {t('home.getInvolved')}
+                            </Link>
+                            <Link to="/about"
+                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold
+                                           bg-white/10 backdrop-blur-md text-white border border-white/20
+                                           hover:bg-white/20 transition-all shadow-lg">
+                                {t('home.learnMore')}
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
