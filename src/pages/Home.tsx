@@ -54,50 +54,55 @@ const Home = () => {
 
             {/* ── Hero Section ── */}
             <section className="relative w-full overflow-hidden rounded-b-[3rem] shadow-2xl bg-white dark:bg-slate-950
-                                h-[60vh] md:h-screen">
+                                h-[70vh] md:h-screen">
 
                 {/* BACKGROUND LAYER: Image
-                    object-cover and object-center ensure the focus remains on the building.
-                    A subtle gradient overlay ensures text readability. */}
+                    object-cover and object-center ensure the focus remains on the building. */}
                 <div className="absolute inset-0 z-0">
                     <img
                         src={heroBg}
                         alt="HTL Mödling Building"
                         className="w-full h-full object-cover object-center"
                     />
-                    {/* Gradient Overlay for Readability */}
-                    <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/20 to-transparent dark:from-black/80 dark:via-black/40 dark:to-transparent" />
+
+                    {/* Glass-Effect Overlay for Readability
+                        Combines semi-transparent background and backdrop-blur for a premium look. */}
+                    <div className="absolute inset-0 bg-white/40 dark:bg-slate-950/50 backdrop-blur-[2px]" />
+
+                    {/* Gradient Fade for Depth */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent dark:from-slate-950 dark:via-transparent dark:to-transparent" />
                 </div>
 
-                {/* CONTENT LAYER: Text & Buttons */}
-                <div className="relative z-10 flex flex-col justify-center h-full px-10 md:px-20">
-                    <div className="max-w-2xl">
-                        <h1 className="text-5xl md:text-8xl font-extrabold tracking-tighter leading-none">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400
-                                             animate-gradient-x"
+                {/* CONTENT LAYER: Centered Text & Buttons */}
+                <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
+                    <div className="max-w-4xl space-y-8">
+                        <h1 className="text-5xl md:text-8xl font-extrabold tracking-tighter leading-tight md:leading-[0.9]">
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400
+                                             animate-gradient-x px-2"
                                 style={{ backgroundSize: '200% 200%' }}>
                                 Elternverein
                             </span>
-                            <span className="block text-white drop-shadow-lg text-3xl md:text-5xl font-bold mt-3">
+                            <span className="block text-slate-900 dark:text-white drop-shadow-sm text-3xl md:text-6xl font-bold mt-4">
                                 HTL Mödling
                             </span>
                         </h1>
 
-                        <p className="mt-6 text-lg md:text-xl text-white/90 font-medium max-w-md drop-shadow-md">
+                        <p className="mt-8 text-lg md:text-2xl text-slate-700 dark:text-slate-200 font-medium max-w-2xl mx-auto leading-relaxed">
                             {t('home.heroDesc')}
                         </p>
 
-                        {/* INTERACTION LAYER */}
-                        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                        {/* INTERACTION LAYER: Centered Links */}
+                        <div className="mt-12 flex flex-col sm:flex-row gap-5 justify-center">
                             <Link to="/contact"
-                                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground
-                                           rounded-full font-bold hover:scale-105 transition-transform shadow-xl shadow-primary/25">
+                                className="inline-flex items-center justify-center px-10 py-5 bg-primary text-primary-foreground
+                                           rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl shadow-primary/30">
                                 {t('home.getInvolved')}
                             </Link>
                             <Link to="/about"
-                                className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold
-                                           bg-white/10 backdrop-blur-md text-white border border-white/20
-                                           hover:bg-white/20 transition-all shadow-lg">
+                                className="inline-flex items-center justify-center px-10 py-5 rounded-full font-bold text-lg
+                                           bg-white/40 dark:bg-white/10 backdrop-blur-md text-slate-900 dark:text-white 
+                                           border border-slate-300 dark:border-white/20
+                                           hover:bg-white/60 dark:hover:bg-white/20 transition-all shadow-xl">
                                 {t('home.learnMore')}
                             </Link>
                         </div>
