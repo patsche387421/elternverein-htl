@@ -2,6 +2,7 @@ import { ArrowRight, Calendar, Users, Heart, FileText, Activity } from 'lucide-r
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import heroBg from '../assets/hero-bg.jpg';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -60,7 +61,7 @@ const Home = () => {
                     A subtle gradient overlay ensures text readability. */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/src/assets/hero-bg.jpg"
+                        src={heroBg}
                         alt="HTL Mödling Building"
                         className="w-full h-full object-cover object-center"
                     />
