@@ -1,7 +1,11 @@
 import { ArrowRight, Calendar, Users, Heart, FileText, Activity } from 'lucide-react';
+import { Suspense, lazy } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+
+// Lazy-load Spline: nicht beim initialen Bundle, sondern erst wenn Hero mountet
+const Spline = lazy(() => import('@splinetool/react-spline'));
 
 const Home = () => {
     const { t } = useTranslation();
@@ -51,32 +55,64 @@ const Home = () => {
                 description={t('home.heroDesc')}
             />
 
-            {/* Modern Hero Section */}
-            <section className="relative h-[600px] flex items-center justify-center text-white overflow-hidden rounded-b-[3rem] shadow-2xl">
-                {/* Background Image Placeholder */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: "url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2670&auto=format&fit=crop')" }}
-                />
+            {/* ── Spline Hero Section ── */}
+            <section
+                className="relative flex items-center justify-center overflow-hidden rounded-b-[3rem] shadow-2xl text-white"
+                style={{ minHeight: 'max(100svh, 700px)' }}
+            >
+                {/* [z-0] Spline 3D Scene – Background Layer */}
+                <div className="absolute inset-0 z-0" aria-hidden="true">
+                    <Suspense fallback={
+                        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900" />
+                    }>
+                        <Spline
+                            scene="https://prod.spline.design/FCo08iJfWrlXumxc/scene.splinecode"
+                            style={{ width: '100%', height: '100%' }}
+                        />
+                    </Suspense>
+                </div>
 
-                {/* Dark Overlay for Readability */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-primary/80 backdrop-blur-[2px]" />
+                {/* [z-1] Gradient overlay für Lesbarkeit */}
+                <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/40 via-transparent to-black/70 pointer-events-none" />
 
-                {/* Grid Pattern Overlay */}
-                <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:30px_30px]" />
-
+                {/* [z-10] Content Layer */}
                 <div className="container mx-auto px-4 relative z-10 text-center space-y-8">
-                    <h1 className="text-4xl md:text-7xl font-black tracking-tight text-balance drop-shadow-lg">
-                        {t('home.heroTitle')}
+
+                    {/* Animated Gradient Headline */}
+                    <h1 className="text-5xl md:text-8xl font-black tracking-tight animate-fade-up">
+                        <span
+                            className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient-x"
+                            style={{ backgroundSize: '200% 200%' }}
+                        >
+                            Elternverein
+                        </span>
+                        <br />
+                        <span className="text-white/90 drop-shadow-lg text-3xl md:text-5xl font-bold mt-2 block">
+                            HTL Mödling
+                        </span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto text-balance leading-relaxed drop-shadow-md font-medium">
+
+                    <p
+                        className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-md animate-fade-up"
+                        style={{ animationDelay: '0.18s', opacity: 0 }}
+                    >
                         {t('home.heroDesc')}
                     </p>
-                    <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link to="/contact" className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-primary-light transition transform hover:scale-105 shadow-xl border border-white/10">
+
+                    <div
+                        className="pt-6 flex flex-col sm:flex-row gap-4 justify-center animate-fade-up"
+                        style={{ animationDelay: '0.34s', opacity: 0 }}
+                    >
+                        <Link
+                            to="/contact"
+                            className="bg-primary text-primary-foreground px-10 py-4 rounded-full font-bold text-lg hover:bg-primary-dark transition-all transform hover:scale-105 shadow-xl shadow-primary/30 border border-white/10"
+                        >
                             {t('home.getInvolved')}
                         </Link>
-                        <Link to="/about" className="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition shadow-lg">
+                        <Link
+                            to="/about"
+                            className="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all shadow-lg"
+                        >
                             {t('home.learnMore')}
                         </Link>
                     </div>

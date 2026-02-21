@@ -125,6 +125,20 @@ export default {
         "2xl": "calc(var(--radius) * 2)",
         "3xl": "calc(var(--radius) * 3)",
       },
+      keyframes: {
+        'gradient-x': {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+        },
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'gradient-x': 'gradient-x 5s ease infinite',
+        'fade-up': 'fade-up 0.7s ease forwards',
+      },
       container: {
         center: true,
         padding: "2rem",
