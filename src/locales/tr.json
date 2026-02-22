@@ -292,6 +292,14 @@
         "accept": "Anladım",
         "privacyLink": "Gizlilik Politikası"
     },
+    "settings": {
+        "title": "Ayarlar",
+        "language": "Dil",
+        "theme": "Tema",
+        "lightMode": "Açık",
+        "darkMode": "Koyu",
+        "note": "Değişiklikler hemen uygulanır."
+    },
     "common": {
         "required": "Zorunlu alan"
     }

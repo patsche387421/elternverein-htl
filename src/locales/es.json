@@ -1,0 +1,305 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "news": "Noticias",
+        "services": "Servicios",
+        "projects": "Proyectos",
+        "about": "Sobre nosotros",
+        "contact": "Contacto",
+        "login": "Iniciar sesión",
+        "logout": "Cerrar sesión",
+        "profile": "Mi perfil",
+        "aria": {
+            "menuToggle": "Alternar menú",
+            "languageToggle": "Cambiar idioma",
+            "themeToggle": "Cambiar tema"
+        },
+        "serviceItems": {
+            "support": "Apoyo social",
+            "tutoring": "Tutoría",
+            "courses": "Cursos"
+        }
+    },
+    "footer": {
+        "links": "Enlaces rápidos",
+        "legal": "Legal",
+        "socials": "Conéctese con nosotros",
+        "impressum": "Aviso legal",
+        "privacy": "Política de privacidad",
+        "terms": "Términos y condiciones"
+    },
+    "news": {
+        "title": "Noticias y eventos",
+        "desc": "Manténgase al día con lo último de la Asociación de Padres.",
+        "filters": {
+            "all": "Todos",
+            "news": "Noticias",
+            "event": "Eventos",
+            "protocol": "Protocolos"
+        },
+        "items": {
+            "agm": {
+                "title": "Asamblea General Anual 2025",
+                "desc": "Invitación a la asamblea general ordinaria de la Asociación de Padres."
+            },
+            "sga": {
+                "title": "Acta de reunión del SGA",
+                "desc": "El acta de la última reunión del Comité de la Comunidad Escolar está disponible en línea."
+            },
+            "funding": {
+                "title": "Nuevas oportunidades de financiación",
+                "desc": "Las solicitudes de financiación de proyectos ahora se pueden enviar digitalmente."
+            },
+            "parentsDay": {
+                "title": "Día de los padres",
+                "desc": "Información sobre el próximo Día de los Padres y reserva de citas."
+            },
+            "festival": {
+                "title": "Festival escolar 2026",
+                "desc": "Encuentro anual de verano para todos los estudiantes y padres."
+            },
+            "jhv": {
+                "title": "Protocolo JHV 2025",
+                "desc": "Actas de la última Asamblea General. Resultados importantes de votación."
+            },
+            "mentalHealth": {
+                "title": "Días de salud mental",
+                "desc": "Nueva serie de talleres que comienza el próximo mes."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Propietario y editor de medios",
+        "contact": "Contacto",
+        "zvr": "Número ZVR",
+        "purpose": "Objeto de la asociación",
+        "purposeDesc": "Salvaguardar los intereses de los socios de la asociación en relación con la labor docente y educativa en la escuela, así como fomentar la cooperación entre el hogar y la escuela."
+    },
+    "privacy": {
+        "intro": "Nos tomamos muy en serio la protección de sus datos personales. A continuación le informamos sobre el procesamiento de sus datos.",
+        "responsible": "1. Responsable",
+        "collection": "2. Recopilación y procesamiento de datos",
+        "collectionDesc": "Procesamos datos personales que recibimos como parte de la membresía o a través de su contacto.",
+        "rights": "3. Sus derechos",
+        "rightsDesc": "En general, usted tiene derecho a información, corrección, eliminación, restricción, portabilidad de datos, revocación y oposición."
+    },
+    "home": {
+        "heroTitle": "Conectando padres, profesores y estudiantes",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Asociación de Padres",
+        "heroDesc": "La Asociación de Padres se dedica a apoyar a la comunidad escolar mediante participación activa, financiación y comunicación abierta.",
+        "servicesLabel": "Nuestros servicios",
+        "servicesSub": "La innovación se encuentra con la comunidad – Descubra nuestras ventajas.",
+        "getInvolved": "Participar",
+        "learnMore": "Más información",
+        "latestNews": "Últimas noticias",
+        "insightsUpdates": "Perspectivas y novedades",
+        "viewAll": "Ver todo",
+        "welcomeBadge": "¡Bienvenidos!",
+        "tags": {
+            "event": "Evento",
+            "protocol": "Protocolo",
+            "news": "Noticia"
+        }
+    },
+    "about": {
+        "title": "Sobre la Asociación de Padres",
+        "desc": "La Asociación de Padres es una organización voluntaria de padres y tutores dedicada a promover el bienestar de los estudiantes y la escuela.",
+        "mission": "Nuestra misión",
+        "missionDesc": "Fomentar una estrecha relación entre el hogar y la escuela, para que padres y profesores puedan cooperar inteligentemente en la educación de sus hijos.",
+        "whatWeDo": "Lo que hacemos",
+        "points": [
+            "Organizar eventos y recaudaciones de fondos",
+            "Apoyar financieramente los proyectos escolares",
+            "Representar los intereses de los padres en los comités escolares",
+            "Facilitar la comunicación entre padres y escuela"
+        ],
+        "board": {
+            "viewDetails": "Ver detalles completos"
+        }
+    },
+    "costs": {
+        "title": "Membresía y costes",
+        "desc": "Gestión transparente de sus contribuciones.",
+        "membership": "Cuota de membresía",
+        "allocation": "Asignación de fondos",
+        "details": "La cuota de membresía se utiliza al 100% en beneficio de los estudiantes.",
+        "membershipPerYear": "Año / Familia"
+    },
+    "contact": {
+        "title": "Contacto",
+        "subtitle": "Escríbanos",
+        "desc": "¿Tiene preguntas o desea participar? Póngase en contacto directamente o complete el formulario.",
+        "form": {
+            "name": "Nombre",
+            "email": "Correo electrónico",
+            "message": "Mensaje",
+            "send": "Enviar mensaje",
+            "namePlaceholder": "Su nombre",
+            "emailPlaceholder": "su.correo@ejemplo.com",
+            "messagePlaceholder": "¿Cómo podemos ayudarle?",
+            "infoText": "Estamos aquí para usted. Contáctenos directamente por correo electrónico, teléfono o visítenos en horario de oficina.",
+            "officeLabel": "Oficina",
+            "officeLocation": "Edificio principal de la escuela, sala 101",
+            "phoneLabel": "Teléfono",
+            "emailLabel": "Correo electrónico"
+        }
+    },
+    "login": {
+        "title": "Iniciar sesión",
+        "subtitle": "Acceso al área interna para padres y profesores.",
+        "email": "Dirección de correo electrónico",
+        "password": "Contraseña",
+        "emailPlaceholder": "nombre@ejemplo.com",
+        "submit": "Iniciar sesión",
+        "register": "¿No tiene cuenta? Regístrese",
+        "forgot": "¿Olvidó su contraseña?",
+        "closeButton": "Cerrar"
+    },
+    "newsAria": {
+        "categories": "Categorías de noticias"
+    },
+    "services": {
+        "title": "Nuestros servicios",
+        "desc": "Apoyamos a estudiantes y familias con ayuda financiera, programas de tutoría y cursos educativos.",
+        "support": "Apoyo social",
+        "supportDesc": "Asistencia financiera para eventos escolares y materiales.",
+        "supportPoints": [
+            "Becas para semanas escolares",
+            "Apoyo para costes de materiales",
+            "Ayuda financiera discreta"
+        ],
+        "tutoring": "Lista de tutores",
+        "tutoringDesc": "Conéctese con tutores cualificados.",
+        "tutoringPoints": [
+            "Red de tutoría entre iguales",
+            "Tutores verificados",
+            "Condiciones justas"
+        ],
+        "courses": "Cursos",
+        "coursesDesc": "Oportunidades educativas adicionales.",
+        "coursesPoints": [
+            "Certificaciones ECDL",
+            "Cursos de moldeo por inyección",
+            "Preparación para exámenes"
+        ],
+        "learnMore": "Más información"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "currentTitle": "Proyectos actuales",
+        "desc": "Historial de proyectos e iniciativas financiadas.",
+        "archive": "Archivo de proyectos",
+        "viewArchive": "Ver archivo",
+        "ariaLabel": "Años de archivo",
+        "overview": "Vista general de proyectos",
+        "viewOverview": "Estado de solicitudes",
+        "backToCurrent": "Volver a la vista general",
+        "archiveDesc": "Historial de años escolares anteriores.",
+        "year": "Año",
+        "fundedProjects": "Proyectos financiados",
+        "items": {
+            "physics": {
+                "title": "Nuevo equipamiento para laboratorio de física",
+                "status": "En progreso"
+            },
+            "library": {
+                "title": "Modernización de la biblioteca",
+                "status": "Aprobado"
+            },
+            "garden": {
+                "title": "Asientos para el jardín escolar",
+                "status": "Completado"
+            }
+        },
+        "apply": {
+            "title": "Enviar propuesta de proyecto",
+            "desc": "Use este formulario para enviar digitalmente su solicitud de financiación.",
+            "button": "Iniciar nueva solicitud",
+            "form": {
+                "title": "Título del proyecto",
+                "applicant": "Solicitante / Departamento",
+                "description": "Descripción detallada del proyecto",
+                "costs": "Financiación necesaria (€)",
+                "placeholderCosts": "0,00",
+                "files": "Adjuntos (Presupuestos, Planos)",
+                "submit": "Enviar propuesta",
+                "success": "¡Su propuesta se ha enviado con éxito!",
+                "titlePlaceholder": "p. ej., Actualización del laboratorio IT",
+                "applicantPlaceholder": "Su nombre / Clase",
+                "descriptionPlaceholder": "Describa su proyecto...",
+                "uploadText": "Arrastre archivos aquí o haga clic",
+                "successSEO": "Su propuesta de proyecto se ha enviado con éxito."
+            }
+        },
+        "overviewTable": {
+            "title": "Propuestas enviadas (2025/26)",
+            "headers": {
+                "project": "Proyecto",
+                "applicant": "Solicitante",
+                "department": "Departamento",
+                "date": "Fecha",
+                "cost": "Coste",
+                "status": "Estado"
+            },
+            "filters": {
+                "label": "Filtros:",
+                "ariaLabel": "Acciones de proyecto",
+                "search": "Buscar proyectos...",
+                "allStatus": "Todos los estados",
+                "allDepts": "Todos los departamentos"
+            },
+            "departments": {
+                "IT": "Tecnología de la información",
+                "ME": "Ingeniería mecánica",
+                "ET": "Ingeniería eléctrica",
+                "GEN": "General",
+                "BAU": "Ingeniería civil",
+                "SP": "Deportes",
+                "FIN": "Finanzas"
+            },
+            "status": {
+                "approved": "Aprobado",
+                "pending": "Pendiente",
+                "rejected": "Rechazado"
+            }
+        }
+    },
+    "board": {
+        "title": "Junta directiva",
+        "desc": "El equipo dedicado detrás de la Asociación de Padres.",
+        "roles": {
+            "chair": "Presidente/a",
+            "viceChair": "Vicepresidente/a",
+            "treasurer": "Tesorero/a",
+            "secretary": "Secretario/a",
+            "member": "Miembro cooptado",
+            "auditor": "Auditor/a"
+        }
+    },
+    "statutes": {
+        "title": "Estatutos",
+        "desc": "La base legal de nuestra asociación.",
+        "download": "Descargar PDF"
+    },
+    "terms": {
+        "title": "Términos y condiciones",
+        "desc": "Normas y reglamentos."
+    },
+    "cookieBanner": {
+        "text": "Solo utilizamos cookies técnicamente necesarias para habilitar la configuración de idioma y el inicio de sesión.",
+        "accept": "Entendido",
+        "privacyLink": "Política de privacidad"
+    },
+    "settings": {
+        "title": "Configuración",
+        "language": "Idioma",
+        "theme": "Tema",
+        "lightMode": "Claro",
+        "darkMode": "Oscuro",
+        "note": "Los cambios se aplican de inmediato."
+    },
+    "common": {
+        "required": "Campo obligatorio"
+    }
+}

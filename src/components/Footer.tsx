@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Instagram, Facebook, Mail } from 'lucide-react';
 import { useState } from 'react';
 import { DesignPreview } from './DesignPreview';
+import Logo from './Logo';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -15,6 +16,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     {/* Brand */}
                     <div className="col-span-1 md:col-span-1">
+                        <Logo className="h-12 w-auto text-primary mb-4 transition-colors duration-300" size={50} />
                         <h3 className="text-xl font-bold text-primary mb-2">Elternverein</h3>
                         <p className="text-sm text-foreground/70 mb-4">
                             HTL Mödling

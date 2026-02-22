@@ -291,6 +291,14 @@
         "accept": "Understood",
         "privacyLink": "Privacy Policy"
     },
+    "settings": {
+        "title": "Settings",
+        "language": "Language",
+        "theme": "Theme",
+        "lightMode": "Light",
+        "darkMode": "Dark",
+        "note": "Changes are applied immediately."
+    },
     "common": {
         "required": "Required field"
     }

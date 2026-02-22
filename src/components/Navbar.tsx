@@ -5,9 +5,9 @@ import { Menu, X, User, LogOut, Settings } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { useTranslation } from 'react-i18next';
-import LanguageSwitcher from './LanguageSwitcher';
-import ThemeToggle from './ThemeToggle';
+import SettingsModal from './SettingsModal';
 import LoginModal from './LoginModal';
+import Logo from './Logo';
 
 function cn(...inputs: (string | undefined | null | false)[]) {
     return twMerge(clsx(inputs));
@@ -18,6 +18,7 @@ const Navbar = () => {
     const [isLoginOpen, setIsLoginOpen] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const location = useLocation();
     const { t } = useTranslation();
 
@@ -25,6 +26,7 @@ const Navbar = () => {
         setIsOpen(false);
         setIsLoginOpen(false);
         setIsUserMenuOpen(false);
+        setIsSettingsOpen(false);
     };
 
     const handleLoginSuccess = () => {
@@ -51,13 +53,16 @@ const Navbar = () => {
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     {/* Brand */}
-                    <Link to="/" className="flex flex-col justify-center" onClick={closeAll}>
-                        <span className="text-xl font-bold text-primary leading-none">
-                            Elternverein
-                        </span>
-                        <span className="text-xs font-medium text-foreground/60 tracking-wide uppercase">
-                            HTL Mödling
-                        </span>
+                    <Link to="/" className="flex items-center gap-3 group" onClick={closeAll}>
+                        <Logo className="h-10 w-auto text-primary transition-transform duration-300 group-hover:scale-110" size={40} />
+                        <div className="flex flex-col justify-center">
+                            <span className="text-xl font-bold text-primary leading-none">
+                                Elternverein
+                            </span>
+                            <span className="text-xs font-medium text-foreground/60 tracking-wide uppercase">
+                                HTL Mödling
+                            </span>
+                        </div>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -78,10 +83,15 @@ const Navbar = () => {
                         ))}
 
                         {/* Actions - Right */}
-                        <div className="hidden lg:flex items-center justify-end gap-3 flex-shrink-0 w-[280px]">
-                            <ThemeToggle />
-                            <div className="border-l border-border h-6 mx-1"></div>
-                            <LanguageSwitcher />
+                        <div className="hidden lg:flex items-center justify-end gap-3 flex-shrink-0 w-[200px]">
+                            {/* Settings Gear */}
+                            <button
+                                onClick={() => setIsSettingsOpen(true)}
+                                className="p-3 rounded-xl text-foreground/60 hover:bg-primary/5 hover:text-primary transition-all border border-transparent hover:border-primary/10 shadow-sm"
+                                aria-label={t('settings.title', 'Einstellungen')}
+                            >
+                                <Settings size={20} />
+                            </button>
 
                             {!isLoggedIn ? (
                                 <button
@@ -127,9 +137,15 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    {/* Mobile Menu Button - Optimized Touch Target */}
-                    <div className="lg:hidden flex items-center gap-4">
-                        <ThemeToggle />
+                    {/* Mobile Menu Button */}
+                    <div className="lg:hidden flex items-center gap-2">
+                        <button
+                            onClick={() => setIsSettingsOpen(true)}
+                            className="p-3 rounded-full text-foreground/80 hover:bg-surface active:scale-95 transition-transform"
+                            aria-label={t('settings.title', 'Einstellungen')}
+                        >
+                            <Settings size={22} />
+                        </button>
                         <button
                             className="p-3 -mr-2 rounded-full text-foreground/80 hover:bg-surface active:scale-95 transition-transform"
                             onClick={() => setIsOpen(!isOpen)}
@@ -173,11 +189,6 @@ const Navbar = () => {
                         ))}
 
                         <div className="flex flex-col gap-4 mt-8 pt-8 border-t border-border">
-                            <div className="flex justify-between items-center px-4">
-                                <span className="text-foreground/60 font-medium">Language</span>
-                                <LanguageSwitcher />
-                            </div>
-
                             {!isLoggedIn ? (
                                 <button
                                     onClick={() => {
@@ -214,6 +225,8 @@ const Navbar = () => {
                 </div>,
                 document.body
             )}
+
+            <SettingsModal isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
 
             <LoginModal
                 isOpen={isLoginOpen}

@@ -44,12 +44,8 @@ const News = () => {
         }
     ];
 
-    const getTypeColor = (type: string) => {
-        switch (type) {
-            case 'event': return 'bg-primary text-primary-foreground';
-            case 'protocol': return 'bg-primary/70 text-primary-foreground';
-            default: return 'bg-primary/40 text-primary-foreground';
-        }
+    const getTypeColor = (_type: string) => {
+        return 'bg-primary text-primary-foreground';
     };
 
     const filteredNews = newsItems.filter(item =>

@@ -61,12 +61,8 @@ const Home = () => {
         }
     ];
 
-    const getTypeColor = (type: string) => {
-        switch (type) {
-            case 'event': return 'bg-primary text-primary-foreground';
-            case 'protocol': return 'bg-primary/70 text-primary-foreground';
-            default: return 'bg-primary/40 text-primary-foreground';
-        }
+    const getTypeColor = (_type: string) => {
+        return 'bg-primary text-primary-foreground';
     };
 
     return (
@@ -79,7 +75,7 @@ const Home = () => {
 
             {/* ── Hero Section ── */}
             <header className="relative w-full overflow-hidden rounded-b-3xl shadow-2xl bg-background
-                                min-h-svh flex flex-col items-center justify-center">
+                                h-[75vh] flex flex-col items-center justify-center">
 
                 {/* BACKGROUND LAYER: Image */}
                 <div className="absolute inset-0 z-0 bg-primary/5">
@@ -104,7 +100,7 @@ const Home = () => {
                             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/15 text-primary text-xs font-black uppercase tracking-[0.3em] mb-4 border border-primary/20">
                                 {t('home.welcomeBadge', 'Willkommen bei uns')}
                             </span>
-                            <h1 className="text-[clamp(2.5rem,10vw,3.75rem)] md:text-[clamp(5rem,15vw,12rem)] font-black tracking-tighter leading-[0.85] text-foreground drop-shadow-sm text-balance break-words hyphens-auto">
+                            <h1 className="text-[clamp(2.5rem,10vw,3.75rem)] md:text-[clamp(5rem,15vw,12rem)] font-black tracking-tighter leading-[0.85] text-foreground drop-shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)] text-balance break-words hyphens-auto">
                                 <span className="text-primary block">
                                     {t('home.heroTitleMain', 'Elternverein')}
                                 </span>

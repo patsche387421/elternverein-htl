@@ -291,6 +291,14 @@
         "accept": "Verstanden",
         "privacyLink": "Datenschutzerklärung"
     },
+    "settings": {
+        "title": "Einstellungen",
+        "language": "Sprache",
+        "theme": "Design",
+        "lightMode": "Hell",
+        "darkMode": "Dunkel",
+        "note": "Änderungen werden sofort übernommen."
+    },
     "common": {
         "required": "Pflichtfeld"
     }
