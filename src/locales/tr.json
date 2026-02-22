@@ -100,6 +100,40 @@
             "event": "Etkinlik",
             "protocol": "Protokol",
             "news": "Haber"
+        },
+        "heroBadge": "3.000'den fazla öğrenci için aktif",
+        "heroTitleFluid": "Geleceği birlikte inşa ediyoruz – HTL Mödling'deki çocuklarımız için.",
+        "heroSubtitleFluid": "Proje hibelerinden sosyal desteğe – öğrencilerin arkasındaki güçlü ağız.",
+        "learnMoreScroll": "Daha fazlasını öğrenin",
+        "benefits": {
+            "proj": "Yenilikçi öğrenci projelerini, prototipten sunuma kadar finansal olarak destekliyoruz.",
+            "projTitle": "Proje Desteği",
+            "projLink": "/projekte",
+            "soc": "Destek gerektiğinde aileler için bürokratik olmayan yardım.",
+            "socTitle": "Sosyal Destek",
+            "socLink": "/services",
+            "comm": "Güçlü bir okul topluluğu için velilerin, okulun ve işletmelerin ağ oluşturması.",
+            "commTitle": "Topluluk",
+            "commLink": "/kontakt"
+        },
+        "socialProof": {
+            "title": "Topluluğumuzdan Sesler",
+            "s1": "“Okul aile birliği sayesinde oğlum diploma projesini gerçekleştirebildi.”",
+            "a1": "– 5. sınıf öğrencisinin annesi",
+            "s2": "“Hızlı destek bize çok yardımcı oldu.”",
+            "a2": "– Bir öğrencinin ailesi"
+        },
+        "faq": {
+            "title": "Sıkça Sorulan Sorular (SSS)",
+            "subtitle": "Burada okul aile birliği hakkında en önemli soruların cevaplarını bulabilirsiniz.",
+            "q1": "Yönetim kurulu üyesi olmadan da yardım edebilir miyim?",
+            "a1": "Evet, kesinlikle! Etkinliklerimizde veya projelerimizde her türlü yardım elini memnuniyetle karşılıyoruz.",
+            "q2": "Üyelik ücreti ne kadar?",
+            "a2": "Üyelik ücreti her yıl genel kurulda belirlenir ve doğrudan öğrencilerin yararına kullanılır.",
+            "q3": "Kimler destek başvurusunda bulunabilir?",
+            "a3": "HTL Mödling öğrencilerinin tüm velileri, sosyal zorluk durumlarında veya yenilikçi öğrenci projeleri için destek başvurusunda bulunabilir.",
+            "q4": "Şeffaflık nasıl sağlanıyor?",
+            "a4": "Kar amacı gütmeyen bir kuruluş olarak sıkı denetimlere tabiyiz. Fonların kullanımı yıllık olarak denetçiler tarafından kontrol edilir ve genel kurulda açıklanır."
         }
     },
     "about": {

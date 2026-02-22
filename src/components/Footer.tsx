@@ -16,11 +16,17 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     {/* Brand */}
                     <div className="col-span-1 md:col-span-1">
-                        <Logo className="h-12 w-auto text-primary mb-4 transition-colors duration-300" size={50} />
-                        <h3 className="text-xl font-bold text-primary mb-2">Elternverein</h3>
-                        <p className="text-sm text-foreground/70 mb-4">
-                            HTL Mödling
-                        </p>
+                        <div className="flex items-center gap-4 mb-6">
+                            <Logo className="h-14 w-auto text-primary transition-colors duration-300" size={56} />
+                            <div className="flex flex-col justify-center border-l border-border pl-4">
+                                <h3 className="text-2xl font-black text-primary leading-tight tracking-tighter">
+                                    Elternverein
+                                </h3>
+                                <p className="text-sm font-bold text-foreground/60 tracking-widest uppercase">
+                                    HTL Mödling
+                                </p>
+                            </div>
+                        </div>
                         <p className="text-sm text-foreground/70">
                             Technikerstraße 1-5<br />
                             2340 Mödling
@@ -32,8 +38,8 @@ const Footer = () => {
                         <h4 className="font-semibold text-foreground mb-2">{t('footer.links')}</h4>
                         <Link to="/about" className="text-sm text-foreground/70 hover:text-primary transition-colors">{t('nav.about')}</Link>
                         <Link to="/services" className="text-sm text-foreground/70 hover:text-primary transition-colors">{t('nav.services')}</Link>
-                        <Link to="/projects" className="text-sm text-foreground/70 hover:text-primary transition-colors">{t('nav.projects')}</Link>
-                        <Link to="/contact" className="text-sm text-foreground/70 hover:text-primary transition-colors">{t('nav.contact')}</Link>
+                        <Link to="/projekte" className="text-sm text-foreground/70 hover:text-primary transition-colors">{t('nav.projects')}</Link>
+                        <Link to="/kontakt" className="text-sm text-foreground/70 hover:text-primary transition-colors">{t('nav.contact')}</Link>
                     </div>
 
                     {/* Legal */}

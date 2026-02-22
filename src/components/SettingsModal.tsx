@@ -14,11 +14,16 @@ const LANGUAGES = [
     { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
     { code: 'ua', label: 'Українська', flag: '🇺🇦' },
     { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'it', label: 'Italiano', flag: '🇮🇹' },
+    { code: 'fr', label: 'Français', flag: '🇫🇷' },
+    { code: 'pl', label: 'Polski', flag: '🇵🇱' },
 ];
 
 const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
     const { t, i18n } = useTranslation();
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+    const currentLanguage = i18n.language.split('-')[0];
 
     const toggleTheme = useCallback(() => {
         setTheme(prev => prev === 'dark' ? 'light' : 'dark');
@@ -62,7 +67,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
             />
 
             {/* Panel */}
-            <div className="relative z-10 w-full max-w-md bg-surface border border-border rounded-2xl shadow-2xl animate-in zoom-in-95 fade-in duration-300 overflow-hidden">
+            <div className="relative z-10 w-full max-w-sm bg-surface border border-border rounded-2xl shadow-2xl animate-in zoom-in-95 fade-in duration-300 overflow-hidden">
                 {/* Header */}
                 <div className="flex items-center justify-between px-6 py-5 border-b border-border">
                     <div className="flex items-center gap-3">
@@ -81,33 +86,34 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 space-y-8">
+                <div className="p-6 space-y-6">
                     {/* Language Selection */}
                     <div className="space-y-3">
-                        <label className="flex items-center gap-2 text-sm font-bold text-foreground/70 uppercase tracking-widest">
-                            <Globe size={16} />
+                        <label htmlFor="language-select" className="flex items-center gap-2 text-xs font-bold text-foreground/70 uppercase tracking-widest">
+                            <Globe size={14} />
                             {t('settings.language', 'Sprache')}
                         </label>
-                        <div className="grid grid-cols-1 gap-2">
-                            {LANGUAGES.map((lang) => (
-                                <button
-                                    key={lang.code}
-                                    onClick={() => handleLanguageChange(lang.code)}
-                                    className={`flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-all duration-200 text-left
-                                        ${i18n.language.split('-')[0] === lang.code
-                                            ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/20'
-                                            : 'bg-background hover:bg-primary/5 text-foreground/80 hover:text-primary border border-border'
-                                        }`}
-                                >
-                                    <span className="text-lg">{lang.flag}</span>
-                                    <span>{lang.label}</span>
-                                    {i18n.language.split('-')[0] === lang.code && (
-                                        <span className="ml-auto text-xs font-black uppercase tracking-widest opacity-70">
-                                            ✓
-                                        </span>
-                                    )}
-                                </button>
-                            ))}
+                        <div className="relative group">
+                            <select
+                                id="language-select"
+                                value={currentLanguage}
+                                onChange={(e) => handleLanguageChange(e.target.value)}
+                                className="w-full h-14 pl-12 pr-4 bg-background border border-border rounded-xl font-semibold text-foreground appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary/20 hover:border-primary/30 transition-all text-base"
+                            >
+                                {LANGUAGES.map((lang) => (
+                                    <option key={lang.code} value={lang.code}>
+                                        {lang.flag} &nbsp; {lang.label}
+                                    </option>
+                                ))}
+                            </select>
+                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-primary pointer-events-none group-focus-within:scale-110 transition-transform">
+                                <Globe size={20} />
+                            </div>
+                            <div className="absolute right-4 top-1/2 -translate-y-1/2 text-foreground/40 pointer-events-none group-focus-within:rotate-180 transition-transform">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
 
@@ -123,8 +129,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
                         >
                             <div className="flex items-center gap-3">
                                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${theme === 'dark'
-                                        ? 'bg-primary/10 text-primary'
-                                        : 'bg-primary/10 text-primary'
+                                    ? 'bg-primary/10 text-primary'
+                                    : 'bg-primary/10 text-primary'
                                     }`}>
                                     {theme === 'dark' ? <Moon size={20} /> : <Sun size={20} />}
                                 </div>

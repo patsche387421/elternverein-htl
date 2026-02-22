@@ -100,6 +100,40 @@
             "event": "Event",
             "protocol": "Protocol",
             "news": "News"
+        },
+        "heroBadge": "Active for over 3,000 students",
+        "heroTitleFluid": "Enabling the future together – for our children at HTL Mödling.",
+        "heroSubtitleFluid": "From project grants to social support – we are the strong network behind the students.",
+        "learnMoreScroll": "Learn more",
+        "benefits": {
+            "proj": "We financially support innovative student projects – from prototype to presentation.",
+            "projTitle": "Project Funding",
+            "projLink": "/projekte",
+            "soc": "Unbureaucratic help for families whenever support is needed.",
+            "socTitle": "Social Support",
+            "socLink": "/services",
+            "comm": "Networking parents, school, and businesses for a strong school community.",
+            "commTitle": "Community",
+            "commLink": "/kontakt"
+        },
+        "socialProof": {
+            "title": "Voices from our Community",
+            "s1": "\"Thanks to the parents' association, our son was able to implement his diploma project.\"",
+            "a1": "– Mother of a 5th grade student",
+            "s2": "\"The rapid support helped us a lot.\"",
+            "a2": "– Family of a student"
+        },
+        "faq": {
+            "title": "Frequently Asked Questions (FAQ)",
+            "subtitle": "Here you will find answers to the most important questions about the parents' association.",
+            "q1": "Can I help even without a board function?",
+            "a1": "Yes, absolutely! We welcome every helping hand at our events or projects, without the need for a formal role on the board.",
+            "q2": "How high is the membership fee?",
+            "a2": "The membership fee is determined annually at the general assembly and directly benefits the students.",
+            "q3": "Who can apply for support?",
+            "a3": "All parents of students at HTL Mödling can apply for support in cases of social hardship or for innovative student projects.",
+            "q4": "How is transparency ensured?",
+            "a4": "As a non-profit association, we are subject to strict audits. The use of funds is monitored annually by auditors and disclosed at the general assembly."
         }
     },
     "about": {

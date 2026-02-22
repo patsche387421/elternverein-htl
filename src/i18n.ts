@@ -6,6 +6,9 @@ import de from './locales/de.json';
 import tr from './locales/tr.json';
 import ua from './locales/ua.json';
 import es from './locales/es.json';
+import it from './locales/it.json';
+import fr from './locales/fr.json';
+import pl from './locales/pl.json';
 
 i18n
     .use(LanguageDetector)
@@ -21,7 +24,10 @@ i18n
             de: { translation: de },
             tr: { translation: tr },
             ua: { translation: ua },
-            es: { translation: es }
+            es: { translation: es },
+            it: { translation: it },
+            fr: { translation: fr },
+            pl: { translation: pl }
         }
     });
 

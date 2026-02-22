@@ -100,6 +100,40 @@
             "event": "Evento",
             "protocol": "Protocolo",
             "news": "Noticia"
+        },
+        "heroBadge": "Activos para más de 3.000 alumnos",
+        "heroTitleFluid": "Habilitando el futuro juntos – para nuestros hijos en el HTL Mödling.",
+        "heroSubtitleFluid": "Desde subvenciones para proyectos hasta apoyo social – somos la sólida red detrás de los alumnos.",
+        "learnMoreScroll": "Saber más",
+        "benefits": {
+            "proj": "Apoyamos financieramente proyectos de estudiantes innovadores, desde el prototipo hasta la presentación.",
+            "projTitle": "Fomento de Proyectos",
+            "projLink": "/projekte",
+            "soc": "Ayuda no burocrática para familias cuando se necesita apoyo.",
+            "socTitle": "Apoyo Social",
+            "socLink": "/services",
+            "comm": "Interconexión de padres, escuela y empresas para una comunidad escolar sólida.",
+            "commTitle": "Comunidad",
+            "commLink": "/kontakt"
+        },
+        "socialProof": {
+            "title": "Voces de nuestra comunidad",
+            "s1": "“Gracias a la asociación de padres, nuestro hijo pudo realizar su proyecto de fin de carrera”.",
+            "a1": "– Madre de un alumno de 5º curso",
+            "s2": "“El apoyo rápido nos ayudó mucho”.",
+            "a2": "– Familia de un alumno"
+        },
+        "faq": {
+            "title": "Preguntas frecuentes (FAQ)",
+            "subtitle": "Aquí encontrará respuestas a las preguntas más importantes sobre la asociación de padres.",
+            "q1": "¿Puedo ayudar incluso sin un cargo en la junta?",
+            "a1": "¡Sí, absolutamente! Agradecemos cualquier ayuda en nuestros eventos o proyectos, sin necesidad de un cargo formal en la junta.",
+            "q2": "¿A cuánto asciende la cuota de socio?",
+            "a2": "La cuota de socio se fija anualmente en la asamblea general y beneficia directamente a los alumnos.",
+            "q3": "¿Quién puede solicitar apoyo?",
+            "a3": "Todos los padres de alumnos del HTL Mödling pueden solicitar apoyo en casos de dificultades sociales o para proyectos de alumnos innovadores.",
+            "q4": "¿Cómo se garantiza la transparencia?",
+            "a4": "Como asociación sin fines de lucro, estamos sujetos a auditorías estrictas. El uso de los fondos es controlado anualmente por auditores y se comunica en la asamblea general."
         }
     },
     "about": {

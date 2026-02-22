@@ -20,7 +20,7 @@ const Navbar = () => {
     const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const location = useLocation();
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const closeAll = () => {
         setIsOpen(false);
@@ -43,9 +43,9 @@ const Navbar = () => {
         { name: t('nav.home'), path: '/' },
         { name: t('nav.news'), path: '/news' },
         { name: t('nav.services'), path: '/services' },
-        { name: t('nav.projects'), path: '/projects' },
+        { name: t('nav.projects'), path: '/projekte' },
         { name: t('nav.about'), path: '/about' },
-        { name: t('nav.contact'), path: '/contact' },
+        { name: t('nav.contact'), path: '/kontakt' },
     ];
 
     return (
@@ -53,13 +53,13 @@ const Navbar = () => {
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     {/* Brand */}
-                    <Link to="/" className="flex items-center gap-3 group" onClick={closeAll}>
-                        <Logo className="h-10 w-auto text-primary transition-transform duration-300 group-hover:scale-110" size={40} />
-                        <div className="flex flex-col justify-center">
-                            <span className="text-xl font-bold text-primary leading-none">
+                    <Link to="/" className="flex items-center gap-5 group" onClick={closeAll}>
+                        <Logo className="h-14 w-auto text-primary transition-transform duration-300 group-hover:scale-105 transform translate-y-[-2px]" size={56} />
+                        <div className="flex flex-col justify-center leading-none">
+                            <span className="text-xl md:text-2xl font-black text-primary tracking-tighter">
                                 Elternverein
                             </span>
-                            <span className="text-xs font-medium text-foreground/60 tracking-wide uppercase">
+                            <span className="text-[10px] md:text-xs font-bold text-foreground/60 tracking-[0.2em] uppercase mt-0.5">
                                 HTL Mödling
                             </span>
                         </div>
@@ -99,7 +99,7 @@ const Navbar = () => {
                                     className="bg-primary text-primary-foreground min-w-[140px] px-4 py-2 rounded-full hover:bg-primary-dark transition-all font-medium flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/30 ml-2"
                                 >
                                     <User size={18} />
-                                    <span>{t('nav.login')}</span>
+                                    <span>{i18n.language.split('-')[0] === 'de' ? 'Anmelden' : 'Login'}</span>
                                 </button>
                             ) : (
                                 <div className="relative ml-2">
@@ -198,7 +198,7 @@ const Navbar = () => {
                                     className="flex items-center justify-center gap-2 bg-primary text-primary-foreground p-4 rounded-xl font-bold text-lg hover:bg-primary-dark transition active:scale-95 shadow-lg shadow-primary/20"
                                 >
                                     <User size={20} />
-                                    {t('nav.login')}
+                                    {i18n.language.split('-')[0] === 'de' ? 'Anmelden' : 'Login'}
                                 </button>
                             ) : (
                                 <div className="space-y-2">

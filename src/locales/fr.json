@@ -1,0 +1,339 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "news": "Actualités",
+        "services": "Services",
+        "projects": "Projets",
+        "about": "À Propos",
+        "contact": "Contact",
+        "login": "Se connecter",
+        "logout": "Se déconnecter",
+        "profile": "Mon Profil",
+        "aria": {
+            "menuToggle": "Basculer le menu",
+            "languageToggle": "Basculer la langue",
+            "themeToggle": "Basculer le thème"
+        },
+        "serviceItems": {
+            "support": "Soutien Social",
+            "tutoring": "Tutorat",
+            "courses": "Cours"
+        }
+    },
+    "footer": {
+        "links": "Liens Rapides",
+        "legal": "Mentions Légales",
+        "socials": "Suivez-nous",
+        "impressum": "Mentions Légales",
+        "privacy": "Politique de Confidentialité",
+        "terms": "Conditions Générales"
+    },
+    "news": {
+        "title": "Actualités et Événements",
+        "desc": "Restez informé des dernières nouvelles de l'Association des Parents.",
+        "filters": {
+            "all": "Tous",
+            "news": "Actualités",
+            "event": "Événements",
+            "protocol": "Protocoles"
+        },
+        "items": {
+            "agm": {
+                "title": "Assemblée Générale Annuelle 2025",
+                "desc": "Invitation à l'assemblée générale ordinaire de l'Association des Parents."
+            },
+            "sga": {
+                "title": "Procès-verbal de la réunion SGA",
+                "desc": "Le compte rendu de la dernière réunion du comité de la communauté scolaire est en ligne."
+            },
+            "funding": {
+                "title": "Nouvelles opportunités de financement",
+                "desc": "Les demandes de financement de projets peuvent désormais être soumises par voie numérique."
+            },
+            "parentsDay": {
+                "title": "Journée des Parents",
+                "desc": "Informations sur la prochaine Journée des Parents et réservation de rendez-vous."
+            },
+            "festival": {
+                "title": "Fête de l'école 2026",
+                "desc": "Rassemblement annuel d'été pour tous les élèves et parents."
+            },
+            "jhv": {
+                "title": "Procès-verbal JHV 2025",
+                "desc": "Compte rendu de la dernière assemblée générale. Résultats de vote importants."
+            },
+            "mentalHealth": {
+                "title": "Journées de la santé mentale",
+                "desc": "Nouvelle série d'ateliers commençant le mois prochain."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Propriétaire des médias et éditeur",
+        "contact": "Contact",
+        "zvr": "Numéro ZVR",
+        "purpose": "But de l'association",
+        "purposeDesc": "Sauvegarde des intérêts des partenaires de l'association concernant l'enseignement et le travail éducatif à l'école, ainsi que promotion de la coopération entre la maison et l'école."
+    },
+    "privacy": {
+        "intro": "Nous prenons la protection de vos données personnelles très au sérieux. Ci-dessous, nous vous informons sur le traitement de vos données.",
+        "responsible": "1. Responsable",
+        "collection": "2. Collecte et traitement des données",
+        "collectionDesc": "Nous traitons les données personnelles que nous recevons dans le cadre de l'adhésion ou par votre contact.",
+        "rights": "3. Vos droits",
+        "rightsDesc": "Vous disposez généralement des droits d'information, de rectification, de suppression, de limitation, de portabilité des données, de révocation et d'opposition."
+    },
+    "home": {
+        "heroTitle": "Connecter Parents, Enseignants et Étudiants",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Association des Parents",
+        "heroDesc": "L'association est dédiée au soutien de la communauté scolaire par une participation active e des financements.",
+        "servicesLabel": "Nos Services",
+        "servicesSub": "L'innovation rencontre la communauté – Découvrez nos avantages.",
+        "welcomeBadge": "Bienvenue",
+        "getInvolved": "Participer",
+        "learnMore": "En savoir plus",
+        "latestNews": "Dernières Nouvelles",
+        "insightsUpdates": "Aperçus et Mises à jour",
+        "viewAll": "Voir tout",
+        "tags": {
+            "event": "Événement",
+            "protocol": "Protocole",
+            "news": "Actu"
+        },
+        "heroBadge": "Actifs pour plus de 3 000 élèves",
+        "heroTitleFluid": "Ensemble, rendons l'avenir possible – pour nos enfants à la HTL Mödling.",
+        "heroSubtitleFluid": "Des bourses de projet au soutien social – nous sommes le réseau solide derrière les élèves.",
+        "learnMoreScroll": "En savoir plus",
+        "benefits": {
+            "proj": "Nous soutenons financièrement les projets innovants des élèves – du prototype à la présentation.",
+            "projTitle": "Financement de projets",
+            "projLink": "/projekte",
+            "soc": "Aide non bureaucratique pour les familles en cas de besoin.",
+            "socTitle": "Soutien Social",
+            "socLink": "/services",
+            "comm": "Mise en réseau des parents, de l'école et des entreprises pour une communauté scolaire forte.",
+            "commTitle": "Communauté",
+            "commLink": "/kontakt"
+        },
+        "socialProof": {
+            "title": "Les voix de notre Communauté",
+            "s1": "« Grâce à l'association des parents, notre fils a pu réaliser son projet de diplôme. »",
+            "a1": "– Mère d'un élève de 5ème année",
+            "s2": "« Le soutien rapide nous a beaucoup aidés. »",
+            "a2": "– Famille d'un élève"
+        },
+        "faq": {
+            "title": "Foire Aux Questions (FAQ)",
+            "subtitle": "Vous trouverez ici les réponses aux questions les plus importantes sur l'association des parents.",
+            "q1": "Puis-je aider même sans avoir de fonction officielle au conseil ?",
+            "a1": "Oui, absolument ! Nous accueillons chaque main secourable lors de nos événements ou projets, sans avoir besoin d'un rôle formel.",
+            "q2": "À combien s'élève la cotisation ?",
+            "a2": "La cotisation est fixée chaque année lors de l'assemblée générale et profite directement aux élèves.",
+            "q3": "Qui peut demander un soutien ?",
+            "a3": "Tous les parents d'élèves de la HTL Mödling peuvent demander un soutien en cas de difficultés sociales ou pour des projets innovants.",
+            "q4": "Comment la transparence est-elle assurée ?",
+            "a4": "En tant qu'association à but non lucratif, nous sommes soumis à des audits stricts. L'utilisation des fonds est contrôlée annuellement."
+        }
+    },
+    "about": {
+        "title": "À propos de l'Association",
+        "desc": "L'Association des Parents est une organisation bénévole dédiée à la promotion du bien-être des élèves et de l'école.",
+        "mission": "Notre Mission",
+        "missionDesc": "Favoriser une relation étroite entre la maison et l'école, pour que parents et enseignants collaborent dans l'éducation des enfants.",
+        "whatWeDo": "Ce que nous faisons",
+        "points": [
+            "Organiser des événements et des collectes de fonds",
+            "Soutenir financièrement les projets scolaires",
+            "Représenter les intérêts des parents dans les comités",
+            "Faciliter la communication entre les parents et l'école"
+        ],
+        "board": {
+            "viewDetails": "Voir tous les détails"
+        }
+    },
+    "costs": {
+        "title": "Adhésion et Coûts",
+        "desc": "Gestion transparente de vos contributions.",
+        "membership": "Cotisation",
+        "allocation": "Allocation des fonds",
+        "details": "La cotisation est utilisée à 100 % au profit des élèves.",
+        "membershipPerYear": "Année par famille"
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "subtitle": "Entrer en contact",
+        "desc": "Vous avez des questions ou souhaitez vous impliquer ? Contactez-nous directement ou remplissez le formulaire.",
+        "form": {
+            "name": "Nom",
+            "email": "E-mail",
+            "message": "Message",
+            "send": "Envoyer le message",
+            "namePlaceholder": "Votre nom",
+            "emailPlaceholder": "votre.email@exemple.com",
+            "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+            "infoText": "Nous sommes là pour vous. Contactez-nous par e-mail, téléphone ou rendez-nous visite.",
+            "officeLabel": "Bureau",
+            "officeLocation": "Bâtiment principal, salle 101",
+            "phoneLabel": "Téléphone",
+            "emailLabel": "E-mail"
+        }
+    },
+    "login": {
+        "title": "Connexion",
+        "subtitle": "Accédez à l'espace interne pour les parents et les enseignants.",
+        "email": "Adresse e-mail",
+        "password": "Mot de passe",
+        "emailPlaceholder": "nom@exemple.com",
+        "submit": "Se connecter",
+        "register": "Pas de compte ? S'inscrire",
+        "forgot": "Mot de passe oublié ?",
+        "closeButton": "Fermer"
+    },
+    "newsAria": {
+        "categories": "Catégories d'actualités"
+    },
+    "services": {
+        "title": "Nos Services",
+        "desc": "Nous soutenons les élèves et les familles avec des aides financières, du soutien scolaire et des formations.",
+        "support": "Soutien Social",
+        "supportDesc": "Aide financière pour les événements scolaires et le matériel.",
+        "supportPoints": [
+            "Bourses pour les semaines scolaires",
+            "Aide pour les frais de matériel",
+            "Aide financière discrète"
+        ],
+        "tutoring": "Liste de tutorat",
+        "tutoringDesc": "Entrez en contact avec des tuteurs qualifiés.",
+        "tutoringPoints": [
+            "Réseau de tutorat entre pairs",
+            "Tuteurs vérifiés",
+            "Conditions équitables"
+        ],
+        "courses": "Cours",
+        "coursesDesc": "Opportunités éducatives supplémentaires.",
+        "coursesPoints": [
+            "Certifications ECDL",
+            "Cours de moulage par injection",
+            "Préparation aux examens"
+        ],
+        "learnMore": "En savoir plus"
+    },
+    "projects": {
+        "title": "Projets",
+        "currentTitle": "Projets Actuels",
+        "desc": "Historique des projets et initiatives financés.",
+        "archive": "Archives des projets",
+        "viewArchive": "Voir les archives",
+        "ariaLabel": "Années d'archives",
+        "overview": "Aperçu des projets",
+        "viewOverview": "État de la demande",
+        "backToCurrent": "Retour à l'aperçu",
+        "archiveDesc": "Historique des années scolaires passées.",
+        "year": "Année",
+        "fundedProjects": "Projets financés",
+        "items": {
+            "physics": {
+                "title": "Nouvel équipement de labo de physique",
+                "status": "En cours"
+            },
+            "library": {
+                "title": "Modernisation de la bibliothèque",
+                "status": "Approuvé"
+            },
+            "garden": {
+                "title": "Sièges pour le jardin de l'école",
+                "status": "Terminé"
+            }
+        },
+        "apply": {
+            "title": "Soumettre une proposition",
+            "desc": "Utilisez ce formulaire pour soumettre numériquement votre demande de financement.",
+            "button": "Nouvelle demande",
+            "form": {
+                "title": "Titre du projet",
+                "applicant": "Demandeur / Département",
+                "description": "Description détaillée",
+                "costs": "Financement requis (€)",
+                "placeholderCosts": "0.00",
+                "files": "Pièces jointes (Devis, plans)",
+                "submit": "Soumettre la proposition",
+                "success": "Votre proposition a été soumise avec succès !",
+                "titlePlaceholder": "Ex. Mise à jour labo IT",
+                "applicantPlaceholder": "Votre nom / Classe",
+                "descriptionPlaceholder": "Décrivez votre projet...",
+                "uploadText": "Glissez les fichiers ici ou cliquez",
+                "successSEO": "Votre proposition de projet a été soumise avec succès."
+            }
+        },
+        "overviewTable": {
+            "title": "Propositions soumises (2025/26)",
+            "headers": {
+                "project": "Projet",
+                "applicant": "Demandeur",
+                "department": "Département",
+                "date": "Date",
+                "cost": "Coût",
+                "status": "Statut"
+            },
+            "filters": {
+                "label": "Filtres :",
+                "ariaLabel": "Actions de projet",
+                "search": "Rechercher des projets...",
+                "allStatus": "Tous les statuts",
+                "allDepts": "Tous les départements"
+            },
+            "departments": {
+                "IT": "Informatique",
+                "ME": "Génie Mécanique",
+                "ET": "Génie Électrique",
+                "GEN": "Général",
+                "BAU": "Génie Civil",
+                "SP": "Sport",
+                "FIN": "Finance"
+            },
+            "status": {
+                "approved": "Approuvé",
+                "pending": "En cours",
+                "rejected": "Refusé"
+            }
+        }
+    },
+    "board": {
+        "title": "Notre Conseil",
+        "desc": "L'équipe dédiée derrière l'Association des Parents.",
+        "roles": {
+            "chair": "Président(e)",
+            "viceChair": "Vice-président(e)",
+            "treasurer": "Trésorier(e)",
+            "secretary": "Secrétaire",
+            "member": "Membre coopté",
+            "auditor": "Auditeur"
+        }
+    },
+    "statutes": {
+        "title": "Statuts",
+        "desc": "Le fondement juridique de notre association.",
+        "download": "Télécharger PDF"
+    },
+    "terms": {
+        "title": "Conditions Générales",
+        "desc": "Règles et règlements."
+    },
+    "cookieBanner": {
+        "text": "Nous n'utilisons que les cookies nécessaires pour activer la langue et la connexion.",
+        "accept": "Compris",
+        "privacyLink": "Politique de Confidentialité"
+    },
+    "settings": {
+        "title": "Paramètres",
+        "language": "Langue",
+        "theme": "Thème",
+        "lightMode": "Clair",
+        "darkMode": "Sombre",
+        "note": "Les modifications sont appliquées immédiatement."
+    },
+    "common": {
+        "required": "Champ obligatoire"
+    }
+}

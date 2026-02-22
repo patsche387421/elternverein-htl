@@ -100,6 +100,40 @@
             "event": "Events",
             "protocol": "Protokolle",
             "news": "News"
+        },
+        "heroBadge": "Aktiv für über 3.000 Schüler",
+        "heroTitleFluid": "Gemeinsam Zukunft ermöglichen – für unsere Kinder an der HTL Mödling.",
+        "heroSubtitleFluid": "Vom Projektzuschuss bis zur sozialen Unterstützung – wir sind das starke Netzwerk hinter den Schülern.",
+        "learnMoreScroll": "Mehr erfahren",
+        "benefits": {
+            "proj": "Wir unterstützen innovative Schülerprojekte finanziell – vom Prototyp bis zur Präsentation.",
+            "projTitle": "Projektförderung",
+            "projLink": "/projekte",
+            "soc": "Unbürokratische Hilfe für Familien, wenn Unterstützung gebraucht wird.",
+            "socTitle": "Soziale Unterstützung",
+            "socLink": "/services",
+            "comm": "Vernetzung von Eltern, Schule und Betrieben für eine starke Schulgemeinschaft.",
+            "commTitle": "Gemeinschaft",
+            "commLink": "/kontakt"
+        },
+        "socialProof": {
+            "title": "Stimmen aus unserer Gemeinschaft",
+            "s1": "„Dank des Elternvereins konnte unser Sohn sein Diplomprojekt umsetzen.“",
+            "a1": "– Mutter eines 5. Jahrgangs",
+            "s2": "„Die schnelle Unterstützung hat uns sehr geholfen.“",
+            "a2": "– Familie eines Schülers"
+        },
+        "faq": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "subtitle": "Hier finden Sie Antworten auf die wichtigsten Fragen rund um den Elternverein.",
+            "q1": "Kann ich auch ohne Vorstandsfunktion mithelfen?",
+            "a1": "Ja, absolut! Wir freuen uns über jede helfende Hand bei unseren Events oder Projekten, ohne dass eine formale Funktion im Vorstand nötig ist.",
+            "q2": "Wie hoch ist der Mitgliedsbeitrag?",
+            "a2": "Der Mitgliedsbeitrag wird jährlich in der Hauptversammlung festgelegt und kommt direkt den Schülern zugute.",
+            "q3": "Wer kann Unterstützung beantragen?",
+            "a3": "Alle Eltern von Schülern der HTL Mödling können bei sozialen Härten oder für innovative Schülerprojekte Unterstützung beantragen.",
+            "q4": "Wie wird die Transparenz sichergestellt?",
+            "a4": "Als gemeinnütziger Verein unterliegen wir strengen Prüfungen. Die Mittelverwendung wird jährlich von Rechnungsprüfern kontrolliert und in der Hauptversammlung offengelegt."
         }
     },
     "about": {

@@ -1,0 +1,339 @@
+{
+    "nav": {
+        "home": "Home",
+        "news": "Novità",
+        "services": "Servizi",
+        "projects": "Progetti",
+        "about": "Chi Siamo",
+        "contact": "Contatto",
+        "login": "Accedi",
+        "logout": "Esci",
+        "profile": "Il Mio Profilo",
+        "aria": {
+            "menuToggle": "Attiva menu",
+            "languageToggle": "Cambia lingua",
+            "themeToggle": "Cambia tema"
+        },
+        "serviceItems": {
+            "support": "Supporto Sociale",
+            "tutoring": "Ripetizioni",
+            "courses": "Corsi"
+        }
+    },
+    "footer": {
+        "links": "Link Veloci",
+        "legal": "Note Legali",
+        "socials": "Seguici",
+        "impressum": "Note Legali",
+        "privacy": "Privacy Policy",
+        "terms": "Termini e Condizioni"
+    },
+    "news": {
+        "title": "Novità ed Eventi",
+        "desc": "Rimani aggiornato con le ultime novità dell'Associazione Genitori.",
+        "filters": {
+            "all": "Tutti",
+            "news": "News",
+            "event": "Eventi",
+            "protocol": "Protocolli"
+        },
+        "items": {
+            "agm": {
+                "title": "Assemblea Generale Annuale 2025",
+                "desc": "Invito all'assemblea generale ordinaria dell'Associazione Genitori."
+            },
+            "sga": {
+                "title": "Verbale Riunione SGA",
+                "desc": "Il verbale dell'ultima riunione del Comitato della Comunità Scolastica è ora online."
+            },
+            "funding": {
+                "title": "Nuove Opportunità di Finanziamento",
+                "desc": "Le domande di finanziamento per i progetti possono ora essere inviate digitalmente."
+            },
+            "parentsDay": {
+                "title": "Giorno dei Genitori",
+                "desc": "Informazioni sul prossimo Giorno dei Genitori e prenotazione appuntamenti."
+            },
+            "festival": {
+                "title": "Festa della Scuola 2026",
+                "desc": "Incontro estivo annuale per tutti gli studenti e i genitori."
+            },
+            "jhv": {
+                "title": "Protocollo JHV 2025",
+                "desc": "Verbale dell'ultima Assemblea Generale. Risultati importanti delle votazioni."
+            },
+            "mentalHealth": {
+                "title": "Giornate della Salute Mentale",
+                "desc": "Nuova serie di workshop a partire dal prossimo mese."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Proprietario dei Media e Editore",
+        "contact": "Contatto",
+        "zvr": "Numero ZVR",
+        "purpose": "Scopo dell'Associazione",
+        "purposeDesc": "Tutela degli interessi dei partner dell'associazione riguardante l'attività didattica ed educativa presso la scuola e promozione della collaborazione tra casa e scuola."
+    },
+    "privacy": {
+        "intro": "Prendiamo molto seriamente la protezione dei vostri dati personali. Di seguito vi informiamo sul trattamento dei vostri dati.",
+        "responsible": "1. Responsabile",
+        "collection": "2. Raccolta e Trattamento dei Dati",
+        "collectionDesc": "Trattiamo i dati personali che riceviamo come parte dell'adesione o attraverso il vostro contatto.",
+        "rights": "3. I vostri Diritti",
+        "rightsDesc": "Avete generalmente i diritti di informazione, correzione, cancellazione, limitazione, portabilità dei dati, revoca e opposizione."
+    },
+    "home": {
+        "heroTitle": "Connettere Genitori, Insegnanti e Studenti",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Associazione Genitori",
+        "heroDesc": "L'associazione si dedica a supportare la comunità scolastica attraverso partecipazione attiva e finanziamenti.",
+        "servicesLabel": "I Nostri Servizi",
+        "servicesSub": "L'innovazione incontra la comunità – Scopri i nostri vantaggi.",
+        "welcomeBadge": "Benvenuti",
+        "getInvolved": "Partecipa",
+        "learnMore": "Scopri di più",
+        "latestNews": "Ultime Novità",
+        "insightsUpdates": "Approfondimenti e Aggiornamenti",
+        "viewAll": "Vedi tutto",
+        "tags": {
+            "event": "Evento",
+            "protocol": "Protocollo",
+            "news": "News"
+        },
+        "heroBadge": "Attivi per oltre 3.000 studenti",
+        "heroTitleFluid": "Costruire il futuro insieme – per i nostri figli alla HTL Mödling.",
+        "heroSubtitleFluid": "Dai sussidi ai progetti al supporto sociale – siamo la rete forte dietro gli studenti.",
+        "learnMoreScroll": "Scopri di più",
+        "benefits": {
+            "proj": "Supportiamo finanziariamente progetti innovativi degli studenti – dal prototipo alla presentazione.",
+            "projTitle": "Finanziamento Progetti",
+            "projLink": "/projekte",
+            "soc": "Aiuto non burocratico per le famiglie in caso di necessità.",
+            "socTitle": "Supporto Sociale",
+            "socLink": "/services",
+            "comm": "Networking tra genitori, scuola e aziende per una comunità scolastica forte.",
+            "commTitle": "Comunità",
+            "commLink": "/kontakt"
+        },
+        "socialProof": {
+            "title": "Voci dalla nostra Comunità",
+            "s1": "«Grazie all'associazione, mio figlio ha potuto realizzare il suo progetto di diploma.»",
+            "a1": "– Madre di uno studente al 5° anno",
+            "s2": "«Il supporto rapido ci ha aiutato molto.»",
+            "a2": "– Famiglia di uno studente"
+        },
+        "faq": {
+            "title": "Domande Frequenti (FAQ)",
+            "subtitle": "Qui trovi le risposte alle domande più importanti sull'associazione.",
+            "q1": "Posso aiutare anche senza una carica ufficiale nel consiglio?",
+            "a1": "Sì, certamente! Ogni mano è benvenuta durante i nostri eventi o progetti, senza necessità di un ruolo formale.",
+            "q2": "A quanto ammonta la quota associativa?",
+            "a2": "La quota viene stabilita annualmente durante l'assemblea generale e va a diretto beneficio degli studenti.",
+            "q3": "Chi può richiedere supporto?",
+            "a3": "Tutti i genitori degli studenti della HTL Mödling in caso di difficoltà sociali o per progetti innovativi.",
+            "q4": "In che modo è garantita la trasparenza?",
+            "a4": "Come associazione non profit, siamo soggetti a revisioni rigorose. L'uso dei fondi viene monitorato annualmente."
+        }
+    },
+    "about": {
+        "title": "Sull'Associazione Genitori",
+        "desc": "L'associazione è un'organizzazione di genitori e tutori dedita a promuovere il benessere degli studenti e della scuola.",
+        "mission": "La Nostra Missione",
+        "missionDesc": "Favorire uno stretto rapporto tra casa e scuola, in modo che genitori e insegnanti possano collaborare nell'educazione dei figli.",
+        "whatWeDo": "Cosa Facciamo",
+        "points": [
+            "Organizzare eventi e raccolte fondi",
+            "Supportare finanziariamente i progetti scolastici",
+            "Rappresentare gli interessi dei genitori nei comitati scolastici",
+            "Facilitare la comunicazione tra genitori e scuola"
+        ],
+        "board": {
+            "viewDetails": "Vedi dettagli completi"
+        }
+    },
+    "costs": {
+        "title": "Adesione e Costi",
+        "desc": "Gestione trasparente dei vostri contributi.",
+        "membership": "Quota Associativa",
+        "allocation": "Allocazione Fondi",
+        "details": "La quota associativa è utilizzata al 100% per il beneficio degli studenti.",
+        "membershipPerYear": "Anno per famiglia"
+    },
+    "contact": {
+        "title": "Contattaci",
+        "subtitle": "Scrivici",
+        "desc": "Hai domande o vuoi partecipare? Contattaci direttamente o compila il modulo.",
+        "form": {
+            "name": "Nome",
+            "email": "Email",
+            "message": "Messaggio",
+            "send": "Invia Messaggio",
+            "namePlaceholder": "Il tuo nome",
+            "emailPlaceholder": "tua.email@esempio.com",
+            "messagePlaceholder": "Come possiamo aiutarti?",
+            "infoText": "Siamo qui per te. Contattaci via email, telefono o visitaci durante l'orario d'ufficio.",
+            "officeLabel": "Ufficio",
+            "officeLocation": "Edificio principale, Stanza 101",
+            "phoneLabel": "Telefono",
+            "emailLabel": "Email"
+        }
+    },
+    "login": {
+        "title": "Accedi",
+        "subtitle": "Accesso all'area interna per genitori e insegnanti.",
+        "email": "Indirizzo Email",
+        "password": "Password",
+        "emailPlaceholder": "nome@esempio.com",
+        "submit": "Accedi",
+        "register": "Non hai un account? Registrati",
+        "forgot": "Password dimenticata?",
+        "closeButton": "Chiudi"
+    },
+    "newsAria": {
+        "categories": "Categorie Novità"
+    },
+    "services": {
+        "title": "I Nostri Servizi",
+        "desc": "Supportiamo studenti e famiglie con aiuti finanziari, programmi di tutoraggio e corsi educativi.",
+        "support": "Supporto Sociale",
+        "supportDesc": "Assistenza finanziaria per eventi scolastici e materiali.",
+        "supportPoints": [
+            "Sussidi per gite scolastiche",
+            "Supporto per i costi del materiale",
+            "Aiuto economico discreto"
+        ],
+        "tutoring": "Lista Ripetizioni",
+        "tutoringDesc": "Connettiti con tutor qualificati.",
+        "tutoringPoints": [
+            "Rete di tutoraggio tra pari",
+            "Tutor verificati",
+            "Condizioni eque"
+        ],
+        "courses": "Corsi",
+        "coursesDesc": "Opportunità educative supplementari.",
+        "coursesPoints": [
+            "Certificazioni ECDL",
+            "Corsi di stampaggio a iniezione",
+            "Preparazione agli esami"
+        ],
+        "learnMore": "Scopri di più"
+    },
+    "projects": {
+        "title": "Progetti",
+        "currentTitle": "Progetti Attuali",
+        "desc": "Una storia dei progetti e delle iniziative finanziate.",
+        "archive": "Archivio Progetti",
+        "viewArchive": "Vedi Archivio",
+        "ariaLabel": "Anni Archivio",
+        "overview": "Panoramica Progetti",
+        "viewOverview": "Stato delle Domande",
+        "backToCurrent": "Torna alla Panoramica",
+        "archiveDesc": "Storia degli anni scolastici passati.",
+        "year": "Anno",
+        "fundedProjects": "Progetti Finanziati",
+        "items": {
+            "physics": {
+                "title": "Nuova Attrezzatura Laboratorio Fisica",
+                "status": "In Corso"
+            },
+            "library": {
+                "title": "Modernizzazione Biblioteca",
+                "status": "Approvato"
+            },
+            "garden": {
+                "title": "Posti a Sedere Giardino Scolastico",
+                "status": "Completato"
+            }
+        },
+        "apply": {
+            "title": "Invia Proposta Progetto",
+            "desc": "Usa questo modulo per inviare digitalmente la tua domanda di finanziamento.",
+            "button": "Inizia Nuova Domanda",
+            "form": {
+                "title": "Titolo Progetto",
+                "applicant": "Richiedente / Dipartimento",
+                "description": "Descrizione Dettagliata Progetto",
+                "costs": "Finanziamento Richiesto (€)",
+                "placeholderCosts": "0.00",
+                "files": "Allegati (Preventivi, Piani)",
+                "submit": "Invia Proposta",
+                "success": "La tua proposta è stata inviata con successo!",
+                "titlePlaceholder": "es. Upgrade Laboratorio IT",
+                "applicantPlaceholder": "Tuo Nome / Classe",
+                "descriptionPlaceholder": "Descrivi il tuo progetto...",
+                "uploadText": "Trascina i file qui o clicca",
+                "successSEO": "La tua proposta di progetto è stata inviata con successo."
+            }
+        },
+        "overviewTable": {
+            "title": "Proposte Inviate (2025/26)",
+            "headers": {
+                "project": "Progetto",
+                "applicant": "Richiedente",
+                "department": "Dipartimento",
+                "date": "Data",
+                "cost": "Costo",
+                "status": "Stato"
+            },
+            "filters": {
+                "label": "Filtri:",
+                "ariaLabel": "Azioni Progetto",
+                "search": "Cerca progetti...",
+                "allStatus": "Tutti gli Stati",
+                "allDepts": "Tutti i Dipartimenti"
+            },
+            "departments": {
+                "IT": "Informatica",
+                "ME": "Ingegneria Meccanica",
+                "ET": "Elettrotecnica",
+                "GEN": "Generale",
+                "BAU": "Ingegneria Civile",
+                "SP": "Sport",
+                "FIN": "Finanza"
+            },
+            "status": {
+                "approved": "Approvato",
+                "pending": "In Esame",
+                "rejected": "Respinto"
+            }
+        }
+    },
+    "board": {
+        "title": "Il Nostro Consiglio",
+        "desc": "Il team dedicato dietro l'Associazione Genitori.",
+        "roles": {
+            "chair": "Presidente",
+            "viceChair": "Vice Presidente",
+            "treasurer": "Tesoriere",
+            "secretary": "Segretario",
+            "member": "Membro Cooptato",
+            "auditor": "Revisore dei Conti"
+        }
+    },
+    "statutes": {
+        "title": "Statuti",
+        "desc": "La base legale della nostra associazione.",
+        "download": "Scarica PDF"
+    },
+    "terms": {
+        "title": "Termini e Condizioni",
+        "desc": "Regole e regolamenti."
+    },
+    "cookieBanner": {
+        "text": "Utilizziamo solo cookie tecnici necessari per abilitare le impostazioni della lingua e l'accesso.",
+        "accept": "Capito",
+        "privacyLink": "Privacy Policy"
+    },
+    "settings": {
+        "title": "Impostazioni",
+        "language": "Lingua",
+        "theme": "Tema",
+        "lightMode": "Chiaro",
+        "darkMode": "Scuro",
+        "note": "Le modifiche vengono applicate immediatamente."
+    },
+    "common": {
+        "required": "Campo obbligatorio"
+    }
+}

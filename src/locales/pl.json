@@ -1,0 +1,339 @@
+{
+    "nav": {
+        "home": "Strona Główna",
+        "news": "Aktualności",
+        "services": "Usługi",
+        "projects": "Projekty",
+        "about": "O Nas",
+        "contact": "Kontakt",
+        "login": "Zaloguj się",
+        "logout": "Wyloguj się",
+        "profile": "Mój Profil",
+        "aria": {
+            "menuToggle": "Przełącz menu",
+            "languageToggle": "Przełącz język",
+            "themeToggle": "Przełącz motyw"
+        },
+        "serviceItems": {
+            "support": "Wsparcie Społeczne",
+            "tutoring": "Korepetycje",
+            "courses": "Kursy"
+        }
+    },
+    "footer": {
+        "links": "Szybkie Linki",
+        "legal": "Informacje Prawne",
+        "socials": "Śledź nas",
+        "impressum": "Nota Prawna",
+        "privacy": "Polityka Prywatności",
+        "terms": "Regulamin"
+    },
+    "news": {
+        "title": "Wiadomości i Wydarzenia",
+        "desc": "Bądź na bieżąco z najnowszymi informacjami od Stowarzyszenia Rodziców.",
+        "filters": {
+            "all": "Wszystkie",
+            "news": "Aktualności",
+            "event": "Wydarzenia",
+            "protocol": "Protokoły"
+        },
+        "items": {
+            "agm": {
+                "title": "Walne Zgromadzenie 2025",
+                "desc": "Zaproszenie na zwyczajne walne zgromadzenie Stowarzyszenia Rodziców."
+            },
+            "sga": {
+                "title": "Protokół z posiedzenia SGA",
+                "desc": "Protokół z ostatniego posiedzenia Komisji Społeczności Szkolnej jest już online."
+            },
+            "funding": {
+                "title": "Nowe możliwości finansowania",
+                "desc": "Wnioski o dofinansowanie projektów można teraz składać drogą elektroniczną."
+            },
+            "parentsDay": {
+                "title": "Dzień Rodziców",
+                "desc": "Informacje o nadchodzącym Dniu Rodziców i rezerwacja terminów."
+            },
+            "festival": {
+                "title": "Święto Szkoły 2026",
+                "desc": "Coroczne letnie spotkanie dla wszystkich uczniów i rodziców."
+            },
+            "jhv": {
+                "title": "Protokół JHV 2025",
+                "desc": "Protokół z ostatniego Walnego Zgromadzenia. Ważne wyniki głosowań."
+            },
+            "mentalHealth": {
+                "title": "Dni Zdrowia Psychicznego",
+                "desc": "Nowa seria warsztatów rozpoczynająca się w przyszłym miesiącu."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Właściciel Mediów i Wydawca",
+        "contact": "Kontakt",
+        "zvr": "Numer ZVR",
+        "purpose": "Cel Stowarzyszenia",
+        "purposeDesc": "Ochrona interesów partnerów stowarzyszenia w zakresie pracy dydaktycznej i wychowawczej w szkole oraz promowanie współpracy między domem a szkołą."
+    },
+    "privacy": {
+        "intro": "Ochronę Twoich danych osobowych traktujemy bardzo poważnie. Poniżej informujemy o przetwarzaniu Twoich danych.",
+        "responsible": "1. Administrator Danych",
+        "collection": "2. Gromadzenie i przetwarzanie danych",
+        "collectionDesc": "Przetwarzamy dane osobowe, które otrzymujemy w ramach członkostwa lub poprzez kontakt z nami.",
+        "rights": "3. Twoje Prawa",
+        "rightsDesc": "Zasadniczo przysługują Państwu prawa do informacji, sprostowania, usunięcia, ograniczenia, przenoszenia danych, odwołania i sprzeciwu."
+    },
+    "home": {
+        "heroTitle": "Łączymy Rodziców, Nauczycieli i Uczniów",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Stowarzyszenie Rodziców",
+        "heroDesc": "StowarzyszenieRodziców angażuje się we wspieranie społeczności szkolnej poprzez aktywny udział i finansowanie.",
+        "servicesLabel": "Nasze Usługi",
+        "servicesSub": "Innowacja spotyka społeczność – odkryj nasze korzyści.",
+        "welcomeBadge": "Witaj u nas",
+        "getInvolved": "Dołącz do nas",
+        "learnMore": "Dowiedz się więcej",
+        "latestNews": "Aktualności",
+        "insightsUpdates": "Wgląd i Aktualizacje",
+        "viewAll": "Zobacz wszystko",
+        "tags": {
+            "event": "Wydarzenie",
+            "protocol": "Protokół",
+            "news": "News"
+        },
+        "heroBadge": "Aktywni dla ponad 3 000 uczniów",
+        "heroTitleFluid": "Wspólnie tworzymy przyszłość – dla naszych dzieci w HTL Mödling.",
+        "heroSubtitleFluid": "Od dotacji na projekty po wsparcie społeczne – jesteśmy silną siecią wspierającą uczniów.",
+        "learnMoreScroll": "Dowiedz się więcej",
+        "benefits": {
+            "proj": "Wspieramy finansowo innowacyjne projekty uczniów – od prototypu po prezentację.",
+            "projTitle": "Finansowanie projektów",
+            "projLink": "/projekte",
+            "soc": "Bezbiurokratyczna pomoc dla rodzin w potrzebie.",
+            "socTitle": "Wsparcie społeczne",
+            "socLink": "/services",
+            "comm": "Networking rodziców, szkoły i firm dla silnej społeczności szkolnej.",
+            "commTitle": "Społeczność",
+            "commLink": "/kontakt"
+        },
+        "socialProof": {
+            "title": "Głosy z naszej społeczności",
+            "s1": "„Dzięki stowarzyszeniu rodziców nasz syn mógł zrealizować swój projekt dyplomowy.”",
+            "a1": "– Matka ucznia 5. klasy",
+            "s2": "„Szybkie wsparcie bardzo nam pomogło.”",
+            "a2": "– Rodzina ucznia"
+        },
+        "faq": {
+            "title": "Najczęściej Zadawane Pytania (FAQ)",
+            "subtitle": "Tutaj znajdziesz odpowiedzi na najważniejsze pytania dotyczące stowarzyszenia rodziców.",
+            "q1": "Czy mogę pomóc nawet bez funkcji w zarządzie?",
+            "a1": "Tak, absolutnie! Cieszymy się z każdej pomocnej dłoni przy naszych wydarzeniach lub projektach, bez potrzeby formalnej roli.",
+            "q2": "Jak wysoka jest składka członkowska?",
+            "a2": "Składka jest ustalana corocznie na walnym zgromadzeniu i trafia bezpośrednio do uczniów.",
+            "q3": "Kto może ubiegać się o wsparcie?",
+            "a3": "Wszyscy rodzice uczniów HTL Mödling mogą ubiegać się o wsparcie w przypadkach trudności społecznych lub na innowacyjne projekty.",
+            "q4": "Jak zapewniona jest przejrzystość?",
+            "a4": "Jako stowarzyszenie non-profit podlegamy ścisłym kontrolom. Wykorzystanie funduszy jest monitorowane corocznie przez biegłych rewidentów."
+        }
+    },
+    "about": {
+        "title": "O Stowarzyszeniu",
+        "desc": "Stowarzyszenie Rodziców jest dobrowolną organizacją rodziców i opiekunów, której celem jest promowanie dobra uczniów i szkoły.",
+        "mission": "Nasza Misja",
+        "missionDesc": "Wspieranie bliskich relacji między domem a szkołą, aby rodzice i nauczyciele mogli inteligentnie współpracować w edukacji dzieci.",
+        "whatWeDo": "Co robimy",
+        "points": [
+            "Organizujemy wydarzenia i zbiórki funduszy",
+            "Wspieramy finansowo projekty szkolne",
+            "Reprezentujemy interesy rodziców w komisjach szkolnych",
+            "Ułatwiamy komunikację między rodzicami a szkołą"
+        ],
+        "board": {
+            "viewDetails": "Zobacz pełne szczegóły"
+        }
+    },
+    "costs": {
+        "title": "Członkostwo i Koszty",
+        "desc": "Przejrzyste zarządzanie Twoimi składkami.",
+        "membership": "Składka Członkowska",
+        "allocation": "Przeznaczenie Środków",
+        "details": "Składka członkowska w 100% wykorzystywana jest dla dobra uczniów.",
+        "membershipPerYear": "Rok na rodzinę"
+    },
+    "contact": {
+        "title": "Kontakt z Nami",
+        "subtitle": "Skontaktuj się",
+        "desc": "Masz pytania lub chcesz się zaangażować? Skontaktuj się bezpośrednio lub wypełnij formularz.",
+        "form": {
+            "name": "Imię i nazwisko",
+            "email": "E-mail",
+            "message": "Wiadomość",
+            "send": "Wyślij wiadomość",
+            "namePlaceholder": "Twoje imię",
+            "emailPlaceholder": "twoj.email@przyklad.pl",
+            "messagePlaceholder": "Jak możemy Ci pomóc?",
+            "infoText": "Jesteśmy tu dla Ciebie. Skontaktuj się bezpośrednio przez e-mail, telefon lub odwiedź nas.",
+            "officeLabel": "Biuro",
+            "officeLocation": "Główny budynek szkoły, pokój 101",
+            "phoneLabel": "Telefon",
+            "emailLabel": "E-mail"
+        }
+    },
+    "login": {
+        "title": "Logowanie",
+        "subtitle": "Dostęp do panelu wewnętrznego dla rodziców i nauczycieli.",
+        "email": "Adres E-mail",
+        "password": "Hasło",
+        "emailPlaceholder": "nazwa@przyklad.pl",
+        "submit": "Zaloguj się",
+        "register": "Nie masz konta? Zarejestruj się",
+        "forgot": "Zapomniałeś hasła?",
+        "closeButton": "Zamknij"
+    },
+    "newsAria": {
+        "categories": "Kategorie wiadomości"
+    },
+    "services": {
+        "title": "Nasze Usługi",
+        "desc": "Wspieramy uczniów i rodziny poprzez pomoc finansową, korepetycje i kursy edukacyjne.",
+        "support": "Wsparcie społeczne",
+        "supportDesc": "Pomoc finansowa na wydarzenia szkolne i materiały.",
+        "supportPoints": [
+            "Dotacje na wycieczki szkolne",
+            "Wsparcie przy kosztach materiałów",
+            "Dyskretna pomoc finansowa"
+        ],
+        "tutoring": "Lista korepetycji",
+        "tutoringDesc": "Skontaktuj się z wykwalifikowanymi korepetytorami.",
+        "tutoringPoints": [
+            "Sieć korepetycji rówieśniczych",
+            "Zweryfikowani korepetytorzy",
+            "Uczciwe warunki"
+        ],
+        "courses": "Kursy",
+        "coursesDesc": "Dodatkowe możliwości edukacyjne.",
+        "coursesPoints": [
+            "Certyfikaty ECDL",
+            "Kursy formowania wtryskowego",
+            "Przygotowanie do egzaminów"
+        ],
+        "learnMore": "Dowiedz się więcej"
+    },
+    "projects": {
+        "title": "Projekty",
+        "currentTitle": "Aktualne Projekty",
+        "desc": "Historia finansowanych projektów i inicjatyw.",
+        "archive": "Archiwum projektów",
+        "viewArchive": "Zobacz archiwum",
+        "ariaLabel": "Lata archiwum",
+        "overview": "Przegląd projektów",
+        "viewOverview": "Status wniosku",
+        "backToCurrent": "Powrót do przeglądu",
+        "archiveDesc": "Historia ubiegłych lat szkolnych.",
+        "year": "Rok",
+        "fundedProjects": "Sfinansowane projekty",
+        "items": {
+            "physics": {
+                "title": "Nowe wyposażenie laboratorium fizyki",
+                "status": "W toku"
+            },
+            "library": {
+                "title": "Modernizacja biblioteki",
+                "status": "Zatwierdzono"
+            },
+            "garden": {
+                "title": "Miejsca do siedzenia w ogrodzie szkolnym",
+                "status": "Zakończono"
+            }
+        },
+        "apply": {
+            "title": "Złóż wniosek projektowy",
+            "desc": "Użyj tego formularza, aby złożyć wniosek o dofinansowanie drogą cyfrową.",
+            "button": "Rozpocznij nowy wniosek",
+            "form": {
+                "title": "Tytuł projektu",
+                "applicant": "Wnioskodawca / Wydział",
+                "description": "Szczegółowy opis projektu",
+                "costs": "Wymagane dofinansowanie (€)",
+                "placeholderCosts": "0.00",
+                "files": "Załączniki (Oferty, plany)",
+                "submit": "Złóż wniosek",
+                "success": "Twój wniosek został pomyślnie złożony!",
+                "titlePlaceholder": "np. Modernizacja pracowni IT",
+                "applicantPlaceholder": "Twoje imię / Klasa",
+                "descriptionPlaceholder": "Opisz swój projekt...",
+                "uploadText": "Przeciągnij pliki tutaj lub kliknij",
+                "successSEO": "Twój wniosek projektowy został pomyślnie złożony."
+            }
+        },
+        "overviewTable": {
+            "title": "Złożone wnioski (2025/26)",
+            "headers": {
+                "project": "Projekt",
+                "applicant": "Wnioskodawca",
+                "department": "Wydział",
+                "date": "Data",
+                "cost": "Koszt",
+                "status": "Status"
+            },
+            "filters": {
+                "label": "Filtry:",
+                "ariaLabel": "Działania projektowe",
+                "search": "Szukaj projektów...",
+                "allStatus": "Wszystkie statusy",
+                "allDepts": "Wszystkie wydziały"
+            },
+            "departments": {
+                "IT": "Informatyka",
+                "ME": "Budowa Maszyn",
+                "ET": "Elektrotechnika",
+                "GEN": "Ogólne",
+                "BAU": "Budownictwo",
+                "SP": "Sport",
+                "FIN": "Finanse"
+            },
+            "status": {
+                "approved": "Zatwierdzony",
+                "pending": "W toku",
+                "rejected": "Odrzucony"
+            }
+        }
+    },
+    "board": {
+        "title": "Nasz Zarząd",
+        "desc": "Zaangażowany zespół wspierający Stowarzyszenie Rodziców.",
+        "roles": {
+            "chair": "Przewodniczący/a",
+            "viceChair": "Wiceprzewodniczący/a",
+            "treasurer": "Skarbnik",
+            "secretary": "Sekretarz",
+            "member": "Członek kooptowany",
+            "auditor": "Rewident"
+        }
+    },
+    "statutes": {
+        "title": "Statuty",
+        "desc": "Podstawa prawna naszego stowarzyszenia.",
+        "download": "Pobierz PDF"
+    },
+    "terms": {
+        "title": "Regulamin",
+        "desc": "Zasady i przepisy."
+    },
+    "cookieBanner": {
+        "text": "Używamy tylko niezbędnych plików cookie, aby umożliwić ustawienia języka i logowanie.",
+        "accept": "Rozumiem",
+        "privacyLink": "Polityka Prywatności"
+    },
+    "settings": {
+        "title": "Ustawienia",
+        "language": "Język",
+        "theme": "Motyw",
+        "lightMode": "Jasny",
+        "darkMode": "Ciemny",
+        "note": "Zmiany są wprowadzane natychmiast."
+    },
+    "common": {
+        "required": "Pole wymagane"
+    }
+}

@@ -38,14 +38,14 @@ function App() {
               <Route path="about" element={<AboutUs />} />
               <Route path="about/board" element={<Board />} />
               <Route path="about/statutes" element={<Statutes />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="kontakt" element={<Contact />} />
               <Route path="services" element={<Services />} />
               <Route path="services/:type" element={<Services />} />
 
-              <Route path="projects" element={<Projects />} />
-              <Route path="projects/archive" element={<ProjectsArchive />} />
-              <Route path="projects/overview" element={<ProjectOverview />} />
-              <Route path="projects/apply" element={<ProjectApplication />} />
+              <Route path="projekte" element={<Projects />} />
+              <Route path="projekte/archive" element={<ProjectsArchive />} />
+              <Route path="projekte/overview" element={<ProjectOverview />} />
+              <Route path="projekte/apply" element={<ProjectApplication />} />
               <Route path="terms" element={<Terms />} />
               <Route path="datenschutz" element={<DataPrivacy />} />
               <Route path="impressum" element={<Impressum />} />
