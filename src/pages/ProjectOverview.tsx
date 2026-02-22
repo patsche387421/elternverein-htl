@@ -23,22 +23,22 @@ const ProjectOverview = () => {
         switch (status) {
             case 'approved':
                 return (
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-success/10 text-success uppercase tracking-wide">
-                        <CheckCircle size={14} />
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-success/10 text-success uppercase tracking-widest border border-success/20 shadow-sm">
+                        <CheckCircle size={12} strokeWidth={3} />
                         {t('projects.overviewTable.status.approved')}
                     </span>
                 );
             case 'rejected':
                 return (
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-destructive/10 text-destructive uppercase tracking-wide">
-                        <XCircle size={14} />
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-destructive/10 text-destructive uppercase tracking-widest border border-destructive/20 shadow-sm">
+                        <XCircle size={12} strokeWidth={3} />
                         {t('projects.overviewTable.status.rejected')}
                     </span>
                 );
             default:
                 return (
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-warning/10 text-warning uppercase tracking-wide">
-                        <Clock size={14} />
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-warning/10 text-warning uppercase tracking-widest border border-warning/20 shadow-sm">
+                        <Clock size={12} strokeWidth={3} />
                         {t('projects.overviewTable.status.pending')}
                     </span>
                 );
@@ -52,104 +52,105 @@ const ProjectOverview = () => {
     });
 
     return (
-        <div className="container mx-auto px-4 py-12 space-y-8">
+        <main className="flex-grow">
             <SEO
                 title={t('projects.overview')}
                 description={t('projects.overviewTable.title')}
+                keywords="Projektübersicht, Status, Förderung, HTL Mödling, Elternverein"
             />
 
-            {/* Header */}
-            <div className="flex items-center justify-between">
-                <div className="space-y-4">
-                    <Link to="/projects" className="inline-flex items-center text-sm text-foreground/60 hover:text-primary transition-colors">
-                        <ArrowLeft size={16} className="mr-1" />
+            <div className="container mx-auto px-4 py-12 space-y-12">
+                {/* Header */}
+                <header className="space-y-6">
+                    <Link to="/projects" className="group inline-flex items-center text-sm font-bold text-foreground/40 hover:text-primary transition-all uppercase tracking-widest">
+                        <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" strokeWidth={2.5} />
                         {t('projects.backToCurrent')}
                     </Link>
-                    <h1 className="text-3xl md:text-4xl font-bold text-foreground">
+                    <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter text-foreground">
                         {t('projects.overviewTable.title')}
                     </h1>
-                </div>
-            </div>
+                </header>
 
-            {/* Search/Filter Bar */}
-            <div className="bg-surface p-4 rounded-2xl border border-border flex flex-wrap items-center gap-4">
-                <div className="relative flex-1 min-w-[200px] max-w-sm">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-foreground/40" size={20} />
-                    <input
-                        type="text"
-                        placeholder={t('projects.overviewTable.filters.search')}
-                        className="w-full pl-10 pr-4 py-2 bg-background rounded-xl border border-border focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                    />
-                </div>
+                {/* Search/Filter Bar */}
+                <section className="bg-card p-6 rounded-3xl border border-border shadow-xl flex flex-wrap items-center gap-6" aria-label="Filters">
+                    <div className="relative flex-1 min-w-[280px]">
+                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground/30" size={20} />
+                        <input
+                            type="text"
+                            placeholder={t('projects.overviewTable.filters.search')}
+                            className="w-full pl-12 pr-4 py-4 bg-background rounded-2xl border border-border focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all font-medium text-foreground outline-none"
+                        />
+                    </div>
 
-                <div className="flex items-center gap-3">
-                    <select
-                        value={selectedDepartment}
-                        onChange={(e) => setSelectedDepartment(e.target.value)}
-                        className="px-4 py-2 bg-background rounded-xl border border-border focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm font-medium text-foreground/80 outline-none appearance-none"
-                    >
-                        <option value="all">{t('projects.overviewTable.filters.allDepts')}</option>
-                        <option value="IT">{t('projects.overviewTable.departments.IT')}</option>
-                        <option value="SP">{t('projects.overviewTable.departments.SP')}</option>
-                        <option value="FIN">{t('projects.overviewTable.departments.FIN')}</option>
-                        <option value="ET">{t('projects.overviewTable.departments.ET')}</option>
-                        <option value="GEN">{t('projects.overviewTable.departments.GEN')}</option>
-                    </select>
+                    <div className="flex items-center gap-4">
+                        <select
+                            value={selectedDepartment}
+                            onChange={(e) => setSelectedDepartment(e.target.value)}
+                            className="px-6 py-4 bg-background rounded-2xl border border-border focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all text-sm font-bold text-foreground/80 outline-none appearance-none cursor-pointer"
+                        >
+                            <option value="all">{t('projects.overviewTable.filters.allDepts')}</option>
+                            <option value="IT">{t('projects.overviewTable.departments.IT')}</option>
+                            <option value="SP">{t('projects.overviewTable.departments.SP')}</option>
+                            <option value="FIN">{t('projects.overviewTable.departments.FIN')}</option>
+                            <option value="ET">{t('projects.overviewTable.departments.ET')}</option>
+                            <option value="GEN">{t('projects.overviewTable.departments.GEN')}</option>
+                        </select>
 
-                    <select
-                        value={selectedStatus}
-                        onChange={(e) => setSelectedStatus(e.target.value)}
-                        className="px-4 py-2 bg-background rounded-xl border border-border focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all text-sm font-medium text-foreground/80 outline-none appearance-none"
-                    >
-                        <option value="all">{t('projects.overviewTable.filters.allStatus')}</option>
-                        <option value="approved">{t('projects.overviewTable.status.approved')}</option>
-                        <option value="pending">{t('projects.overviewTable.status.pending')}</option>
-                        <option value="rejected">{t('projects.overviewTable.status.rejected')}</option>
-                    </select>
-                </div>
-            </div>
+                        <select
+                            value={selectedStatus}
+                            onChange={(e) => setSelectedStatus(e.target.value)}
+                            className="px-6 py-4 bg-background rounded-2xl border border-border focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all text-sm font-bold text-foreground/80 outline-none appearance-none cursor-pointer"
+                        >
+                            <option value="all">{t('projects.overviewTable.filters.allStatus')}</option>
+                            <option value="approved">{t('projects.overviewTable.status.approved')}</option>
+                            <option value="pending">{t('projects.overviewTable.status.pending')}</option>
+                            <option value="rejected">{t('projects.overviewTable.status.rejected')}</option>
+                        </select>
+                    </div>
+                </section>
 
-            {/* Table Container */}
-            <div className="bg-surface rounded-3xl border border-border shadow-sm overflow-hidden">
-                <div className="overflow-x-auto">
-                    <table className="w-full text-left border-collapse">
-                        <thead className="bg-background/50 border-b border-border">
-                            <tr>
-                                <th className="p-6 text-sm font-bold text-foreground/70 uppercase tracking-wider">{t('projects.overviewTable.headers.project')}</th>
-                                <th className="p-6 text-sm font-bold text-foreground/70 uppercase tracking-wider">{t('projects.overviewTable.headers.department')}</th>
-                                <th className="p-6 text-sm font-bold text-foreground/70 uppercase tracking-wider">{t('projects.overviewTable.headers.applicant')}</th>
-                                <th className="p-6 text-sm font-bold text-foreground/70 uppercase tracking-wider">{t('projects.overviewTable.headers.date')}</th>
-                                <th className="p-6 text-sm font-bold text-foreground/70 uppercase tracking-wider">{t('projects.overviewTable.headers.cost')}</th>
-                                <th className="p-6 text-sm font-bold text-foreground/70 uppercase tracking-wider">{t('projects.overviewTable.headers.status')}</th>
-                            </tr>
-                        </thead>
-                        <tbody className="divide-y divide-border">
-                            {filteredProjects.map((p, i) => (
-                                <tr key={i} className="group hover:bg-background/50 transition-colors">
-                                    <td className="p-6 font-bold text-foreground">{p.title}</td>
-                                    <td className="p-6 text-foreground/80">
-                                        <span className="px-2 py-1 rounded-md bg-foreground/5 text-xs font-medium">
-                                            {t(`projects.overviewTable.departments.${p.department}`)}
-                                        </span>
-                                    </td>
-                                    <td className="p-6 text-foreground/80">{p.applicant}</td>
-                                    <td className="p-6 text-foreground/60 font-mono text-sm">{p.date}</td>
-                                    <td className="p-6 font-mono font-medium">{p.cost}</td>
-                                    <td className="p-6">{getStatusBadge(p.status)}</td>
+                {/* Table Container */}
+                <section className="bg-card rounded-[2.5rem] border border-border shadow-2xl overflow-hidden">
+                    <div className="overflow-x-auto">
+                        <table className="w-full text-left border-collapse">
+                            <thead>
+                                <tr className="bg-muted/50 border-b border-border">
+                                    <th className="p-8 text-xs font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.project')}</th>
+                                    <th className="p-8 text-xs font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.department')}</th>
+                                    <th className="p-8 text-xs font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.applicant')}</th>
+                                    <th className="p-8 text-xs font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.date')}</th>
+                                    <th className="p-8 text-xs font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.cost')}</th>
+                                    <th className="p-8 text-xs font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.status')}</th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                            </thead>
+                            <tbody className="divide-y divide-border/50">
+                                {filteredProjects.map((p, i) => (
+                                    <tr key={i} className="group hover:bg-primary/5 transition-all duration-300">
+                                        <td className="p-8 font-extrabold text-foreground tracking-tight">{p.title}</td>
+                                        <td className="p-8">
+                                            <span className="px-3 py-1 rounded-lg bg-surface border border-border text-[10px] font-black uppercase tracking-widest text-foreground/60 shadow-inner group-hover:border-primary/20 group-hover:text-primary transition-all">
+                                                {t(`projects.overviewTable.departments.${p.department}`)}
+                                            </span>
+                                        </td>
+                                        <td className="p-8 text-foreground/70 font-medium">{p.applicant}</td>
+                                        <td className="p-8 text-foreground/40 font-mono text-xs">{p.date}</td>
+                                        <td className="p-8 font-mono font-black text-foreground/80">{p.cost}</td>
+                                        <td className="p-8">{getStatusBadge(p.status)}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
 
-            <div className="text-center pt-8">
-                <Link to="/projects/apply" className="inline-flex items-center justify-center gap-2 text-primary font-bold hover:underline">
-                    {t('projects.apply.button')}
-                    <ArrowLeft size={16} className="rotate-180" />
-                </Link>
+                <footer className="text-center pt-12">
+                    <Link to="/projects/apply" className="group inline-flex items-center justify-center gap-4 bg-primary text-primary-foreground px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-1">
+                        {t('projects.apply.button')}
+                        <ArrowLeft size={20} className="rotate-180 group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
+                    </Link>
+                </footer>
             </div>
-        </div>
+        </main>
     );
 };
 

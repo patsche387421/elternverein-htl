@@ -6,92 +6,114 @@ const Contact = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container mx-auto px-4 py-12">
+        <main className="flex-grow">
             <SEO
                 title={t('contact.title')}
                 description={t('contact.desc')}
+                keywords="Kontakt, Elternverein, HTL Mödling, E-Mail, Telefon, Büro"
             />
 
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 text-center">{t('contact.title')}</h1>
+            <div className="container mx-auto px-4 py-12 space-y-16">
+                <header className="text-center space-y-6">
+                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground">{t('contact.title')}</h1>
+                    <p className="text-xl text-foreground/60 font-medium max-w-2xl mx-auto leading-relaxed">
+                        {t('contact.desc')}
+                    </p>
+                </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                {/* Contact Info */}
-                <div className="space-y-8">
-                    <div>
-                        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">{t('contact.subtitle')}</h3>
-                        <p className="text-gray-600 dark:text-gray-400 mb-6">
-                            {t('contact.desc')}
-                        </p>
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    {/* Contact Info */}
+                    <div className="space-y-10">
+                        <div>
+                            <h2 className="text-3xl font-bold mb-4 text-foreground tracking-tight">{t('contact.subtitle')}</h2>
+                            <p className="text-lg text-foreground/60 leading-relaxed font-medium">
+                                Wir sind für Sie da. Kontaktieren Sie uns direkt per E-Mail, Telefon oder besuchen Sie uns während der Sprechzeiten.
+                            </p>
+                        </div>
+
+                        <div className="space-y-6">
+                            <article className="flex items-center gap-6 p-6 bg-surface rounded-3xl border border-border group hover:border-primary/50 transition-all">
+                                <div className="bg-primary/10 p-4 rounded-2xl text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all shadow-inner">
+                                    <Mail size={24} />
+                                </div>
+                                <div>
+                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">Email</p>
+                                    <p className="text-lg font-bold text-foreground">info@elternverein.today</p>
+                                </div>
+                            </article>
+
+                            <article className="flex items-center gap-6 p-6 bg-surface rounded-3xl border border-border group hover:border-primary/50 transition-all">
+                                <div className="bg-primary/10 p-4 rounded-2xl text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all shadow-inner">
+                                    <Phone size={24} />
+                                </div>
+                                <div>
+                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">Telefon</p>
+                                    <p className="text-lg font-bold text-foreground">+43 1 234 5678</p>
+                                </div>
+                            </article>
+
+                            <article className="flex items-center gap-6 p-6 bg-surface rounded-3xl border border-border group hover:border-primary/50 transition-all">
+                                <div className="bg-primary/10 p-4 rounded-2xl text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all shadow-inner">
+                                    <MapPin size={24} />
+                                </div>
+                                <div>
+                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">Büro</p>
+                                    <p className="text-lg font-bold text-foreground">Schul-Hauptgebäude, Zimmer 101</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
 
-                    <div className="space-y-6">
-                        <div className="flex items-center gap-4 text-gray-600 dark:text-gray-300 group">
-                            <div className="bg-primary/10 p-3 rounded-full text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                                <Mail size={20} />
-                            </div>
-                            <div>
-                                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Email</p>
-                                <p>info@elternverein.today</p>
-                            </div>
-                        </div>
+                    {/* Contact Form */}
+                    <div className="bg-card p-10 rounded-[2.5rem] shadow-2xl border border-border relative overflow-hidden">
+                        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
 
-                        <div className="flex items-center gap-4 text-gray-600 dark:text-gray-300 group">
-                            <div className="bg-primary/10 p-3 rounded-full text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                                <Phone size={20} />
+                        <form className="space-y-6 relative z-10" onSubmit={(e) => e.preventDefault()}>
+                            <div className="space-y-2">
+                                <label className="block text-sm font-bold text-foreground/60 uppercase tracking-widest ml-2" htmlFor="name">
+                                    {t('contact.form.name')}
+                                </label>
+                                <input
+                                    id="name"
+                                    type="text"
+                                    className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium"
+                                    placeholder="Ihr Name"
+                                    required
+                                />
                             </div>
-                            <div>
-                                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Phone</p>
-                                <p>+43 1 234 5678</p>
+                            <div className="space-y-2">
+                                <label className="block text-sm font-bold text-foreground/60 uppercase tracking-widest ml-2" htmlFor="email">
+                                    {t('contact.form.email')}
+                                </label>
+                                <input
+                                    id="email"
+                                    type="email"
+                                    className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium"
+                                    placeholder="ihre.mail@beispiel.com"
+                                    required
+                                />
                             </div>
-                        </div>
-
-                        <div className="flex items-center gap-4 text-gray-600 dark:text-gray-300 group">
-                            <div className="bg-primary/10 p-3 rounded-full text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                                <MapPin size={20} />
+                            <div className="space-y-2">
+                                <label className="block text-sm font-bold text-foreground/60 uppercase tracking-widest ml-2" htmlFor="message">
+                                    {t('contact.form.message')}
+                                </label>
+                                <textarea
+                                    id="message"
+                                    rows={5}
+                                    className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium resize-none"
+                                    placeholder="Wie können wir Ihnen helfen?"
+                                    required
+                                ></textarea>
                             </div>
-                            <div>
-                                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Office</p>
-                                <p>School Main Building, Room 101</p>
-                            </div>
-                        </div>
+                            <button className="w-full bg-primary text-primary-foreground py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-primary/90 transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-primary/20 transform hover:-translate-y-1">
+                                <Send size={20} strokeWidth={2.5} />
+                                {t('contact.form.send')}
+                            </button>
+                        </form>
                     </div>
-                </div>
-
-                {/* Contact Form */}
-                <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
-                    <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('contact.form.name')}</label>
-                            <input
-                                type="text"
-                                className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-ring outline-none transition-shadow"
-                                placeholder="John Doe"
-                            />
-                        </div>
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('contact.form.email')}</label>
-                            <input
-                                type="email"
-                                className="w-full px-4 py-2 rounded-lg border border-border bg-background text-foreground focus:ring-2 focus:ring-ring outline-none transition-shadow"
-                                placeholder="john@example.com"
-                            />
-                        </div>
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">{t('contact.form.message')}</label>
-                            <textarea
-                                rows={4}
-                                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-shadow resize-none"
-                                placeholder="..."
-                            ></textarea>
-                        </div>
-                        <button className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-bold hover:bg-primary/90 transition flex items-center justify-center gap-2">
-                            <Send size={18} />
-                            {t('contact.form.send')}
-                        </button>
-                    </form>
-                </div>
+                </section>
             </div>
-        </div>
+        </main>
     );
 };
 

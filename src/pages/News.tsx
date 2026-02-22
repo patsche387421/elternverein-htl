@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calendar, FileText, Bell } from 'lucide-react';
+import { Calendar, FileText, Bell, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 
@@ -57,63 +57,72 @@ const News = () => {
     );
 
     return (
-        <div className="container mx-auto px-4 py-12 space-y-12">
+        <main className="flex-grow">
             <SEO
                 title={t('news.title')}
                 description={t('news.desc')}
+                keywords="News, Aktuelles, Termine, Protokolle, HTL Mödling, Elternverein"
             />
 
-            <div className="text-center space-y-4">
-                <div className="inline-flex items-center justify-center p-3 bg-primary/10 text-primary rounded-2xl mb-4">
-                    <Bell size={32} />
-                </div>
-                <h1 className="text-4xl font-bold text-gray-900 dark:text-white">{t('news.title')}</h1>
-                <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                    {t('news.desc')}
-                </p>
-            </div>
-
-            {/* Category Filter Bar */}
-            <div className="flex flex-wrap justify-center gap-3">
-                {categories.map((cat) => (
-                    <button
-                        key={cat}
-                        onClick={() => setSelectedCategory(cat)}
-                        className={`px-6 py-2 rounded-full font-bold transition-all duration-300 transform hover:scale-105 ${selectedCategory === cat
-                            ? 'bg-primary text-white shadow-lg shadow-primary/25 -translate-y-1'
-                            : 'bg-surface border border-border text-foreground/60 hover:border-primary/40 hover:text-primary'
-                            }`}
-                    >
-                        {t(`news.filters.${cat}`)}
-                    </button>
-                ))}
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredNews.map((item) => (
-                    <div key={item.id} className="bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all group">
-                        <div className="flex justify-between items-start mb-4">
-                            <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${getTypeColor(item.type)}`}>
-                                {t(`home.tags.${item.type}`)}
-                            </span>
-                            <span className="text-sm text-gray-400 font-mono">{item.date}</span>
-                        </div>
-
-                        <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                            {item.title}
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-400 mb-6">
-                            {item.desc}
-                        </p>
-
-                        <div className="flex items-center gap-2 text-sm font-semibold text-primary">
-                            <item.icon size={18} />
-                            <span>{t('home.viewAll')}</span>
-                        </div>
+            <div className="container mx-auto px-4 py-12 space-y-16">
+                <header className="text-center space-y-6">
+                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-[2rem] mb-4 shadow-inner">
+                        <Bell size={40} />
                     </div>
-                ))}
+                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground">{t('news.title')}</h1>
+                    <p className="text-xl text-foreground/60 font-medium max-w-2xl mx-auto leading-relaxed">
+                        {t('news.desc')}
+                    </p>
+                </header>
+
+                {/* Category Filter Bar */}
+                <nav className="flex flex-wrap justify-center gap-3" aria-label="News Kategorien">
+                    {categories.map((cat) => (
+                        <button
+                            key={cat}
+                            onClick={() => setSelectedCategory(cat)}
+                            className={`px-8 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 ${selectedCategory === cat
+                                ? 'bg-primary text-white shadow-xl shadow-primary/25 -translate-y-1'
+                                : 'bg-surface border border-border text-foreground/60 hover:border-primary/40 hover:text-primary'
+                                }`}
+                        >
+                            {t(`news.filters.${cat}`)}
+                        </button>
+                    ))}
+                </nav>
+
+                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {filteredNews.map((item) => (
+                        <article key={item.id} className="bg-card dark:bg-slate-900 rounded-[2.5rem] p-8 shadow-sm border border-border hover:shadow-2xl hover:border-primary/30 transition-all group flex flex-col">
+                            <div className="flex justify-between items-center mb-6">
+                                <span className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest ${getTypeColor(item.type)}`}>
+                                    {t(`home.tags.${item.type}`)}
+                                </span>
+                                <div className="flex items-center gap-2 text-sm text-foreground/30 font-bold uppercase tracking-wider">
+                                    <Calendar size={14} />
+                                    <span>{item.date}</span>
+                                </div>
+                            </div>
+
+                            <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors leading-tight">
+                                {item.title}
+                            </h3>
+                            <p className="text-foreground/60 font-medium leading-relaxed mb-8 flex-grow">
+                                {item.desc}
+                            </p>
+
+                            <div className="pt-6 border-t border-border flex items-center justify-between group-hover:border-primary/20 transition-colors">
+                                <div className="flex items-center gap-3 text-sm font-bold text-primary uppercase tracking-widest">
+                                    <item.icon size={20} strokeWidth={2.5} />
+                                    <span>{t('home.viewAll')}</span>
+                                </div>
+                                <ArrowRight size={20} className="text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                            </div>
+                        </article>
+                    ))}
+                </section>
             </div>
-        </div>
+        </main>
     );
 };
 
