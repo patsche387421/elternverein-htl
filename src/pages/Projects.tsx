@@ -56,9 +56,9 @@ const Projects = () => {
                 </header>
 
                 {/* Main Action Hub - 3 Options */}
-                <nav className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" aria-label="Project Actions">
+                <nav className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" aria-label={t('projects.overviewTable.filters.ariaLabel', 'Project Actions')}>
                     {/* 1. New Application (Primary CTA) */}
-                    <Link to="/projects/apply" className="group relative flex flex-col items-center justify-center p-10 bg-gradient-to-br from-primary to-primary text-primary-foreground rounded-[2.5rem] shadow-2xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                    <Link to="/projects/apply" className="group relative flex flex-col items-center justify-center p-10 bg-gradient-to-br from-primary to-primary text-primary-foreground rounded-3xl shadow-2xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                         <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                         <div className="bg-white/20 p-5 rounded-3xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-inner">
                             <Lightbulb size={40} strokeWidth={2.5} />
@@ -68,7 +68,7 @@ const Projects = () => {
                     </Link>
 
                     {/* 2. Overview (Status) */}
-                    <Link to="/projects/overview" className="group relative flex flex-col items-center justify-center p-10 bg-surface border border-border rounded-[2.5rem] hover:border-primary/50 hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-2xl">
+                    <Link to="/projects/overview" className="group relative flex flex-col items-center justify-center p-10 bg-surface border border-border rounded-3xl hover:border-primary/50 hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-2xl">
                         <div className="bg-primary/5 p-5 rounded-3xl mb-6 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 shadow-inner">
                             <List size={40} strokeWidth={2.5} />
                         </div>
@@ -77,7 +77,7 @@ const Projects = () => {
                     </Link>
 
                     {/* 3. Archive */}
-                    <Link to="/projects/archive" className="group relative flex flex-col items-center justify-center p-10 bg-surface border border-border rounded-[2.5rem] hover:border-primary/50 hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-2xl">
+                    <Link to="/projects/archive" className="group relative flex flex-col items-center justify-center p-10 bg-surface border border-border rounded-3xl hover:border-primary/50 hover:-translate-y-2 transition-all duration-500 shadow-xl hover:shadow-2xl">
                         <div className="bg-primary/5 p-5 rounded-3xl mb-6 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 shadow-inner">
                             <Archive size={40} strokeWidth={2.5} />
                         </div>
@@ -98,7 +98,7 @@ const Projects = () => {
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                         {currentProjects.map((project, index) => (
-                            <article key={index} className="group flex flex-col bg-card rounded-[2.5rem] border border-border overflow-hidden hover:shadow-2xl hover:shadow-primary/5 hover:border-primary/20 transition-all duration-500 relative">
+                            <article key={index} className="group flex flex-col bg-card rounded-3xl border border-border overflow-hidden hover:shadow-2xl hover:shadow-primary/5 hover:border-primary/20 transition-all duration-500 relative">
                                 {/* Status Stripe */}
                                 <div className={cn("h-2.5 w-full",
                                     project.status === 'In Progress' ? "bg-primary" :

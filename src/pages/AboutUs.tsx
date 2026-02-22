@@ -50,13 +50,13 @@ const AboutUs = () => {
                 </section>
 
                 {/* Membership & Costs */}
-                <section className="bg-surface rounded-[2.5rem] p-8 md:p-16 border border-border relative overflow-hidden">
+                <section className="bg-surface rounded-3xl p-8 md:p-16 border border-border relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-12 text-primary/5 pointer-events-none">
                         <Euro size={200} strokeWidth={1} />
                     </div>
 
                     <div className="max-w-3xl mx-auto text-center space-y-8 relative z-10">
-                        <div className="inline-flex items-center justify-center p-5 bg-white dark:bg-slate-800 rounded-3xl shadow-xl mb-2">
+                        <div className="inline-flex items-center justify-center p-5 bg-card rounded-3xl shadow-xl mb-2">
                             <Euro size={40} className="text-primary" />
                         </div>
                         <div>
@@ -77,7 +77,7 @@ const AboutUs = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                         <h2 className="text-4xl font-bold text-foreground tracking-tight">{t('board.title')}</h2>
                         <Link to="/about/board" className="group flex items-center gap-2 text-primary font-bold text-lg hover:underline transition-all">
-                            Vollständige Details ansehen <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                            {t('about.board.viewDetails', 'Vollständige Details ansehen')} <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>
 

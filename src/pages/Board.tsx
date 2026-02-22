@@ -22,7 +22,7 @@ const Board = () => {
 
             <div className="container mx-auto px-4 py-12 space-y-16">
                 <header className="text-center space-y-6">
-                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-[2rem] mb-4 shadow-inner">
+                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-2xl mb-4 shadow-inner">
                         <Users size={40} />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground">{t('board.title')}</h1>
@@ -33,7 +33,7 @@ const Board = () => {
 
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {members.map((m, i) => (
-                        <article key={i} className="bg-card p-8 rounded-[2rem] border border-border shadow-sm flex items-center justify-between group hover:border-primary/50 transition-all hover:shadow-xl">
+                        <article key={i} className="bg-card p-8 rounded-2xl border border-border shadow-sm flex items-center justify-between group hover:border-primary/50 transition-all hover:shadow-xl">
                             <div>
                                 <p className="text-sm font-bold text-primary uppercase tracking-widest mb-1">{m.role}</p>
                                 <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">{m.name}</h3>

@@ -27,7 +27,7 @@ const ProjectsArchive = () => {
                     </Link>
 
                     <div className="text-center space-y-6 max-w-3xl mx-auto">
-                        <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-[2rem] mb-4 shadow-inner transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-2xl mb-4 shadow-inner transform -rotate-3 hover:rotate-0 transition-transform duration-500">
                             <Archive size={40} strokeWidth={2.5} />
                         </div>
                         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground leading-tight">
@@ -40,9 +40,9 @@ const ProjectsArchive = () => {
                 </header>
 
                 {/* Archive Grid */}
-                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" aria-label="Archive Years">
+                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" aria-label={t('projects.archive.ariaLabel', 'Archive Years')}>
                     {years.map((year) => (
-                        <article key={year} className="bg-card p-10 rounded-[2.5rem] border border-border hover:border-primary/50 cursor-pointer group transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl relative overflow-hidden">
+                        <article key={year} className="bg-card p-10 rounded-3xl border border-border hover:border-primary/50 cursor-pointer group transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-700" />
 
                             <div className="flex items-center justify-between mb-8 relative z-10">

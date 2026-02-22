@@ -15,13 +15,13 @@ const Impressum = () => {
 
             <div className="container mx-auto px-4 py-12 space-y-16">
                 <header className="text-center space-y-6">
-                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-[2rem] mb-4 shadow-inner">
+                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-2xl mb-4 shadow-inner">
                         <Info size={40} />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground">{t('footer.impressum')}</h1>
                 </header>
 
-                <div className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-[2.5rem] border border-border shadow-2xl space-y-12">
+                <div className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-3xl border border-border shadow-2xl space-y-12">
                     <section className="prose prose-lg dark:prose-invert max-w-none grid grid-cols-1 md:grid-cols-2 gap-12">
                         <div className="space-y-6">
                             <div>

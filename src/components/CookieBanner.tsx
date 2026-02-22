@@ -41,7 +41,7 @@ const CookieBanner = () => {
                         <button
                             onClick={() => setIsVisible(false)}
                             className="p-3 bg-foreground/5 hover:bg-foreground/10 rounded-xl text-foreground/70 transition-colors"
-                            aria-label="Close"
+                            aria-label={t('login.closeButton', 'Close')}
                         >
                             <X size={20} />
                         </button>

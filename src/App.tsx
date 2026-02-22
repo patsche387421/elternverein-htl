@@ -56,8 +56,8 @@ function App() {
             <Route path="/dashboard" element={<InternalLayout />}>
               <Route index element={<Dashboard />} />
               <Route path="calendar" element={<CalendarPage />} />
-              <Route path="messages" element={<div className="p-8 text-center text-gray-500">Messaging coming soon...</div>} />
-              <Route path="settings" element={<div className="p-8 text-center text-gray-500">Settings coming soon...</div>} />
+              <Route path="messages" element={<div className="p-8 text-center text-foreground/50">Messaging coming soon...</div>} />
+              <Route path="settings" element={<div className="p-8 text-center text-foreground/50">Settings coming soon...</div>} />
             </Route>
           </Routes>
         </div>

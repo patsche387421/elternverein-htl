@@ -65,7 +65,7 @@ const Contact = () => {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="bg-card p-10 rounded-[2.5rem] shadow-2xl border border-border relative overflow-hidden">
+                    <div className="bg-card p-10 rounded-3xl shadow-2xl border border-border relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
 
                         <form className="space-y-6 relative z-10" onSubmit={(e) => e.preventDefault()}>

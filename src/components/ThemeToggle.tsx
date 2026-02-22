@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ThemeToggle = () => {
+    const { t } = useTranslation();
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
     useEffect(() => {
@@ -21,7 +23,7 @@ const ThemeToggle = () => {
         <button
             onClick={toggleTheme}
             className="p-3 rounded-xl text-foreground/60 hover:bg-primary/5 hover:text-primary transition-all border border-transparent hover:border-primary/10 shadow-sm"
-            aria-label="Toggle Theme"
+            aria-label={t('nav.aria.themeToggle', 'Toggle Theme')}
         >
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
         </button>

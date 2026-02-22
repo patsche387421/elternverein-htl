@@ -22,7 +22,7 @@ const ProjectApplication = () => {
                     description={t('projects.apply.form.successSEO')}
                 />
                 <div className="container mx-auto px-4 text-center space-y-10 animate-in fade-in slide-in-from-bottom-8 duration-700">
-                    <div className="w-24 h-24 bg-success/10 text-success rounded-[2rem] flex items-center justify-center mx-auto mb-8 shadow-inner transform rotate-12">
+                    <div className="w-24 h-24 bg-success/10 text-success rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-inner transform rotate-12">
                         <CheckCircle size={48} strokeWidth={2.5} />
                     </div>
                     <div className="space-y-4">
@@ -65,7 +65,7 @@ const ProjectApplication = () => {
                 </header>
 
                 {/* Form Card */}
-                <section className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-[2.5rem] border border-border shadow-2xl relative overflow-hidden">
+                <section className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-3xl border border-border shadow-2xl relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
 
                     <form onSubmit={handleSubmit} className="space-y-10 relative z-10">
@@ -112,7 +112,7 @@ const ProjectApplication = () => {
                                     min="0"
                                     step="0.01"
                                     className="w-full px-6 py-4 rounded-2xl bg-background border border-border focus:ring-4 focus:ring-primary/10 outline-none transition-all font-black text-foreground pl-12"
-                                    placeholder="0.00"
+                                    placeholder={t('projects.apply.form.placeholderCosts', '0.00')}
                                 />
                                 <span className="absolute left-6 top-1/2 -translate-y-1/2 font-black text-foreground/40">€</span>
                             </div>

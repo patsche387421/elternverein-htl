@@ -9,6 +9,11 @@
         "login": "Login",
         "logout": "Logout",
         "profile": "My Profile",
+        "aria": {
+            "menuToggle": "Toggle menu",
+            "languageToggle": "Toggle language",
+            "themeToggle": "Toggle theme"
+        },
         "serviceItems": {
             "support": "Social Support",
             "tutoring": "Tutoring",
@@ -80,7 +85,12 @@
     },
     "home": {
         "heroTitle": "Connecting Parents, Teachers, and Students",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Parents' Association",
         "heroDesc": "The Elternverein is dedicated to supporting the school community through active participation, funding, and open communication.",
+        "servicesLabel": "Our Services",
+        "servicesSub": "Innovation meets community – Discover our benefits.",
+        "welcomeBadge": "Welcome",
         "getInvolved": "Get Involved",
         "learnMore": "Learn More",
         "latestNews": "Latest News",
@@ -103,7 +113,10 @@
             "Support school projects financially",
             "Represent parents' interests in school committees",
             "Facilitate communication between parents and school"
-        ]
+        ],
+        "board": {
+            "viewDetails": "View full details"
+        }
     },
     "costs": {
         "title": "Membership & Costs",
@@ -143,6 +156,9 @@
         "forgot": "Forgot password?",
         "closeButton": "Close"
     },
+    "newsAria": {
+        "categories": "News Categories"
+    },
     "services": {
         "title": "Our Services",
         "desc": "We support students and families with financial aid, tutoring programs, and educational courses.",
@@ -175,6 +191,7 @@
         "desc": "A history of funded projects and initiatives.",
         "archive": "Project Archive",
         "viewArchive": "View Archive",
+        "ariaLabel": "Archive Years",
         "overview": "Project Overview",
         "viewOverview": "Application Status",
         "backToCurrent": "Back to Overview",
@@ -204,6 +221,7 @@
                 "applicant": "Applicant / Department",
                 "description": "Detailed Project Description",
                 "costs": "Funding Required (€)",
+                "placeholderCosts": "0.00",
                 "files": "Attachments (Quotes, Plans)",
                 "submit": "Submit Proposal",
                 "success": "Your proposal has been successfully submitted!",
@@ -226,6 +244,7 @@
             },
             "filters": {
                 "label": "Filters:",
+                "ariaLabel": "Project Actions",
                 "search": "Search projects...",
                 "allStatus": "All Statuses",
                 "allDepts": "All Departments"

@@ -31,7 +31,7 @@ const CalendarPage = () => {
                 </button>
             </div>
 
-            <div className="bg-card rounded-[2rem] border border-border shadow-2xl overflow-hidden self-start">
+            <div className="bg-card rounded-2xl border border-border shadow-2xl overflow-hidden self-start">
                 {/* Calendar Header */}
                 <div className="p-6 border-b border-border flex justify-between items-center bg-muted/30">
                     <h2 className="text-xl font-black text-foreground tracking-tight">{month} {year}</h2>

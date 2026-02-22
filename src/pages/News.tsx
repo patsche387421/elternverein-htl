@@ -46,9 +46,9 @@ const News = () => {
 
     const getTypeColor = (type: string) => {
         switch (type) {
-            case 'event': return 'bg-violet-600 text-white';
-            case 'protocol': return 'bg-sky-600 text-white';
-            default: return 'bg-emerald-600 text-white';
+            case 'event': return 'bg-primary text-primary-foreground';
+            case 'protocol': return 'bg-secondary text-secondary-foreground';
+            default: return 'bg-accent text-accent-foreground';
         }
     };
 
@@ -66,7 +66,7 @@ const News = () => {
 
             <div className="container mx-auto px-4 py-12 space-y-16">
                 <header className="text-center space-y-6">
-                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-[2rem] mb-4 shadow-inner">
+                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-2xl mb-4 shadow-inner">
                         <Bell size={40} />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground">{t('news.title')}</h1>
@@ -76,7 +76,7 @@ const News = () => {
                 </header>
 
                 {/* Category Filter Bar */}
-                <nav className="flex flex-wrap justify-center gap-3" aria-label="News Kategorien">
+                <nav className="flex flex-wrap justify-center gap-3" aria-label={t('newsAria.categories', 'News Kategorien')}>
                     {categories.map((cat) => (
                         <button
                             key={cat}
@@ -93,7 +93,7 @@ const News = () => {
 
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {filteredNews.map((item) => (
-                        <article key={item.id} className="bg-card rounded-[2.5rem] p-10 shadow-sm border border-border hover:shadow-2xl hover:border-primary/30 transition-all group flex flex-col relative overflow-hidden">
+                        <article key={item.id} className="bg-card rounded-3xl p-10 shadow-sm border border-border hover:shadow-2xl hover:border-primary/30 transition-all group flex flex-col relative overflow-hidden">
                             {/* Subtle background glow on hover */}
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100%] transition-all group-hover:bg-primary/10" />
                             <div className="flex justify-between items-center mb-6">

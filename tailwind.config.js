@@ -118,6 +118,7 @@ export default {
         },
       },
       borderRadius: {
+        DEFAULT: "var(--radius)",
         sm: "calc(var(--radius) * 0.25)",
         md: "calc(var(--radius) * 0.5)",
         lg: "var(--radius)",

@@ -9,6 +9,11 @@
         "login": "Anmelden",
         "logout": "Abmelden",
         "profile": "Mein Profil",
+        "aria": {
+            "menuToggle": "Menü umschalten",
+            "languageToggle": "Sprache umschalten",
+            "themeToggle": "Design umschalten"
+        },
         "serviceItems": {
             "support": "Soziale Unterstützung",
             "tutoring": "Nachhilfe",
@@ -80,12 +85,17 @@
     },
     "home": {
         "heroTitle": "Verbindung von Eltern, Lehrern und Schülern",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Elternverein",
         "heroDesc": "Der Elternverein widmet sich der Unterstützung der Schulgemeinschaft durch aktive Teilnahme, Finanzierung und offene Kommunikation.",
+        "servicesLabel": "Unsere Services",
+        "servicesSub": "Innovation trifft Gemeinschaft – Entdecken Sie unsere Vorteile.",
         "getInvolved": "Mitmachen",
         "learnMore": "Mehr erfahren",
         "latestNews": "Aktuelles",
         "insightsUpdates": "Einblicke & Neuigkeiten",
         "viewAll": "Alle ansehen",
+        "welcomeBadge": "Willkommen bei uns",
         "tags": {
             "event": "Events",
             "protocol": "Protokolle",
@@ -103,7 +113,10 @@
             "Schulprojekte finanziell unterstützen",
             "Elterninteressen in Schulgremien vertreten",
             "Kommunikation zwischen Eltern und Schule erleichtern"
-        ]
+        ],
+        "board": {
+            "viewDetails": "Vollständige Details ansehen"
+        }
     },
     "costs": {
         "title": "Mitgliedschaft & Kosten",
@@ -143,6 +156,9 @@
         "forgot": "Passwort vergessen?",
         "closeButton": "Schließen"
     },
+    "newsAria": {
+        "categories": "News Kategorien"
+    },
     "services": {
         "title": "Unsere Services",
         "desc": "Wir unterstützen Schüler und Familien mit finanzieller Hilfe, Nachhilfeprogrammen und Bildungsangeboten.",
@@ -175,6 +191,7 @@
         "desc": "Eine Historie der geförderten Projekte und Initiativen.",
         "archive": "Projektarchiv",
         "viewArchive": "Zum Archiv",
+        "ariaLabel": "Archiv-Jahre",
         "overview": "Projektübersicht",
         "viewOverview": "Status der Anträge",
         "backToCurrent": "Zurück zur Übersicht",
@@ -204,6 +221,7 @@
                 "applicant": "Antragsteller / Abteilung",
                 "description": "Detaillierte Projektbeschreibung",
                 "costs": "Finanzierungsbedarf (€)",
+                "placeholderCosts": "0,00",
                 "files": "Dateianhänge (Angebote, Pläne)",
                 "submit": "Diesen Antrag einreichen",
                 "success": "Ihr Antrag wurde erfolgreich übermittelt!",
@@ -226,6 +244,7 @@
             },
             "filters": {
                 "label": "Filter:",
+                "ariaLabel": "Projekt-Aktionen",
                 "search": "Projekte suchen...",
                 "allStatus": "Alle Status",
                 "allDepts": "Alle Abteilungen"

@@ -19,7 +19,7 @@ const Login = () => {
                 description={t('login.subtitle')}
             />
 
-            <div className="max-w-md w-full bg-card rounded-[2rem] shadow-2xl p-10 space-y-10 border border-border relative overflow-hidden">
+            <div className="max-w-md w-full bg-card rounded-2xl shadow-2xl p-10 space-y-10 border border-border relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
                 <div className="text-center">
                     <Link to="/" className="inline-flex items-center text-sm font-bold text-foreground/40 hover:text-primary transition-all uppercase tracking-widest mb-8">
@@ -56,7 +56,7 @@ const Login = () => {
                             <input
                                 type="password"
                                 className="w-full pl-12 pr-4 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium"
-                                placeholder="••••••••"
+                                placeholder={t('login.passwordPlaceholder', '••••••••')}
                                 required
                             />
                         </div>

@@ -29,7 +29,7 @@ const Dashboard = () => {
             {/* Stats Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
                 {stats.map((stat) => (
-                    <div key={stat.name} className="bg-card p-6 rounded-[2rem] border border-border shadow-xl flex items-center gap-4 group hover:scale-[1.02] transition-all">
+                    <div key={stat.name} className="bg-card p-6 rounded-2xl border border-border shadow-xl flex items-center gap-4 group hover:scale-[1.02] transition-all">
                         <div className={`p-4 rounded-2xl ${stat.bg} ${stat.color} group-hover:scale-110 transition-transform`}>
                             <stat.icon size={28} />
                         </div>
@@ -43,7 +43,7 @@ const Dashboard = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4">
                 {/* Recent Activity */}
-                <div className="lg:col-span-2 bg-card rounded-[2.5rem] border border-border shadow-2xl overflow-hidden self-start">
+                <div className="lg:col-span-2 bg-card rounded-3xl border border-border shadow-2xl overflow-hidden self-start">
                     <div className="p-8 border-b border-border flex justify-between items-center bg-muted/30">
                         <h2 className="text-xl font-black text-foreground tracking-tight">Recent Activity</h2>
                         <button className="text-sm font-black text-primary uppercase tracking-widest hover:opacity-80 transition-opacity">View All</button>
@@ -64,7 +64,7 @@ const Dashboard = () => {
                 </div>
 
                 {/* Quick Actions / Announcements */}
-                <div className="bg-card rounded-[2.5rem] border border-border shadow-2xl p-8 space-y-6 self-start">
+                <div className="bg-card rounded-3xl border border-border shadow-2xl p-8 space-y-6 self-start">
                     <h2 className="text-xl font-black text-foreground tracking-tight">Quick Actions</h2>
                     <div className="grid grid-cols-1 gap-4">
                         <button className="w-full text-left p-5 rounded-2xl bg-primary/10 text-primary font-black uppercase tracking-widest text-xs border border-primary/20 hover:bg-primary/20 transition-all transform hover:-translate-y-1">

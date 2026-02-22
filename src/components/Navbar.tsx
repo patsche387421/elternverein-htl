@@ -133,7 +133,7 @@ const Navbar = () => {
                         <button
                             className="p-3 -mr-2 rounded-full text-foreground/80 hover:bg-surface active:scale-95 transition-transform"
                             onClick={() => setIsOpen(!isOpen)}
-                            aria-label="Toggle menu"
+                            aria-label={t('nav.aria.menuToggle', 'Toggle menu')}
                         >
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>
@@ -146,7 +146,7 @@ const Navbar = () => {
                 <div className="fixed inset-0 z-50 flex flex-col bg-surface animate-in slide-in-from-right-10 duration-200">
                     {/* Cloud Header for Mobile Menu */}
                     <div className="flex justify-between items-center p-4 border-b border-border bg-surface/80 backdrop-blur-md">
-                        <span className="text-xl font-bold text-primary">Menu</span>
+                        <span className="text-xl font-bold text-primary">{t('nav.aria.menuToggle', 'Menu')}</span>
                         <button
                             onClick={() => setIsOpen(false)}
                             className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 active:scale-95 transition-all text-foreground"

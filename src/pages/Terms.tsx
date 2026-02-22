@@ -15,14 +15,14 @@ const Terms = () => {
 
             <div className="container mx-auto px-4 py-12 space-y-16">
                 <header className="text-center space-y-6">
-                    <div className="inline-flex items-center justify-center p-5 bg-amber-500/10 text-amber-500 rounded-[2rem] mb-4 shadow-inner">
+                    <div className="inline-flex items-center justify-center p-5 bg-warning/10 text-warning rounded-2xl mb-4 shadow-inner">
                         <Scale size={40} />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground">{t('terms.title')}</h1>
                 </header>
 
-                <section className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-[2.5rem] border border-border shadow-2xl relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-8 text-amber-500/5 pointer-events-none">
+                <section className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-3xl border border-border shadow-2xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 p-8 text-warning/5 pointer-events-none">
                         <Scale size={150} strokeWidth={1} />
                     </div>
 

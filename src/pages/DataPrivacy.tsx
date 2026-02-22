@@ -15,14 +15,14 @@ const DataPrivacy = () => {
 
             <div className="container mx-auto px-4 py-12 space-y-16">
                 <header className="text-center space-y-6">
-                    <div className="inline-flex items-center justify-center p-5 bg-emerald-500/10 text-emerald-500 rounded-[2rem] mb-4 shadow-inner">
+                    <div className="inline-flex items-center justify-center p-5 bg-success/10 text-success rounded-3xl mb-4 shadow-inner">
                         <Shield size={40} />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground">{t('footer.privacy')}</h1>
                 </header>
 
-                <div className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-[2.5rem] border border-border shadow-2xl relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-8 text-emerald-500/5 pointer-events-none">
+                <div className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-3xl border border-border shadow-2xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 p-8 text-success/5 pointer-events-none">
                         <Shield size={150} strokeWidth={1} />
                     </div>
 

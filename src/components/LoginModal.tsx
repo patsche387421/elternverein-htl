@@ -125,7 +125,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLoginSuccess
                 {/* Footer */}
                 <div className="p-6 bg-background/50 text-center border-t border-border">
                     <p className="text-xs text-foreground/50">
-                        &copy; {new Date().getFullYear()} Elternverein HTL Mödling
+                        &copy; {new Date().getFullYear()} {t('home.heroTitleMain', 'Elternverein')} {t('home.heroTitleSub', 'HTL Mödling')}
                     </p>
                 </div>
             </div>

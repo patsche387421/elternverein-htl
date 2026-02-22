@@ -9,6 +9,11 @@
         "login": "Giriş",
         "logout": "Çıkış Yap",
         "profile": "Profilim",
+        "aria": {
+            "menuToggle": "Menüyü aç/kapat",
+            "languageToggle": "Dili değiştir",
+            "themeToggle": "Temayı değiştir"
+        },
         "serviceItems": {
             "support": "Sosyal Destek",
             "tutoring": "Özel Ders",
@@ -80,12 +85,17 @@
     },
     "home": {
         "heroTitle": "Veliler, Öğretmenler ve Öğrencilerin Buluşma Noktası",
-        "heroDesc": "Elternverein (Veliler Birliği), aktif katılım, finansman ve açık iletişim yoluyla okul topluluğunu desteklemeye kendini adamıştır.",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Okul Aile Birliği",
+        "heroDesc": "Okul Aile Birliği, aktif katılım, finansman ve açık iletişim yoluyla okul topluluğunu desteklemeye kendini adamıştır.",
+        "servicesLabel": "Hizmetlerimiz",
+        "servicesSub": "İnovasyon toplulukla buluşuyor – avantajlarımızı keşfedin.",
         "getInvolved": "Katılın",
         "learnMore": "Daha Fazla Bilgi",
         "latestNews": "Son Haberler",
         "insightsUpdates": "Görüşler & Güncellemeler",
         "viewAll": "Hepsini Görüntüle",
+        "welcomeBadge": "Hoş Geldiniz",
         "tags": {
             "event": "Etkinlik",
             "protocol": "Protokol",
@@ -103,7 +113,10 @@
             "Okul projelerini finansal olarak desteklemek",
             "Okul komitelerinde veli çıkarlarını temsil etmek",
             "Veliler ve okul arasındaki iletişimi kolaylaştırmak"
-        ]
+        ],
+        "board": {
+            "viewDetails": "Tüm detayları gör"
+        }
     },
     "costs": {
         "title": "Üyelik & Maliyetler",
@@ -137,10 +150,15 @@
         "subtitle": "Veliler ve öğretmenler için dahili alana erişim.",
         "email": "E-posta Adresi",
         "password": "Şifre",
+        "emailPlaceholder": "isim@ornek.com",
+        "passwordPlaceholder": "••••••••",
         "submit": "Giriş Yap",
         "register": "Hesabınız yok mu? Kayıt olun",
         "forgot": "Şifremi unuttum?",
         "closeButton": "Kapat"
+    },
+    "newsAria": {
+        "categories": "Haber Kategorileri"
     },
     "services": {
         "title": "Hizmetlerimiz",
@@ -174,6 +192,7 @@
         "desc": "Desteklenen projelerin ve girişimlerin tarihçesi.",
         "archive": "Proje Arşivi",
         "viewArchive": "Arşivi Görüntüle",
+        "ariaLabel": "Arşiv Yılları",
         "overview": "Projeye Genel Bakış",
         "viewOverview": "Başvuru Durumu",
         "backToCurrent": "Genel Bakışa Dön",
@@ -203,6 +222,7 @@
                 "applicant": "Başvuran / Departman",
                 "description": "Detaylı Proje Açıklaması",
                 "costs": "Gerekli Finansman (€)",
+                "placeholderCosts": "0.00",
                 "files": "Ekler (Teklifler, Planlar)",
                 "submit": "Öneriyi Gönder",
                 "success": "Öneriniz başarıyla gönderildi!",
@@ -225,6 +245,7 @@
             },
             "filters": {
                 "label": "Filtreler:",
+                "ariaLabel": "Proje İşlemleri",
                 "search": "Projelerde ara...",
                 "allStatus": "Tüm Durumlar",
                 "allDepts": "Tüm Departmanlar"

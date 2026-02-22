@@ -15,7 +15,7 @@ const Statutes = () => {
 
             <div className="container mx-auto px-4 py-12 space-y-16">
                 <header className="text-center space-y-6">
-                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-[2rem] mb-4 shadow-inner">
+                    <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-2xl mb-4 shadow-inner">
                         <FileText size={40} />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-foreground">{t('statutes.title')}</h1>
@@ -24,7 +24,7 @@ const Statutes = () => {
                     </p>
                 </header>
 
-                <section className="max-w-4xl mx-auto bg-card p-8 md:p-12 rounded-[2.5rem] border border-border shadow-2xl space-y-10 relative overflow-hidden">
+                <section className="max-w-4xl mx-auto bg-card p-8 md:p-12 rounded-3xl border border-border shadow-2xl space-y-10 relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-8 text-primary/5 pointer-events-none">
                         <FileText size={150} strokeWidth={1} />
                     </div>

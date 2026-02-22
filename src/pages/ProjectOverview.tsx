@@ -78,7 +78,7 @@ const ProjectOverview = () => {
                         <input
                             type="text"
                             placeholder={t('projects.overviewTable.filters.search')}
-                            className="w-full pl-16 pr-6 py-6 bg-card rounded-[2rem] border border-border shadow-2xl focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all font-semibold text-xl text-foreground outline-none"
+                            className="w-full pl-16 pr-6 py-6 bg-card rounded-2xl border border-border shadow-2xl focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all font-semibold text-xl text-foreground outline-none"
                         />
                     </div>
 
@@ -88,8 +88,8 @@ const ProjectOverview = () => {
                             <button
                                 onClick={() => setSelectedStatus('all')}
                                 className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedStatus === 'all'
-                                        ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20'
-                                        : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
+                                    ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20'
+                                    : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
                                     }`}
                             >
                                 {t('projects.overviewTable.filters.allStatus')}
@@ -99,8 +99,8 @@ const ProjectOverview = () => {
                                     key={status}
                                     onClick={() => setSelectedStatus(status)}
                                     className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedStatus === status
-                                            ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20'
-                                            : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
+                                        ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20'
+                                        : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
                                         }`}
                                 >
                                     {t(`projects.overviewTable.status.${status}`)}
@@ -112,8 +112,8 @@ const ProjectOverview = () => {
                             <button
                                 onClick={() => setSelectedDepartment('all')}
                                 className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedDepartment === 'all'
-                                        ? 'bg-primary/20 text-primary border-primary/30'
-                                        : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
+                                    ? 'bg-primary/20 text-primary border-primary/30'
+                                    : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
                                     }`}
                             >
                                 {t('projects.overviewTable.filters.allDepts')}
@@ -123,8 +123,8 @@ const ProjectOverview = () => {
                                     key={dept}
                                     onClick={() => setSelectedDepartment(dept)}
                                     className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedDepartment === dept
-                                            ? 'bg-primary/20 text-primary border-primary/30'
-                                            : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
+                                        ? 'bg-primary/20 text-primary border-primary/30'
+                                        : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
                                         }`}
                                 >
                                     {t(`projects.overviewTable.departments.${dept}`)}
@@ -135,7 +135,7 @@ const ProjectOverview = () => {
                 </section>
 
                 {/* Table Container */}
-                <section className="bg-card rounded-[2.5rem] border border-border shadow-2xl overflow-hidden">
+                <section className="bg-card rounded-3xl border border-border shadow-2xl overflow-hidden">
                     <div className="overflow-x-auto">
                         <table className="w-full text-left border-collapse">
                             <thead>

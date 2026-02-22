@@ -55,7 +55,7 @@ const Services = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
                     {services.map((service) => (
-                        <article key={service.id} id={service.id} className="bg-card rounded-[2.5rem] p-10 shadow-xl border border-border hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group relative overflow-hidden">
+                        <article key={service.id} id={service.id} className="bg-card rounded-3xl p-10 shadow-xl border border-border hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group relative overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-primary/20 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
 
                             <div className={`w-20 h-20 ${service.bg} ${service.color} rounded-2xl flex items-center justify-center mb-8 shadow-inner transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
