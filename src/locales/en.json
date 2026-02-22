@@ -121,7 +121,15 @@
             "name": "Name",
             "email": "Email",
             "message": "Message",
-            "send": "Send Message"
+            "send": "Send Message",
+            "namePlaceholder": "Your Name",
+            "emailPlaceholder": "your.email@example.com",
+            "messagePlaceholder": "How can we help you?",
+            "infoText": "We are here for you. Contact us directly via email, phone, or visit us during office hours.",
+            "officeLabel": "Office",
+            "officeLocation": "Main School Building, Room 101",
+            "phoneLabel": "Phone",
+            "emailLabel": "Email"
         }
     },
     "login": {
@@ -129,6 +137,7 @@
         "subtitle": "Access the internal area for parents and teachers.",
         "email": "Email Address",
         "password": "Password",
+        "emailPlaceholder": "name@example.com",
         "submit": "Sign In",
         "register": "No account? Register",
         "forgot": "Forgot password?",
@@ -197,7 +206,12 @@
                 "costs": "Funding Required (€)",
                 "files": "Attachments (Quotes, Plans)",
                 "submit": "Submit Proposal",
-                "success": "Your proposal has been successfully submitted!"
+                "success": "Your proposal has been successfully submitted!",
+                "titlePlaceholder": "e.g., IT Lab Upgrade",
+                "applicantPlaceholder": "Your Name / Class",
+                "descriptionPlaceholder": "Describe your project...",
+                "uploadText": "Drag and drop files here or click",
+                "successSEO": "Your project proposal has been successfully submitted."
             }
         },
         "overviewTable": {
@@ -257,5 +271,8 @@
         "text": "We only use technically necessary cookies to enable language settings and the login.",
         "accept": "Understood",
         "privacyLink": "Privacy Policy"
+    },
+    "common": {
+        "required": "Required field"
     }
 }

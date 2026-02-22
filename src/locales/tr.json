@@ -1,0 +1,277 @@
+{
+    "nav": {
+        "home": "Anasayfa",
+        "news": "Haberler",
+        "services": "Hizmetler",
+        "projects": "Projeler",
+        "about": "Hakkımızda",
+        "contact": "İletişim",
+        "login": "Giriş",
+        "logout": "Çıkış Yap",
+        "profile": "Profilim",
+        "serviceItems": {
+            "support": "Sosyal Destek",
+            "tutoring": "Özel Ders",
+            "courses": "Kurslar"
+        }
+    },
+    "footer": {
+        "links": "Hızlı Bağlantılar",
+        "legal": "Yasal",
+        "socials": "Bize Ulaşın",
+        "impressum": "Künye",
+        "privacy": "Gizlilik Politikası",
+        "terms": "Kullanım Şartları"
+    },
+    "news": {
+        "title": "Haberler & Etkinlikler",
+        "desc": "Veliler Birliği'nden en son gelişmeleri takip edin.",
+        "filters": {
+            "all": "Hepsi",
+            "news": "Haberler",
+            "event": "Etkinlikler",
+            "protocol": "Protokoller"
+        },
+        "items": {
+            "agm": {
+                "title": "Yıllık Genel Kurul 2025",
+                "desc": "Veliler Birliği'nin olağan genel kurul toplantısına davet."
+            },
+            "sga": {
+                "title": "SGA Toplantı Tutanakları",
+                "desc": "Son Okul Topluluğu Komitesi toplantı tutanakları çevrimiçi."
+            },
+            "funding": {
+                "title": "Yeni Finansman Fırsatları",
+                "desc": "Proje finansmanı başvuruları artık dijital olarak yapılabiliyor."
+            },
+            "parentsDay": {
+                "title": "Veli Günü",
+                "desc": "Gelecek Veli Günü ve randevu alımı hakkında bilgiler."
+            },
+            "festival": {
+                "title": "Okul Festivali 2026",
+                "desc": "Tüm öğrenciler ve veliler için yıllık yaz buluşması."
+            },
+            "jhv": {
+                "title": "JHV Protokolü 2025",
+                "desc": "Son Genel Kurul tutanakları. Önemli oylama sonuçları."
+            },
+            "mentalHealth": {
+                "title": "Ruh Sağlığı Günleri",
+                "desc": "Gelecek ay başlayacak yeni atölye dizisi."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Medya Sahibi & Yayıncı",
+        "contact": "İletişim",
+        "zvr": "ZVR Numarası",
+        "purpose": "Dernek Amacı",
+        "purposeDesc": "Okuldaki eğitim ve öğretim çalışmalarına ilişkin dernek ortaklarının çıkarlarının korunması ve ev ile okul arasındaki işbirliğinin teşvik edilmesi."
+    },
+    "privacy": {
+        "intro": "Kişisel verilerinizin korunmasını çok ciddiye alıyoruz. Aşağıda verilerinizin işlenmesi hakkında sizi bilgilendiriyoruz.",
+        "responsible": "1. Sorumlu Kişi",
+        "collection": "2. Veri Toplama ve İşleme",
+        "collectionDesc": "Üyelik kapsamında veya bizimle iletişime geçtiğinizde aldığımız kişisel verileri işliyoruz.",
+        "rights": "3. Haklarınız",
+        "rightsDesc": "Genel olarak bilgi edinme, düzeltme, silme, kısıtlama, veri taşınabilirliği, iptal ve itiraz haklarına sahipsiniz."
+    },
+    "home": {
+        "heroTitle": "Veliler, Öğretmenler ve Öğrencilerin Buluşma Noktası",
+        "heroDesc": "Elternverein (Veliler Birliği), aktif katılım, finansman ve açık iletişim yoluyla okul topluluğunu desteklemeye kendini adamıştır.",
+        "getInvolved": "Katılın",
+        "learnMore": "Daha Fazla Bilgi",
+        "latestNews": "Son Haberler",
+        "insightsUpdates": "Görüşler & Güncellemeler",
+        "viewAll": "Hepsini Görüntüle",
+        "tags": {
+            "event": "Etkinlik",
+            "protocol": "Protokol",
+            "news": "Haber"
+        }
+    },
+    "about": {
+        "title": "Elternverein Hakkında",
+        "desc": "Veliler Birliği, öğrencilerin ve okulun refahını artırmaya adanmış veliler ve vasilerin gönüllü bir kuruluşudur.",
+        "mission": "Misyonumuz",
+        "missionDesc": "Ev ve okul arasında yakın bir ilişki kurarak velilerin ve öğretmenlerin çocuklarının eğitiminde akıllıca işbirliği yapmalarını sağlamak.",
+        "whatWeDo": "Neler Yapıyoruz",
+        "points": [
+            "Etkinlikler ve bağış kampanyaları düzenlemek",
+            "Okul projelerini finansal olarak desteklemek",
+            "Okul komitelerinde veli çıkarlarını temsil etmek",
+            "Veliler ve okul arasındaki iletişimi kolaylaştırmak"
+        ]
+    },
+    "costs": {
+        "title": "Üyelik & Maliyetler",
+        "desc": "Katkılarınızın şeffaf yönetimi.",
+        "membership": "Üyelik Ücreti",
+        "allocation": "Fon Tahsisi",
+        "details": "Üyelik ücreti %100 öğrencilerin yararı için kullanılır.",
+        "membershipPerYear": "Yıl / Aile"
+    },
+    "contact": {
+        "title": "İletişim",
+        "subtitle": "Bize Yazın",
+        "desc": "Sorularınız mı var veya dahil mi olmak istiyorsunuz? Doğrudan bize ulaşın veya formu doldurun.",
+        "form": {
+            "name": "İsim",
+            "email": "E-posta",
+            "message": "Mesaj",
+            "send": "Mesaj Gönder",
+            "namePlaceholder": "İsminiz",
+            "emailPlaceholder": "e-posta@örnek.com",
+            "messagePlaceholder": "Size nasıl yardımcı olabiliriz?",
+            "infoText": "Sizin için buradayız. Bize e-posta, telefon yoluyla ulaşın veya çalışma saatlerinde bizi ziyaret edin.",
+            "officeLabel": "Ofis",
+            "officeLocation": "Okul Ana Binası, Oda 101",
+            "phoneLabel": "Telefon",
+            "emailLabel": "E-posta"
+        }
+    },
+    "login": {
+        "title": "Giriş Yap",
+        "subtitle": "Veliler ve öğretmenler için dahili alana erişim.",
+        "email": "E-posta Adresi",
+        "password": "Şifre",
+        "submit": "Giriş Yap",
+        "register": "Hesabınız yok mu? Kayıt olun",
+        "forgot": "Şifremi unuttum?",
+        "closeButton": "Kapat"
+    },
+    "services": {
+        "title": "Hizmetlerimiz",
+        "desc": "Öğrencileri ve aileleri mali yardım, ders programları ve eğitim kursları ile destekliyoruz.",
+        "support": "Sosyal Destek",
+        "supportDesc": "Okul etkinlikleri ve materyalleri için finansal yardım.",
+        "supportPoints": [
+            "Okul gezileri için hibeler",
+            "Materyal maliyetleri için destek",
+            "Gizli finansal yardım"
+        ],
+        "tutoring": "Özel Ders Listesi",
+        "tutoringDesc": "Nitelikli özel ders öğretmenleriyle bağlantı kurun.",
+        "tutoringPoints": [
+            "Akranlar arası ders ağı",
+            "Onaylı öğrenci eğitmenleri",
+            "Adil koşullar"
+        ],
+        "courses": "Kurslar",
+        "coursesDesc": "Ek eğitim fırsatları.",
+        "coursesPoints": [
+            "ECDL sertifikaları",
+            "Enjeksiyon kalıplama kursları",
+            "Sınav hazırlığı"
+        ],
+        "learnMore": "Daha Fazla Bilgi"
+    },
+    "projects": {
+        "title": "Projeler",
+        "currentTitle": "Mevcut Projeler",
+        "desc": "Desteklenen projelerin ve girişimlerin tarihçesi.",
+        "archive": "Proje Arşivi",
+        "viewArchive": "Arşivi Görüntüle",
+        "overview": "Projeye Genel Bakış",
+        "viewOverview": "Başvuru Durumu",
+        "backToCurrent": "Genel Bakışa Dön",
+        "archiveDesc": "Geçmiş okul yıllarının tarihçesi.",
+        "year": "Yıl",
+        "fundedProjects": "Desteklenen Projeler",
+        "items": {
+            "physics": {
+                "title": "Yeni Fizik Laboratuvar Ekipmanı",
+                "status": "Devam Ediyor"
+            },
+            "library": {
+                "title": "Kütüphane Modernizasyonu",
+                "status": "Onaylandı"
+            },
+            "garden": {
+                "title": "Okul Bahçesi Oturma Düzeni",
+                "status": "Tamamlandı"
+            }
+        },
+        "apply": {
+            "title": "Proje Önerisi Gönder",
+            "desc": "Finansman başvurunuzu dijital olarak göndermek için bu formu kullanın.",
+            "button": "Yeni Başvuru Başlat",
+            "form": {
+                "title": "Proje Başlığı",
+                "applicant": "Başvuran / Departman",
+                "description": "Detaylı Proje Açıklaması",
+                "costs": "Gerekli Finansman (€)",
+                "files": "Ekler (Teklifler, Planlar)",
+                "submit": "Öneriyi Gönder",
+                "success": "Öneriniz başarıyla gönderildi!",
+                "titlePlaceholder": "örneğin; IT Laboratuvar Güncellemesi",
+                "applicantPlaceholder": "Adınız / Sınıfınız",
+                "descriptionPlaceholder": "Projenizi açıklayın...",
+                "uploadText": "Dosyaları buraya sürükleyin veya tıklayın",
+                "successSEO": "Proje başvurunuz başarıyla gönderildi."
+            }
+        },
+        "overviewTable": {
+            "title": "Gönderilen Öneriler (2025/26)",
+            "headers": {
+                "project": "Proje",
+                "applicant": "Başvuran",
+                "department": "Departman",
+                "date": "Tarih",
+                "cost": "Maliyet",
+                "status": "Durum"
+            },
+            "filters": {
+                "label": "Filtreler:",
+                "search": "Projelerde ara...",
+                "allStatus": "Tüm Durumlar",
+                "allDepts": "Tüm Departmanlar"
+            },
+            "departments": {
+                "IT": "Bilişim Teknolojileri",
+                "ME": "Makine Mühendisliği",
+                "ET": "Elektrik Mühendisliği",
+                "GEN": "Genel",
+                "BAU": "İnşaat Mühendisliği",
+                "SP": "Spor",
+                "FIN": "Finans"
+            },
+            "status": {
+                "approved": "Onaylandı",
+                "pending": "Beklemede",
+                "rejected": "Reddedildi"
+            }
+        }
+    },
+    "board": {
+        "title": "Yönetim Kurulu",
+        "desc": "Veliler Birliği'nin arkasındaki özverili ekip.",
+        "roles": {
+            "chair": "Başkan",
+            "viceChair": "Başkan Vekili",
+            "treasurer": "Sayman",
+            "secretary": "Sekreter",
+            "member": "Seçilmiş Üye",
+            "auditor": "Denetçi"
+        }
+    },
+    "statutes": {
+        "title": "Tüzük",
+        "desc": "Derneğimizin yasal dayanağı.",
+        "download": "PDF İndir"
+    },
+    "terms": {
+        "title": "Kullanım Şartları",
+        "desc": "Kurallar ve düzenlemeler."
+    },
+    "cookieBanner": {
+        "text": "Dil ayarlarını ve girişi etkinleştirmek için yalnızca teknik olarak gerekli çerezleri kullanıyoruz.",
+        "accept": "Anladım",
+        "privacyLink": "Gizlilik Politikası"
+    },
+    "common": {
+        "required": "Zorunlu alan"
+    }
+}

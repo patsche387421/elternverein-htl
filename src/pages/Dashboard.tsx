@@ -1,4 +1,5 @@
 import { Bell, Calendar, Users, FileText } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Dashboard = () => {
     const stats = [
@@ -16,21 +17,25 @@ const Dashboard = () => {
 
     return (
         <div className="space-y-6">
+            <SEO
+                title="Dashboard"
+                description="Verwalten Sie Ihre Profil- und Vereinsaktivitäten."
+            />
             <div className="flex justify-between items-center px-4">
-                <h1 className="text-2xl font-bold text-gray-900">Dashboard Overview</h1>
-                <div className="text-sm text-gray-500">Welcome back, Patrick</div>
+                <h1 className="text-3xl font-black text-foreground tracking-tighter">Dashboard Overview</h1>
+                <div className="text-sm font-bold text-foreground/40 uppercase tracking-widest">Welcome back, Patrick</div>
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
                 {stats.map((stat) => (
-                    <div key={stat.name} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-center gap-4">
-                        <div className={`p-3 rounded-lg ${stat.bg} ${stat.color}`}>
-                            <stat.icon size={24} />
+                    <div key={stat.name} className="bg-card p-6 rounded-[2rem] border border-border shadow-xl flex items-center gap-4 group hover:scale-[1.02] transition-all">
+                        <div className={`p-4 rounded-2xl ${stat.bg} ${stat.color} group-hover:scale-110 transition-transform`}>
+                            <stat.icon size={28} />
                         </div>
                         <div>
-                            <p className="text-sm text-gray-500 font-medium">{stat.name}</p>
-                            <h3 className="text-2xl font-bold text-gray-900">{stat.value}</h3>
+                            <p className="text-xs font-black text-foreground/40 uppercase tracking-widest mb-1">{stat.name}</p>
+                            <h3 className="text-2xl font-black text-foreground">{stat.value}</h3>
                         </div>
                     </div>
                 ))}
@@ -38,19 +43,19 @@ const Dashboard = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4">
                 {/* Recent Activity */}
-                <div className="lg:col-span-2 bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-                    <div className="p-6 border-b flex justify-between items-center">
-                        <h2 className="text-lg font-bold text-gray-900">Recent Activity</h2>
-                        <button className="text-sm text-primary hover:underline">View All</button>
+                <div className="lg:col-span-2 bg-card rounded-[2.5rem] border border-border shadow-2xl overflow-hidden self-start">
+                    <div className="p-8 border-b border-border flex justify-between items-center bg-muted/30">
+                        <h2 className="text-xl font-black text-foreground tracking-tight">Recent Activity</h2>
+                        <button className="text-sm font-black text-primary uppercase tracking-widest hover:opacity-80 transition-opacity">View All</button>
                     </div>
-                    <div className="divide-y">
+                    <div className="divide-y divide-border/50">
                         {recentActivity.map((activity, i) => (
-                            <div key={i} className="p-4 hover:bg-gray-50 transition-colors flex justify-between items-center">
+                            <div key={i} className="p-6 hover:bg-primary/5 transition-colors flex justify-between items-center group">
                                 <div>
-                                    <p className="font-medium text-gray-900">{activity.title}</p>
-                                    <p className="text-sm text-gray-500">by {activity.user}</p>
+                                    <p className="font-extrabold text-foreground group-hover:text-primary transition-colors">{activity.title}</p>
+                                    <p className="text-xs font-bold text-foreground/40 uppercase tracking-widest mt-1">by {activity.user}</p>
                                 </div>
-                                <div className="text-xs text-gray-400 font-mono">
+                                <div className="text-[10px] text-foreground/20 font-mono font-black uppercase tracking-tighter bg-surface px-2 py-1 rounded-md border border-border">
                                     {activity.date}
                                 </div>
                             </div>
@@ -59,16 +64,16 @@ const Dashboard = () => {
                 </div>
 
                 {/* Quick Actions / Announcements */}
-                <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6 space-y-4">
-                    <h2 className="text-lg font-bold text-gray-900">Quick Actions</h2>
-                    <div className="grid grid-cols-1 gap-3">
-                        <button className="w-full text-left px-4 py-3 rounded-lg bg-primary/10 text-primary font-medium hover:bg-primary/20 transition">
+                <div className="bg-card rounded-[2.5rem] border border-border shadow-2xl p-8 space-y-6 self-start">
+                    <h2 className="text-xl font-black text-foreground tracking-tight">Quick Actions</h2>
+                    <div className="grid grid-cols-1 gap-4">
+                        <button className="w-full text-left p-5 rounded-2xl bg-primary/10 text-primary font-black uppercase tracking-widest text-xs border border-primary/20 hover:bg-primary/20 transition-all transform hover:-translate-y-1">
                             Post Announcement
                         </button>
-                        <button className="w-full text-left px-4 py-3 rounded-lg bg-success/10 text-success font-medium hover:bg-success/20 transition">
+                        <button className="w-full text-left p-5 rounded-2xl bg-success/10 text-success font-black uppercase tracking-widest text-xs border border-success/20 hover:bg-success/20 transition-all transform hover:-translate-y-1">
                             Create Event
                         </button>
-                        <button className="w-full text-left px-4 py-3 rounded-lg bg-accent/10 text-accent font-medium hover:bg-accent/20 transition">
+                        <button className="w-full text-left p-5 rounded-2xl bg-accent/10 text-accent font-black uppercase tracking-widest text-xs border border-accent/20 hover:bg-accent/20 transition-all transform hover:-translate-y-1">
                             Upload Document
                         </button>
                     </div>

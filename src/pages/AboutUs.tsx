@@ -41,7 +41,7 @@ const AboutUs = () => {
                         <ul className="space-y-4">
                             {points.map((point, i) => (
                                 <li key={i} className="flex items-start gap-3 group">
-                                    <CheckCircle size={22} className="text-green-500 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                                    <CheckCircle size={22} className="text-success mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
                                     <span className="text-foreground/80 font-medium leading-relaxed">{point}</span>
                                 </li>
                             ))}

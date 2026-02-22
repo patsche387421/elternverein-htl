@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight, Plus } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const CalendarPage = () => {
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -15,46 +16,50 @@ const CalendarPage = () => {
 
     return (
         <div className="space-y-6">
+            <SEO
+                title="Veranstaltungskalender"
+                description="Alle Termine und Veranstaltungen des Elternvereins auf einen Blick."
+            />
             <div className="flex justify-between items-center px-4">
                 <div>
-                    <h1 className="text-2xl font-bold text-gray-900">Shared Calendar</h1>
-                    <p className="text-sm text-gray-500">View and manage all school related events.</p>
+                    <h1 className="text-3xl font-black text-foreground tracking-tighter">Shared Calendar</h1>
+                    <p className="text-sm font-extrabold text-foreground/40 uppercase tracking-widest mt-1">View and manage all events</p>
                 </div>
-                <button className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition flex items-center gap-2">
-                    <Plus size={18} />
+                <button className="bg-primary text-primary-foreground px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-1 flex items-center gap-2">
+                    <Plus size={20} strokeWidth={3} />
                     Add Event
                 </button>
             </div>
 
-            <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+            <div className="bg-card rounded-[2rem] border border-border shadow-2xl overflow-hidden self-start">
                 {/* Calendar Header */}
-                <div className="p-4 border-b flex justify-between items-center bg-gray-50">
-                    <h2 className="text-lg font-bold text-gray-800">{month} {year}</h2>
-                    <div className="flex gap-2">
-                        <button className="p-2 hover:bg-white rounded-md border transition">
-                            <ChevronLeft size={20} />
+                <div className="p-6 border-b border-border flex justify-between items-center bg-muted/30">
+                    <h2 className="text-xl font-black text-foreground tracking-tight">{month} {year}</h2>
+                    <div className="flex gap-3">
+                        <button className="p-3 bg-surface hover:bg-primary/10 hover:text-primary rounded-xl border border-border transition-all">
+                            <ChevronLeft size={20} strokeWidth={2.5} />
                         </button>
-                        <button className="p-2 hover:bg-white rounded-md border transition">
-                            <ChevronRight size={20} />
+                        <button className="p-3 bg-surface hover:bg-primary/10 hover:text-primary rounded-xl border border-border transition-all">
+                            <ChevronRight size={20} strokeWidth={2.5} />
                         </button>
                     </div>
                 </div>
 
-                {/* Calendar Grid */}
-                <div className="grid grid-cols-7 border-b">
+                {/* Calendar Grid Days */}
+                <div className="grid grid-cols-7 border-b border-border bg-muted/10">
                     {days.map(day => (
-                        <div key={day} className="py-2 text-center text-xs font-bold text-gray-400 uppercase tracking-wider border-r last:border-0">
+                        <div key={day} className="py-4 text-center text-[10px] font-black text-foreground/30 uppercase tracking-[0.2em] border-r border-border last:border-0">
                             {day}
                         </div>
                     ))}
                 </div>
-                <div className="grid grid-cols-7 border-collapse">
+                <div className="grid grid-cols-7">
                     {calendarDays.map((date, i) => (
                         <div
                             key={i}
-                            className={`min-h-[100px] p-2 border-r border-b last:border-r-0 hover:bg-gray-50 transition-colors relative ${!date.isCurrentMonth ? 'bg-gray-50 text-gray-300' : 'text-gray-700'}`}
+                            className={`min-h-[140px] p-4 border-r border-b border-border last:border-r-0 hover:bg-primary/5 transition-colors relative group ${!date.isCurrentMonth ? 'bg-muted/10 text-foreground/20' : 'text-foreground/80'}`}
                         >
-                            <span className="text-sm font-medium">{date.day}</span>
+                            <span className="text-sm font-black tracking-tighter">{date.day}</span>
                             <div className="mt-1 space-y-1">
                                 {date.events.map((event, idx) => (
                                     <div key={idx} className="text-[10px] py-1 px-1.5 bg-primary/10 text-primary rounded border border-primary/20 truncate">

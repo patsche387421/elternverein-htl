@@ -93,7 +93,9 @@ const News = () => {
 
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {filteredNews.map((item) => (
-                        <article key={item.id} className="bg-card dark:bg-slate-900 rounded-[2.5rem] p-8 shadow-sm border border-border hover:shadow-2xl hover:border-primary/30 transition-all group flex flex-col">
+                        <article key={item.id} className="bg-card rounded-[2.5rem] p-10 shadow-sm border border-border hover:shadow-2xl hover:border-primary/30 transition-all group flex flex-col relative overflow-hidden">
+                            {/* Subtle background glow on hover */}
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100%] transition-all group-hover:bg-primary/10" />
                             <div className="flex justify-between items-center mb-6">
                                 <span className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest ${getTypeColor(item.type)}`}>
                                     {t(`home.tags.${item.type}`)}

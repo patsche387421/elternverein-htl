@@ -27,7 +27,7 @@ const Contact = () => {
                         <div>
                             <h2 className="text-3xl font-bold mb-4 text-foreground tracking-tight">{t('contact.subtitle')}</h2>
                             <p className="text-lg text-foreground/60 leading-relaxed font-medium">
-                                Wir sind für Sie da. Kontaktieren Sie uns direkt per E-Mail, Telefon oder besuchen Sie uns während der Sprechzeiten.
+                                {t('contact.form.infoText')}
                             </p>
                         </div>
 
@@ -37,7 +37,7 @@ const Contact = () => {
                                     <Mail size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">Email</p>
+                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">{t('contact.form.emailLabel')}</p>
                                     <p className="text-lg font-bold text-foreground">info@elternverein.today</p>
                                 </div>
                             </article>
@@ -47,7 +47,7 @@ const Contact = () => {
                                     <Phone size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">Telefon</p>
+                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">{t('contact.form.phoneLabel')}</p>
                                     <p className="text-lg font-bold text-foreground">+43 1 234 5678</p>
                                 </div>
                             </article>
@@ -57,8 +57,8 @@ const Contact = () => {
                                     <MapPin size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">Büro</p>
-                                    <p className="text-lg font-bold text-foreground">Schul-Hauptgebäude, Zimmer 101</p>
+                                    <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">{t('contact.form.officeLabel')}</p>
+                                    <p className="text-lg font-bold text-foreground">{t('contact.form.officeLocation')}</p>
                                 </div>
                             </article>
                         </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                                     id="name"
                                     type="text"
                                     className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium"
-                                    placeholder="Ihr Name"
+                                    placeholder={t('contact.form.namePlaceholder')}
                                     required
                                 />
                             </div>
@@ -89,7 +89,7 @@ const Contact = () => {
                                     id="email"
                                     type="email"
                                     className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium"
-                                    placeholder="ihre.mail@beispiel.com"
+                                    placeholder={t('contact.form.emailPlaceholder')}
                                     required
                                 />
                             </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                                     id="message"
                                     rows={5}
                                     className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium resize-none"
-                                    placeholder="Wie können wir Ihnen helfen?"
+                                    placeholder={t('contact.form.messagePlaceholder')}
                                     required
                                 ></textarea>
                             </div>

@@ -19,7 +19,7 @@ const ProjectApplication = () => {
             <main className="flex-grow flex items-center justify-center py-24">
                 <SEO
                     title={`${t('projects.apply.title')} - ${t('projects.apply.form.success')}`}
-                    description="Ihr Projektantrag wurde erfolgreich eingereicht."
+                    description={t('projects.apply.form.successSEO')}
                 />
                 <div className="container mx-auto px-4 text-center space-y-10 animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <div className="w-24 h-24 bg-success/10 text-success rounded-[2rem] flex items-center justify-center mx-auto mb-8 shadow-inner transform rotate-12">
@@ -80,7 +80,7 @@ const ProjectApplication = () => {
                                     type="text"
                                     required
                                     className="w-full px-6 py-4 rounded-2xl bg-background border border-border focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium text-foreground"
-                                    placeholder="z.B. IT-Labor Upgrade"
+                                    placeholder={t('projects.apply.form.titlePlaceholder')}
                                 />
                             </div>
 
@@ -94,7 +94,7 @@ const ProjectApplication = () => {
                                     type="text"
                                     required
                                     className="w-full px-6 py-4 rounded-2xl bg-background border border-border focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium text-foreground"
-                                    placeholder="Ihr Name / Klasse"
+                                    placeholder={t('projects.apply.form.applicantPlaceholder')}
                                 />
                             </div>
                         </div>
@@ -128,7 +128,7 @@ const ProjectApplication = () => {
                                 required
                                 rows={6}
                                 className="w-full px-6 py-4 rounded-2xl bg-background border border-border focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium text-foreground resize-none min-h-[160px]"
-                                placeholder="Beschreiben Sie Ihr Projekt..."
+                                placeholder={t('projects.apply.form.descriptionPlaceholder')}
                             />
                         </div>
 
@@ -147,7 +147,7 @@ const ProjectApplication = () => {
                                     <div className="p-4 bg-surface rounded-2xl shadow-sm transform group-hover:scale-110 transition-transform">
                                         <Upload size={32} strokeWidth={2.5} />
                                     </div>
-                                    <span className="text-sm font-bold uppercase tracking-widest">Dateien hierher ziehen oder klicken</span>
+                                    <span className="text-sm font-bold uppercase tracking-widest">{t('projects.apply.form.uploadText')}</span>
                                 </div>
                             </div>
                         </div>

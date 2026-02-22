@@ -78,85 +78,96 @@ const Home = () => {
             />
 
             {/* ── Hero Section ── */}
-            <header className="relative w-full overflow-hidden rounded-b-[3rem] shadow-2xl bg-white dark:bg-slate-950
-                                h-[75vh] md:h-screen">
+            <header className="relative w-full overflow-hidden rounded-b-[4rem] shadow-2xl bg-white dark:bg-slate-950
+                                h-svh flex flex-col items-center justify-center">
 
                 {/* BACKGROUND LAYER: Image */}
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/hero-bg.jpg"
                         alt="HTL Mödling Hauptgebäude"
-                        className="w-full h-full object-cover object-center opacity-70 dark:opacity-40"
+                        className="w-full h-full object-cover object-center opacity-90 dark:opacity-40 filter contrast-[1.15] brightness-[1.05] transition-opacity duration-1000"
                         loading="lazy"
                     />
 
-                    {/* Strong Glass-Effect Overlay */}
-                    <div className="absolute inset-0 bg-white/70 dark:bg-slate-950/80 backdrop-blur-[4px]" />
+                    {/* Dynamic Glass-Effect Overlay - Lighter in Light Mode */}
+                    <div className="absolute inset-0 bg-white/30 dark:bg-slate-950/80 backdrop-blur-[2px] transition-all duration-700" />
 
                     {/* Gradient Fade for Bottom Transition */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+                    <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-background via-background/60 to-transparent" />
                 </div>
 
                 {/* CONTENT LAYER */}
-                <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-                    <div className="max-w-4xl space-y-10 animate-fade-up">
-                        <h1 className="text-5xl md:text-9xl font-extrabold tracking-tighter leading-tight md:leading-[0.85]">
-                            <span className="text-primary block mb-4">
-                                Elternverein
+                <div className="relative z-10 w-full px-6 text-center">
+                    <div className="max-w-6xl mx-auto space-y-12 animate-fade-up">
+                        <div className="space-y-4">
+                            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/15 text-primary text-xs font-black uppercase tracking-[0.3em] mb-4 border border-primary/20">
+                                Willkommen bei uns
                             </span>
-                            <span className="block text-foreground text-3xl md:text-6xl font-bold opacity-80">
-                                HTL Mödling
-                            </span>
-                        </h1>
+                            <h1 className="text-6xl md:text-[12rem] font-black tracking-tighter leading-[0.8] text-foreground drop-shadow-sm">
+                                <span className="text-primary block">
+                                    Elternverein
+                                </span>
+                                <span className="block opacity-90 transform -translate-y-2 md:-translate-y-4">
+                                    HTL Mödling
+                                </span>
+                            </h1>
+                        </div>
 
-                        <p className="text-lg md:text-2xl text-foreground/70 font-medium max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-xl md:text-3xl text-foreground font-semibold max-w-2xl mx-auto leading-tight opacity-80">
                             {t('home.heroDesc')}
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-5 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
                             <Link to="/contact"
                                 className="inline-flex items-center justify-center px-10 py-5 bg-primary text-primary-foreground
-                                           rounded-full font-bold text-lg hover:scale-105 transition-all shadow-2xl shadow-primary/30">
+                                           rounded-2xl font-black uppercase tracking-widest text-lg hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-primary/40">
                                 {t('home.getInvolved')}
                             </Link>
                             <Link to="/about"
-                                className="inline-flex items-center justify-center px-10 py-5 rounded-full font-bold text-lg
-                                           bg-surface text-foreground border border-border
-                                           hover:bg-surface/80 transition-all shadow-xl">
+                                className="inline-flex items-center justify-center px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-lg
+                                           bg-surface/50 backdrop-blur-md text-foreground border border-border
+                                           hover:bg-surface transition-all shadow-xl">
                                 {t('home.learnMore')}
                             </Link>
                         </div>
                     </div>
                 </div>
+
+                {/* Scroll Indicator */}
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce opacity-40">
+                    <div className="w-1.5 h-16 rounded-full bg-gradient-to-b from-primary via-primary/50 to-transparent" />
+                </div>
             </header>
 
             {/* ── Bento Grid Section ── */}
-            <section className="container mx-auto px-4 mt-20">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">{t('nav.services')}</h2>
-                    <p className="text-foreground/60 text-lg max-w-2xl mx-auto font-medium">Innovation trifft Gemeinschaft – Entdecken Sie unsere Vorteile.</p>
+            <section className="container mx-auto px-4 mt-32 relative z-10">
+                <div className="text-center mb-20">
+                    <span className="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">Unsere Services</span>
+                    <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-4">{t('nav.services')}</h2>
+                    <p className="text-foreground/60 text-xl max-w-2xl mx-auto font-medium">Innovation trifft Gemeinschaft – Entdecken Sie unsere Vorteile.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto">
                     {benefits.map((benefit, i) => (
                         <Link
                             key={i}
                             to={benefit.link}
-                            className={`group relative overflow-hidden rounded-[2rem] border p-8 transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${benefit.className}`}
+                            className={`group relative overflow-hidden rounded-[2.5rem] border p-10 transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${benefit.className}`}
                         >
-                            <div className="absolute top-0 right-0 p-6 text-primary/10 group-hover:text-primary/20 transition-colors">
-                                <benefit.icon size={120} strokeWidth={1} />
+                            <div className="absolute top-0 right-0 p-8 text-primary/5 group-hover:text-primary/10 transition-colors">
+                                <benefit.icon size={160} strokeWidth={1} />
                             </div>
                             <div className="relative z-10 h-full flex flex-col">
-                                <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-primary/10 text-primary group-hover:scale-110 transition-transform">
-                                    <benefit.icon size={24} />
+                                <div className="mb-8 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 text-primary group-hover:scale-110 transition-transform border border-primary/20">
+                                    <benefit.icon size={28} />
                                 </div>
-                                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{benefit.title}</h3>
-                                <p className="text-foreground/70 font-medium leading-relaxed max-w-sm">
+                                <h3 className="text-3xl font-black mb-4 group-hover:text-primary transition-colors tracking-tight">{benefit.title}</h3>
+                                <p className="text-foreground/70 font-semibold leading-relaxed max-w-sm text-lg">
                                     {benefit.desc}
                                 </p>
-                                <div className="mt-auto pt-8 flex items-center gap-2 text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity">
-                                    Mehr erfahren <ArrowRight size={18} />
+                                <div className="mt-auto pt-10 flex items-center gap-3 text-primary font-black uppercase tracking-widest text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                                    {t('home.learnMore')} <ArrowRight size={20} />
                                 </div>
                             </div>
                         </Link>

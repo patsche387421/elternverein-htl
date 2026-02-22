@@ -121,7 +121,15 @@
             "name": "Name",
             "email": "E-Mail",
             "message": "Nachricht",
-            "send": "Nachricht senden"
+            "send": "Nachricht senden",
+            "namePlaceholder": "Ihr Name",
+            "emailPlaceholder": "ihre.mail@beispiel.com",
+            "messagePlaceholder": "Wie können wir Ihnen helfen?",
+            "infoText": "Wir sind für Sie da. Kontaktieren Sie uns direkt per E-Mail, Telefon oder besuchen Sie uns während der Sprechzeiten.",
+            "officeLabel": "Büro",
+            "officeLocation": "Schul-Hauptgebäude, Zimmer 101",
+            "phoneLabel": "Telefon",
+            "emailLabel": "E-Mail"
         }
     },
     "login": {
@@ -129,6 +137,7 @@
         "subtitle": "Zugang zum internen Bereich für Eltern und Lehrer.",
         "email": "E-Mail Adresse",
         "password": "Passwort",
+        "emailPlaceholder": "name@beispiel.com",
         "submit": "Anmelden",
         "register": "Noch kein Konto? Registrieren",
         "forgot": "Passwort vergessen?",
@@ -197,7 +206,12 @@
                 "costs": "Finanzierungsbedarf (€)",
                 "files": "Dateianhänge (Angebote, Pläne)",
                 "submit": "Diesen Antrag einreichen",
-                "success": "Ihr Antrag wurde erfolgreich übermittelt!"
+                "success": "Ihr Antrag wurde erfolgreich übermittelt!",
+                "titlePlaceholder": "z.B. IT-Labor Upgrade",
+                "applicantPlaceholder": "Ihr Name / Klasse",
+                "descriptionPlaceholder": "Beschreiben Sie Ihr Projekt...",
+                "uploadText": "Dateien hierher ziehen oder klicken",
+                "successSEO": "Ihr Projektantrag wurde erfolgreich eingereicht."
             }
         },
         "overviewTable": {
@@ -257,5 +271,8 @@
         "text": "Wir nutzen nur technisch notwendige Cookies, um die Spracheinstellung und den Login zu ermöglichen.",
         "accept": "Verstanden",
         "privacyLink": "Datenschutzerklärung"
+    },
+    "common": {
+        "required": "Pflichtfeld"
     }
 }

@@ -71,41 +71,66 @@ const ProjectOverview = () => {
                     </h1>
                 </header>
 
-                {/* Search/Filter Bar */}
-                <section className="bg-card p-6 rounded-3xl border border-border shadow-xl flex flex-wrap items-center gap-6" aria-label="Filters">
-                    <div className="relative flex-1 min-w-[280px]">
-                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground/30" size={20} />
+                {/* Search Bar */}
+                <section className="max-w-6xl mx-auto space-y-6">
+                    <div className="relative">
+                        <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-foreground/30" size={24} />
                         <input
                             type="text"
                             placeholder={t('projects.overviewTable.filters.search')}
-                            className="w-full pl-12 pr-4 py-4 bg-background rounded-2xl border border-border focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all font-medium text-foreground outline-none"
+                            className="w-full pl-16 pr-6 py-6 bg-card rounded-[2rem] border border-border shadow-2xl focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all font-semibold text-xl text-foreground outline-none"
                         />
                     </div>
 
-                    <div className="flex items-center gap-4">
-                        <select
-                            value={selectedDepartment}
-                            onChange={(e) => setSelectedDepartment(e.target.value)}
-                            className="px-6 py-4 bg-background rounded-2xl border border-border focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all text-sm font-bold text-foreground/80 outline-none appearance-none cursor-pointer"
-                        >
-                            <option value="all">{t('projects.overviewTable.filters.allDepts')}</option>
-                            <option value="IT">{t('projects.overviewTable.departments.IT')}</option>
-                            <option value="SP">{t('projects.overviewTable.departments.SP')}</option>
-                            <option value="FIN">{t('projects.overviewTable.departments.FIN')}</option>
-                            <option value="ET">{t('projects.overviewTable.departments.ET')}</option>
-                            <option value="GEN">{t('projects.overviewTable.departments.GEN')}</option>
-                        </select>
+                    {/* Filter Tags - Scrollable on Mobile */}
+                    <div className="space-y-4">
+                        <div className="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 flex-nowrap">
+                            <button
+                                onClick={() => setSelectedStatus('all')}
+                                className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedStatus === 'all'
+                                        ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20'
+                                        : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
+                                    }`}
+                            >
+                                {t('projects.overviewTable.filters.allStatus')}
+                            </button>
+                            {['pending', 'approved', 'rejected'].map(status => (
+                                <button
+                                    key={status}
+                                    onClick={() => setSelectedStatus(status)}
+                                    className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedStatus === status
+                                            ? 'bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20'
+                                            : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
+                                        }`}
+                                >
+                                    {t(`projects.overviewTable.status.${status}`)}
+                                </button>
+                            ))}
+                        </div>
 
-                        <select
-                            value={selectedStatus}
-                            onChange={(e) => setSelectedStatus(e.target.value)}
-                            className="px-6 py-4 bg-background rounded-2xl border border-border focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all text-sm font-bold text-foreground/80 outline-none appearance-none cursor-pointer"
-                        >
-                            <option value="all">{t('projects.overviewTable.filters.allStatus')}</option>
-                            <option value="approved">{t('projects.overviewTable.status.approved')}</option>
-                            <option value="pending">{t('projects.overviewTable.status.pending')}</option>
-                            <option value="rejected">{t('projects.overviewTable.status.rejected')}</option>
-                        </select>
+                        <div className="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 flex-nowrap">
+                            <button
+                                onClick={() => setSelectedDepartment('all')}
+                                className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedDepartment === 'all'
+                                        ? 'bg-primary/20 text-primary border-primary/30'
+                                        : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
+                                    }`}
+                            >
+                                {t('projects.overviewTable.filters.allDepts')}
+                            </button>
+                            {['IT', 'ME', 'ET', 'BAU', 'SP', 'GEN'].map(dept => (
+                                <button
+                                    key={dept}
+                                    onClick={() => setSelectedDepartment(dept)}
+                                    className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedDepartment === dept
+                                            ? 'bg-primary/20 text-primary border-primary/30'
+                                            : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
+                                        }`}
+                                >
+                                    {t(`projects.overviewTable.departments.${dept}`)}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </section>
 
