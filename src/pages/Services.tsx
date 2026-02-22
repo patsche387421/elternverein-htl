@@ -11,8 +11,8 @@ const Services = () => {
             icon: Heart,
             title: t('services.support'),
             desc: t('services.supportDesc'),
-            color: 'text-destructive',
-            bg: 'bg-destructive/10',
+            color: 'text-primary',
+            bg: 'bg-primary/10',
             features: t('services.supportPoints', { returnObjects: true }) as string[]
         },
         {
@@ -29,8 +29,8 @@ const Services = () => {
             icon: GraduationCap,
             title: t('services.courses'),
             desc: t('services.coursesDesc'),
-            color: 'text-secondary',
-            bg: 'bg-secondary/10',
+            color: 'text-primary',
+            bg: 'bg-primary/10',
             features: t('services.coursesPoints', { returnObjects: true }) as string[]
         }
     ];
@@ -78,7 +78,8 @@ const Services = () => {
                                 ))}
                             </ul>
 
-                            <button className="w-full py-5 rounded-2xl border-2 border-border font-black uppercase tracking-widest hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all duration-300 text-foreground/40 group-hover:text-foreground/80 transform active:scale-95">
+                            <button className="w-full py-5 rounded-2xl border-2 border-border font-black uppercase tracking-widest hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all duration-300 text-foreground/40 group-hover:text-foreground/80 transform active:scale-95
+                                focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none">
                                 {t('services.learnMore')}
                             </button>
                         </article>

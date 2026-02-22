@@ -40,12 +40,18 @@ const computeThemeVars = (hex: string, radiusRem: number): Record<string, string
     const rgb = hexToRgb(hex);
     const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
     const luma = (0.299 * rgb.r + 0.587 * rgb.g + 0.114 * rgb.b) / 255;
+    const fgValue = luma > 0.55 ? '0 0% 0%' : '0 0% 100%';
 
     return {
         '--primary': `${hsl.h} ${hsl.s}% ${hsl.l}%`,
-        '--primary-foreground': luma > 0.55 ? '0 0% 0%' : '0 0% 100%',
+        '--primary-foreground': fgValue,
         '--primary-light': `${hsl.h} ${hsl.s}% ${Math.min(96, hsl.l + 45)}%`,
         '--primary-dark': `${hsl.h} ${hsl.s}% ${Math.max(20, hsl.l - 10)}%`,
+        // Harmonische Ableitungen
+        '--secondary': `${hsl.h} ${Math.round(hsl.s * 0.6)}% ${hsl.l}%`,
+        '--secondary-foreground': fgValue,
+        '--accent': `${(hsl.h + 30) % 360} ${hsl.s}% ${hsl.l}%`,
+        '--accent-foreground': fgValue,
         '--radius': `${radiusRem}rem`,
     };
 };

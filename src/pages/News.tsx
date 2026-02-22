@@ -47,8 +47,8 @@ const News = () => {
     const getTypeColor = (type: string) => {
         switch (type) {
             case 'event': return 'bg-primary text-primary-foreground';
-            case 'protocol': return 'bg-secondary text-secondary-foreground';
-            default: return 'bg-accent text-accent-foreground';
+            case 'protocol': return 'bg-primary/70 text-primary-foreground';
+            default: return 'bg-primary/40 text-primary-foreground';
         }
     };
 
@@ -81,9 +81,11 @@ const News = () => {
                         <button
                             key={cat}
                             onClick={() => setSelectedCategory(cat)}
-                            className={`px-8 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 ${selectedCategory === cat
-                                ? 'bg-primary text-white shadow-xl shadow-primary/25 -translate-y-1'
-                                : 'bg-surface border border-border text-foreground/60 hover:border-primary/40 hover:text-primary'
+                            className={`px-8 py-3 rounded-xl font-bold transition-all duration-300 transform hover:scale-105
+                                focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none
+                                ${selectedCategory === cat
+                                    ? 'bg-primary text-primary-foreground shadow-xl shadow-primary/25 -translate-y-1'
+                                    : 'bg-surface border border-border text-foreground/60 hover:border-primary/40 hover:text-primary'
                                 }`}
                         >
                             {t(`news.filters.${cat}`)}
@@ -97,7 +99,7 @@ const News = () => {
                             {/* Subtle background glow on hover */}
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100%] transition-all group-hover:bg-primary/10" />
                             <div className="flex justify-between items-center mb-6">
-                                <span className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest ${getTypeColor(item.type)}`}>
+                                <span className={`px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-widest ${getTypeColor(item.type)}`}>
                                     {t(`home.tags.${item.type}`)}
                                 </span>
                                 <div className="flex items-center gap-2 text-sm text-foreground/30 font-bold uppercase tracking-wider">

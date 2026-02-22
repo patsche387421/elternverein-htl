@@ -11,28 +11,28 @@ const Home = () => {
             title: t('about.mission'),
             desc: t('about.missionDesc'),
             icon: Users,
-            className: "md:col-span-8 md:row-span-2 bg-primary/5 border-primary/20",
+            className: "md:col-span-8 md:row-span-2 bg-primary/5 border-primary/20 h-full",
             link: "/about"
         },
         {
             title: t('services.support'),
             desc: t('services.desc'),
             icon: Heart,
-            className: "md:col-span-4 bg-secondary/5 border-secondary/20",
+            className: "md:col-span-4 bg-primary/5 border-primary/20 h-full",
             link: "/services"
         },
         {
             title: t('projects.title'),
             desc: t('projects.desc'),
             icon: Activity,
-            className: "md:col-span-4 bg-accent/5 border-accent/20",
+            className: "md:col-span-4 bg-primary/5 border-primary/20 h-full",
             link: "/projects"
         },
         {
             title: t('costs.membership'),
             desc: t('costs.details'),
             icon: CheckCircle2,
-            className: "md:col-span-12 bg-background border-border",
+            className: "md:col-span-12 bg-primary/5 border-primary/20 h-full",
             link: "/contact"
         }
     ];
@@ -43,29 +43,29 @@ const Home = () => {
             title: t('news.items.festival.title'),
             date: "15.10.2026",
             desc: t('news.items.festival.desc'),
-            image: "bg-primary/5"
+            image: "bg-primary/10"
         },
         {
             type: 'protocol',
             title: t('news.items.jhv.title'),
             date: "22.09.2025",
             desc: t('news.items.jhv.desc'),
-            image: "bg-secondary/5"
+            image: "bg-primary/7"
         },
         {
             type: 'news',
             title: t('news.items.mentalHealth.title'),
             date: "10.03.2025",
             desc: t('news.items.mentalHealth.desc'),
-            image: "bg-accent/5"
+            image: "bg-primary/5"
         }
     ];
 
     const getTypeColor = (type: string) => {
         switch (type) {
             case 'event': return 'bg-primary text-primary-foreground';
-            case 'protocol': return 'bg-secondary text-secondary-foreground';
-            default: return 'bg-accent text-accent-foreground';
+            case 'protocol': return 'bg-primary/70 text-primary-foreground';
+            default: return 'bg-primary/40 text-primary-foreground';
         }
     };
 
@@ -82,7 +82,7 @@ const Home = () => {
                                 min-h-svh flex flex-col items-center justify-center">
 
                 {/* BACKGROUND LAYER: Image */}
-                <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 z-0 bg-primary/5">
                     <img
                         src="/hero-bg.jpg"
                         alt="HTL Mödling Hauptgebäude"
@@ -121,13 +121,15 @@ const Home = () => {
                         <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
                             <Link to="/contact"
                                 className="inline-flex items-center justify-center px-6 py-3 sm:px-10 sm:py-5 bg-primary text-primary-foreground
-                                           rounded-2xl font-black uppercase tracking-widest text-base sm:text-lg hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-primary/40">
+                                           rounded-2xl font-black uppercase tracking-widest text-base sm:text-lg hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-primary/40
+                                           focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none">
                                 {t('home.getInvolved')}
                             </Link>
                             <Link to="/about"
                                 className="inline-flex items-center justify-center px-6 py-3 sm:px-10 sm:py-5 rounded-2xl font-black uppercase tracking-widest text-base sm:text-lg
                                            bg-surface/50 backdrop-blur-md text-foreground border border-border
-                                           hover:bg-surface transition-all shadow-xl">
+                                           hover:bg-surface transition-all shadow-xl
+                                           focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none">
                                 {t('home.learnMore')}
                             </Link>
                         </div>
@@ -148,7 +150,7 @@ const Home = () => {
                     <p className="text-foreground/60 text-lg md:text-xl max-w-2xl mx-auto font-medium text-balance">{t('home.servicesSub', 'Innovation trifft Gemeinschaft – Entdecken Sie unsere Vorteile.')}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-12 auto-rows-fr gap-8 max-w-7xl mx-auto">
                     {benefits.map((benefit, i) => (
                         <Link
                             key={i}
@@ -193,7 +195,7 @@ const Home = () => {
                             <div className={`rounded-3xl aspect-[4/3] mb-6 overflow-hidden relative shadow-inner ${item.image}`}>
                                 <div className="absolute inset-0 bg-black/5 group-hover:opacity-0 transition-opacity" />
                                 <div className="absolute top-5 left-5 z-10">
-                                    <span className={`inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider ${getTypeColor(item.type)}`}>
+                                    <span className={`inline-flex items-center px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-wider ${getTypeColor(item.type)}`}>
                                         {t(`home.tags.${item.type}`)}
                                     </span>
                                 </div>
