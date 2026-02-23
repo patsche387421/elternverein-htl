@@ -8,6 +8,7 @@ const ProjectOverview = () => {
     const { t } = useTranslation();
     const [selectedDepartment, setSelectedDepartment] = useState('all');
     const [selectedStatus, setSelectedStatus] = useState('all');
+    const [searchQuery, setSearchQuery] = useState('');
 
     const projects = [
         { title: "Smartboard Austausch", applicant: "Prof. Bauer / IT", department: "IT", date: "15.02.2026", cost: "€ 4.200", status: "pending" },
@@ -48,7 +49,9 @@ const ProjectOverview = () => {
     const filteredProjects = projects.filter(p => {
         const matchesDept = selectedDepartment === 'all' || p.department === selectedDepartment;
         const matchesStatus = selectedStatus === 'all' || p.status === selectedStatus;
-        return matchesDept && matchesStatus;
+        const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            p.applicant.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesDept && matchesStatus && matchesSearch;
     });
 
     return (
@@ -77,14 +80,17 @@ const ProjectOverview = () => {
                         <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-foreground/30" size={24} />
                         <input
                             type="text"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
                             placeholder={t('projects.overviewTable.filters.search')}
                             className="w-full pl-16 pr-6 py-6 bg-card rounded-2xl border border-border shadow-2xl focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all font-semibold text-xl text-foreground outline-none"
                         />
                     </div>
 
-                    {/* Filter Tags - Scrollable on Mobile */}
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 flex-nowrap">
+                    {/* Filter Section */}
+                    <div className="space-y-6">
+                        {/* Status Buttons (Keep as buttons) */}
+                        <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 flex-nowrap">
                             <button
                                 onClick={() => setSelectedStatus('all')}
                                 className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedStatus === 'all'
@@ -108,28 +114,29 @@ const ProjectOverview = () => {
                             ))}
                         </div>
 
-                        <div className="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 flex-nowrap">
-                            <button
-                                onClick={() => setSelectedDepartment('all')}
-                                className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedDepartment === 'all'
-                                    ? 'bg-primary/20 text-primary border-primary/30'
-                                    : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
-                                    }`}
-                            >
-                                {t('projects.overviewTable.filters.allDepts')}
-                            </button>
-                            {['IT', 'ME', 'ET', 'BAU', 'SP', 'GEN'].map(dept => (
-                                <button
-                                    key={dept}
-                                    onClick={() => setSelectedDepartment(dept)}
-                                    className={`whitespace-nowrap px-6 py-3 rounded-2xl text-sm font-black uppercase tracking-widest border transition-all ${selectedDepartment === dept
-                                        ? 'bg-primary/20 text-primary border-primary/30'
-                                        : 'bg-surface/50 text-foreground/40 border-border hover:border-primary/50'
-                                        }`}
+                        {/* Department Dropdown (New) */}
+                        <div className="max-w-md">
+                            <label htmlFor="dept-select" className="block text-[10px] font-black uppercase tracking-[0.2em] text-foreground/40 mb-2 ml-4">
+                                {t('projects.overviewTable.headers.department')}
+                            </label>
+                            <div className="relative">
+                                <select
+                                    id="dept-select"
+                                    value={selectedDepartment}
+                                    onChange={(e) => setSelectedDepartment(e.target.value)}
+                                    className="w-full px-6 py-4 bg-surface border border-border rounded-2xl text-sm font-bold text-foreground focus:ring-4 focus:ring-primary/10 transition-all appearance-none cursor-pointer outline-none shadow-xl"
                                 >
-                                    {t(`projects.overviewTable.departments.${dept}`)}
-                                </button>
-                            ))}
+                                    <option value="all">{t('projects.overviewTable.filters.allDepts')}</option>
+                                    {['IT', 'ME', 'ET', 'BAU', 'EL', 'CH', 'GEN', 'SP', 'FIN'].map(dept => (
+                                        <option key={dept} value={dept}>
+                                            {t(`projects.overviewTable.departments.${dept}`)}
+                                        </option>
+                                    ))}
+                                </select>
+                                <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-foreground/40">
+                                    <ArrowLeft size={16} className="-rotate-90" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -149,20 +156,31 @@ const ProjectOverview = () => {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-border/50">
-                                {filteredProjects.map((p, i) => (
-                                    <tr key={i} className="group hover:bg-primary/5 transition-all duration-300">
-                                        <td className="p-8 font-extrabold text-foreground tracking-tight">{p.title}</td>
-                                        <td className="p-8">
-                                            <span className="px-3 py-1 rounded-lg bg-surface border border-border text-[10px] font-black uppercase tracking-widest text-foreground/60 shadow-inner group-hover:border-primary/20 group-hover:text-primary transition-all">
-                                                {t(`projects.overviewTable.departments.${p.department}`)}
-                                            </span>
+                                {filteredProjects.length > 0 ? (
+                                    filteredProjects.map((p, i) => (
+                                        <tr key={i} className="group hover:bg-primary/5 transition-all duration-300">
+                                            <td className="p-8 font-extrabold text-foreground tracking-tight">{p.title}</td>
+                                            <td className="p-8">
+                                                <span className="px-3 py-1 rounded-lg bg-surface border border-border text-[10px] font-black uppercase tracking-widest text-foreground/60 shadow-inner group-hover:border-primary/20 group-hover:text-primary transition-all">
+                                                    {t(`projects.overviewTable.departments.${p.department}`)}
+                                                </span>
+                                            </td>
+                                            <td className="p-8 text-foreground/70 font-medium">{p.applicant}</td>
+                                            <td className="p-8 text-foreground/40 font-mono text-xs">{p.date}</td>
+                                            <td className="p-8 font-mono font-black text-foreground/80">{p.cost}</td>
+                                            <td className="p-8">{getStatusBadge(p.status)}</td>
+                                        </tr>
+                                    ))
+                                ) : (
+                                    <tr>
+                                        <td colSpan={6} className="p-20 text-center">
+                                            <div className="flex flex-col items-center gap-4 text-foreground/20">
+                                                <Search size={48} strokeWidth={1.5} />
+                                                <p className="text-xl font-bold">{t('projects.overviewTable.noResults')}</p>
+                                            </div>
                                         </td>
-                                        <td className="p-8 text-foreground/70 font-medium">{p.applicant}</td>
-                                        <td className="p-8 text-foreground/40 font-mono text-xs">{p.date}</td>
-                                        <td className="p-8 font-mono font-black text-foreground/80">{p.cost}</td>
-                                        <td className="p-8">{getStatusBadge(p.status)}</td>
                                     </tr>
-                                ))}
+                                )}
                             </tbody>
                         </table>
                     </div>

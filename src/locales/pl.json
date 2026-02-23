@@ -250,6 +250,8 @@
             "title": "Złóż wniosek projektowy",
             "desc": "Użyj tego formularza, aby złożyć wniosek o dofinansowanie drogą cyfrową.",
             "button": "Rozpocznij nowy wniosek",
+            "dashboardTitle": "Przesłane wnioski (2025/26)",
+            "dashboardDesc": "Zarządzaj i śledź statusy swoich projektów",
             "form": {
                 "title": "Tytuł projektu",
                 "applicant": "Wnioskodawca / Wydział",
@@ -289,9 +291,12 @@
                 "ET": "Elektrotechnika",
                 "GEN": "Ogólne",
                 "BAU": "Budownictwo",
+                "EL": "Elektronika",
+                "CH": "Chemia",
                 "SP": "Sport",
                 "FIN": "Finanse"
             },
+            "noResults": "Nie znaleziono żadnych wniosków.",
             "status": {
                 "approved": "Zatwierdzony",
                 "pending": "W toku",

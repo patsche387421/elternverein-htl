@@ -250,6 +250,8 @@
             "title": "Enviar propuesta de proyecto",
             "desc": "Use este formulario para enviar digitalmente su solicitud de financiación.",
             "button": "Iniciar nueva solicitud",
+            "dashboardTitle": "Solicitudes enviadas (2025/26)",
+            "dashboardDesc": "Gestione y realice un seguimiento del estado de sus proyectos",
             "form": {
                 "title": "Título del proyecto",
                 "applicant": "Solicitante / Departamento",
@@ -289,9 +291,12 @@
                 "ET": "Ingeniería eléctrica",
                 "GEN": "General",
                 "BAU": "Ingeniería civil",
+                "EL": "Electrónica",
+                "CH": "Química",
                 "SP": "Deportes",
                 "FIN": "Finanzas"
             },
+            "noResults": "No se encontraron solicitudes.",
             "status": {
                 "approved": "Aprobado",
                 "pending": "Pendiente",

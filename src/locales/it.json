@@ -250,6 +250,8 @@
             "title": "Invia Proposta Progetto",
             "desc": "Usa questo modulo per inviare digitalmente la tua domanda di finanziamento.",
             "button": "Inizia Nuova Domanda",
+            "dashboardTitle": "Domande Inviate (2025/26)",
+            "dashboardDesc": "Gestisci e monitora lo stato dei tuoi progetti",
             "form": {
                 "title": "Titolo Progetto",
                 "applicant": "Richiedente / Dipartimento",
@@ -289,9 +291,12 @@
                 "ET": "Elettrotecnica",
                 "GEN": "Generale",
                 "BAU": "Ingegneria Civile",
+                "EL": "Elettronica",
+                "CH": "Chimica",
                 "SP": "Sport",
                 "FIN": "Finanza"
             },
+            "noResults": "Nessuna domanda trovata.",
             "status": {
                 "approved": "Approvato",
                 "pending": "In Esame",

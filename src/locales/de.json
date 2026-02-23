@@ -250,6 +250,8 @@
             "title": "Projektantrag einreichen",
             "desc": "Nutzen Sie dieses Formular für die digitale Einreichung Ihres Förderantrags.",
             "button": "Neuen Antrag stellen",
+            "dashboardTitle": "Eingereichte Anträge (2025/26)",
+            "dashboardDesc": "Verwalten und verfolgen Sie Ihre Projektstatus",
             "form": {
                 "title": "Projektbezeichnung",
                 "applicant": "Antragsteller / Abteilung",
@@ -289,9 +291,12 @@
                 "ET": "Elektrotechnik",
                 "GEN": "Allgemein",
                 "BAU": "Bautechnik",
+                "EL": "Elektronik",
+                "CH": "Chemie",
                 "SP": "Sport",
                 "FIN": "Finanzen"
             },
+            "noResults": "Keine Anträge gefunden.",
             "status": {
                 "approved": "Genehmigt",
                 "pending": "In Prüfung",

@@ -1,12 +1,44 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Send, Upload, ArrowLeft, CheckCircle } from 'lucide-react';
+import { Send, Upload, ArrowLeft, CheckCircle, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const ProjectApplication = () => {
     const { t } = useTranslation();
     const [submitted, setSubmitted] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [selectedDepartment, setSelectedDepartment] = useState('all');
+
+    const projects = [
+        { title: "Smartboard Austausch", applicant: "Prof. Bauer / IT", department: "IT", date: "15.02.2026", cost: "€ 4.200", status: "pending" },
+        { title: "3D-Drucker Filament", applicant: "Robotik-Club", department: "IT", date: "10.02.2026", cost: "€ 350", status: "approved" },
+        { title: "Bibliotheks-Lounge Sitzmöbel", applicant: "Schülervertretung", department: "GEN", date: "05.02.2026", cost: "€ 1.800", status: "approved" },
+    ];
+
+    const filteredProjects = projects.filter(p => {
+        const matchesDept = selectedDepartment === 'all' || p.department === selectedDepartment;
+        const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            p.applicant.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesDept && matchesSearch;
+    });
+
+    const getStatusBadge = (status: string) => {
+        switch (status) {
+            case 'approved':
+                return (
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-success/10 text-success uppercase tracking-widest border border-success/20 shadow-sm">
+                        {t('projects.overviewTable.status.approved')}
+                    </span>
+                );
+            default:
+                return (
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-warning/10 text-warning uppercase tracking-widest border border-warning/20 shadow-sm">
+                        {t('projects.overviewTable.status.pending')}
+                    </span>
+                );
+        }
+    };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -162,6 +194,84 @@ const ProjectApplication = () => {
                             </button>
                         </footer>
                     </form>
+                </section>
+
+                {/* Dashboard: Submitted Applications Section */}
+                <section className="max-w-6xl mx-auto space-y-10 pt-20">
+                    <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-border pb-8">
+                        <div className="space-y-2">
+                            <h2 className="text-3xl font-black tracking-tight text-foreground">
+                                {t('projects.apply.dashboardTitle')}
+                            </h2>
+                            <p className="text-foreground/40 font-medium">{t('projects.apply.dashboardDesc')}</p>
+                        </div>
+
+                        <div className="flex flex-col sm:flex-row items-center gap-4">
+                            {/* Search */}
+                            <div className="relative w-full sm:w-64">
+                                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground/30" size={18} />
+                                <input
+                                    type="text"
+                                    value={searchQuery}
+                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                    placeholder={t('projects.overviewTable.filters.search')}
+                                    className="w-full pl-12 pr-4 py-3 bg-surface border border-border rounded-xl text-sm font-medium focus:ring-4 focus:ring-primary/10 transition-all outline-none"
+                                />
+                            </div>
+
+                            {/* Dept Dropdown */}
+                            <select
+                                value={selectedDepartment}
+                                onChange={(e) => setSelectedDepartment(e.target.value)}
+                                className="w-full sm:w-auto px-4 py-3 bg-surface border border-border rounded-xl text-sm font-bold text-foreground focus:ring-4 focus:ring-primary/10 transition-all outline-none cursor-pointer"
+                            >
+                                <option value="all">{t('projects.overviewTable.filters.allDepts')}</option>
+                                {['IT', 'ME', 'ET', 'BAU', 'EL', 'CH', 'GEN', 'SP', 'FIN'].map(dept => (
+                                    <option key={dept} value={dept}>
+                                        {t(`projects.overviewTable.departments.${dept}`)}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div className="bg-card rounded-3xl border border-border shadow-2xl overflow-hidden">
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-left border-collapse">
+                                <thead>
+                                    <tr className="bg-muted/30 border-b border-border">
+                                        <th className="p-6 text-[10px] font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.project')}</th>
+                                        <th className="p-6 text-[10px] font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.department')}</th>
+                                        <th className="p-6 text-[10px] font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.status')}</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-border/50">
+                                    {filteredProjects.length > 0 ? (
+                                        filteredProjects.map((p, i) => (
+                                            <tr key={i} className="group hover:bg-primary/5 transition-colors">
+                                                <td className="p-6">
+                                                    <div className="font-extrabold text-foreground tracking-tight">{p.title}</div>
+                                                    <div className="text-xs text-foreground/40">{p.applicant}</div>
+                                                </td>
+                                                <td className="p-6 text-xs font-bold text-foreground/60">
+                                                    {t(`projects.overviewTable.departments.${p.department}`)}
+                                                </td>
+                                                <td className="p-6">
+                                                    {getStatusBadge(p.status)}
+                                                </td>
+                                            </tr>
+                                        ))
+                                    ) : (
+                                        <tr>
+                                            <td colSpan={3} className="p-12 text-center text-foreground/20 font-bold italic">
+                                                {t('projects.overviewTable.noResults')}
+                                            </td>
+                                        </tr>
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>

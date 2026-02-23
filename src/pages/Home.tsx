@@ -48,7 +48,7 @@ const Home = () => {
                 {/* BACKGROUND LAYER: Image */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/elternverein/hero-web.jpg"
+                        src="/elternverein/hero-bg.webp"
                         alt="HTL Mödling Hauptgebäude"
                         className="w-full h-full object-cover object-center transition-opacity duration-1000"
                         loading="eager"
@@ -65,11 +65,10 @@ const Home = () => {
                 <div className="relative z-10 w-full px-6">
                     <div className="max-w-6xl mx-auto flex flex-col items-center lg:items-start text-center lg:text-left animate-fade-up backdrop-blur-[2px] p-6 rounded-3xl">
                         <div className="space-y-6 max-w-4xl">
-                            {/* New Badge */}
-                            <span className="inline-flex items-center px-4 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium border border-primary/20 backdrop-blur-md">
+                            {/* New Badge - Solid Primary for maximal readability */}
+                            <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-black uppercase tracking-widest shadow-xl">
                                 {t('home.heroBadge')}
                             </span>
-
                             {/* Fluid Typography Title */}
                             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.1] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)] text-balance">
                                 {t('home.heroTitleFluid')}
@@ -100,13 +99,6 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* New Animated Scroll Indicator - Hidden on Mobile/Tablet per User Request */}
-                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden lg:flex flex-col items-center gap-3 animate-bounce cursor-pointer group">
-                    <span className="text-white/60 text-xs font-bold uppercase tracking-[0.2em] group-hover:text-white transition-colors">
-                        {t('home.learnMoreScroll')}
-                    </span>
-                    <div className="w-1.5 h-12 rounded-full bg-gradient-to-b from-primary via-primary/50 to-transparent shadow-[0_0_15px_rgba(var(--primary-rgb),0.5)]" />
-                </div>
             </header>
 
             {/* ── Benefit Grid Section (Refactored) ── */}

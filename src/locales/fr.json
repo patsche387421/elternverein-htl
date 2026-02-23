@@ -250,6 +250,8 @@
             "title": "Soumettre une proposition",
             "desc": "Utilisez ce formulaire pour soumettre numériquement votre demande de financement.",
             "button": "Nouvelle demande",
+            "dashboardTitle": "Demandes soumises (2025/26)",
+            "dashboardDesc": "Gérez et suivez l'état de vos projets",
             "form": {
                 "title": "Titre du projet",
                 "applicant": "Demandeur / Département",
@@ -289,9 +291,12 @@
                 "ET": "Génie Électrique",
                 "GEN": "Général",
                 "BAU": "Génie Civil",
+                "EL": "Électronique",
+                "CH": "Chimie",
                 "SP": "Sport",
                 "FIN": "Finance"
             },
+            "noResults": "Aucune demande trouvée.",
             "status": {
                 "approved": "Approuvé",
                 "pending": "En cours",

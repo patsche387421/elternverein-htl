@@ -250,6 +250,8 @@
             "title": "Submit Project Proposal",
             "desc": "Use this form to digitally submit your funding application.",
             "button": "Start New Application",
+            "dashboardTitle": "Submitted Applications (2025/26)",
+            "dashboardDesc": "Manage and track your project statuses",
             "form": {
                 "title": "Project Title",
                 "applicant": "Applicant / Department",
@@ -289,9 +291,12 @@
                 "ET": "Electrical Engineering",
                 "GEN": "General",
                 "BAU": "Civil Engineering",
+                "EL": "Electronics",
+                "CH": "Chemistry",
                 "SP": "Sport",
                 "FIN": "Finance"
             },
+            "noResults": "No applications found.",
             "status": {
                 "approved": "Approved",
                 "pending": "Pending",

@@ -251,6 +251,8 @@
             "title": "Proje Önerisi Gönder",
             "desc": "Finansman başvurunuzu dijital olarak göndermek için bu formu kullanın.",
             "button": "Yeni Başvuru Başlat",
+            "dashboardTitle": "Gönderilen Başvurular (2025/26)",
+            "dashboardDesc": "Proje durumlarınızı yönetin ve takip edin",
             "form": {
                 "title": "Proje Başlığı",
                 "applicant": "Başvuran / Departman",
@@ -290,9 +292,12 @@
                 "ET": "Elektrik Mühendisliği",
                 "GEN": "Genel",
                 "BAU": "İnşaat Mühendisliği",
+                "EL": "Elektronik",
+                "CH": "Kimya",
                 "SP": "Spor",
                 "FIN": "Finans"
             },
+            "noResults": "Başvuru bulunamadı.",
             "status": {
                 "approved": "Onaylandı",
                 "pending": "Beklemede",
