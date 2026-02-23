@@ -107,7 +107,7 @@ const Contact = () => {
                             </div>
                             <button className="w-full bg-primary text-primary-foreground py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-primary/90 transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-primary/20 transform hover:-translate-y-1">
                                 <Send size={20} strokeWidth={2.5} />
-                                {t('contact.form.send')}
+                                {t('home.getInvolved')}
                             </button>
                         </form>
                     </div>

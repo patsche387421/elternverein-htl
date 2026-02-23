@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/Layout';
 import InternalLayout from './components/InternalLayout';
@@ -43,13 +43,16 @@ function App() {
               <Route path="services/:type" element={<Services />} />
 
               <Route path="projekte" element={<Projects />} />
-              <Route path="projekte/archive" element={<ProjectsArchive />} />
-              <Route path="projekte/overview" element={<ProjectOverview />} />
-              <Route path="projekte/apply" element={<ProjectApplication />} />
+              <Route path="projekte/archiv" element={<ProjectsArchive />} />
+              <Route path="projekte/uebersicht" element={<ProjectOverview />} />
+              <Route path="projekte/antrag" element={<ProjectApplication />} />
               <Route path="terms" element={<Terms />} />
               <Route path="datenschutz" element={<DataPrivacy />} />
               <Route path="impressum" element={<Impressum />} />
               <Route path="login" element={<Login />} />
+
+              {/* Catch-all route to handle refreshes and direct URL access */}
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
 
             {/* Dashboard Routes (Internal) */}

@@ -62,7 +62,7 @@ const ProjectOverview = () => {
             <div className="container mx-auto px-4 py-12 space-y-12">
                 {/* Header */}
                 <header className="space-y-6">
-                    <Link to="/projects" className="group inline-flex items-center text-sm font-bold text-foreground/40 hover:text-primary transition-all uppercase tracking-widest">
+                    <Link to="/projekte" className="group inline-flex items-center text-sm font-bold text-foreground/40 hover:text-primary transition-all uppercase tracking-widest">
                         <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" strokeWidth={2.5} />
                         {t('projects.backToCurrent')}
                     </Link>
@@ -169,7 +169,7 @@ const ProjectOverview = () => {
                 </section>
 
                 <footer className="text-center pt-12">
-                    <Link to="/projects/apply" className="group inline-flex items-center justify-center gap-4 bg-primary text-primary-foreground px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-1">
+                    <Link to="/projekte/antrag" className="group inline-flex items-center justify-center gap-4 bg-primary text-primary-foreground px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-1">
                         {t('projects.apply.button')}
                         <ArrowLeft size={20} className="rotate-180 group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
                     </Link>

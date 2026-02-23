@@ -14,7 +14,7 @@ interface SEOProps {
 
 const SEO = ({
     title,
-    description,
+    description = 'Der Elternverein der HTL Mödling unterstützt die Schulgemeinschaft, fördert innovative Projekte und bietet soziale Hilfe für Schüler und Familien.',
     name = 'Elternverein HTL Mödling',
     type = 'website',
     image = '/og-image.jpg',

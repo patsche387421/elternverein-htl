@@ -48,17 +48,14 @@ const Home = () => {
                 {/* BACKGROUND LAYER: Image */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/hero-bg.jpg"
+                        src="/elternverein/hero-web.jpg"
                         alt="HTL Mödling Hauptgebäude"
                         className="w-full h-full object-cover object-center transition-opacity duration-1000"
                         loading="eager"
                     />
 
-                    {/* Dynamic Glass-Effect Overlay - Gradient from Left for Desktop / Centered for Mobile */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent lg:from-black/90 lg:via-black/50" />
-
-                    {/* Dark Mode Overlay Adjustment */}
-                    <div className="absolute inset-0 bg-background/20 dark:bg-background/40 backdrop-blur-[1px]" />
+                    {/* Uniform Dark Overlay for maximum readability */}
+                    <div className="absolute inset-0 bg-black/60" />
 
                     {/* Bottom Fade */}
                     <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-background via-background/20 to-transparent" />
@@ -66,7 +63,7 @@ const Home = () => {
 
                 {/* CONTENT LAYER */}
                 <div className="relative z-10 w-full px-6">
-                    <div className="max-w-6xl mx-auto flex flex-col items-center lg:items-start text-center lg:text-left animate-fade-up">
+                    <div className="max-w-6xl mx-auto flex flex-col items-center lg:items-start text-center lg:text-left animate-fade-up backdrop-blur-[2px] p-6 rounded-3xl">
                         <div className="space-y-6 max-w-4xl">
                             {/* New Badge */}
                             <span className="inline-flex items-center px-4 py-1 rounded-full bg-primary/20 text-primary text-sm font-medium border border-primary/20 backdrop-blur-md">
@@ -86,19 +83,19 @@ const Home = () => {
 
                         {/* Actions */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-10">
-                            <Link to="/contact"
+                            <Link to="/kontakt"
                                 className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground
                                            rounded-2xl font-black uppercase tracking-widest text-base hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-primary/40
                                            focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none">
                                 {t('home.getInvolved')}
                             </Link>
-                            <Link to="/about"
+                            <a href="#nutzen"
                                 className="inline-flex items-center justify-center px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-base
                                            bg-white/10 backdrop-blur-md text-white border border-white/20
                                            hover:bg-white/20 transition-all shadow-xl
                                            focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none">
                                 {t('home.learnMore')}
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +110,7 @@ const Home = () => {
             </header>
 
             {/* ── Benefit Grid Section (Refactored) ── */}
-            <section className="bg-surface py-20 relative overflow-hidden">
+            <section id="nutzen" className="bg-surface py-20 relative overflow-hidden">
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
                         {/* Karte 1: Projektförderung */}
@@ -213,18 +210,18 @@ const Home = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
-                    {newsItems.map((item, i) => (
-                        <article key={i} className="flex flex-col group cursor-pointer bg-surface/50 p-4 rounded-3xl border border-transparent hover:border-primary/20 hover:bg-background hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300">
+                    {newsItems.map((item, index) => (
+                        <article key={index} className="flex flex-col group cursor-pointer bg-surface/50 p-4 rounded-3xl border border-transparent hover:border-primary/20 hover:bg-background hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300">
                             <div className="rounded-3xl aspect-[4/3] mb-6 overflow-hidden relative shadow-inner">
                                 <img
                                     src={item.image}
-                                    alt={item.title}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    alt={t(`news.items.${Object.keys(t('news.items', { returnObjects: true }))[index]}.title`)}
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-black/10 group-hover:opacity-0 transition-opacity" />
                                 <div className="absolute top-5 left-5 z-10">
                                     <span className={`inline-flex items-center px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-wider ${getTypeColor(item.type)}`}>
-                                        {t(`home.tags.${item.type}`)}
+                                        {t(`news.filters.${item.type}`)}
                                     </span>
                                 </div>
                             </div>
@@ -281,7 +278,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-        </main>
+        </main >
     );
 };
 

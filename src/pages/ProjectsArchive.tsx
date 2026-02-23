@@ -21,7 +21,7 @@ const ProjectsArchive = () => {
             <div className="container mx-auto px-4 py-12 space-y-16">
                 {/* Header */}
                 <header className="space-y-8">
-                    <Link to="/projects" className="group inline-flex items-center text-sm font-bold text-foreground/40 hover:text-primary transition-all uppercase tracking-widest">
+                    <Link to="/projekte" className="group inline-flex items-center text-sm font-bold text-foreground/40 hover:text-primary transition-all uppercase tracking-widest">
                         <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" strokeWidth={2.5} />
                         {t('projects.backToCurrent')}
                     </Link>
