@@ -60,10 +60,10 @@ const Footer = () => {
                     <div>
                         <h4 className="font-semibold text-foreground mb-4">{t('footer.socials')}</h4>
                         <div className="flex space-x-4">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full text-foreground/80 hover:text-primary hover:bg-primary/10 transition-colors border border-border">
+                            <a href="https://www.instagram.com/htlmoedling/" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full text-foreground/80 hover:text-primary hover:bg-primary/10 transition-colors border border-border">
                                 <Instagram size={20} />
                             </a>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full text-foreground/80 hover:text-primary hover:bg-primary/10 transition-colors border border-border">
+                            <a href="https://www.facebook.com/HTLMoedlingSV/" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full text-foreground/80 hover:text-primary hover:bg-primary/10 transition-colors border border-border">
                                 <Facebook size={20} />
                             </a>
                             <a href="mailto:office@elternverein.today" className="p-2 bg-background rounded-full text-foreground/80 hover:text-primary hover:bg-primary/10 transition-colors border border-border">

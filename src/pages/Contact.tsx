@@ -38,7 +38,12 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-xs text-foreground/40 font-black uppercase tracking-widest mb-1">{t('contact.form.emailLabel')}</p>
-                                    <p className="text-lg font-bold text-foreground">info@elternverein.today</p>
+                                    <p className="text-lg font-bold text-foreground">
+                                        <a href="mailto:office@elternverein.today" className="hover:text-primary transition-colors">
+                                            office@elternverein.today
+                                        </a>
+                                    </p>
+
                                 </div>
                             </article>
 
