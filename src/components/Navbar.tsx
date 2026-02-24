@@ -118,10 +118,10 @@ const Navbar = () => {
                                                     <p className="font-bold text-foreground">Patrick Kroeger</p>
                                                     <p className="text-xs text-foreground/60">Administrator</p>
                                                 </div>
-                                                <button className="w-full text-left px-4 py-2 text-sm text-foreground/80 hover:bg-primary/5 hover:text-primary flex items-center gap-2">
+                                                <Link to="/dashboard" onClick={() => setIsUserMenuOpen(false)} className="w-full text-left px-4 py-2 text-sm text-foreground/80 hover:bg-primary/5 hover:text-primary flex items-center gap-2">
                                                     <Settings size={16} />
                                                     {t('nav.profile')}
-                                                </button>
+                                                </Link>
                                                 <button
                                                     onClick={handleLogout}
                                                     className="w-full text-left px-4 py-2 text-sm text-destructive hover:bg-destructive/10 flex items-center gap-2"
@@ -202,15 +202,15 @@ const Navbar = () => {
                                 </button>
                             ) : (
                                 <div className="space-y-2">
-                                    <div className="px-4 py-2 bg-surface-2 rounded-xl border border-border flex items-center gap-3">
+                                    <Link to="/dashboard" onClick={closeAll} className="px-4 py-2 bg-surface-2 rounded-xl border border-border flex items-center gap-3 active:scale-[0.98] transition-transform">
                                         <div className="h-10 w-10 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">
                                             PK
                                         </div>
                                         <div>
                                             <p className="font-bold">Patrick Kroeger</p>
-                                            <p className="text-xs text-foreground/60">Administrator</p>
+                                            <p className="text-xs text-foreground/60">{t('nav.profile')} (Admin)</p>
                                         </div>
-                                    </div>
+                                    </Link>
                                     <button
                                         onClick={handleLogout}
                                         className="w-full flex items-center justify-center gap-2 text-destructive bg-destructive/10 p-4 rounded-xl font-bold"

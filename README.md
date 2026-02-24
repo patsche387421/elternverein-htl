@@ -41,5 +41,25 @@ Diese Website dient als zentrale Plattform für den Elternverein der HTL Mödlin
 | Language Switcher | ✅ Aktiv | Nahtloser Wechsel zwischen DE/EN. |
 | Dashboard | ✅ Aktiv | Interne Übersicht für Vorstandsmitglieder. |
 
+## 🚀 Performance Audit & Optimierung
+
+Basierend auf den PageSpeed-Berichten vom 24.02.2026 wurden folgende Engpässe identifiziert:
+
+### Aktuelle Werte
+- **Mobile Score**: 74 / 100 (LCP: 22.1s)
+- **Desktop Score**: 79 / 100 (LCP: 3.7s)
+
+### ⚠️ Performance-Bottlenecks
+1. **Riesige Bilder**: Die Datei `hero-bg.webp` ist mit **3.85 MB** viel zu groß für das Web. Dies verursacht den extrem hohen LCP (Largest Contentful Paint).
+2. **Render-blocking Ressourcen**: CSS und JS blockieren den ersten Seitenaufbau.
+3. **Unused JavaScript**: Es wird Code geladen, der auf der Initialseite nicht benötigt wird.
+
+### 🛠️ Konkrete Optimierungsschritte
+- [ ] **Bildkompression**: `hero-bg.webp` auf unter 500KB komprimieren (z.B. mit [Squoosh](https://squoosh.app/)).
+- [ ] **Next-Gen Formate**: Konsequente Nutzung von `.avif` für noch bessere Kompression als WebP.
+- [ ] **Lazy Loading**: Bilder unterhalb des "Above-the-fold" Bereichs mit `loading="lazy"` markieren.
+- [ ] **Code Splitting**: Nutzen von `React.lazy()` für Routen, um das Initialpaket zu verkleinern.
+- [ ] **Vercel Edge Caching**: Konfiguration von Cache-Control Headern für statische Assets.
+
 ---
 *Erstellt von Antigravity für den Elternverein HTL Mödling.*
