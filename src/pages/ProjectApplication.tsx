@@ -64,7 +64,7 @@ const ProjectApplication = () => {
                         </p>
                     </div>
                     <Link to="/projekte" className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-1">
-                        <ArrowLeft size={20} strokeWidth={2.5} />
+                        <ArrowLeft size={20} strokeWidth={2.5} className="rtl:rotate-180" />
                         {t('projects.backToCurrent')}
                     </Link>
                 </div>
@@ -84,7 +84,7 @@ const ProjectApplication = () => {
                 {/* Header */}
                 <header className="max-w-4xl mx-auto space-y-8">
                     <Link to="/projekte" className="group inline-flex items-center text-sm font-bold text-foreground/40 hover:text-primary transition-all uppercase tracking-widest">
-                        <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" strokeWidth={2.5} />
+                        <ArrowLeft size={16} className="me-2 group-hover:-translate-x-1 rtl:group-hover:translate-x-1 transition-transform rtl:rotate-180" strokeWidth={2.5} />
                         {t('projects.backToCurrent')}
                     </Link>
 
@@ -98,13 +98,13 @@ const ProjectApplication = () => {
 
                 {/* Form Card */}
                 <section className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-3xl border border-border shadow-2xl relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
+                    <div className="absolute top-0 start-0 w-full h-2 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
 
                     <form onSubmit={handleSubmit} className="space-y-10 relative z-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                             {/* Title */}
                             <div className="space-y-3">
-                                <label htmlFor="project-title" className="text-xs font-black text-foreground/40 uppercase tracking-widest ml-2">
+                                <label htmlFor="project-title" className="text-xs font-black text-foreground/40 uppercase tracking-widest ms-2">
                                     {t('projects.apply.form.title')} *
                                 </label>
                                 <input
@@ -118,7 +118,7 @@ const ProjectApplication = () => {
 
                             {/* Applicant */}
                             <div className="space-y-3">
-                                <label htmlFor="applicant" className="text-xs font-black text-foreground/40 uppercase tracking-widest ml-2">
+                                <label htmlFor="applicant" className="text-xs font-black text-foreground/40 uppercase tracking-widest ms-2">
                                     {t('projects.apply.form.applicant')} *
                                 </label>
                                 <input
@@ -133,7 +133,7 @@ const ProjectApplication = () => {
 
                         {/* Costs */}
                         <div className="space-y-3">
-                            <label htmlFor="costs" className="text-xs font-black text-foreground/40 uppercase tracking-widest ml-2">
+                            <label htmlFor="costs" className="text-xs font-black text-foreground/40 uppercase tracking-widest ms-2">
                                 {t('projects.apply.form.costs')} *
                             </label>
                             <div className="relative">
@@ -143,16 +143,16 @@ const ProjectApplication = () => {
                                     required
                                     min="0"
                                     step="0.01"
-                                    className="w-full px-6 py-4 rounded-2xl bg-background border border-border focus:ring-4 focus:ring-primary/10 outline-none transition-all font-black text-foreground pl-12"
+                                    className="w-full px-6 py-4 rounded-2xl bg-background border border-border focus:ring-4 focus:ring-primary/10 outline-none transition-all font-black text-foreground ps-12"
                                     placeholder={t('projects.apply.form.placeholderCosts', '0.00')}
                                 />
-                                <span className="absolute left-6 top-1/2 -translate-y-1/2 font-black text-foreground/40">€</span>
+                                <span className="absolute start-6 top-1/2 -translate-y-1/2 font-black text-foreground/40">€</span>
                             </div>
                         </div>
 
                         {/* Description */}
                         <div className="space-y-3">
-                            <label htmlFor="description" className="text-xs font-black text-foreground/40 uppercase tracking-widest ml-2">
+                            <label htmlFor="description" className="text-xs font-black text-foreground/40 uppercase tracking-widest ms-2">
                                 {t('projects.apply.form.description')} *
                             </label>
                             <textarea
@@ -166,7 +166,7 @@ const ProjectApplication = () => {
 
                         {/* File Upload */}
                         <div className="space-y-3">
-                            <label className="text-xs font-black text-foreground/40 uppercase tracking-widest ml-2">
+                            <label className="text-xs font-black text-foreground/40 uppercase tracking-widest ms-2">
                                 {t('projects.apply.form.files')}
                             </label>
                             <div className="border-2 border-dashed border-border rounded-2xl p-12 hover:bg-primary/5 hover:border-primary/30 transition-all cursor-pointer text-center relative group shadow-inner">
@@ -189,7 +189,7 @@ const ProjectApplication = () => {
                                 type="submit"
                                 className="w-full bg-primary text-primary-foreground py-6 rounded-2xl font-black uppercase tracking-widest text-lg hover:bg-primary/90 transition shadow-2xl shadow-primary/20 hover:shadow-primary/40 flex items-center justify-center gap-4 active:scale-[0.98] transform hover:-translate-y-1"
                             >
-                                <Send size={24} strokeWidth={2.5} />
+                                <Send size={24} strokeWidth={2.5} className="rtl:rotate-180" />
                                 {t('projects.apply.form.submit')}
                             </button>
                         </footer>
@@ -209,13 +209,13 @@ const ProjectApplication = () => {
                         <div className="flex flex-col sm:flex-row items-center gap-4">
                             {/* Search */}
                             <div className="relative w-full sm:w-64">
-                                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground/30" size={18} />
+                                <Search className="absolute start-4 top-1/2 -translate-y-1/2 text-foreground/30" size={18} />
                                 <input
                                     type="text"
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                     placeholder={t('projects.overviewTable.filters.search')}
-                                    className="w-full pl-12 pr-4 py-3 bg-surface border border-border rounded-xl text-sm font-medium focus:ring-4 focus:ring-primary/10 transition-all outline-none"
+                                    className="w-full ps-12 pe-4 py-3 bg-surface border border-border rounded-xl text-sm font-medium focus:ring-4 focus:ring-primary/10 transition-all outline-none"
                                 />
                             </div>
 
@@ -237,7 +237,7 @@ const ProjectApplication = () => {
 
                     <div className="bg-card rounded-3xl border border-border shadow-2xl overflow-hidden">
                         <div className="overflow-x-auto">
-                            <table className="w-full text-left border-collapse">
+                            <table className="w-full text-start border-collapse">
                                 <thead>
                                     <tr className="bg-muted/30 border-b border-border">
                                         <th className="p-6 text-[10px] font-black text-foreground/40 uppercase tracking-widest">{t('projects.overviewTable.headers.project')}</th>
@@ -250,8 +250,10 @@ const ProjectApplication = () => {
                                         filteredProjects.map((p, i) => (
                                             <tr key={i} className="group hover:bg-primary/5 transition-colors">
                                                 <td className="p-6">
-                                                    <div className="font-extrabold text-foreground tracking-tight">{p.title}</div>
-                                                    <div className="text-xs text-foreground/40">{p.applicant}</div>
+                                                    <div className="flex flex-col gap-1">
+                                                        <div className="font-extrabold text-foreground tracking-tight">{p.title}</div>
+                                                        <div className="text-xs text-foreground/40">{p.applicant}</div>
+                                                    </div>
                                                 </td>
                                                 <td className="p-6 text-xs font-bold text-foreground/60">
                                                     {t(`projects.overviewTable.departments.${p.department}`)}

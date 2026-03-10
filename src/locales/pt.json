@@ -1,0 +1,344 @@
+{
+    "nav": {
+        "home": "Início",
+        "news": "Notícias",
+        "services": "Serviços",
+        "projects": "Projetos",
+        "about": "Sobre",
+        "contact": "Contato",
+        "login": "Entrar",
+        "logout": "Sair",
+        "profile": "Meu Perfil",
+        "aria": {
+            "menuToggle": "Alternar menu",
+            "languageToggle": "Alternar idioma",
+            "themeToggle": "Alternar tema"
+        },
+        "serviceItems": {
+            "support": "Apoio Social",
+            "tutoring": "Explicações",
+            "courses": "Cursos"
+        }
+    },
+    "footer": {
+        "links": "Links Rápidos",
+        "legal": "Jurídico",
+        "socials": "Conecte-se conosco",
+        "impressum": "Aviso Legal",
+        "privacy": "Política de Privacidade",
+        "terms": "Termos e Condições"
+    },
+    "news": {
+        "title": "Notícias e Eventos",
+        "desc": "Fique atualizado com as novidades da Associação de Pais.",
+        "filters": {
+            "all": "Todos",
+            "news": "Notícias",
+            "event": "Eventos",
+            "protocol": "Protocolos"
+        },
+        "items": {
+            "agm": {
+                "title": "Assembleia Geral Anual 2025",
+                "desc": "Convite para a assembleia geral ordinária da Associação de Pais."
+            },
+            "sga": {
+                "title": "Atas da Reunião SGA",
+                "desc": "As atas da última reunião do Conselho da Comunidade Escolar já estão online."
+            },
+            "funding": {
+                "title": "Novas Oportunidades de Financiamento",
+                "desc": "As candidaturas para financiamento de projetos podem agora ser submetidas digitalmente."
+            },
+            "parentsDay": {
+                "title": "Dia dos Pais",
+                "desc": "Informações sobre o próximo Dia dos Pais e marcação de horários."
+            },
+            "festival": {
+                "title": "Festival Escolar 2026",
+                "desc": "Encontro anual de verão para todos os alunos e pais."
+            },
+            "jhv": {
+                "title": "Protocolo JHV 2025",
+                "desc": "Atas da última Assembleia Geral. Resultados de votação importantes."
+            },
+            "mentalHealth": {
+                "title": "Dias da Saúde Mental",
+                "desc": "Nova série de workshops a começar no próximo mês."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Proprietário da Mídia e Editor",
+        "contact": "Contato",
+        "zvr": "Número ZVR",
+        "purpose": "Objetivo da Associação",
+        "purposeDesc": "Salvaguardar os interesses dos parceiros da associação em relação ao ensino e trabalho educativo na escola, bem como promover a cooperação entre a casa e a escola."
+    },
+    "privacy": {
+        "intro": "Levamos muito a sério a proteção dos seus dados pessoais. Abaixo informamos sobre o processamento dos seus dados.",
+        "responsible": "1. Parte Responsável",
+        "collection": "2. Recolha e Processamento de Dados",
+        "collectionDesc": "Processamos dados pessoais que recebemos como parte da adesão ou através do seu contato.",
+        "rights": "3. Seus Direitos",
+        "rightsDesc": "Geralmente tem os direitos de informação, correção, eliminação, restrição, portabilidade de dados, revogação e objeção."
+    },
+    "home": {
+        "heroTitle": "Conectando Pais, Professores e Alunos",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Associação de Pais",
+        "heroDesc": "A Associação de Pais dedica-se a apoiar a comunidade escolar através de participação ativa, financiamento e comunicação aberta.",
+        "servicesLabel": "Nossos Serviços",
+        "servicesSub": "Inovação encontra a comunidade – Descubra nossos benefícios.",
+        "welcomeBadge": "Bem-vindo",
+        "getInvolved": "Participe",
+        "learnMore": "Saiba Mais",
+        "latestNews": "Últimas Notícias",
+        "insightsUpdates": "Informações e Atualizações",
+        "viewAll": "Ver Tudo",
+        "tags": {
+            "event": "Evento",
+            "protocol": "Protocolo",
+            "news": "Notícia"
+        },
+        "heroBadge": "Ativo para mais de 3.000 alunos",
+        "heroTitleFluid": "Habilitando o futuro juntos – para nossos filhos na HTL Mödling.",
+        "heroSubtitleFluid": "Desde bolsas de estudo a apoio social – somos a rede forte por trás dos alunos.",
+        "learnMoreScroll": "Saiba mais",
+        "benefits": {
+            "proj": "Apoiamos financeiramente projetos estudantis inovadores – do protótipo à apresentação.",
+            "projTitle": "Financiamento de Projetos",
+            "projLink": "/projekte",
+            "soc": "Ajuda desburocratizada para famílias sempre que o apoio é necessário.",
+            "socTitle": "Apoio Social",
+            "socLink": "/services",
+            "comm": "Conectando pais, escola e empresas para uma comunidade escolar forte.",
+            "commTitle": "Comunidade",
+            "commLink": "/kontakt"
+        },
+        "socialProof": {
+            "title": "Vozes da nossa Comunidade",
+            "s1": "\"Graças à associação de pais, nosso filho pôde realizar seu projeto final.\"",
+            "a1": "– Mãe de um aluno do 5º ano",
+            "s2": "\"O apoio rápido ajudou-nos muito.\"",
+            "a2": "– Família de um aluno"
+        },
+        "faq": {
+            "title": "Perguntas Frequentes (FAQ)",
+            "subtitle": "Aqui encontrará respostas às perguntas mais importantes sobre a associação de pais.",
+            "q1": "Posso ajudar mesmo sem uma função na diretoria?",
+            "a1": "Sim, com certeza! Agradecemos toda a ajuda nos nossos eventos ou projetos, sem necessidade de um cargo formal na diretoria.",
+            "q2": "Qual o valor da quota de sócio?",
+            "a2": "A quota de sócio é determinada anualmente em assembleia geral e beneficia diretamente os alunos.",
+            "q3": "Quem pode solicitar apoio?",
+            "a3": "Todos os pais de alunos da HTL Mödling podem solicitar apoio em casos de carência social ou para projetos estudantis inovadores.",
+            "q4": "Como a transparência é garantida?",
+            "a4": "Como associação sem fins lucrativos, estamos sujeitos a auditorias rigorosas. O uso dos fundos é monitorado anualmente por auditores e divulgado na assembleia geral."
+        }
+    },
+    "about": {
+        "title": "Sobre a Associação de Pais",
+        "desc": "A Associação de Pais é uma organização voluntária de pais e encarregados de educação dedicada a promover o bem-estar dos alunos e da escola.",
+        "mission": "Nossa Missão",
+        "missionDesc": "Fomentar uma relação estreita entre a casa e a escola, para que pais e professores possam cooperar de forma inteligente na educação dos seus filhos.",
+        "whatWeDo": "O Que Fazemos",
+        "points": [
+            "Organizar eventos e angariação de fundos",
+            "Apoiar projetos escolares financeiramente",
+            "Representar os interesses dos pais nos conselhos escolares",
+            "Facilitar a comunicação entre pais e escola"
+        ],
+        "board": {
+            "viewDetails": "Ver detalhes completos"
+        }
+    },
+    "costs": {
+        "title": "Associação e Custos",
+        "desc": "Gestão transparente das suas contribuições.",
+        "membership": "Quota de Sócio",
+        "allocation": "Alocação de Fundos",
+        "details": "A quota de sócio é utilizada 100% em benefício dos alunos.",
+        "membershipPerYear": "Ano por Família"
+    },
+    "contact": {
+        "title": "Contate-nos",
+        "subtitle": "Entre em Contato",
+        "desc": "Tem dúvidas ou quer participar? Contacte-nos diretamente ou preencha o formulário.",
+        "form": {
+            "name": "Nome",
+            "email": "E-mail",
+            "message": "Mensagem",
+            "send": "Enviar Mensagem",
+            "namePlaceholder": "Seu Nome",
+            "emailPlaceholder": "seu.email@exemplo.com",
+            "messagePlaceholder": "Como podemos ajudar?",
+            "infoText": "Estamos aqui para você. Contate-nos diretamente por e-mail, telefone ou visite-nos durante o horário de atendimento.",
+            "officeLabel": "Escritório",
+            "officeLocation": "Edifício Principal da Escola, Sala 101",
+            "phoneLabel": "Telefone",
+            "emailLabel": "E-mail"
+        }
+    },
+    "login": {
+        "title": "Entrar",
+        "subtitle": "Acesse a área interna para pais e professores.",
+        "email": "Endereço de E-mail",
+        "password": "Senha",
+        "emailPlaceholder": "nome@exemplo.com",
+        "submit": "Entrar",
+        "register": "Não tem conta? Registe-se",
+        "forgot": "Esqueceu a senha?",
+        "closeButton": "Fechar"
+    },
+    "newsAria": {
+        "categories": "Categorias de Notícias"
+    },
+    "services": {
+        "title": "Nossos Serviços",
+        "desc": "Apoiamos alunos e famílias com ajuda financeira, programas de explicações e cursos educacionais.",
+        "support": "Apoio Social",
+        "supportDesc": "Assistência financeira para eventos e materiais escolares.",
+        "supportPoints": [
+            "Subsídios para semanas escolares",
+            "Apoio para custos de materiais",
+            "Ajuda financeira discreta"
+        ],
+        "tutoring": "Lista de Explicações",
+        "tutoringDesc": "Conecte-se com explicadores qualificados.",
+        "tutoringPoints": [
+            "Rede de explicações entre alunos",
+            "Explicadores alunos verificados",
+            "Condições justas"
+        ],
+        "courses": "Cursos",
+        "coursesDesc": "Oportunidades educacionais adicionais.",
+        "coursesPoints": [
+            "Certificações ECDL",
+            "Cursos de moldagem por injeção",
+            "Preparação para exames"
+        ],
+        "learnMore": "Saiba Mais"
+    },
+    "projects": {
+        "title": "Projetos",
+        "currentTitle": "Projetos Atuais",
+        "desc": "Um histórico de projetos e iniciativas financiadas.",
+        "archive": "Arquivo de Projetos",
+        "viewArchive": "Ver Arquivo",
+        "ariaLabel": "Anos do Arquivo",
+        "overview": "Visão Geral do Projeto",
+        "viewOverview": "Estado da Candidatura",
+        "backToCurrent": "Voltar à Visão Geral",
+        "archiveDesc": "Histórico de anos letivos passados.",
+        "year": "Ano",
+        "fundedProjects": "Projetos Financiados",
+        "items": {
+            "physics": {
+                "title": "Novo Equipamento para Laboratório de Física",
+                "status": "Em Progresso"
+            },
+            "library": {
+                "title": "Modernização da Biblioteca",
+                "status": "Aprovado"
+            },
+            "garden": {
+                "title": "Assentos no Jardim da Escola",
+                "status": "Concluído"
+            }
+        },
+        "apply": {
+            "title": "Submeter Proposta de Projeto",
+            "desc": "Use este formulário para submeter digitalmente o seu pedido de financiamento.",
+            "button": "Iniciar Nova Candidatura",
+            "dashboardTitle": "Candidaturas Submetidas (2025/26)",
+            "dashboardDesc": "Gerencie e acompanhe os estados dos seus projetos",
+            "form": {
+                "title": "Título do Projeto",
+                "applicant": "Candidato / Departamento",
+                "description": "Descrição Detalhada do Projeto",
+                "costs": "Financiamento Necessário (€)",
+                "placeholderCosts": "0.00",
+                "files": "Anexos (Orçamentos, Planos)",
+                "submit": "Submeter Proposta",
+                "success": "A sua proposta foi submetida com sucesso!",
+                "titlePlaceholder": "ex: Upgrade do Lab de TI",
+                "applicantPlaceholder": "Seu Nome / Turma",
+                "descriptionPlaceholder": "Descreva o seu projeto...",
+                "uploadText": "Arraste e solte arquivos aqui ou clique",
+                "successSEO": "A sua proposta de projeto foi submetida com sucesso."
+            }
+        },
+        "overviewTable": {
+            "title": "Propostas Submetidas (2025/26)",
+            "headers": {
+                "project": "Projeto",
+                "applicant": "Candidato",
+                "department": "Departamento",
+                "date": "Data",
+                "cost": "Custo",
+                "status": "Estado"
+            },
+            "filters": {
+                "label": "Filtros:",
+                "ariaLabel": "Ações de Projeto",
+                "search": "Pesquisar projetos...",
+                "allStatus": "Todos os Estados",
+                "allDepts": "Todos os Departamentos"
+            },
+            "departments": {
+                "IT": "Tecnologia da Informação",
+                "ME": "Engenharia Mecânica",
+                "ET": "Engenharia Elétrica",
+                "GEN": "Geral",
+                "BAU": "Engenharia Civil",
+                "EL": "Eletrônica",
+                "CH": "Química",
+                "SP": "Desporto",
+                "FIN": "Finanças"
+            },
+            "noResults": "Nenhuma candidatura encontrada.",
+            "status": {
+                "approved": "Aprovado",
+                "pending": "Pendente",
+                "rejected": "Rejeitado"
+            }
+        }
+    },
+    "board": {
+        "title": "Nossa Diretoria",
+        "desc": "A equipa dedicada por trás da Associação de Pais.",
+        "roles": {
+            "chair": "Presidente",
+            "viceChair": "Vice-Presidente",
+            "treasurer": "Tesoureiro",
+            "secretary": "Secretário",
+            "member": "Membro Cooptado",
+            "auditor": "Auditor"
+        }
+    },
+    "statutes": {
+        "title": "Estatutos",
+        "desc": "O fundamento legal da nossa associação.",
+        "download": "Descarregar PDF"
+    },
+    "terms": {
+        "title": "Termos e Condições",
+        "desc": "Regras e regulamentos."
+    },
+    "cookieBanner": {
+        "text": "Utilizamos apenas cookies tecnicamente necessários para permitir as definições de idioma e o login.",
+        "accept": "Entendi",
+        "privacyLink": "Política de Privacidade"
+    },
+    "settings": {
+        "title": "Definições",
+        "language": "Idioma",
+        "theme": "Tema",
+        "lightMode": "Claro",
+        "darkMode": "Escuro",
+        "note": "As alterações são aplicadas imediatamente."
+    },
+    "common": {
+        "required": "Campo obrigatório"
+    }
+}

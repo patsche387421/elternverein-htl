@@ -10,12 +10,15 @@ import it from './locales/it.json';
 import fr from './locales/fr.json';
 import pl from './locales/pl.json';
 
+import ar from './locales/ar.json';
+import pt from './locales/pt.json';
+
 i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         debug: true,
-        fallbackLng: 'de',
+        fallbackLng: 'en',
         interpolation: {
             escapeValue: false,
         },
@@ -27,7 +30,9 @@ i18n
             es: { translation: es },
             it: { translation: it },
             fr: { translation: fr },
-            pl: { translation: pl }
+            pl: { translation: pl },
+            ar: { translation: ar },
+            pt: { translation: pt }
         }
     });
 

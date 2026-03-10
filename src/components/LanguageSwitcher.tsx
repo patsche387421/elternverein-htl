@@ -5,10 +5,12 @@ const LanguageSwitcher = () => {
     const { i18n, t } = useTranslation();
 
     const toggleLanguage = () => {
-        const langs = ['de', 'en', 'tr'];
+        const langs = ['de', 'en', 'tr', 'pt', 'ar'];
         const currentIndex = langs.indexOf(i18n.language.split('-')[0]);
         const nextIndex = (currentIndex + 1) % langs.length;
-        i18n.changeLanguage(langs[nextIndex]);
+        const nextLang = langs[nextIndex];
+        i18n.changeLanguage(nextLang);
+        document.documentElement.dir = nextLang === 'ar' ? 'rtl' : 'ltr';
     };
 
     return (

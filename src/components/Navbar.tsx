@@ -96,13 +96,13 @@ const Navbar = () => {
                             {!isLoggedIn ? (
                                 <button
                                     onClick={() => setIsLoginOpen(true)}
-                                    className="bg-primary text-primary-foreground min-w-[140px] px-4 py-2 rounded-full hover:bg-primary-dark transition-all font-medium flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/30 ml-2"
+                                    className="bg-primary text-primary-foreground min-w-[140px] px-4 py-2 rounded-full hover:bg-primary-dark transition-all font-medium flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/30 ms-2"
                                 >
                                     <User size={18} />
                                     <span>{i18n.language.split('-')[0] === 'de' ? 'Anmelden' : 'Login'}</span>
                                 </button>
                             ) : (
-                                <div className="relative ml-2">
+                                <div className="relative ms-2">
                                     <button
                                         onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                                         className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center border-2 border-primary/20 hover:border-primary transition-colors font-bold"
@@ -113,7 +113,7 @@ const Navbar = () => {
                                     {isUserMenuOpen && (
                                         <>
                                             <div className="fixed inset-0 z-10" onClick={() => setIsUserMenuOpen(false)}></div>
-                                            <div className="absolute right-0 mt-2 w-48 bg-surface border border-border rounded-xl shadow-xl z-20 py-2 animate-in fade-in zoom-in-95 duration-200">
+                                            <div className="absolute end-0 mt-2 w-48 bg-surface border border-border rounded-xl shadow-xl z-20 py-2 animate-in fade-in zoom-in-95 duration-200">
                                                 <div className="px-4 py-2 border-b border-border mb-2">
                                                     <p className="font-bold text-foreground">Patrick Kroeger</p>
                                                     <p className="text-xs text-foreground/60">Administrator</p>
@@ -147,7 +147,7 @@ const Navbar = () => {
                             <Settings size={22} />
                         </button>
                         <button
-                            className="p-3 -mr-2 rounded-full text-foreground/80 hover:bg-surface active:scale-95 transition-transform"
+                            className="p-3 -me-2 rounded-full text-foreground/80 hover:bg-surface active:scale-95 transition-transform"
                             onClick={() => setIsOpen(!isOpen)}
                             aria-label={t('nav.aria.menuToggle', 'Toggle menu')}
                         >
@@ -159,7 +159,7 @@ const Navbar = () => {
 
             {/* Mobile Navigation Menu */}
             {isOpen && createPortal(
-                <div className="fixed inset-0 z-50 flex flex-col bg-surface animate-in slide-in-from-right-10 duration-200">
+                <div className="fixed inset-0 z-50 flex flex-col bg-surface animate-in slide-in-from-start-10 duration-200">
                     {/* Cloud Header for Mobile Menu */}
                     <div className="flex justify-between items-center p-4 border-b border-border bg-surface/80 backdrop-blur-md">
                         <span className="text-xl font-bold text-primary">{t('nav.aria.menuToggle', 'Menu')}</span>

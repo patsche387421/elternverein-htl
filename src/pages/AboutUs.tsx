@@ -51,7 +51,7 @@ const AboutUs = () => {
 
                 {/* Membership & Costs */}
                 <section className="bg-surface rounded-3xl p-8 md:p-16 border border-border relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-12 text-primary/5 pointer-events-none">
+                    <div className="absolute top-0 end-0 p-12 text-primary/5 pointer-events-none">
                         <Euro size={200} strokeWidth={1} />
                     </div>
 
@@ -67,7 +67,7 @@ const AboutUs = () => {
                         </div>
                         <div className="bg-primary text-primary-foreground px-8 py-5 rounded-3xl shadow-2xl inline-block transform hover:scale-105 transition-transform">
                             <span className="text-5xl font-black">€ 15,-</span>
-                            <span className="text-primary-foreground/80 font-bold ml-2 uppercase tracking-widest text-sm">/ {t('costs.membershipPerYear')}</span>
+                            <span className="text-primary-foreground/80 font-bold ms-2 uppercase tracking-widest text-sm">/ {t('costs.membershipPerYear')}</span>
                         </div>
                     </div>
                 </section>
@@ -77,7 +77,7 @@ const AboutUs = () => {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                         <h2 className="text-4xl font-bold text-foreground tracking-tight">{t('board.title')}</h2>
                         <Link to="/about/board" className="group flex items-center gap-2 text-primary font-bold text-lg hover:underline transition-all">
-                            {t('about.board.viewDetails', 'Vollständige Details ansehen')} <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                            {t('about.board.viewDetails', 'Vollständige Details ansehen')} <ArrowRight size={20} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
                         </Link>
                     </div>
 

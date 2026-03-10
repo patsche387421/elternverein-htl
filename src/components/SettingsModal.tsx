@@ -17,6 +17,8 @@ const LANGUAGES = [
     { code: 'it', label: 'Italiano', flag: '🇮🇹' },
     { code: 'fr', label: 'Français', flag: '🇫🇷' },
     { code: 'pl', label: 'Polski', flag: '🇵🇱' },
+    { code: 'pt', label: 'Português', flag: '🇵🇹' },
+    { code: 'ar', label: 'العربية', flag: '🇦🇪' },
 ];
 
 const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
@@ -40,7 +42,16 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
 
     const handleLanguageChange = useCallback((lang: string) => {
         i18n.changeLanguage(lang);
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        document.documentElement.lang = lang;
     }, [i18n]);
+
+    // Handle initial direction
+    useEffect(() => {
+        const lang = i18n.language.split('-')[0];
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        document.documentElement.lang = lang;
+    }, [i18n.language]);
 
     // Close on Escape
     useEffect(() => {

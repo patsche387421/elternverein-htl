@@ -7,6 +7,10 @@
     @apply bg-background text-foreground transition-colors duration-300;
   }
 
+  :root[lang="ar"] body {
+    font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
   /* One-Color Engine Base Styles */
   h1,
   h2,

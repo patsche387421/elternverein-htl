@@ -183,7 +183,7 @@ const Home = () => {
                 </div>
 
                 {/* Background Decor */}
-                <div className="absolute top-0 right-0 p-24 text-primary/5 select-none pointer-events-none transform translate-x-1/4 -translate-y-1/4">
+                <div className="absolute top-0 end-0 p-24 text-primary/5 select-none pointer-events-none transform translate-x-1/4 -translate-y-1/4 rtl:-translate-x-1/4">
                     <Users size={400} />
                 </div>
             </section>
@@ -197,7 +197,7 @@ const Home = () => {
                         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-foreground leading-tight">{t('home.latestNews')}</h2>
                     </div>
                     <Link to="/news" className="group flex items-center gap-2 text-foreground/60 hover:text-primary font-bold transition-all text-lg tracking-tight">
-                        {t('home.viewAll')} <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
+                        {t('home.viewAll')} <ArrowRight size={24} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
                     </Link>
                 </div>
 
@@ -211,7 +211,7 @@ const Home = () => {
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-black/10 group-hover:opacity-0 transition-opacity" />
-                                <div className="absolute top-5 left-5 z-10">
+                                <div className="absolute top-5 start-5 z-10">
                                     <span className={`inline-flex items-center px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-wider ${getTypeColor(item.type)}`}>
                                         {t(`news.filters.${item.type}`)}
                                     </span>
@@ -254,7 +254,7 @@ const Home = () => {
                                     className="group bg-background rounded-2xl border border-border overflow-hidden transition-all duration-300 open:shadow-lg open:shadow-primary/5"
                                 >
                                     <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-lg select-none">
-                                        <span className="group-open:text-primary transition-colors pr-6">
+                                        <span className="group-open:text-primary transition-colors pe-6">
                                             {t(`home.faq.q${i}`)}
                                         </span>
                                         <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center group-open:rotate-180 transition-transform">

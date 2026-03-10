@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className="col-span-1 md:col-span-1">
                         <div className="flex items-center gap-4 mb-6">
                             <Logo className="h-14 w-auto text-primary transition-colors duration-300" size={56} />
-                            <div className="flex flex-col justify-center border-l border-border pl-4">
+                            <div className="flex flex-col justify-center border-s border-border ps-4">
                                 <h3 className="text-2xl font-black text-primary leading-tight tracking-tighter">
                                     Elternverein
                                 </h3>
@@ -59,7 +59,7 @@ const Footer = () => {
                     {/* Socials */}
                     <div>
                         <h4 className="font-semibold text-foreground mb-4">{t('footer.socials')}</h4>
-                        <div className="flex space-x-4">
+                        <div className="flex gap-4">
                             <a href="https://www.instagram.com/htlmoedling/" target="_blank" rel="noopener noreferrer" className="p-2 bg-background rounded-full text-foreground/80 hover:text-primary hover:bg-primary/10 transition-colors border border-border">
                                 <Instagram size={20} />
                             </a>

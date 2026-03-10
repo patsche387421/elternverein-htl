@@ -22,7 +22,8 @@ const Terms = () => {
                 </header>
 
                 <section className="max-w-4xl mx-auto bg-card p-10 md:p-16 rounded-3xl border border-border shadow-2xl relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-8 text-warning/5 pointer-events-none">
+                    <div className="absolute top-0 start-0 w-full h-1.5 bg-gradient-to-r from-transparent via-primary/40 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
+                    <div className="absolute end-0 p-8 text-warning/5 pointer-events-none">
                         <Scale size={150} strokeWidth={1} />
                     </div>
 

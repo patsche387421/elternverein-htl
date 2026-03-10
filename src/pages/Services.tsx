@@ -61,7 +61,7 @@ const Services = () => {
                             className="group relative overflow-hidden bg-surface/50 backdrop-blur-sm rounded-3xl p-10 border border-primary/10 hover:border-primary/30 hover:shadow-[0_20px_50px_rgba(var(--primary-rgb),0.1)] transition-all duration-500 hover:-translate-y-2"
                         >
                             {/* Decorative Top Line */}
-                            <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-primary/40 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
+                            <div className="absolute top-0 start-0 w-full h-1.5 bg-gradient-to-r from-transparent via-primary/40 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
 
                             {/* Icon Container with HSL-derived background */}
                             <div className={`w-20 h-20 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-8 shadow-inner transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 border border-primary/20`}>
