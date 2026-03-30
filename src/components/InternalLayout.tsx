@@ -1,5 +1,5 @@
-import { Outlet, Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Calendar, MessageSquare, Settings, LogOut } from 'lucide-react';
+import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
+import { LayoutDashboard, Calendar, MessageSquare, Settings, LogOut, Menu } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -9,6 +9,12 @@ function cn(...inputs: (string | undefined | null | false)[]) {
 
 const InternalLayout = () => {
     const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.removeItem('login_email');
+        navigate('/');
+    };
 
     const sidebarLinks = [
         { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
@@ -20,10 +26,19 @@ const InternalLayout = () => {
         <div className="flex h-screen bg-background">
             {/* Sidebar */}
             <aside className="w-64 bg-surface border-r border-border hidden md:flex flex-col">
-                <div className="p-6 border-b border-border">
-                    <Link to="/" className="text-xl font-bold text-primary">
+                <div className="p-6 border-b border-border space-y-6">
+                    <Link to="/" className="text-xl font-bold text-primary block">
                         EV Intern
                     </Link>
+                    <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold border border-primary/20">
+                            T
+                        </div>
+                        <div>
+                            <p className="text-sm font-bold text-foreground">Testperson</p>
+                            <p className="text-xs text-foreground/50">Vorstandsmitglied</p>
+                        </div>
+                    </div>
                 </div>
                 <nav className="flex-grow p-4 space-y-2">
                     {sidebarLinks.map((link) => (
@@ -31,14 +46,21 @@ const InternalLayout = () => {
                             key={link.name}
                             to={link.path}
                             className={cn(
-                                "flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+                                "flex items-center justify-between px-4 py-2 rounded-lg text-sm font-medium transition-colors",
                                 location.pathname === link.path
                                     ? "bg-primary/10 text-primary"
                                     : "text-foreground/70 hover:bg-primary/5 hover:text-primary"
                             )}
                         >
-                            <link.icon size={18} />
-                            {link.name}
+                            <div className="flex items-center gap-3">
+                                <link.icon size={18} />
+                                {link.name}
+                            </div>
+                            {link.name === 'Messages' && (
+                                <span className="bg-primary flex-shrink-0 text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded-full">
+                                    3
+                                </span>
+                            )}
                         </Link>
                     ))}
                 </nav>
@@ -50,13 +72,13 @@ const InternalLayout = () => {
                         <Settings size={18} />
                         Settings
                     </Link>
-                    <Link
-                        to="/"
-                        className="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium text-danger hover:bg-danger/10"
+                    <button
+                        onClick={handleLogout}
+                        className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium text-danger hover:bg-danger/10 transition-colors"
                     >
                         <LogOut size={18} />
                         Logout
-                    </Link>
+                    </button>
                 </div>
             </aside>
 
@@ -64,11 +86,14 @@ const InternalLayout = () => {
             <div className="flex-grow flex flex-col overflow-hidden">
                 {/* Mobile Header */}
                 <header className="bg-surface border-b border-border h-16 flex items-center justify-between px-6 md:hidden">
-                    <Link to="/" className="text-xl font-bold text-primary">
-                        EV Intern
-                    </Link>
+                    <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-sm border border-primary/20">
+                            T
+                        </div>
+                        <span className="text-sm font-bold text-foreground">Testperson</span>
+                    </div>
                     <button className="text-foreground/70 p-2 hover:text-primary transition-colors">
-                        <LayoutDashboard size={24} />
+                        <Menu size={24} />
                     </button>
                 </header>
 

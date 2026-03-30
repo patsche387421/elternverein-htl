@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { X, User, LogIn } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { createPortal } from 'react-dom';
@@ -11,6 +11,7 @@ interface LoginModalProps {
 
 const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLoginSuccess }) => {
     const { t } = useTranslation();
+    const [email, setEmail] = useState('');
 
     // Prevent scrolling when modal is open
     useEffect(() => {
@@ -26,6 +27,11 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLoginSuccess
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        
+        if (email) {
+            localStorage.setItem('login_email', email);
+        }
+
         // Simulate login delay
         setTimeout(() => {
             if (onLoginSuccess) {
@@ -84,6 +90,8 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLoginSuccess
                             </label>
                             <input
                                 type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 className="w-full px-4 py-3 rounded-xl bg-background border border-border focus:ring-2 focus:ring-primary transition-all outline-none text-foreground"
                                 placeholder="name@example.com"
                                 autoFocus

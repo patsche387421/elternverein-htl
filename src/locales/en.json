@@ -340,5 +340,85 @@
     },
     "common": {
         "required": "Required field"
+    },
+    "dashboard": {
+        "overview": {
+            "title": "Dashboard Overview",
+            "welcome": "Welcome back, {{name}}",
+            "stats": {
+                "events": "Open Projects",
+                "messages": "Approved Projects",
+                "members": "Active News",
+                "reports": "Next Event"
+            },
+            "activity": {
+                "title": "Recent Activity",
+                "viewAll": "View All",
+                "by": "by"
+            },
+            "actions": {
+                "title": "Quick Actions",
+                "post": "New Project Proposal",
+                "event": "Write News",
+                "document": "Upload Protocol"
+            },
+            "mock": {
+                "a1": "IT Laptops proposal approved",
+                "a2": "New meeting minutes uploaded",
+                "a3": "News: Summer Festival date",
+                "a4": "Garden maintenance project completed",
+                "a5": "Board meeting scheduled",
+                "u1": "Board",
+                "u2": "Secretary",
+                "u3": "PR Team",
+                "u4": "Project Lead",
+                "u5": "Chair",
+                "d1": "2 hours ago",
+                "d2": "Yesterday",
+                "d3": "2 days ago",
+                "d4": "3 days ago",
+                "d5": "Last week"
+            }
+        },
+        "messages": {
+            "title": "Messages",
+            "placeholder": "Write a message...",
+            "send": "Send",
+            "empty": "Select a conversation to start",
+            "mock": {
+                "c1": "Board Group",
+                "c2": "Accounting",
+                "c3": "Project Planning",
+                "m1": "Is the budget for the summer festival approved?",
+                "m2": "Invoice for the new laptops received.",
+                "m3": "We still need helpers for parents' day."
+            }
+        },
+        "settings": {
+            "title": "Settings",
+            "profile": {
+                "title": "Profile",
+                "name": "Name",
+                "email": "Email"
+            },
+            "notifications": {
+                "title": "Notifications",
+                "email": "Email Notifications",
+                "push": "Push Notifications",
+                "weekly": "Weekly Summary"
+            },
+            "appearance": {
+                "title": "Appearance"
+            },
+            "security": {
+                "title": "Security",
+                "changePassword": "Change Password",
+                "current": "Current Password",
+                "new": "New Password",
+                "confirm": "Confirm Password",
+                "success": "Password changed successfully!"
+            },
+            "save": "Save Changes"
+        }
     }
 }

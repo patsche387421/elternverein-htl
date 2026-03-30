@@ -340,5 +340,85 @@
     },
     "common": {
         "required": "Pflichtfeld"
+    },
+    "dashboard": {
+        "overview": {
+            "title": "Dashboard Übersicht",
+            "welcome": "Willkommen zurück, {{name}}",
+            "stats": {
+                "events": "Offene Projekte",
+                "messages": "Genehmigte Projekte",
+                "members": "Aktive News",
+                "reports": "Nächster Termin"
+            },
+            "activity": {
+                "title": "Letzte Aktivitäten",
+                "viewAll": "Alle anzeigen",
+                "by": "von"
+            },
+            "actions": {
+                "title": "Schnellzugriff",
+                "post": "Neuer Projektantrag",
+                "event": "News verfassen",
+                "document": "Protokoll hochladen"
+            },
+            "mock": {
+                "a1": "Antrag IT-Laptops genehmigt",
+                "a2": "Neues Sitzungsprotokoll hochgeladen",
+                "a3": "News: Sommerfest Termin",
+                "a4": "Projekt Gartenpflege abgeschlossen",
+                "a5": "Vorstandssitzung angesetzt",
+                "u1": "Vorstand",
+                "u2": "Schriftführer",
+                "u3": "PR Team",
+                "u4": "Projektleiter",
+                "u5": "Obmann",
+                "d1": "Vor 2 Stunden",
+                "d2": "Gestern",
+                "d3": "Vor 2 Tagen",
+                "d4": "Vor 3 Tagen",
+                "d5": "Letzte Woche"
+            }
+        },
+        "messages": {
+            "title": "Nachrichten",
+            "placeholder": "Schreibe eine Nachricht...",
+            "send": "Senden",
+            "empty": "Wähle eine Konversation aus",
+            "mock": {
+                "c1": "Vorstandsgruppe",
+                "c2": "Buchhaltung",
+                "c3": "Projektplanung",
+                "m1": "Ist das Budget für das Sommerfest schon freigegeben?",
+                "m2": "Rechnung für die neuen Laptops ist eingegangen.",
+                "m3": "Wir brauchen noch Helfer für den Elternsprechtag."
+            }
+        },
+        "settings": {
+            "title": "Einstellungen",
+            "profile": {
+                "title": "Profil",
+                "name": "Name",
+                "email": "E-Mail"
+            },
+            "notifications": {
+                "title": "Benachrichtigungen",
+                "email": "E-Mail Benachrichtigungen",
+                "push": "Push Benachrichtigungen",
+                "weekly": "Wöchentliche Zusammenfassung"
+            },
+            "appearance": {
+                "title": "Darstellung"
+            },
+            "security": {
+                "title": "Sicherheit",
+                "changePassword": "Passwort ändern",
+                "current": "Aktuelles Passwort",
+                "new": "Neues Passwort",
+                "confirm": "Passwort bestätigen",
+                "success": "Passwort erfolgreich geändert!"
+            },
+            "save": "Änderungen speichern"
+        }
     }
 }

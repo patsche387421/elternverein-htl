@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { User, Lock, ArrowLeft } from 'lucide-react';
@@ -7,8 +8,13 @@ const Login = () => {
     const navigate = useNavigate();
     const { t } = useTranslation();
 
+    const [email, setEmail] = useState('');
+
     const handleLogin = (e: React.FormEvent) => {
         e.preventDefault();
+        if (email) {
+            localStorage.setItem('login_email', email);
+        }
         navigate('/dashboard');
     };
 
@@ -42,6 +48,8 @@ const Login = () => {
                             <User className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground/20" size={20} />
                             <input
                                 type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 className="w-full pl-12 pr-4 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium"
                                 placeholder={t('login.emailPlaceholder', 'name@example.com')}
                                 required
