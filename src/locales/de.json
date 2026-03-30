@@ -55,7 +55,7 @@
                 "desc": "Informationen zum kommenden Elternsprechtag und Terminbuchung."
             },
             "festival": {
-                "title": "Schulfest 2026",
+                "title": "Ausflug bei Firma Fantasie",
                 "desc": "Jährliches Sommerfest für alle Schüler und Eltern."
             },
             "jhv": {
@@ -63,7 +63,7 @@
                 "desc": "Protokoll der letzten Jahreshauptversammlung. Wichtige Abstimmungsergebnisse."
             },
             "mentalHealth": {
-                "title": "Mental Health Days",
+                "title": "Tag der offenen Tür 2026",
                 "desc": "Neue Workshop-Serie startet nächsten Monat."
             }
         }
@@ -106,15 +106,21 @@
         "heroSubtitleFluid": "Vom Projektzuschuss bis zur sozialen Unterstützung – wir sind das starke Netzwerk hinter den Schülern.",
         "learnMoreScroll": "Mehr erfahren",
         "benefits": {
-            "proj": "Wir unterstützen innovative Schülerprojekte finanziell – vom Prototyp bis zur Präsentation.",
-            "projTitle": "Projektförderung",
+            "projTitle": "Fördern",
+            "proj": "Projekte & Ausbildung finanziell unterstützen",
             "projLink": "/projekte",
-            "soc": "Unbürokratische Hilfe für Familien, wenn Unterstützung gebraucht wird.",
-            "socTitle": "Soziale Unterstützung",
-            "socLink": "/services",
-            "comm": "Vernetzung von Eltern, Schule und Betrieben für eine starke Schulgemeinschaft.",
-            "commTitle": "Gemeinschaft",
-            "commLink": "/kontakt"
+            "suppTitle": "Unterstützen",
+            "supp": "Bindeglied zu Direktion & Abteilungsleitern",
+            "suppLink": "/services",
+            "helpTitle": "Helfen",
+            "help": "Sozial schwache Familien entlasten",
+            "helpLink": "/services",
+            "infoTitle": "Informieren",
+            "info": "Nachhilfe, Kurse, psychologische Hilfe",
+            "infoLink": "/news",
+            "entTitle": "Unterhalten",
+            "ent": "Bälle, Maturafeiern, Barbarafeier",
+            "entLink": "/news"
         },
         "socialProof": {
             "title": "Stimmen aus unserer Gemeinschaft",
@@ -342,6 +348,25 @@
         "required": "Pflichtfeld"
     },
     "dashboard": {
+        "nav": {
+            "overview": "Übersicht",
+            "calendar": "Kalender",
+            "messages": "Nachrichten"
+        },
+        "calendar": {
+            "title": "Gemeinsamer Kalender",
+            "subtitle": "Alle Termine & Veranstaltungen auf einen Blick",
+            "add": "Termin eintragen",
+            "days": {
+                "sun": "So",
+                "mon": "Mo",
+                "tue": "Di",
+                "wed": "Mi",
+                "thu": "Do",
+                "fri": "Fr",
+                "sat": "Sa"
+            }
+        },
         "overview": {
             "title": "Dashboard Übersicht",
             "welcome": "Willkommen zurück, {{name}}",

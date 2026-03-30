@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Instagram, Facebook, Mail } from 'lucide-react';
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import { DesignPreview } from './DesignPreview';
 import Logo from './Logo';
 
-const Footer = () => {
+const Footer = memo(() => {
     const { t } = useTranslation();
     const [previewOpen, setPreviewOpen] = useState(false);
     const currentYear = new Date().getFullYear();
@@ -86,6 +86,8 @@ const Footer = () => {
             />
         </footer>
     );
-};
+});
+
+Footer.displayName = 'Footer';
 
 export default Footer;

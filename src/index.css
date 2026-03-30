@@ -11,6 +11,10 @@
     font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
+  :root {
+    --accent-warm: 38 95% 55%;
+  }
+
   /* One-Color Engine Base Styles */
   h1,
   h2,

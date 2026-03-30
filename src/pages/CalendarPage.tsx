@@ -1,7 +1,9 @@
 import { ChevronLeft, ChevronRight, Plus } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 
 const CalendarPage = () => {
+    const { t } = useTranslation();
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     const date = new Date();
     const month = date.toLocaleString('default', { month: 'long' });
@@ -17,17 +19,17 @@ const CalendarPage = () => {
     return (
         <div className="space-y-6">
             <SEO
-                title="Veranstaltungskalender"
-                description="Alle Termine und Veranstaltungen des Elternvereins auf einen Blick."
+                title={t('dashboard.calendar.title', 'Shared Calendar')}
+                description={t('dashboard.calendar.subtitle', 'Veranstaltungskalender')}
             />
             <div className="flex justify-between items-center px-4">
                 <div>
-                    <h1 className="text-3xl font-black text-foreground tracking-tighter">Shared Calendar</h1>
-                    <p className="text-sm font-extrabold text-foreground/40 uppercase tracking-widest mt-1">View and manage all events</p>
+                    <h1 className="text-3xl font-black text-foreground tracking-tighter">{t('dashboard.calendar.title', 'Shared Calendar')}</h1>
+                    <p className="text-sm font-extrabold text-foreground/40 uppercase tracking-widest mt-1">{t('dashboard.calendar.subtitle', 'View and manage all events')}</p>
                 </div>
                 <button className="bg-primary text-primary-foreground px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-1 flex items-center gap-2">
                     <Plus size={20} strokeWidth={3} />
-                    Add Event
+                    {t('dashboard.calendar.add', 'Add Event')}
                 </button>
             </div>
 
@@ -49,7 +51,7 @@ const CalendarPage = () => {
                 <div className="grid grid-cols-7 border-b border-border bg-muted/10">
                     {days.map(day => (
                         <div key={day} className="py-4 text-center text-[10px] font-black text-foreground/30 uppercase tracking-[0.2em] border-r border-border last:border-0">
-                            {day}
+                            {t(`dashboard.calendar.days.${day.toLowerCase()}`, day)}
                         </div>
                     ))}
                 </div>

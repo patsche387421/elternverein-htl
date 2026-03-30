@@ -1,54 +1,17 @@
 import { useState } from 'react';
-import { Calendar, FileText, Bell, ArrowRight } from 'lucide-react';
+import { Calendar, ArrowRight, Bell } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import { newsData, type NewsCategory } from '../data/newsData';
 
 const News = () => {
     const { t } = useTranslation();
-    const [selectedCategory, setSelectedCategory] = useState('all');
+    const [selectedCategory, setSelectedCategory] = useState<NewsCategory>('all');
 
-    const categories = ['all', 'news', 'event', 'protocol'];
+    const categories: NewsCategory[] = ['all', 'news', 'event', 'protocol'];
 
-    const newsItems = [
-        {
-            id: 1,
-            title: t('news.items.agm.title'),
-            date: "15.10.2025",
-            type: "event",
-            desc: t('news.items.agm.desc'),
-            icon: Calendar
-        },
-        {
-            id: 2,
-            title: t('news.items.sga.title'),
-            date: "01.10.2025",
-            type: "protocol",
-            desc: t('news.items.sga.desc'),
-            icon: FileText
-        },
-        {
-            id: 3,
-            title: t('news.items.funding.title'),
-            date: "20.09.2025",
-            type: "news",
-            desc: t('news.items.funding.desc'),
-            icon: Bell
-        },
-        {
-            id: 4,
-            title: t('news.items.parentsDay.title'),
-            date: "10.12.2025",
-            type: "event",
-            desc: t('news.items.parentsDay.desc'),
-            icon: Calendar
-        }
-    ];
-
-    const getTypeColor = (_type: string) => {
-        return 'bg-primary text-primary-foreground';
-    };
-
-    const filteredNews = newsItems.filter(item =>
+    const filteredNews = newsData.filter(item =>
         selectedCategory === 'all' || item.type === selectedCategory
     );
 
@@ -61,7 +24,7 @@ const News = () => {
             />
 
             <div className="container mx-auto px-4 py-12 space-y-16">
-                <header className="text-center space-y-6">
+                <header className="text-center space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-700">
                     <div className="inline-flex items-center justify-center p-5 bg-primary/10 text-primary rounded-2xl mb-4 shadow-inner">
                         <Bell size={40} />
                     </div>
@@ -72,7 +35,7 @@ const News = () => {
                 </header>
 
                 {/* Category Filter Bar */}
-                <nav className="flex flex-wrap justify-center gap-3" aria-label={t('newsAria.categories', 'News Kategorien')}>
+                <nav className="flex flex-wrap justify-center gap-3 animate-in fade-in duration-700 delay-150" aria-label={t('newsAria.categories', 'News Kategorien')}>
                     {categories.map((cat) => (
                         <button
                             key={cat}
@@ -90,35 +53,54 @@ const News = () => {
                 </nav>
 
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {filteredNews.map((item) => (
-                        <article key={item.id} className="bg-card rounded-3xl p-10 shadow-sm border border-border hover:shadow-2xl hover:border-primary/30 transition-all group flex flex-col relative overflow-hidden">
-                            {/* Subtle background glow on hover */}
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100%] transition-all group-hover:bg-primary/10" />
-                            <div className="flex justify-between items-center mb-6">
-                                <span className={`px-4 py-1.5 rounded-md text-xs font-bold uppercase tracking-widest ${getTypeColor(item.type)}`}>
-                                    {t(`home.tags.${item.type}`)}
-                                </span>
-                                <div className="flex items-center gap-2 text-sm text-foreground/30 font-bold uppercase tracking-wider">
+                    {filteredNews.map((item, index) => (
+                        <Link 
+                            to={`/news/${item.id}`} 
+                            key={item.id} 
+                            className="bg-card rounded-3xl p-4 shadow-sm border border-border hover:shadow-2xl hover:border-primary/40 transition-all group flex flex-col relative overflow-hidden animate-in fade-in slide-in-from-bottom-8"
+                            style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
+                        >
+                            {/* Feature Image */}
+                            <div className="rounded-2xl aspect-[16/10] mb-6 overflow-hidden relative shadow-inner">
+                                <img
+                                    src={item.image}
+                                    alt={t(item.titleKey)}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent group-hover:opacity-70 transition-opacity duration-500" />
+                                <div className="absolute top-4 start-4 z-10">
+                                    <span className={`inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-black/50 text-white backdrop-blur-sm border border-white/20`}>
+                                        {t(`news.filters.${item.type}`)}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className="px-3 pb-3 flex flex-col flex-grow relative z-10">
+                                <div className="flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-xs mb-3">
                                     <Calendar size={14} />
                                     <span>{item.date}</span>
                                 </div>
-                            </div>
 
-                            <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors leading-tight">
-                                {item.title}
-                            </h3>
-                            <p className="text-foreground/60 font-medium leading-relaxed mb-8 flex-grow">
-                                {item.desc}
-                            </p>
+                                <h3 className="text-2xl font-black text-foreground mb-3 group-hover:text-primary transition-colors leading-tight">
+                                    {t(item.titleKey)}
+                                </h3>
+                                
+                                <p className="text-foreground/60 font-medium leading-relaxed mb-6 flex-grow line-clamp-3">
+                                    {t(item.descKey)}
+                                </p>
 
-                            <div className="pt-6 border-t border-border flex items-center justify-between group-hover:border-primary/20 transition-colors">
-                                <div className="flex items-center gap-3 text-sm font-bold text-primary uppercase tracking-widest">
-                                    <item.icon size={20} strokeWidth={2.5} />
-                                    <span>{t('home.viewAll')}</span>
+                                <div className="pt-5 border-t border-border flex items-center justify-between group-hover:border-primary/20 transition-colors">
+                                    <span className="text-sm font-bold text-foreground/50 group-hover:text-primary transition-colors uppercase tracking-widest">
+                                        Artikel lesen
+                                    </span>
+                                    <div className="w-8 h-8 rounded-full bg-primary/5 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transform group-hover:translate-x-1 transition-all">
+                                        <ArrowRight size={16} strokeWidth={2.5} />
+                                    </div>
                                 </div>
-                                <ArrowRight size={20} className="text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                             </div>
-                        </article>
+                        </Link>
                     ))}
                 </section>
             </div>

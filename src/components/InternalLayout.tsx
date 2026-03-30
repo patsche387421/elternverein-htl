@@ -1,4 +1,5 @@
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { LayoutDashboard, Calendar, MessageSquare, Settings, LogOut, Menu } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -8,6 +9,7 @@ function cn(...inputs: (string | undefined | null | false)[]) {
 }
 
 const InternalLayout = () => {
+    const { t } = useTranslation();
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -17,9 +19,9 @@ const InternalLayout = () => {
     };
 
     const sidebarLinks = [
-        { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
-        { name: 'Calendar', path: '/dashboard/calendar', icon: Calendar },
-        { name: 'Messages', path: '/dashboard/messages', icon: MessageSquare },
+        { name: t('dashboard.nav.overview', 'Dashboard'), path: '/dashboard', icon: LayoutDashboard },
+        { name: t('dashboard.nav.calendar', 'Calendar'), path: '/dashboard/calendar', icon: Calendar },
+        { name: t('dashboard.nav.messages', 'Messages'), path: '/dashboard/messages', icon: MessageSquare },
     ];
 
     return (
@@ -56,7 +58,7 @@ const InternalLayout = () => {
                                 <link.icon size={18} />
                                 {link.name}
                             </div>
-                            {link.name === 'Messages' && (
+                            {link.path === '/dashboard/messages' && (
                                 <span className="bg-primary flex-shrink-0 text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded-full">
                                     3
                                 </span>
@@ -70,14 +72,14 @@ const InternalLayout = () => {
                         className="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium text-foreground/70 hover:bg-primary/5 hover:text-primary"
                     >
                         <Settings size={18} />
-                        Settings
+                        {t('dashboard.settings.title', 'Settings')}
                     </Link>
                     <button
                         onClick={handleLogout}
                         className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium text-danger hover:bg-danger/10 transition-colors"
                     >
                         <LogOut size={18} />
-                        Logout
+                        {t('nav.logout', 'Logout')}
                     </button>
                 </div>
             </aside>
@@ -98,10 +100,14 @@ const InternalLayout = () => {
                 </header>
 
                 {/* Dashboard Content */}
-                <main className="flex-grow overflow-auto p-6 bg-background">
-                    <div className="max-w-7xl mx-auto">
+                <main className="flex-grow overflow-auto p-6 bg-background flex flex-col">
+                    <div className="max-w-7xl mx-auto flex-grow w-full">
                         <Outlet />
                     </div>
+                    {/* Internal Footer */}
+                    <footer className="mt-8 pt-4 border-t border-border text-center text-[10px] text-foreground/40 font-bold tracking-[0.2em] uppercase shrink-0">
+                        Demo-Version • Erstellt von Patrick K. & Antigravity
+                    </footer>
                 </main>
             </div>
         </div>

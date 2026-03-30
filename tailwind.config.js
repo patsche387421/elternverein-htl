@@ -92,6 +92,7 @@ export default {
         },
         "accent-gold": "hsl(var(--accent-gold))",
         "accent-silver": "hsl(var(--accent-silver))",
+        "accent-warm": "hsl(var(--accent-warm))",
         card: "hsl(var(--surface))",
         border: "hsl(var(--border))",
         input: "hsl(var(--border))",
@@ -220,6 +221,7 @@ export default {
 
             '--accent-gold': `${(h + 45) % 360} 80% 60%`,
             '--accent-silver': `${h} 5% 75%`,
+            '--accent-warm': `38 95% 55%`,
 
             ...generateStatusVars(false)
           },
@@ -246,6 +248,7 @@ export default {
 
             '--accent-gold': `${(h + 45) % 360} 80% 60%`,
             '--accent-silver': `${h} 5% 75%`,
+            '--accent-warm': `38 95% 55%`,
 
             ...generateStatusVars(true)
           }

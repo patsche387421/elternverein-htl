@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, User, LogOut, Settings } from 'lucide-react';
@@ -16,11 +16,15 @@ function cn(...inputs: (string | undefined | null | false)[]) {
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(() => !!localStorage.getItem('login_email'));
     const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const location = useLocation();
     const { t, i18n } = useTranslation();
+
+    useEffect(() => {
+        setIsLoggedIn(!!localStorage.getItem('login_email'));
+    }, [location.pathname]);
 
     const closeAll = () => {
         setIsOpen(false);
@@ -35,6 +39,7 @@ const Navbar = () => {
     };
 
     const handleLogout = () => {
+        localStorage.removeItem('login_email');
         setIsLoggedIn(false);
         setIsUserMenuOpen(false);
     };
@@ -107,7 +112,7 @@ const Navbar = () => {
                                         onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                                         className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center border-2 border-primary/20 hover:border-primary transition-colors font-bold"
                                     >
-                                        PK
+                                        TP
                                     </button>
 
                                     {isUserMenuOpen && (
@@ -115,7 +120,7 @@ const Navbar = () => {
                                             <div className="fixed inset-0 z-10" onClick={() => setIsUserMenuOpen(false)}></div>
                                             <div className="absolute end-0 mt-2 w-48 bg-surface border border-border rounded-xl shadow-xl z-20 py-2 animate-in fade-in zoom-in-95 duration-200">
                                                 <div className="px-4 py-2 border-b border-border mb-2">
-                                                    <p className="font-bold text-foreground">Patrick Kroeger</p>
+                                                    <p className="font-bold text-foreground">Testperson</p>
                                                     <p className="text-xs text-foreground/60">Administrator</p>
                                                 </div>
                                                 <Link to="/dashboard" onClick={() => setIsUserMenuOpen(false)} className="w-full text-left px-4 py-2 text-sm text-foreground/80 hover:bg-primary/5 hover:text-primary flex items-center gap-2">
@@ -204,10 +209,10 @@ const Navbar = () => {
                                 <div className="space-y-2">
                                     <Link to="/dashboard" onClick={closeAll} className="px-4 py-2 bg-surface-2 rounded-xl border border-border flex items-center gap-3 active:scale-[0.98] transition-transform">
                                         <div className="h-10 w-10 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">
-                                            PK
+                                            TP
                                         </div>
                                         <div>
-                                            <p className="font-bold">Patrick Kroeger</p>
+                                            <p className="font-bold">Testperson</p>
                                             <p className="text-xs text-foreground/60">{t('nav.profile')} (Admin)</p>
                                         </div>
                                     </Link>

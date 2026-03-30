@@ -55,7 +55,7 @@
                 "desc": "Information about the upcoming Parents' Day and appointment booking."
             },
             "festival": {
-                "title": "School Festival 2026",
+                "title": "Excursion to Company Fantasie",
                 "desc": "Annual summer gathering for all students and parents."
             },
             "jhv": {
@@ -63,7 +63,7 @@
                 "desc": "Minutes from the last General Assembly. Important voting results."
             },
             "mentalHealth": {
-                "title": "Mental Health Days",
+                "title": "Open House Day 2026",
                 "desc": "New workshop series starting next month."
             }
         }
@@ -106,15 +106,21 @@
         "heroSubtitleFluid": "From project grants to social support – we are the strong network behind the students.",
         "learnMoreScroll": "Learn more",
         "benefits": {
-            "proj": "We financially support innovative student projects – from prototype to presentation.",
-            "projTitle": "Project Funding",
+            "projTitle": "Funding",
+            "proj": "Financially support projects & education",
             "projLink": "/projekte",
-            "soc": "Unbureaucratic help for families whenever support is needed.",
-            "socTitle": "Social Support",
-            "socLink": "/services",
-            "comm": "Networking parents, school, and businesses for a strong school community.",
-            "commTitle": "Community",
-            "commLink": "/kontakt"
+            "suppTitle": "Support",
+            "supp": "Liaison to administration & department heads",
+            "suppLink": "/services",
+            "helpTitle": "Help",
+            "help": "Relieve socially disadvantaged families",
+            "helpLink": "/services",
+            "infoTitle": "Information",
+            "info": "Tutoring, courses, psychological help",
+            "infoLink": "/news",
+            "entTitle": "Entertainment",
+            "ent": "Balls, graduation parties, Barbara celebration",
+            "entLink": "/news"
         },
         "socialProof": {
             "title": "Voices from our Community",
@@ -342,6 +348,25 @@
         "required": "Required field"
     },
     "dashboard": {
+        "nav": {
+            "overview": "Overview",
+            "calendar": "Calendar",
+            "messages": "Messages"
+        },
+        "calendar": {
+            "title": "Shared Calendar",
+            "subtitle": "View and manage all events",
+            "add": "Add Event",
+            "days": {
+                "sun": "Sun",
+                "mon": "Mon",
+                "tue": "Tue",
+                "wed": "Wed",
+                "thu": "Thu",
+                "fri": "Fri",
+                "sat": "Sat"
+            }
+        },
         "overview": {
             "title": "Dashboard Overview",
             "welcome": "Welcome back, {{name}}",

@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 
-const CookieBanner = () => {
+const CookieBanner = memo(() => {
     const { t } = useTranslation();
     const [isVisible, setIsVisible] = useState(() => {
         if (typeof window !== 'undefined') {
@@ -50,6 +50,8 @@ const CookieBanner = () => {
             </div>
         </div>
     );
-};
+});
+
+CookieBanner.displayName = 'CookieBanner';
 
 export default CookieBanner;
