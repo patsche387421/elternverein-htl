@@ -40,31 +40,38 @@
         "items": {
             "agm": {
                 "title": "Annual General Meeting 2025",
-                "desc": "Invitation to the ordinary general meeting of the Parents' Association."
+                "desc": "Invitation to the ordinary general meeting of the Parents' Association.",
+                "body": "We cordially invite you to the Annual General Meeting of the Parents' Association of HTL Mödling. The meeting will take place on October 15, 2025, at 6:00 PM in the assembly hall of HTL Mödling.\n\nThe agenda includes the board's annual report, the treasurer's report with discharge of the board, the election of association officers, and the determination of the membership fee for the upcoming school year.\n\nYour participation is especially important, as essential decisions for the 2025/26 school year will be made at this meeting. A proxy vote is possible in case of absence. Please register by October 10, 2025, at the latest."
             },
             "sga": {
                 "title": "SGA Meeting Minutes",
-                "desc": "The minutes of the last School Community Committee meeting are now online."
+                "desc": "The minutes of the last School Community Committee meeting are now online.",
+                "body": "The minutes of the latest School Community Committee (SGA) meeting are now available for download. Important topics concerning school operations were discussed during the session.\n\nKey resolutions include: approval of the budget for school events in the current school year, updates to the school rules regarding mobile phone usage, and planning for upcoming parents' evenings and information events.\n\nAll parents are invited to review the full minutes and to contact the Parents' Association with any questions. The next SGA meeting is scheduled for December 2025."
             },
             "funding": {
                 "title": "New Funding Opportunities",
-                "desc": "Applications for project funding can now be submitted digitally."
+                "desc": "Applications for project funding can now be submitted digitally.",
+                "body": "Funding applications for innovative student projects can now be submitted digitally through our new online portal. The Parents' Association has increased the budget for project funding for the 2025/26 school year.\n\nProjects from all departments of HTL Mödling are eligible for funding – from Information Technology and Mechanical Engineering to Electrical Engineering, Civil Engineering, and Chemistry. We especially welcome cross-departmental collaborative projects.\n\nApplications are reviewed by the Parents' Association board and processed within three weeks. Upon approval, funds are made available promptly. All information about the application process can be found on our projects page."
             },
             "parentsDay": {
                 "title": "Parents' Day",
-                "desc": "Information about the upcoming Parents' Day and appointment booking."
+                "desc": "Information about the upcoming Parents' Day and appointment booking.",
+                "body": "The upcoming Parents' Day will take place on December 10, 2025, at HTL Mödling. Take this opportunity to discuss your children's current academic progress in personal conversations with their teachers.\n\nAppointment booking for the individual meetings is handled through the school portal. Please book your preferred time slots early, as they tend to fill up quickly. Each meeting lasts approximately ten minutes.\n\nThe Parents' Association will be present with an information stand. We are happy to answer your questions about our support services, funding opportunities, and upcoming events. Coffee and refreshments will be available."
             },
             "festival": {
                 "title": "Excursion to Company Fantasie",
-                "desc": "Annual summer gathering for all students and parents."
+                "desc": "An exciting company visit offering hands-on insights for students and parents.",
+                "body": "On October 15, 2026, the Parents' Association is organizing a company excursion to Company Fantasie. Students from all departments and their parents are cordially invited to gain hands-on insights into industrial practice for a day.\n\nCompany Fantasie is a leading technology enterprise in the region, offering exclusive tours of its production facilities, interactive workshops, and networking opportunities with professionals. Catering will be provided on site.\n\nRegistration is available through the Parents' Association's internal portal. Places are limited, so early registration is recommended. Bus transport from HTL Mödling will be organized by the Parents' Association and is free of charge for all participants."
             },
             "jhv": {
-                "title": "JHV Protocol 2025",
-                "desc": "Minutes from the last General Assembly. Important voting results."
+                "title": "AGM Minutes 2025",
+                "desc": "Minutes from the last Annual General Meeting. Important voting results.",
+                "body": "The complete minutes of the Annual General Meeting held on September 22, 2025, are now available for download by all members.\n\nIn the votes, the annual report was unanimously accepted, the membership fee for the 2025/26 school year was confirmed, and the board was discharged. The board elections resulted in the appointment of three new co-opted members.\n\nThe board thanks all attending members for the constructive discussion and lively interest. The next minutes will be published after the autumn session."
             },
             "mentalHealth": {
                 "title": "Open House Day 2026",
-                "desc": "New workshop series starting next month."
+                "desc": "Visit our workshops and laboratories on Open House Day.",
+                "body": "On Open House Day 2026, HTL Mödling opens its doors to all interested visitors. Explore our workshops, laboratories, and classrooms, and experience the diversity of our technical education firsthand.\n\nThe Parents' Association will be present with its own information stand and is available to answer questions about school support, funding opportunities, and association activities. Additionally, interactive workshops will be offered for children and young people.\n\nWe look forward to your visit and to introducing you to the opportunities at HTL Mödling. The school canteen, supported by the Parents' Association, will provide refreshments."
             }
         }
     },
@@ -343,6 +350,25 @@
         "lightMode": "Light",
         "darkMode": "Dark",
         "note": "Changes are applied immediately."
+    },
+    "newsArticle": {
+        "readArticle": "Read article",
+        "author": "Author",
+        "authorName": "Parents' Association Board",
+        "category": "Category",
+        "share": "Share",
+        "shareCopied": "Link copied!",
+        "print": "Print",
+        "details": "Important Details & Dates",
+        "detailStart": "Start: On time as per invitation",
+        "detailLocation": "Location: Assembly hall or via online conference",
+        "detailRegistration": "Registration: Required via the internal portal",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "The event takes place in the main building or the respective workshops.",
+        "ctaTitle": "Have questions about this?",
+        "ctaDesc": "We are happy to help you with any concerns.",
+        "ctaButton": "Get in touch",
+        "contactNote": "For questions, please contact our office at office@elternverein.today"
     },
     "common": {
         "required": "Required field"

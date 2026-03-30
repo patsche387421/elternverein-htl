@@ -40,31 +40,38 @@
         "items": {
             "agm": {
                 "title": "Assemblea Generale Annuale 2025",
-                "desc": "Invito all'assemblea generale ordinaria dell'Associazione Genitori."
+                "desc": "Invito all'assemblea generale ordinaria dell'Associazione Genitori.",
+                "body": "Vi invitiamo cordialmente all'Assemblea Generale Annuale dell'Associazione Genitori di HTL Mödling. La riunione si terrà il 15 ottobre 2025 alle ore 18:00 nella sala delle cerimonie dell'HTL Mödling.\n\nL'ordine del giorno include: il rapporto annuale del consiglio, il rapporto del tesoriere con lo scarico del consiglio, l'elezione dei rappresentanti dell'associazione e la determinazione della quota associativa per il prossimo anno scolastico.\n\nLa vostra partecipazione è particolarmente importante, poiché durante questa assemblea verranno prese decisioni essenziali per l'anno scolastico 2025/26. In caso di assenza, è possibile votare per delega. Vi preghiamo di registrarvi entro il 10 ottobre 2025."
             },
             "sga": {
                 "title": "Verbale Riunione SGA",
-                "desc": "Il verbale dell'ultima riunione del Comitato della Comunità Scolastica è ora online."
+                "desc": "Il verbale dell'ultima riunione del Comitato della Comunità Scolastica è ora online.",
+                "body": "Il verbale dell'ultima riunione del Comitato della Comunità Scolastica (SGA) è ora disponibile per il download. Durante la sessione sono stati discussi argomenti importanti relativi al funzionamento scolastico.\n\nLe delibere principali includono: l'approvazione del bilancio per gli eventi scolastici dell'anno in corso, l'aggiornamento del regolamento scolastico sull'uso dei telefoni cellulari e la pianificazione delle prossime serate per i genitori e degli eventi informativi.\n\nTutti i genitori sono invitati a consultare il verbale completo e a contattare l'Associazione Genitori per qualsiasi domanda. La prossima riunione dell'SGA è prevista per dicembre 2025."
             },
             "funding": {
                 "title": "Nuove Opportunità di Finanziamento",
-                "desc": "Le domande di finanziamento per i progetti possono ora essere inviate digitalmente."
+                "desc": "Le domande di finanziamento per i progetti possono ora essere inviate digitalmente.",
+                "body": "Le domande di finanziamento per progetti innovativi degli studenti possono ora essere inviate digitalmente tramite il nostro nuovo portale online. L'Associazione Genitori ha aumentato il budget per il finanziamento dei progetti per l'anno scolastico 2025/26.\n\nI progetti di tutti i dipartimenti dell'HTL Mödling sono ammissibili al finanziamento – dalle Tecnologie dell'Informazione e Ingegneria Meccanica all'Elettrotecnica, Edilizia e Chimica. Diamo un particolare benvenuto ai progetti collaborativi tra dipartimenti.\n\nLe domande vengono esaminate dal consiglio dell'Associazione Genitori e vengono elaborate entro tre settimane. Dopo l'approvazione, i fondi vengono resi disponibili tempestivamente. Tutte le informazioni sulla procedura di candidatura sono disponibili nella pagina dei progetti."
             },
             "parentsDay": {
                 "title": "Giorno dei Genitori",
-                "desc": "Informazioni sul prossimo Giorno dei Genitori e prenotazione appuntamenti."
+                "desc": "Informazioni sul prossimo Giorno dei Genitori e prenotazione appuntamenti.",
+                "body": "Il prossimo Giorno dei Genitori si terrà il 10 dicembre 2025 presso l'HTL Mödling. Cogliete questa opportunità per discutere il progresso accademico attuale dei vostri figli in colloqui personali con i loro insegnanti.\n\nLa prenotazione degli appuntamenti per i colloqui individuali avviene tramite il portale scolastico. Vi preghiamo di prenotare i vostri orari preferiti in anticipo, poiché le fasce orarie tendono a esaurirsi rapidamente. Ogni colloquio dura circa dieci minuti.\n\nL'Associazione Genitori sarà presente con uno stand informativo. Saremo lieti di rispondere alle vostre domande sui nostri servizi di supporto, le opportunità di finanziamento e i prossimi eventi. Saranno disponibili caffè e rinfreschi."
             },
             "festival": {
-                "title": "Festa della Scuola 2026",
-                "desc": "Incontro estivo annuale per tutti gli studenti e i genitori."
+                "title": "Escursione alla Ditta Fantasie",
+                "desc": "Un'emozionante visita aziendale con esperienze pratiche per studenti e genitori.",
+                "body": "Il 15 ottobre 2026, l'Associazione Genitori organizza un'escursione aziendale alla Ditta Fantasie. Gli studenti di tutti i dipartimenti e i loro genitori sono cordialmente invitati ad acquisire esperienze pratiche nel contesto industriale per un'intera giornata.\n\nLa Ditta Fantasie è un'azienda tecnologica leader nella regione e offre visite esclusive agli stabilimenti di produzione, workshop interattivi e opportunità di networking con i professionisti. Il catering sarà fornito in loco.\n\nL'iscrizione avviene tramite il portale interno dell'Associazione Genitori. I posti sono limitati, quindi si consiglia l'iscrizione anticipata. Il trasporto in autobus dall'HTL Mödling sarà organizzato dall'Associazione Genitori ed è gratuito per tutti i partecipanti."
             },
             "jhv": {
-                "title": "Protocollo JHV 2025",
-                "desc": "Verbale dell'ultima Assemblea Generale. Risultati importanti delle votazioni."
+                "title": "Verbale Assemblea Generale 2025",
+                "desc": "Verbale dell'ultima Assemblea Generale. Risultati importanti delle votazioni.",
+                "body": "Il verbale completo dell'Assemblea Generale tenutasi il 22 settembre 2025 è ora disponibile per il download da parte di tutti i soci.\n\nNelle votazioni, il rapporto annuale è stato accettato all'unanimità, la quota associativa per l'anno scolastico 2025/26 è stata confermata e il consiglio è stato scaricato. Le elezioni del consiglio hanno portato alla nomina di tre nuovi membri cooptati.\n\nIl consiglio ringrazia tutti i soci presenti per la discussione costruttiva e il grande interesse dimostrato. Il prossimo verbale sarà pubblicato dopo la sessione autunnale."
             },
             "mentalHealth": {
-                "title": "Giornate della Salute Mentale",
-                "desc": "Nuova serie di workshop a partire dal prossimo mese."
+                "title": "Giornata Porte Aperte 2026",
+                "desc": "Visitate i nostri laboratori e le nostre officine nella Giornata Porte Aperte.",
+                "body": "Nella Giornata Porte Aperte 2026, l'HTL Mödling apre le sue porte a tutti gli interessati. Esplorate i nostri laboratori, le officine e le aule e vivete in prima persona la varietà della nostra formazione tecnica.\n\nL'Associazione Genitori sarà presente con un proprio stand informativo e disponibile per rispondere a domande sul supporto scolastico, le opportunità di finanziamento e le attività dell'associazione. Inoltre, verranno offerti workshop interattivi per bambini e ragazzi.\n\nNon vediamo l'ora della vostra visita. La mensa scolastica, con il supporto dell'Associazione Genitori, offrirà rinfreschi."
             }
         }
     },
@@ -337,6 +344,25 @@
         "lightMode": "Chiaro",
         "darkMode": "Scuro",
         "note": "Le modifiche vengono applicate immediatamente."
+    },
+    "newsArticle": {
+        "readArticle": "Leggi l'articolo",
+        "author": "Autore",
+        "authorName": "Consiglio dell'Associazione Genitori",
+        "category": "Categoria",
+        "share": "Condividi",
+        "shareCopied": "Link copiato!",
+        "print": "Stampa",
+        "details": "Dettagli e date importanti",
+        "detailStart": "Inizio: Puntuale come da invito",
+        "detailLocation": "Luogo: Sala delle cerimonie o via conferenza online",
+        "detailRegistration": "Iscrizione: Necessaria tramite il portale interno",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "L'evento si svolge nell'edificio principale o nelle officine corrispondenti.",
+        "ctaTitle": "Avete domande a riguardo?",
+        "ctaDesc": "Siamo felici di aiutarvi con qualsiasi dubbio.",
+        "ctaButton": "Contattaci",
+        "contactNote": "Per domande, contattate il nostro ufficio all'indirizzo office@elternverein.today"
     },
     "common": {
         "required": "Campo obbligatorio"

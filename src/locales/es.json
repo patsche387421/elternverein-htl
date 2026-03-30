@@ -40,31 +40,38 @@
         "items": {
             "agm": {
                 "title": "Asamblea General Anual 2025",
-                "desc": "Invitación a la asamblea general ordinaria de la Asociación de Padres."
+                "desc": "Invitación a la asamblea general ordinaria de la Asociación de Padres.",
+                "body": "Les invitamos cordialmente a la Asamblea General Anual de la Asociación de Padres de HTL Mödling. La reunión tendrá lugar el 15 de octubre de 2025 a las 18:00 horas en el salón de actos de HTL Mödling.\n\nEl orden del día incluye: el informe anual de la junta directiva, el informe del tesorero con descargo de la junta, la elección de cargos de la asociación y la determinación de la cuota de socio para el próximo año escolar.\n\nSu participación es especialmente importante, ya que en esta reunión se tomarán decisiones esenciales para el año escolar 2025/26. En caso de ausencia, es posible el voto por delegación. Rogamos se inscriban antes del 10 de octubre de 2025."
             },
             "sga": {
                 "title": "Acta de reunión del SGA",
-                "desc": "El acta de la última reunión del Comité de la Comunidad Escolar está disponible en línea."
+                "desc": "El acta de la última reunión del Comité de la Comunidad Escolar está disponible en línea.",
+                "body": "El acta de la última reunión del Comité de la Comunidad Escolar (SGA) ya está disponible para su descarga. Durante la sesión se trataron temas importantes relativos al funcionamiento escolar.\n\nLas resoluciones principales incluyen: aprobación del presupuesto para eventos escolares del año escolar en curso, actualización del reglamento escolar respecto al uso de teléfonos móviles y planificación de las próximas reuniones de padres y eventos informativos.\n\nTodos los padres están invitados a revisar el acta completa y a contactar con la Asociación de Padres para cualquier consulta. La próxima reunión del SGA está prevista para diciembre de 2025."
             },
             "funding": {
                 "title": "Nuevas oportunidades de financiación",
-                "desc": "Las solicitudes de financiación de proyectos ahora se pueden enviar digitalmente."
+                "desc": "Las solicitudes de financiación de proyectos ahora se pueden enviar digitalmente.",
+                "body": "Las solicitudes de financiación para proyectos estudiantiles innovadores ya pueden enviarse digitalmente a través de nuestro nuevo portal en línea. La Asociación de Padres ha aumentado el presupuesto para la financiación de proyectos del año escolar 2025/26.\n\nProyectos de todos los departamentos de HTL Mödling son elegibles – desde Tecnología de la Información e Ingeniería Mecánica hasta Ingeniería Eléctrica, Ingeniería Civil y Química. Damos especial bienvenida a proyectos colaborativos interdepartamentales.\n\nLas solicitudes son revisadas por la junta directiva de la Asociación de Padres y se procesan en un plazo de tres semanas. Tras la aprobación, los fondos se ponen a disposición con prontitud. Toda la información sobre el proceso de solicitud está disponible en nuestra página de proyectos."
             },
             "parentsDay": {
                 "title": "Día de los padres",
-                "desc": "Información sobre el próximo Día de los Padres y reserva de citas."
+                "desc": "Información sobre el próximo Día de los Padres y reserva de citas.",
+                "body": "El próximo Día de los Padres tendrá lugar el 10 de diciembre de 2025 en HTL Mödling. Aproveche esta oportunidad para comentar el progreso académico actual de sus hijos en conversaciones personales con sus profesores.\n\nLa reserva de citas para las reuniones individuales se realiza a través del portal escolar. Le rogamos reserve sus franjas horarias preferidas con antelación, ya que suelen agotarse rápidamente. Cada reunión dura aproximadamente diez minutos.\n\nLa Asociación de Padres estará presente con un puesto informativo. Con gusto responderemos a sus preguntas sobre nuestros servicios de apoyo, oportunidades de financiación y próximos eventos. Se ofrecerá café y refrescos."
             },
             "festival": {
-                "title": "Festival escolar 2026",
-                "desc": "Encuentro anual de verano para todos los estudiantes y padres."
+                "title": "Excursión a la empresa Fantasie",
+                "desc": "Una emocionante visita a una empresa con experiencias prácticas para estudiantes y padres.",
+                "body": "El 15 de octubre de 2026, la Asociación de Padres organiza una excursión a la empresa Fantasie. Estudiantes de todos los departamentos y sus padres están cordialmente invitados a adquirir experiencias prácticas en el ámbito industrial durante un día.\n\nLa empresa Fantasie es una empresa tecnológica líder en la región que ofrece visitas exclusivas a sus instalaciones de producción, talleres interactivos y oportunidades de networking con profesionales. Se proporcionará catering en el lugar.\n\nLa inscripción se realiza a través del portal interno de la Asociación de Padres. Las plazas son limitadas, por lo que se recomienda la inscripción anticipada. El transporte en autobús desde HTL Mödling será organizado por la Asociación de Padres y es gratuito para todos los participantes."
             },
             "jhv": {
-                "title": "Protocolo JHV 2025",
-                "desc": "Actas de la última Asamblea General. Resultados importantes de votación."
+                "title": "Acta de la Asamblea General 2025",
+                "desc": "Actas de la última Asamblea General. Resultados importantes de votación.",
+                "body": "Las actas completas de la Asamblea General celebrada el 22 de septiembre de 2025 ya están disponibles para su descarga por todos los socios.\n\nEn las votaciones, el informe anual fue aceptado por unanimidad, se confirmó la cuota de socio para el año escolar 2025/26 y se otorgó el descargo a la junta directiva. Las elecciones de la junta resultaron en el nombramiento de tres nuevos miembros cooptados.\n\nLa junta agradece a todos los socios presentes la discusión constructiva y el gran interés mostrado. Las próximas actas se publicarán tras la sesión de otoño."
             },
             "mentalHealth": {
-                "title": "Días de salud mental",
-                "desc": "Nueva serie de talleres que comienza el próximo mes."
+                "title": "Jornada de Puertas Abiertas 2026",
+                "desc": "Visite nuestros talleres y laboratorios en la Jornada de Puertas Abiertas.",
+                "body": "En la Jornada de Puertas Abiertas 2026, HTL Mödling abre sus puertas a todos los interesados. Explore nuestros talleres, laboratorios y aulas, y experimente de primera mano la diversidad de nuestra educación técnica.\n\nLa Asociación de Padres estará presente con su propio puesto informativo y disponible para responder preguntas sobre el apoyo escolar, oportunidades de financiación y actividades de la asociación. Además, se ofrecerán talleres interactivos para niños y jóvenes.\n\nEsperamos su visita y poder presentarle las oportunidades en HTL Mödling. El comedor escolar, con el apoyo de la Asociación de Padres, ofrecerá refrescos."
             }
         }
     },
@@ -337,6 +344,25 @@
         "lightMode": "Claro",
         "darkMode": "Oscuro",
         "note": "Los cambios se aplican de inmediato."
+    },
+    "newsArticle": {
+        "readArticle": "Leer artículo",
+        "author": "Autor",
+        "authorName": "Junta de la Asociación de Padres",
+        "category": "Categoría",
+        "share": "Compartir",
+        "shareCopied": "¡Enlace copiado!",
+        "print": "Imprimir",
+        "details": "Detalles y fechas importantes",
+        "detailStart": "Inicio: Puntual según la invitación",
+        "detailLocation": "Lugar: Salón de actos o por videoconferencia",
+        "detailRegistration": "Inscripción: Necesaria a través del portal interno",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "El evento se celebra en el edificio principal o en los talleres correspondientes.",
+        "ctaTitle": "¿Tiene preguntas al respecto?",
+        "ctaDesc": "Con gusto le ayudamos con cualquier duda.",
+        "ctaButton": "Contactar",
+        "contactNote": "Para consultas, contacte con nuestra oficina en office@elternverein.today"
     },
     "common": {
         "required": "Campo obligatorio"

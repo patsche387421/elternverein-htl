@@ -48,40 +48,40 @@ const Dashboard = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4">
-                {/* Recent Activity */}
-                <div className="lg:col-span-2 bg-card rounded-3xl border border-border shadow-2xl overflow-hidden self-start">
-                    <div className="p-8 border-b border-border flex justify-between items-center bg-muted/30">
+                {/* Quick Actions / Announcements — first on mobile, last on desktop */}
+                <div className="order-first lg:order-last bg-card rounded-3xl border border-border shadow-2xl p-6 md:p-8 space-y-6 self-start">
+                    <h2 className="text-xl font-black text-foreground tracking-tight">{t('dashboard.overview.actions.title')}</h2>
+                    <div className="grid grid-cols-1 gap-4">
+                        <Link to="/projekte/antrag" className="w-full text-center p-4 md:p-5 rounded-2xl bg-primary/10 text-primary font-black uppercase tracking-widest text-xs border border-primary/20 hover:bg-primary/20 transition-all transform hover:-translate-y-1 block">
+                            {t('dashboard.overview.actions.post')}
+                        </Link>
+                        <button className="w-full text-center p-4 md:p-5 rounded-2xl bg-success/10 text-success font-black uppercase tracking-widest text-xs border border-success/20 hover:bg-success/20 transition-all transform hover:-translate-y-1">
+                            {t('dashboard.overview.actions.event')}
+                        </button>
+                        <button className="w-full text-center p-4 md:p-5 rounded-2xl bg-accent/10 text-accent font-black uppercase tracking-widest text-xs border border-accent/20 hover:bg-accent/20 transition-all transform hover:-translate-y-1">
+                            {t('dashboard.overview.actions.document')}
+                        </button>
+                    </div>
+                </div>
+
+                {/* Recent Activity — second on mobile, first on desktop */}
+                <div className="order-last lg:order-first lg:col-span-2 bg-card rounded-3xl border border-border shadow-2xl overflow-hidden self-start">
+                    <div className="p-6 md:p-8 border-b border-border flex justify-between items-center bg-muted/30">
                         <h2 className="text-xl font-black text-foreground tracking-tight">{t('dashboard.overview.activity.title')}</h2>
                         <button className="text-sm font-black text-primary uppercase tracking-widest hover:opacity-80 transition-opacity">{t('dashboard.overview.activity.viewAll')}</button>
                     </div>
                     <div className="divide-y divide-border/50">
                         {recentActivity.map((activity, i) => (
-                            <div key={i} className="p-6 hover:bg-primary/5 transition-colors flex justify-between items-center group">
-                                <div>
-                                    <p className="font-extrabold text-foreground group-hover:text-primary transition-colors">{activity.title}</p>
+                            <div key={i} className="p-4 md:p-6 hover:bg-primary/5 transition-colors flex justify-between items-center group gap-4">
+                                <div className="min-w-0">
+                                    <p className="font-extrabold text-foreground group-hover:text-primary transition-colors truncate">{activity.title}</p>
                                     <p className="text-xs font-bold text-foreground/40 uppercase tracking-widest mt-1">{t('dashboard.overview.activity.by')} {activity.user}</p>
                                 </div>
-                                <div className="text-[10px] text-foreground/20 font-mono font-black uppercase tracking-tighter bg-surface px-2 py-1 rounded-md border border-border">
+                                <div className="text-[10px] text-foreground/20 font-mono font-black uppercase tracking-tighter bg-surface px-2 py-1 rounded-md border border-border whitespace-nowrap shrink-0">
                                     {activity.date}
                                 </div>
                             </div>
                         ))}
-                    </div>
-                </div>
-
-                {/* Quick Actions / Announcements */}
-                <div className="bg-card rounded-3xl border border-border shadow-2xl p-8 space-y-6 self-start">
-                    <h2 className="text-xl font-black text-foreground tracking-tight">{t('dashboard.overview.actions.title')}</h2>
-                    <div className="grid grid-cols-1 gap-4">
-                        <Link to="/projekte/antrag" className="w-full text-center p-5 rounded-2xl bg-primary/10 text-primary font-black uppercase tracking-widest text-xs border border-primary/20 hover:bg-primary/20 transition-all transform hover:-translate-y-1 block">
-                            {t('dashboard.overview.actions.post')}
-                        </Link>
-                        <button className="w-full text-center p-5 rounded-2xl bg-success/10 text-success font-black uppercase tracking-widest text-xs border border-success/20 hover:bg-success/20 transition-all transform hover:-translate-y-1">
-                            {t('dashboard.overview.actions.event')}
-                        </button>
-                        <button className="w-full text-center p-5 rounded-2xl bg-accent/10 text-accent font-black uppercase tracking-widest text-xs border border-accent/20 hover:bg-accent/20 transition-all transform hover:-translate-y-1">
-                            {t('dashboard.overview.actions.document')}
-                        </button>
                     </div>
                 </div>
             </div>

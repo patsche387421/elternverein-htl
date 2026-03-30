@@ -93,7 +93,7 @@ const News = () => {
 
                                 <div className="pt-5 border-t border-border flex items-center justify-between group-hover:border-primary/20 transition-colors">
                                     <span className="text-sm font-bold text-foreground/50 group-hover:text-primary transition-colors uppercase tracking-widest">
-                                        Artikel lesen
+                                        {t('newsArticle.readArticle')}
                                     </span>
                                     <div className="w-8 h-8 rounded-full bg-primary/5 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transform group-hover:translate-x-1 transition-all">
                                         <ArrowRight size={16} strokeWidth={2.5} />

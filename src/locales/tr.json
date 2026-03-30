@@ -40,31 +40,38 @@
         "items": {
             "agm": {
                 "title": "Yıllık Genel Kurul 2025",
-                "desc": "Veliler Birliği'nin olağan genel kurul toplantısına davet."
+                "desc": "Veliler Birliği'nin olağan genel kurul toplantısına davet.",
+                "body": "HTL Mödling Veli Derneği Genel Kurul Toplantısına sizi içtenlikle davet ediyoruz. Toplantı 15 Ekim 2025 tarihinde saat 18:00'de HTL Mödling tören salonunda gerçekleştirilecektir.\n\nGündem maddeleri arasında: yönetim kurulu yıllık raporu, saymanlık raporu ile yönetim kurulunun ibrası, dernek organlarının seçimi ve gelecek öğretim yılı için üyelik aidatının belirlenmesi yer almaktadır.\n\nKatılımınız bizim için özellikle önemlidir, çünkü bu toplantıda 2025/26 öğretim yılı için önemli kararlar alınacaktır. Katılamama durumunda vekâleten oy kullanma imkânı bulunmaktadır. Lütfen en geç 10 Ekim 2025 tarihine kadar kayıt yaptırınız."
             },
             "sga": {
-                "title": "SGA Toplantı Tutanakları",
-                "desc": "Son Okul Topluluğu Komitesi toplantı tutanakları çevrimiçi."
+                "title": "SGA Toplantı Tutanağı",
+                "desc": "Son Okul Topluluğu Komitesi toplantı tutanakları çevrimiçi.",
+                "body": "Son Okul Topluluğu Komitesi (SGA) toplantısının tutanakları artık indirilebilir durumdadır. Oturumda okul işleyişiyle ilgili önemli konular görüşülmüştür.\n\nTemel kararlar arasında: mevcut öğretim yılındaki okul etkinlikleri bütçesinin onaylanması, cep telefonu kullanımına ilişkin okul kurallarının güncellenmesi ve gelecek veli toplantıları ile bilgilendirme etkinliklerinin planlanması bulunmaktadır.\n\nTüm veliler tutanakları incelemeye ve soruları için Veli Derneği ile iletişime geçmeye davet edilmektedir. Bir sonraki SGA toplantısı Aralık 2025 için planlanmıştır."
             },
             "funding": {
-                "title": "Yeni Finansman Fırsatları",
-                "desc": "Proje finansmanı başvuruları artık dijital olarak yapılabiliyor."
+                "title": "Yeni Finansman Olanakları",
+                "desc": "Proje finansmanı başvuruları artık dijital olarak yapılabiliyor.",
+                "body": "Yenilikçi öğrenci projeleri için finansman başvuruları artık yeni çevrimiçi portalımız üzerinden dijital olarak yapılabilmektedir. Veli Derneği, 2025/26 öğretim yılı için proje finansman bütçesini artırmıştır.\n\nHTL Mödling'in tüm bölümlerinden projeler finanse edilebilir – Bilgi Teknolojilerinden Makine Mühendisliğine, Elektrik Mühendisliğinden İnşaat Mühendisliğine ve Kimyaya kadar. Özellikle bölümler arası iş birliği projelerini memnuniyetle karşılıyoruz.\n\nBaşvurular Veli Derneği yönetim kurulu tarafından değerlendirilir ve üç hafta içinde işleme alınır. Onay durumunda fonlar derhal kullanıma sunulur. Başvuru süreci hakkında tüm bilgiler projeler sayfamızda bulunabilir."
             },
             "parentsDay": {
-                "title": "Veli Günü",
-                "desc": "Gelecek Veli Günü ve randevu alımı hakkında bilgiler."
+                "title": "Veli Görüşme Günü",
+                "desc": "Yaklaşan Veli Görüşme Günü ve randevu kayıt bilgileri.",
+                "body": "Yaklaşan Veli Görüşme Günü 10 Aralık 2025 tarihinde HTL Mödling'de gerçekleştirilecektir. Çocuklarınızın mevcut akademik durumunu öğretmenleriyle yüz yüze görüşmeler yaparak değerlendirme fırsatını değerlendirin.\n\nBireysel görüşmeler için randevu alma okul portalları üzerinden yapılmaktadır. Zaman dilimleri hızla dolduğundan, tercih ettiğiniz saatleri erken ayırtmanızı öneririz. Her görüşme yaklaşık on dakika sürmektedir.\n\nVeli Derneği bir bilgi standı ile etkinlikte hazır bulunacaktır. Destek hizmetlerimiz, finansman olanakları ve yaklaşan etkinlikler hakkındaki sorularınızı memnuniyetle yanıtlarız. Kahve ve atıştırmalıklar sunulacaktır."
             },
             "festival": {
-                "title": "Okul Festivali 2026",
-                "desc": "Tüm öğrenciler ve veliler için yıllık yaz buluşması."
+                "title": "Firma Fantasie Gezisi",
+                "desc": "Öğrenciler ve veliler için uygulamalı deneyimler sunan heyecan verici bir şirket gezisi.",
+                "body": "15 Ekim 2026 tarihinde Veli Derneği, Firma Fantasie'ye bir şirket gezisi düzenlemektedir. Tüm bölümlerden öğrenciler ve velileri, endüstriyel uygulamalar hakkında bir günlük uygulamalı deneyim kazanmaya davet edilmektedir.\n\nFirma Fantasie, bölgedeki öncü bir teknoloji şirketidir ve üretim tesislerine özel turlar, interaktif atölyeler ve profesyonellerle ağ oluşturma fırsatları sunmaktadır. Yerinde yiyecek-içecek hizmeti sağlanacaktır.\n\nKayıt, Veli Derneği'nin dahili portalları üzerinden yapılmaktadır. Kontenjan sınırlıdır, bu nedenle erken kayıt önerilir. HTL Mödling'den otobüs transferi Veli Derneği tarafından organize edilecek olup tüm katılımcılar için ücretsizdir."
             },
             "jhv": {
-                "title": "JHV Protokolü 2025",
-                "desc": "Son Genel Kurul tutanakları. Önemli oylama sonuçları."
+                "title": "2025 Genel Kurul Tutanağı",
+                "desc": "Son Genel Kurul Toplantısı tutanakları. Önemli oylama sonuçları.",
+                "body": "22 Eylül 2025 tarihinde gerçekleştirilen Genel Kurul Toplantısının tam tutanakları artık tüm üyeler tarafından indirilebilir durumdadır.\n\nOylamalarda yıllık rapor oybirliğiyle kabul edilmiş, 2025/26 öğretim yılı için üyelik aidatı onaylandı ve yönetim kurulu ibra edilmiştir. Yönetim kurulu seçimlerinde üç yeni koopte üye atanmıştır.\n\nYönetim kurulu, katılan tüm üyelere yapıcı tartışmaları ve yoğun ilgileri için teşekkür eder. Bir sonraki tutanaklar sonbahar oturumunun ardından yayımlanacaktır."
             },
             "mentalHealth": {
-                "title": "Ruh Sağlığı Günleri",
-                "desc": "Gelecek ay başlayacak yeni atölye dizisi."
+                "title": "Açık Kapı Günü 2026",
+                "desc": "Açık Kapı Günü'nde atölyelerimizi ve laboratuvarlarımızı ziyaret edin.",
+                "body": "2026 Açık Kapı Günü'nde HTL Mödling kapılarını tüm ilgililere açmaktadır. Atölyelerimizi, laboratuvarlarımızı ve sınıflarımızı keşfedin ve teknik eğitimimizin çeşitliliğini bizzat yaşayın.\n\nVeli Derneği kendi bilgi standıyla hazır bulunacak ve okul desteği, finansman olanakları ve dernek faaliyetleri hakkındaki soruları yanıtlamak için müsait olacaktır. Ayrıca çocuklar ve gençler için interaktif atölyeler sunulacaktır.\n\nZiyaretinizi dört gözle bekliyoruz. Okul kantini, Veli Derneği'nin desteğiyle yiyecek-içecek hizmeti sunacaktır."
             }
         }
     },
@@ -338,6 +345,25 @@
         "lightMode": "Açık",
         "darkMode": "Koyu",
         "note": "Değişiklikler hemen uygulanır."
+    },
+    "newsArticle": {
+        "readArticle": "Yazıyı oku",
+        "author": "Yazar",
+        "authorName": "Veli Derneği Yönetim Kurulu",
+        "category": "Kategori",
+        "share": "Paylaş",
+        "shareCopied": "Bağlantı kopyalandı!",
+        "print": "Yazdır",
+        "details": "Önemli Detaylar ve Tarihler",
+        "detailStart": "Başlangıç: Davete göre zamanında",
+        "detailLocation": "Yer: Tören salonu veya çevrimiçi konferans ile",
+        "detailRegistration": "Kayıt: Dahili portal üzerinden gereklidir",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "Etkinlik ana binada veya ilgili atölyelerde gerçekleştirilecektir.",
+        "ctaTitle": "Bu konuda sorularınız mı var?",
+        "ctaDesc": "Her türlü sorunuzda size yardımcı olmaktan mutluluk duyarız.",
+        "ctaButton": "İletişime geçin",
+        "contactNote": "Sorularınız için lütfen office@elternverein.today adresindeki ofisimizle iletişime geçin"
     },
     "common": {
         "required": "Zorunlu alan"

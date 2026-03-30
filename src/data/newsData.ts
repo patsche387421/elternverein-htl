@@ -6,6 +6,7 @@ export interface NewsItem {
     date: string;
     titleKey: string;
     descKey: string;
+    bodyKey: string;
     image: string;
 }
 
@@ -16,6 +17,7 @@ export const newsData: NewsItem[] = [
         date: "15.10.2026",
         titleKey: "news.items.festival.title",
         descKey: "news.items.festival.desc",
+        bodyKey: "news.items.festival.body",
         image: "/pics/Ausflug_1.webp"
     },
     {
@@ -24,6 +26,7 @@ export const newsData: NewsItem[] = [
         date: "10.03.2026",
         titleKey: "news.items.mentalHealth.title",
         descKey: "news.items.mentalHealth.desc",
+        bodyKey: "news.items.mentalHealth.body",
         image: "/pics/Event_Tag der offenen Tür_1.webp"
     },
     {
@@ -32,7 +35,8 @@ export const newsData: NewsItem[] = [
         date: "15.10.2025",
         titleKey: "news.items.agm.title",
         descKey: "news.items.agm.desc",
-        image: "/pics/Praesentation_1.webp" 
+        bodyKey: "news.items.agm.body",
+        image: "/pics/Praesentation_1.webp"
     },
     {
         id: "sga",
@@ -40,6 +44,7 @@ export const newsData: NewsItem[] = [
         date: "01.10.2025",
         titleKey: "news.items.sga.title",
         descKey: "news.items.sga.desc",
+        bodyKey: "news.items.sga.body",
         image: "/pics/Protokoll_Vorschau_1.webp"
     },
     {
@@ -48,6 +53,7 @@ export const newsData: NewsItem[] = [
         date: "20.09.2025",
         titleKey: "news.items.funding.title",
         descKey: "news.items.funding.desc",
+        bodyKey: "news.items.funding.body",
         image: "/pics/Labor_3.webp"
     },
     {
@@ -56,6 +62,7 @@ export const newsData: NewsItem[] = [
         date: "22.09.2025",
         titleKey: "news.items.jhv.title",
         descKey: "news.items.jhv.desc",
+        bodyKey: "news.items.jhv.body",
         image: "/pics/Protokoll_Vorschau_1.webp"
     },
     {
@@ -64,6 +71,7 @@ export const newsData: NewsItem[] = [
         date: "10.12.2025",
         titleKey: "news.items.parentsDay.title",
         descKey: "news.items.parentsDay.desc",
+        bodyKey: "news.items.parentsDay.body",
         image: "/pics/htl-gebaude-von-oben-2.webp"
     }
 ];

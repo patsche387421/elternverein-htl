@@ -40,31 +40,38 @@
         "items": {
             "agm": {
                 "title": "Jahreshauptversammlung 2025",
-                "desc": "Einladung zur ordentlichen Jahreshauptversammlung des Elternvereins."
+                "desc": "Einladung zur ordentlichen Jahreshauptversammlung des Elternvereins.",
+                "body": "Wir laden Sie herzlich zur Jahreshauptversammlung des Elternvereins der HTL Mödling ein. Die Versammlung findet am 15. Oktober 2025 um 18:00 Uhr im Festsaal der HTL Mödling statt.\n\nAuf der Tagesordnung stehen unter anderem: der Jahresbericht des Vorstands, der Kassenbericht mit Entlastung des Vorstands, die Neuwahl der Vereinsorgane sowie die Festlegung des Mitgliedsbeitrags für das kommende Schuljahr.\n\nIhre Teilnahme ist uns besonders wichtig, da bei dieser Versammlung wesentliche Entscheidungen für das Schuljahr 2025/26 getroffen werden. Eine Stimmrechtsübertragung ist bei Verhinderung möglich. Wir bitten um Anmeldung bis spätestens 10. Oktober 2025."
             },
             "sga": {
-                "title": "Protokoll SGA Sitzung",
-                "desc": "Das Protokoll der letzten Schulgemeinschaftsausschuss-Sitzung ist nun online."
+                "title": "Protokoll SGA-Sitzung",
+                "desc": "Das Protokoll der letzten Schulgemeinschaftsausschuss-Sitzung ist nun online.",
+                "body": "Das Protokoll der letzten Sitzung des Schulgemeinschaftsausschusses (SGA) steht ab sofort zum Download bereit. In der Sitzung wurden wichtige Themen rund um den Schulbetrieb besprochen.\n\nZu den zentralen Beschlüssen gehören: die Genehmigung des Budgets für Schulveranstaltungen im laufenden Schuljahr, die Anpassung der Hausordnung bezüglich der Handynutzung sowie die Planung kommender Elternabende und Informationsveranstaltungen.\n\nAlle Eltern sind eingeladen, das vollständige Protokoll einzusehen und sich bei Rückfragen an den Elternverein zu wenden. Die nächste SGA-Sitzung ist für Dezember 2025 geplant."
             },
             "funding": {
                 "title": "Neue Fördermöglichkeiten",
-                "desc": "Ab sofort können Anträge für Projektförderungen digital eingereicht werden."
+                "desc": "Ab sofort können Anträge für Projektförderungen digital eingereicht werden.",
+                "body": "Ab sofort können Förderanträge für innovative Schülerprojekte digital über unser neues Online-Portal eingereicht werden. Der Elternverein stellt für das Schuljahr 2025/26 ein erhöhtes Budget für die Projektförderung bereit.\n\nGefördert werden Projekte aus allen Abteilungen der HTL Mödling – von der Informationstechnologie über Maschinenbau und Elektrotechnik bis hin zu Bautechnik und Chemie. Besonders begrüßen wir abteilungsübergreifende Kooperationsprojekte.\n\nDie Anträge werden vom Vorstand des Elternvereins geprüft und innerhalb von drei Wochen bearbeitet. Bei Genehmigung stellen wir die Mittel zeitnah zur Verfügung. Alle Informationen zum Antragsverfahren finden Sie auf unserer Projektseite."
             },
             "parentsDay": {
                 "title": "Elternsprechtag",
-                "desc": "Informationen zum kommenden Elternsprechtag und Terminbuchung."
+                "desc": "Informationen zum kommenden Elternsprechtag und Terminbuchung.",
+                "body": "Der kommende Elternsprechtag findet am 10. Dezember 2025 an der HTL Mödling statt. Nutzen Sie diese Gelegenheit, um mit den Lehrkräften Ihrer Kinder in persönlichen Gesprächen den aktuellen Leistungsstand zu besprechen.\n\nDie Terminbuchung für die Einzelgespräche erfolgt über das Schulportal. Bitte buchen Sie Ihre Wunschtermine rechtzeitig, da die Zeitfenster erfahrungsgemäß schnell vergeben sind. Jedes Gespräch dauert etwa zehn Minuten.\n\nDer Elternverein ist vor Ort mit einem Informationsstand vertreten. Wir stehen Ihnen für Fragen zu unseren Unterstützungsangeboten, Förderungen und anstehenden Veranstaltungen zur Verfügung. Für Kaffee und Erfrischungen ist gesorgt."
             },
             "festival": {
                 "title": "Ausflug bei Firma Fantasie",
-                "desc": "Jährliches Sommerfest für alle Schüler und Eltern."
+                "desc": "Ein spannender Firmenausflug mit Einblicken in die Praxis für Schüler und Eltern.",
+                "body": "Am 15. Oktober 2026 veranstaltet der Elternverein einen Firmenausflug zur Firma Fantasie. Schülerinnen und Schüler aller Abteilungen sowie deren Eltern sind herzlich eingeladen, einen Tag lang Einblicke in die industrielle Praxis zu gewinnen.\n\nDie Firma Fantasie ist ein führendes Technologieunternehmen in der Region und bietet exklusive Führungen durch die Produktionshallen, interaktive Workshops und Networking-Möglichkeiten mit Fachkräften. Für Verpflegung vor Ort ist gesorgt.\n\nDie Anmeldung erfolgt über das interne Portal des Elternvereins. Die Teilnehmerzahl ist begrenzt – eine frühzeitige Anmeldung wird empfohlen. Der Bustransfer ab der HTL Mödling wird vom Elternverein organisiert und ist für alle Teilnehmer kostenlos."
             },
             "jhv": {
-                "title": "JHV Protokoll 2025",
-                "desc": "Protokoll der letzten Jahreshauptversammlung. Wichtige Abstimmungsergebnisse."
+                "title": "JHV-Protokoll 2025",
+                "desc": "Protokoll der letzten Jahreshauptversammlung. Wichtige Abstimmungsergebnisse.",
+                "body": "Das vollständige Protokoll der Jahreshauptversammlung vom 22. September 2025 liegt nun vor und steht allen Mitgliedern zum Download zur Verfügung.\n\nBei den Abstimmungen wurde der Jahresbericht einstimmig angenommen, der Mitgliedsbeitrag für das Schuljahr 2025/26 bestätigt und der Vorstand entlastet. Bei der Neuwahl wurden drei neue kooptierte Mitglieder in den Vorstand aufgenommen.\n\nDer Vorstand bedankt sich bei allen anwesenden Mitgliedern für die konstruktive Diskussion und das rege Interesse. Das nächste Protokoll wird nach der Herbstsitzung veröffentlicht."
             },
             "mentalHealth": {
                 "title": "Tag der offenen Tür 2026",
-                "desc": "Neue Workshop-Serie startet nächsten Monat."
+                "desc": "Besuchen Sie unsere Werkstätten und Labore am Tag der offenen Tür.",
+                "body": "Am Tag der offenen Tür 2026 öffnet die HTL Mödling ihre Türen für alle Interessierten. Besuchen Sie unsere Werkstätten, Labore und Unterrichtsräume und erleben Sie die Vielfalt unserer technischen Ausbildung hautnah.\n\nDer Elternverein ist mit einem eigenen Informationsstand vertreten und steht für Fragen rund um die Schulunterstützung, Förderungen und Vereinsaktivitäten zur Verfügung. Zusätzlich werden interaktive Workshops für Kinder und Jugendliche angeboten.\n\nWir freuen uns auf Ihren Besuch und darauf, Ihnen die Möglichkeiten an der HTL Mödling näherzubringen. Für das leibliche Wohl sorgt die Schulkantine, unterstützt durch den Elternverein."
             }
         }
     },
@@ -343,6 +350,25 @@
         "lightMode": "Hell",
         "darkMode": "Dunkel",
         "note": "Änderungen werden sofort übernommen."
+    },
+    "newsArticle": {
+        "readArticle": "Artikel lesen",
+        "author": "Autor",
+        "authorName": "Elternverein Vorstand",
+        "category": "Kategorie",
+        "share": "Teilen",
+        "shareCopied": "Link kopiert!",
+        "print": "Drucken",
+        "details": "Wichtige Details & Termine",
+        "detailStart": "Beginn: Pünktlich laut Einladung",
+        "detailLocation": "Ort: Festsaal oder per Online-Konferenz",
+        "detailRegistration": "Anmeldung: Über das interne Portal erforderlich",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "Die Veranstaltung findet im Hauptgebäude oder den jeweiligen Werkstätten statt.",
+        "ctaTitle": "Haben Sie Fragen dazu?",
+        "ctaDesc": "Wir helfen Ihnen gerne bei Unklarheiten weiter.",
+        "ctaButton": "Kontakt aufnehmen",
+        "contactNote": "Bei Fragen wenden Sie sich bitte an unser Büro unter office@elternverein.today"
     },
     "common": {
         "required": "Pflichtfeld"

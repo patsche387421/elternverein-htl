@@ -40,31 +40,38 @@
         "items": {
             "agm": {
                 "title": "Walne Zgromadzenie 2025",
-                "desc": "Zaproszenie na zwyczajne walne zgromadzenie Stowarzyszenia Rodziców."
+                "desc": "Zaproszenie na zwyczajne walne zgromadzenie Stowarzyszenia Rodziców.",
+                "body": "Serdecznie zapraszamy na Walne Zgromadzenie Stowarzyszenia Rodziców HTL Mödling. Spotkanie odbędzie się 15 października 2025 o godzinie 18:00 w auli HTL Mödling.\n\nPorządek obrad obejmuje: roczne sprawozdanie zarządu, sprawozdanie skarbnika z udzieleniem absolutorium zarządowi, wybór organów stowarzyszenia oraz ustalenie składki członkowskiej na nadchodzący rok szkolny.\n\nPaństwa uczestnictwo jest szczególnie ważne, ponieważ na tym zgromadzeniu podejmowane będą istotne decyzje dotyczące roku szkolnego 2025/26. W przypadku niemożności uczestnictwa możliwe jest głosowanie przez pełnomocnika. Prosimy o rejestrację najpóźniej do 10 października 2025."
             },
             "sga": {
                 "title": "Protokół z posiedzenia SGA",
-                "desc": "Protokół z ostatniego posiedzenia Komisji Społeczności Szkolnej jest już online."
+                "desc": "Protokół z ostatniego posiedzenia Komisji Społeczności Szkolnej jest już online.",
+                "body": "Protokół z ostatniego posiedzenia Komisji Społeczności Szkolnej (SGA) jest już dostępny do pobrania. Podczas posiedzenia omówiono ważne tematy dotyczące funkcjonowania szkoły.\n\nGłówne uchwały obejmują: zatwierdzenie budżetu na wydarzenia szkolne w bieżącym roku szkolnym, aktualizację regulaminu szkoły dotyczącego używania telefonów komórkowych oraz planowanie nadchodzących wieczorów rodzicielskich i wydarzeń informacyjnych.\n\nWszyscy rodzice są zaproszeni do zapoznania się z pełnym protokołem i skontaktowania się ze Stowarzyszeniem Rodziców w przypadku pytań. Następne posiedzenie SGA zaplanowane jest na grudzień 2025."
             },
             "funding": {
                 "title": "Nowe możliwości finansowania",
-                "desc": "Wnioski o dofinansowanie projektów można teraz składać drogą elektroniczną."
+                "desc": "Wnioski o dofinansowanie projektów można teraz składać drogą elektroniczną.",
+                "body": "Wnioski o dofinansowanie innowacyjnych projektów uczniowskich można teraz składać cyfrowo za pośrednictwem naszego nowego portalu online. Stowarzyszenie Rodziców zwiększyło budżet na finansowanie projektów na rok szkolny 2025/26.\n\nProjekty ze wszystkich wydziałów HTL Mödling kwalifikują się do dofinansowania – od Informatyki i Budowy Maszyn po Elektrotechnikę, Budownictwo i Chemię. Szczególnie mile widzimy międzywydziałowe projekty współpracy.\n\nWnioski są rozpatrywane przez zarząd Stowarzyszenia Rodziców i przetwarzane w ciągu trzech tygodni. Po zatwierdzeniu środki są udostępniane niezwłocznie. Wszystkie informacje o procedurze składania wniosków znajdziesz na naszej stronie projektów."
             },
             "parentsDay": {
                 "title": "Dzień Rodziców",
-                "desc": "Informacje o nadchodzącym Dniu Rodziców i rezerwacja terminów."
+                "desc": "Informacje o nadchodzącym Dniu Rodziców i rezerwacja terminów.",
+                "body": "Nadchodzący Dzień Rodziców odbędzie się 10 grudnia 2025 w HTL Mödling. Skorzystaj z tej okazji, aby omówić bieżące postępy w nauce swoich dzieci w osobistych rozmowach z ich nauczycielami.\n\nRezerwacja terminów na indywidualne spotkania odbywa się za pośrednictwem portalu szkolnego. Prosimy o wcześniejsze zarezerwowanie preferowanych czasów, ponieważ sloty czasowe szybko się wypełniają. Każde spotkanie trwa około dziesięciu minut.\n\nStowarzyszenie Rodziców będzie obecne ze stoiskiem informacyjnym. Chętnie odpowiemy na Państwa pytania dotyczące naszych usług wsparcia, możliwości finansowania i nadchodzących wydarzeń. Dostępna będzie kawa i przekąski."
             },
             "festival": {
-                "title": "Święto Szkoły 2026",
-                "desc": "Coroczne letnie spotkanie dla wszystkich uczniów i rodziców."
+                "title": "Wycieczka do Firmy Fantasie",
+                "desc": "Ekscytująca wycieczka firmowa z praktycznym doświadczeniem dla uczniów i rodziców.",
+                "body": "15 października 2026 Stowarzyszenie Rodziców organizuje wycieczkę firmową do Firmy Fantasie. Uczniowie ze wszystkich wydziałów i ich rodzice są serdecznie zaproszeni, aby przez jeden dzień zdobyć praktyczne doświadczenie w praktyce przemysłowej.\n\nFirma Fantasie jest wiodącym przedsiębiorstwem technologicznym w regionie, oferującym ekskluzywne zwiedzanie zakładów produkcyjnych, interaktywne warsztaty i możliwości networkingu z profesjonalistami. Catering zostanie zapewniony na miejscu.\n\nRejestracja odbywa się za pośrednictwem wewnętrznego portalu Stowarzyszenia Rodziców. Liczba miejsc jest ograniczona, dlatego zalecana jest wczesna rejestracja. Transport autobusowy z HTL Mödling zostanie zorganizowany przez Stowarzyszenie Rodziców i jest bezpłatny dla wszystkich uczestników."
             },
             "jhv": {
-                "title": "Protokół JHV 2025",
-                "desc": "Protokół z ostatniego Walnego Zgromadzenia. Ważne wyniki głosowań."
+                "title": "Protokół WZ 2025",
+                "desc": "Protokół z ostatniego Walnego Zgromadzenia. Ważne wyniki głosowań.",
+                "body": "Pełny protokół Walnego Zgromadzenia, które odbyło się 22 września 2025, jest teraz dostępny do pobrania dla wszystkich członków.\n\nW głosowaniach sprawozdanie roczne zostało przyjęte jednomyślnie, potwierdzono składkę członkowską na rok szkolny 2025/26 i udzielono absolutorium zarządowi. W wyborach zarządu powołano trzech nowych członków kooptowanych.\n\nZarząd dziękuje wszystkim obecnym członkom za konstruktywną dyskusję i duże zainteresowanie. Następny protokół zostanie opublikowany po sesji jesiennej."
             },
             "mentalHealth": {
-                "title": "Dni Zdrowia Psychicznego",
-                "desc": "Nowa seria warsztatów rozpoczynająca się w przyszłym miesiącu."
+                "title": "Dzień Otwarty 2026",
+                "desc": "Odwiedź nasze pracownie i laboratoria w Dniu Otwartym.",
+                "body": "W Dniu Otwartym 2026 HTL Mödling otwiera swoje drzwi dla wszystkich zainteresowanych. Poznaj nasze pracownie, laboratoria i sale lekcyjne i doświadcz różnorodności naszej edukacji technicznej na własne oczy.\n\nStowarzyszenie Rodziców będzie obecne z własnym stoiskiem informacyjnym i gotowe do odpowiedzi na pytania dotyczące wsparcia szkolnego, możliwości finansowania i działalności stowarzyszenia. Dodatkowo zostaną zaoferowane interaktywne warsztaty dla dzieci i młodzieży.\n\nCzekamy na Twoją wizytę. Stołówka szkolna, przy wsparciu Stowarzyszenia Rodziców, zapewni napoje i przekąski."
             }
         }
     },
@@ -87,7 +94,7 @@
         "heroTitle": "Łączymy Rodziców, Nauczycieli i Uczniów",
         "heroTitleSub": "HTL Mödling",
         "heroTitleMain": "Stowarzyszenie Rodziców",
-        "heroDesc": "StowarzyszenieRodziców angażuje się we wspieranie społeczności szkolnej poprzez aktywny udział i finansowanie.",
+        "heroDesc": "Stowarzyszenie Rodziców angażuje się we wspieranie społeczności szkolnej poprzez aktywny udział i finansowanie.",
         "servicesLabel": "Nasze Usługi",
         "servicesSub": "Innowacja spotyka społeczność – odkryj nasze korzyści.",
         "welcomeBadge": "Witaj u nas",
@@ -337,6 +344,25 @@
         "lightMode": "Jasny",
         "darkMode": "Ciemny",
         "note": "Zmiany są wprowadzane natychmiast."
+    },
+    "newsArticle": {
+        "readArticle": "Czytaj artykuł",
+        "author": "Autor",
+        "authorName": "Zarząd Stowarzyszenia Rodziców",
+        "category": "Kategoria",
+        "share": "Udostępnij",
+        "shareCopied": "Link skopiowany!",
+        "print": "Drukuj",
+        "details": "Ważne szczegóły i terminy",
+        "detailStart": "Początek: Punktualnie zgodnie z zaproszeniem",
+        "detailLocation": "Miejsce: Aula lub wideokonferencja",
+        "detailRegistration": "Rejestracja: Wymagana przez portal wewnętrzny",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "Wydarzenie odbywa się w głównym budynku lub odpowiednich pracowniach.",
+        "ctaTitle": "Masz pytania w tej sprawie?",
+        "ctaDesc": "Chętnie pomożemy we wszelkich wątpliwościach.",
+        "ctaButton": "Skontaktuj się",
+        "contactNote": "W przypadku pytań prosimy o kontakt z naszym biurem pod adresem office@elternverein.today"
     },
     "common": {
         "required": "Pole wymagane"

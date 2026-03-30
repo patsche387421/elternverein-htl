@@ -40,31 +40,38 @@
         "items": {
             "agm": {
                 "title": "Assembleia Geral Anual 2025",
-                "desc": "Convite para a assembleia geral ordinária da Associação de Pais."
+                "desc": "Convite para a assembleia geral ordinária da Associação de Pais.",
+                "body": "Convidamo-vos cordialmente para a Assembleia Geral Anual da Associação de Pais da HTL Mödling. A reunião terá lugar a 15 de outubro de 2025, às 18h00, no salão de festas da HTL Mödling.\n\nA ordem de trabalhos inclui: o relatório anual da direção, o relatório do tesoureiro com a isenção de responsabilidade da direção, a eleição dos órgãos da associação e a determinação da quota de membro para o próximo ano letivo.\n\nA vossa participação é especialmente importante, uma vez que serão tomadas decisões essenciais para o ano letivo 2025/26 nesta assembleia. Em caso de ausência, é possível o voto por procuração. Solicitamos a inscrição até 10 de outubro de 2025."
             },
             "sga": {
                 "title": "Atas da Reunião SGA",
-                "desc": "As atas da última reunião do Conselho da Comunidade Escolar já estão online."
+                "desc": "As atas da última reunião do Conselho da Comunidade Escolar já estão online.",
+                "body": "A ata da última reunião do Comité da Comunidade Escolar (SGA) está agora disponível para download. Durante a sessão foram discutidos temas importantes relativos ao funcionamento escolar.\n\nAs resoluções principais incluem: a aprovação do orçamento para eventos escolares do ano letivo em curso, a atualização do regulamento escolar relativo ao uso de telemóveis e o planeamento das próximas reuniões de pais e eventos informativos.\n\nTodos os pais são convidados a consultar a ata completa e a contactar a Associação de Pais para quaisquer dúvidas. A próxima reunião do SGA está prevista para dezembro de 2025."
             },
             "funding": {
                 "title": "Novas Oportunidades de Financiamento",
-                "desc": "As candidaturas para financiamento de projetos podem agora ser submetidas digitalmente."
+                "desc": "As candidaturas para financiamento de projetos podem agora ser submetidas digitalmente.",
+                "body": "As candidaturas a financiamento de projetos inovadores de estudantes podem agora ser submetidas digitalmente através do nosso novo portal online. A Associação de Pais aumentou o orçamento para financiamento de projetos para o ano letivo 2025/26.\n\nProjetos de todos os departamentos da HTL Mödling são elegíveis – desde Tecnologias da Informação e Engenharia Mecânica até Engenharia Elétrica, Engenharia Civil e Química. Damos especial boas-vindas a projetos colaborativos interdepartamentais.\n\nAs candidaturas são analisadas pela direção da Associação de Pais e processadas no prazo de três semanas. Após aprovação, os fundos são disponibilizados prontamente. Todas as informações sobre o processo de candidatura estão disponíveis na nossa página de projetos."
             },
             "parentsDay": {
                 "title": "Dia dos Pais",
-                "desc": "Informações sobre o próximo Dia dos Pais e marcação de horários."
+                "desc": "Informações sobre o próximo Dia dos Pais e marcação de horários.",
+                "body": "O próximo Dia dos Pais terá lugar a 10 de dezembro de 2025 na HTL Mödling. Aproveite esta oportunidade para discutir o progresso académico atual dos seus filhos em conversas pessoais com os seus professores.\n\nA marcação de horários para as reuniões individuais é feita através do portal escolar. Solicitamos que reserve os seus horários preferidos com antecedência, pois tendem a esgotar-se rapidamente. Cada reunião dura aproximadamente dez minutos.\n\nA Associação de Pais estará presente com um stand informativo. Teremos todo o prazer em responder às suas questões sobre os nossos serviços de apoio, oportunidades de financiamento e próximos eventos. Café e refrescos estarão disponíveis."
             },
             "festival": {
-                "title": "Festival Escolar 2026",
-                "desc": "Encontro anual de verão para todos os alunos e pais."
+                "title": "Excursão à Empresa Fantasie",
+                "desc": "Uma emocionante visita empresarial com experiências práticas para estudantes e pais.",
+                "body": "A 15 de outubro de 2026, a Associação de Pais organiza uma excursão à Empresa Fantasie. Estudantes de todos os departamentos e os seus pais são cordialmente convidados a adquirir experiências práticas na indústria durante um dia.\n\nA Empresa Fantasie é uma empresa tecnológica líder na região, oferecendo visitas exclusivas às suas instalações de produção, workshops interativos e oportunidades de networking com profissionais. O catering será fornecido no local.\n\nA inscrição realiza-se através do portal interno da Associação de Pais. Os lugares são limitados, pelo que se recomenda a inscrição antecipada. O transporte de autocarro desde a HTL Mödling será organizado pela Associação de Pais e é gratuito para todos os participantes."
             },
             "jhv": {
                 "title": "Protocolo JHV 2025",
-                "desc": "Atas da última Assembleia Geral. Resultados de votação importantes."
+                "desc": "Atas da última Assembleia Geral. Resultados de votação importantes.",
+                "body": "A ata completa da Assembleia Geral realizada a 22 de setembro de 2025 está agora disponível para download por todos os membros.\n\nNas votações, o relatório anual foi aceite por unanimidade, a quota de membro para o ano letivo 2025/26 foi confirmada e a direção foi exonerada. As eleições da direção resultaram na nomeação de três novos membros cooptados.\n\nA direção agradece a todos os membros presentes a discussão construtiva e o grande interesse demonstrado. A próxima ata será publicada após a sessão de outono."
             },
             "mentalHealth": {
-                "title": "Dias da Saúde Mental",
-                "desc": "Nova série de workshops a começar no próximo mês."
+                "title": "Dia de Portas Abertas 2026",
+                "desc": "Visite as nossas oficinas e laboratórios no Dia de Portas Abertas.",
+                "body": "No Dia de Portas Abertas 2026, a HTL Mödling abre as suas portas a todos os interessados. Explore as nossas oficinas, laboratórios e salas de aula e experiencie a diversidade da nossa formação técnica em primeira mão.\n\nA Associação de Pais estará presente com o seu próprio stand informativo e disponível para responder a questões sobre o apoio escolar, oportunidades de financiamento e atividades da associação. Adicionalmente, serão oferecidos workshops interativos para crianças e jovens.\n\nAguardamos a sua visita. A cantina escolar, com o apoio da Associação de Pais, fornecerá refrescos."
             }
         }
     },
@@ -337,6 +344,25 @@
         "lightMode": "Claro",
         "darkMode": "Escuro",
         "note": "As alterações são aplicadas imediatamente."
+    },
+    "newsArticle": {
+        "readArticle": "Ler artigo",
+        "author": "Autor",
+        "authorName": "Conselho da Associação de Pais",
+        "category": "Categoria",
+        "share": "Partilhar",
+        "shareCopied": "Link copiado!",
+        "print": "Imprimir",
+        "details": "Detalhes e datas importantes",
+        "detailStart": "Início: Pontual de acordo com o convite",
+        "detailLocation": "Local: Salão de festas ou via conferência online",
+        "detailRegistration": "Inscrição: Necessária através do portal interno",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "O evento realiza-se no edifício principal ou nas respectivas oficinas.",
+        "ctaTitle": "Tem perguntas sobre isto?",
+        "ctaDesc": "Teremos todo o prazer em ajudá-lo com quaisquer preocupações.",
+        "ctaButton": "Entre em contacto",
+        "contactNote": "Para dúvidas, entre em contacto com o nosso escritório em office@elternverein.today"
     },
     "common": {
         "required": "Campo obrigatório"
