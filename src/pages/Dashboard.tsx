@@ -1,21 +1,19 @@
 import { useState } from 'react';
-import { Bell, Calendar, Users, FileText, Info } from 'lucide-react';
+import { Bell, Calendar, Users, FileText, Info, X, Upload, FileEdit } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const Dashboard = () => {
     const { t } = useTranslation();
-    const navigate = useNavigate();
     const [toast, setToast] = useState<string | null>(null);
+    const [showAll, setShowAll] = useState(false);
+    const [showNewsModal, setShowNewsModal] = useState(false);
+    const [showUploadModal, setShowUploadModal] = useState(false);
 
     const showToast = (message: string) => {
         setToast(message);
         setTimeout(() => setToast(null), 3000);
-    };
-
-    const handleViewAllActivity = () => {
-        document.getElementById('activity-list')?.scrollIntoView({ behavior: 'smooth' });
     };
 
     const stats = [
@@ -34,6 +32,8 @@ const Dashboard = () => {
         { title: 'Zusätzlicher Test-Eintrag 1', date: 'Heute', user: 'System' },
         { title: 'Zusätzlicher Test-Eintrag 2', date: 'Gestern', user: 'System' },
     ];
+
+    const visibleActivity = showAll ? recentActivity : recentActivity.slice(0, 4);
 
     return (
         <div className="space-y-6 relative">
@@ -62,21 +62,21 @@ const Dashboard = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4">
-                {/* Quick Actions / Announcements */}
+                {/* Quick Actions */}
                 <div className="order-first lg:order-last bg-card rounded-3xl border border-border shadow-2xl p-6 md:p-8 space-y-6 self-start">
                     <h2 className="text-xl font-black text-foreground tracking-tight">{t('dashboard.overview.actions.title')}</h2>
                     <div className="grid grid-cols-1 gap-4">
                         <Link to="/projekte/antrag" className="w-full text-center p-4 md:p-5 rounded-2xl bg-primary/10 text-primary font-black uppercase tracking-widest text-xs border border-primary/20 hover:bg-primary/20 transition-all transform hover:-translate-y-1 block">
                             {t('dashboard.overview.actions.post')}
                         </Link>
-                        <button 
-                            onClick={() => navigate('/dashboard/calendar?new=true')}
+                        <button
+                            onClick={() => setShowNewsModal(true)}
                             className="w-full text-center p-4 md:p-5 rounded-2xl bg-success/10 text-success font-black uppercase tracking-widest text-xs border border-success/20 hover:bg-success/20 transition-all transform hover:-translate-y-1"
                         >
                             {t('dashboard.overview.actions.event')}
                         </button>
-                        <button 
-                            onClick={() => showToast('In der Demo nicht verfügbar')}
+                        <button
+                            onClick={() => setShowUploadModal(true)}
                             className="w-full text-center p-4 md:p-5 rounded-2xl bg-accent/10 text-accent font-black uppercase tracking-widest text-xs border border-accent/20 hover:bg-accent/20 transition-all transform hover:-translate-y-1"
                         >
                             {t('dashboard.overview.actions.document')}
@@ -88,15 +88,15 @@ const Dashboard = () => {
                 <div id="activity-list" className="order-last lg:order-first lg:col-span-2 bg-card rounded-3xl border border-border shadow-2xl overflow-hidden self-start">
                     <div className="p-6 md:p-8 border-b border-border flex justify-between items-center bg-muted/30">
                         <h2 className="text-xl font-black text-foreground tracking-tight">{t('dashboard.overview.activity.title')}</h2>
-                        <button 
-                            onClick={handleViewAllActivity}
+                        <button
+                            onClick={() => setShowAll(!showAll)}
                             className="text-sm font-black text-primary uppercase tracking-widest hover:opacity-80 transition-opacity"
                         >
-                            {t('dashboard.overview.activity.viewAll')}
+                            {showAll ? 'Weniger' : t('dashboard.overview.activity.viewAll')}
                         </button>
                     </div>
-                    <div className="divide-y divide-border/50 max-h-[400px] overflow-y-auto">
-                        {recentActivity.map((activity, i) => (
+                    <div className="divide-y divide-border/50">
+                        {visibleActivity.map((activity, i) => (
                             <div key={i} className="p-4 md:p-6 hover:bg-primary/5 transition-colors flex justify-between items-center group gap-4">
                                 <div className="min-w-0">
                                     <p className="font-extrabold text-foreground group-hover:text-primary transition-colors truncate">{activity.title}</p>
@@ -108,8 +108,102 @@ const Dashboard = () => {
                             </div>
                         ))}
                     </div>
+                    {recentActivity.length > 4 && (
+                        <div className="p-4 border-t border-border text-center">
+                            <button
+                                onClick={() => setShowAll(!showAll)}
+                                className="text-xs font-black text-foreground/40 hover:text-primary uppercase tracking-widest transition-colors"
+                            >
+                                {showAll ? '▲ Weniger anzeigen' : `▼ ${recentActivity.length - 4} weitere anzeigen`}
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
+
+            {/* ── News Modal ── */}
+            {showNewsModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true">
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200" onClick={() => setShowNewsModal(false)} />
+                    <div className="relative z-10 w-full max-w-lg bg-surface border border-border rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 fade-in duration-300">
+                        <div className="bg-success p-6 flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                                <FileEdit size={22} className="text-white" />
+                                <h2 className="text-xl font-black text-white">News verfassen</h2>
+                            </div>
+                            <button onClick={() => setShowNewsModal(false)} className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors">
+                                <X size={20} />
+                            </button>
+                        </div>
+                        <form className="p-6 space-y-4" onSubmit={(e) => { e.preventDefault(); setShowNewsModal(false); showToast('Demo: News-Entwurf gespeichert'); }}>
+                            <div>
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Titel</label>
+                                <input type="text" placeholder="z.B. Sommerfest Termin" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" />
+                            </div>
+                            <div>
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Kategorie</label>
+                                <select className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary outline-none transition-all">
+                                    <option>News</option>
+                                    <option>Event</option>
+                                    <option>Protokoll</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Inhalt</label>
+                                <textarea rows={4} placeholder="News-Text eingeben..." className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" />
+                            </div>
+                            <div className="flex gap-3 pt-2">
+                                <button type="button" onClick={() => setShowNewsModal(false)} className="flex-1 py-3 rounded-xl border border-border font-bold text-foreground/60 hover:bg-muted transition-all text-sm">
+                                    Abbrechen
+                                </button>
+                                <button type="submit" className="flex-1 py-3 rounded-xl bg-success text-white font-black uppercase tracking-widest text-sm hover:bg-success/90 transition-all">
+                                    Veröffentlichen
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            )}
+
+            {/* ── Upload Modal ── */}
+            {showUploadModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4" role="dialog" aria-modal="true">
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200" onClick={() => setShowUploadModal(false)} />
+                    <div className="relative z-10 w-full max-w-md bg-surface border border-border rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 fade-in duration-300">
+                        <div className="bg-accent p-6 flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                                <Upload size={22} className="text-white" />
+                                <h2 className="text-xl font-black text-white">Protokoll hochladen</h2>
+                            </div>
+                            <button onClick={() => setShowUploadModal(false)} className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors">
+                                <X size={20} />
+                            </button>
+                        </div>
+                        <div className="p-6 space-y-4">
+                            <div className="border-2 border-dashed border-border rounded-2xl p-10 text-center hover:border-primary/50 transition-colors cursor-pointer group">
+                                <Upload size={40} className="mx-auto text-foreground/20 group-hover:text-primary/50 transition-colors mb-4" />
+                                <p className="text-sm font-bold text-foreground/50 group-hover:text-foreground/70 transition-colors">Datei hierher ziehen oder klicken</p>
+                                <p className="text-[10px] text-foreground/30 font-black uppercase tracking-widest mt-2">PDF, DOCX, JPG • max. 10 MB</p>
+                            </div>
+                            <div>
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Sitzungsdatum</label>
+                                <input type="date" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary outline-none transition-all" />
+                            </div>
+                            <div className="flex gap-3 pt-2">
+                                <button onClick={() => setShowUploadModal(false)} className="flex-1 py-3 rounded-xl border border-border font-bold text-foreground/60 hover:bg-muted transition-all text-sm">
+                                    Abbrechen
+                                </button>
+                                <button
+                                    onClick={() => { setShowUploadModal(false); showToast('Demo: Protokoll-Upload simuliert'); }}
+                                    className="flex-1 py-3 rounded-xl bg-accent text-white font-black uppercase tracking-widest text-sm hover:bg-accent/90 transition-all"
+                                >
+                                    Hochladen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Toast Notification */}
             {toast && (

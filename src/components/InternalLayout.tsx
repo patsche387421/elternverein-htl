@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { LayoutDashboard, Calendar, MessageSquare, Settings, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Calendar, MessageSquare, Settings, LogOut, Menu, X, Globe } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -71,6 +71,13 @@ const InternalLayout = () => {
                     ))}
                 </nav>
                 <div className="p-4 border-t border-border space-y-2">
+                    <Link
+                        to="/"
+                        className="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-bold text-primary bg-primary/5 hover:bg-primary/10 transition-colors border border-primary/10"
+                    >
+                        <Globe size={18} />
+                        Zur Website
+                    </Link>
                     <Link
                         to="/dashboard/settings"
                         className="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium text-foreground/70 hover:bg-primary/5 hover:text-primary"
@@ -147,6 +154,14 @@ const InternalLayout = () => {
                             ))}
                         </nav>
                         <div className="p-4 border-t border-border space-y-1">
+                            <Link
+                                to="/"
+                                onClick={closeMobileMenu}
+                                className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-bold text-primary bg-primary/5 hover:bg-primary/10 transition-colors border border-primary/10"
+                            >
+                                <Globe size={20} />
+                                Zur Website
+                            </Link>
                             <Link
                                 to="/dashboard/settings"
                                 onClick={closeMobileMenu}
