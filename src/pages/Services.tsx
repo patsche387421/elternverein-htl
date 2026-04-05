@@ -15,7 +15,7 @@ const Services = () => {
             color: 'text-primary',
             bg: 'bg-primary/10',
             features: t('services.supportPoints', { returnObjects: true }) as string[],
-            contactSlug: 'unterstuetzung'
+            link: '/services/unterstuetzung'
         },
         {
             id: 'tutoring',
@@ -25,7 +25,7 @@ const Services = () => {
             color: 'text-primary',
             bg: 'bg-primary/10',
             features: t('services.tutoringPoints', { returnObjects: true }) as string[],
-            contactSlug: 'nachhilfe'
+            link: '/services/nachhilfe'
         },
         {
             id: 'courses',
@@ -35,7 +35,7 @@ const Services = () => {
             color: 'text-primary',
             bg: 'bg-primary/10',
             features: t('services.coursesPoints', { returnObjects: true }) as string[],
-            contactSlug: 'kurse'
+            link: '/services/kurse'
         }
     ];
 
@@ -91,7 +91,7 @@ const Services = () => {
                             </ul>
 
                             <Link
-                                to={`/kontakt?thema=${service.contactSlug}`}
+                                to={service.link}
                                 className="w-full py-5 rounded-2xl border-2 border-primary/20 font-black uppercase tracking-widest text-primary/60 hover:text-primary-foreground hover:bg-primary hover:border-primary transition-all duration-300 transform active:scale-95
                                 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none block text-center"
                             >

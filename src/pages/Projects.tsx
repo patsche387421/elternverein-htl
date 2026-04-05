@@ -101,7 +101,7 @@ const Projects = () => {
                 {/* Main Action Hub - 3 Options */}
                 <nav className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" aria-label={t('projects.overviewTable.filters.ariaLabel', 'Project Actions')}>
                     {/* 1. New Application (Primary CTA) */}
-                    <Link to="/projekte/antrag" className="group relative flex flex-col items-center justify-center p-10 bg-gradient-to-br from-primary to-primary text-primary-foreground rounded-3xl shadow-2xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                    <Link to="/projekte/antrag" className="group relative flex flex-col items-center justify-center p-10 bg-gradient-to-br from-primary to-accent text-primary-foreground rounded-3xl shadow-2xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                         <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
                         <div className="bg-white/20 p-5 rounded-3xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-inner">
                             <Lightbulb size={40} strokeWidth={2.5} />
@@ -149,7 +149,7 @@ const Projects = () => {
                                 {/* Status Stripe */}
                                 <div className={cn("h-2.5 w-full",
                                     project.status === 'In Progress' ? "bg-primary" :
-                                        project.status === 'Approved' ? "bg-success" : "bg-warning"
+                                        project.status === 'Approved' ? "bg-success" : "bg-accent"
                                 )} />
 
                                 <div className="p-10 flex flex-col flex-1">
@@ -160,7 +160,7 @@ const Projects = () => {
                                         <span className={cn(
                                             "px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-sm",
                                             project.status === 'In Progress' ? "bg-primary/10 text-primary" :
-                                                project.status === 'Approved' ? "bg-success/10 text-success" : "bg-warning/10 text-warning"
+                                                project.status === 'Approved' ? "bg-success/10 text-success" : "bg-accent/10 text-accent"
                                         )}>
                                             {t(`projects.items.${Object.keys(t('projects.items', { returnObjects: true }))[index]}.status`)}
                                         </span>
@@ -197,9 +197,9 @@ const Projects = () => {
                     {/* Modal Panel */}
                     <div className="relative z-10 w-full max-w-lg bg-surface border border-border rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 fade-in duration-300">
                         {/* Status Stripe */}
-                        <div className={cn("h-2 w-full",
+                        <div className={cn("h-3 w-full",
                             selectedProject.type === 'success' ? "bg-success" :
-                                selectedProject.type === 'warning' ? "bg-warning" : "bg-primary"
+                                selectedProject.type === 'warning' ? "bg-accent" : "bg-primary"
                         )} />
 
                         {/* Header */}
@@ -225,7 +225,7 @@ const Projects = () => {
                                 <span className={cn(
                                     "inline-flex items-center px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm",
                                     selectedProject.type === 'success' ? "bg-success/10 text-success border border-success/20" :
-                                        selectedProject.type === 'warning' ? "bg-warning/10 text-warning border border-warning/20" :
+                                        selectedProject.type === 'warning' ? "bg-accent/10 text-accent border border-accent/20" :
                                             "bg-primary/10 text-primary border border-primary/20"
                                 )}>
                                     {selectedProject.status}

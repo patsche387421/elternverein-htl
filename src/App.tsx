@@ -27,6 +27,9 @@ const ProjectsArchive = lazy(() => import('./pages/ProjectsArchive'));
 const Board = lazy(() => import('./pages/Board'));
 const Statutes = lazy(() => import('./pages/Statutes'));
 const Terms = lazy(() => import('./pages/Terms'));
+const SocialSupport = lazy(() => import('./pages/services/SocialSupport'));
+const Tutoring = lazy(() => import('./pages/services/Tutoring'));
+const Courses = lazy(() => import('./pages/services/Courses'));
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
     const isLoggedIn = !!localStorage.getItem('login_email');
@@ -54,7 +57,9 @@ function App() {
                 <Route path="about/statutes" element={<Statutes />} />
                 <Route path="kontakt" element={<Contact />} />
                 <Route path="services" element={<Services />} />
-                <Route path="services/:type" element={<Services />} />
+                <Route path="services/unterstuetzung" element={<SocialSupport />} />
+                <Route path="services/nachhilfe" element={<Tutoring />} />
+                <Route path="services/kurse" element={<Courses />} />
 
                 <Route path="projekte" element={<Projects />} />
                 <Route path="projekte/archiv" element={<ProjectsArchive />} />

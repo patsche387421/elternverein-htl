@@ -33,7 +33,7 @@ const ProjectApplication = () => {
                 );
             default:
                 return (
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-warning/10 text-warning uppercase tracking-widest border border-warning/20 shadow-sm">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-accent/10 text-accent uppercase tracking-widest border border-accent/20 shadow-sm">
                         {t('projects.overviewTable.status.pending')}
                     </span>
                 );

@@ -58,9 +58,9 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
                     {/* Brand */}
                     <Link to="/" className="flex items-center gap-5 group" onClick={closeAll}>
-                        <Logo className="h-14 w-auto text-primary transition-transform duration-300 group-hover:scale-105 transform translate-y-[-2px]" size={56} />
+                        <Logo className="h-14 w-auto transition-transform duration-300 group-hover:scale-105 transform translate-y-[-2px]" size={56} />
                         <div className="flex flex-col justify-center leading-none">
-                            <span className="text-xl md:text-2xl font-black text-primary tracking-tighter">
+                            <span className="text-xl md:text-2xl font-black text-foreground tracking-tighter">
                                 Elternverein
                             </span>
                             <span className="text-[10px] md:text-xs font-bold text-foreground/60 tracking-[0.2em] uppercase mt-0.5">

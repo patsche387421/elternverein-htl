@@ -168,7 +168,7 @@ const ProjectsArchive = () => {
                                                             "px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest border shadow-sm",
                                                             project.status === 'completed'
                                                                 ? "bg-success/10 text-success border-success/20"
-                                                                : "bg-warning/10 text-warning border-warning/20"
+                                                                : "bg-accent/10 text-accent border-accent/20"
                                                         )}>
                                                             {project.status === 'completed'
                                                                 ? t('projects.overviewTable.status.approved', 'Abgeschlossen')

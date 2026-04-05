@@ -17,9 +17,9 @@ const Footer = memo(() => {
                     {/* Brand */}
                     <div className="col-span-1 md:col-span-1">
                         <div className="flex items-center gap-4 mb-6">
-                            <Logo className="h-14 w-auto text-primary transition-colors duration-300" size={56} />
+                            <Logo className="h-14 w-auto transition-colors duration-300" size={56} />
                             <div className="flex flex-col justify-center border-s border-border ps-4">
-                                <h3 className="text-2xl font-black text-primary leading-tight tracking-tighter">
+                                <h3 className="text-2xl font-black text-foreground leading-tight tracking-tighter">
                                     Elternverein
                                 </h3>
                                 <p className="text-sm font-bold text-foreground/60 tracking-widest uppercase">

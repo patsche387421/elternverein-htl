@@ -110,7 +110,7 @@ const Home = () => {
                         </Link>
 
                         {/* 2. Unterstützen */}
-                        <Link to={t('home.benefits.suppLink')}
+                        <Link to="/services/kurse"
                             className="scroll-reveal opacity-0 translate-y-8 duration-700 delay-200 group bg-background rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 p-6 border border-border/50 hover:border-primary/30 transition-all cursor-pointer flex flex-col items-center lg:items-start text-center lg:text-left">
                             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:scale-110 group-hover:bg-primary group-hover:text-black transition-all duration-300 shadow-sm">
                                 <Handshake size={28} strokeWidth={2.5}/>
@@ -124,7 +124,7 @@ const Home = () => {
                         </Link>
 
                         {/* 3. Helfen */}
-                        <Link to={t('home.benefits.helpLink')}
+                        <Link to="/services/unterstuetzung"
                             className="scroll-reveal opacity-0 translate-y-8 duration-700 delay-300 group bg-background rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 p-6 border border-border/50 hover:border-primary/30 transition-all cursor-pointer flex flex-col items-center lg:items-start text-center lg:text-left">
                             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:scale-110 group-hover:bg-primary group-hover:text-black transition-all duration-300 shadow-sm">
                                 <Heart size={28} strokeWidth={2.5}/>
@@ -138,7 +138,7 @@ const Home = () => {
                         </Link>
 
                         {/* 4. Informieren */}
-                        <Link to={t('home.benefits.infoLink')}
+                        <Link to="/services/nachhilfe"
                             className="scroll-reveal opacity-0 translate-y-8 duration-700 delay-500 group bg-background rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 p-6 border border-border/50 hover:border-primary/30 transition-all cursor-pointer flex flex-col items-center lg:items-start text-center lg:text-left">
                             <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-5 group-hover:scale-110 group-hover:bg-primary group-hover:text-black transition-all duration-300 shadow-sm">
                                 <BookOpen size={28} strokeWidth={2.5}/>
