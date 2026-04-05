@@ -10,6 +10,7 @@ interface BoardMember {
     email: string;
     term: string;
     bio: string;
+    image?: string;
 }
 
 const Board = () => {
@@ -22,28 +23,32 @@ const Board = () => {
             name: "Max Mustermann",
             email: "obmann@elternverein.today",
             term: "2024 - 2026",
-            bio: "Max engagiert sich seit 5 Jahren im Elternverein und legt seinen Fokus auf die Digitalisierung der Schulinfrastruktur und bessere Kommunikation zwischen Schule und Eltern."
+            bio: "Max engagiert sich seit 5 Jahren im Elternverein und legt seinen Fokus auf die Digitalisierung der Schulinfrastruktur und bessere Kommunikation zwischen Schule und Eltern.",
+            image: "/pics/Mann1.webp"
         },
         {
             role: t('board.roles.viceChair'),
             name: "Julia Sommer",
             email: "stellvertreter@elternverein.today",
             term: "2023 - 2025",
-            bio: "Als zweifache Mutter an der HTL bringt Julia ihre Expertise im Bereich Eventorganisation ein. Sie leitet das Komitee für den jährlichen HTL-Ball."
+            bio: "Als zweifache Mutter an der HTL bringt Julia ihre Expertise im Bereich Eventorganisation ein. Sie leitet das Komitee für den jährlichen HTL-Ball.",
+            image: "/pics/Frau1.webp"
         },
         {
             role: t('board.roles.treasurer'),
             name: "Thomas Bauer",
             email: "kassier@elternverein.today",
             term: "2024 - 2026",
-            bio: "Thomas ist Finanzberater und sorgt für die transparente und effiziente Verwaltung der Mitgliedsbeiträge sowie die faire Vergabe von Projektförderungen."
+            bio: "Thomas ist Finanzberater und sorgt für die transparente und effiziente Verwaltung der Mitgliedsbeiträge sowie die faire Vergabe von Projektförderungen.",
+            image: "/pics/Mann2.webp"
         },
         {
             role: t('board.roles.secretary'),
             name: "Sarah Lang",
             email: "schriftfuehrer@elternverein.today",
             term: "2024 - 2025",
-            bio: "Sarah dokumentiert alle Vorstandssitzungen und koordiniert die Newsletter, um alle Eltern stets aktuell über Aktivitäten des Elternvereins zu informieren."
+            bio: "Sarah dokumentiert alle Vorstandssitzungen und koordiniert die Newsletter, um alle Eltern stets aktuell über Aktivitäten des Elternvereins zu informieren.",
+            image: "/pics/Frau2.webp"
         },
     ];
 
@@ -88,9 +93,18 @@ const Board = () => {
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {members.map((m, i) => (
                         <article key={i} className="bg-card p-8 rounded-3xl border border-border shadow-sm flex flex-col justify-between group hover:border-primary/50 transition-all hover:shadow-xl">
-                            <div className="flex items-center gap-5 mb-6">
-                                <div className="w-16 h-16 bg-surface rounded-2xl flex items-center justify-center flex-shrink-0 text-foreground/20 group-hover:text-primary transition-colors">
-                                    <User size={32} />
+                            <div className="flex items-center gap-6 mb-6">
+                                <div className="w-24 h-24 rounded-full flex items-center justify-center flex-shrink-0 bg-surface text-foreground/20 group-hover:text-primary transition-colors overflow-hidden">
+                                    {m.image ? (
+                                        <img 
+                                            src={m.image} 
+                                            alt={m.name} 
+                                            loading="lazy" 
+                                            className="w-full h-full object-cover" 
+                                        />
+                                    ) : (
+                                        <User size={40} />
+                                    )}
                                 </div>
                                 <div>
                                     <p className="text-sm font-bold text-primary uppercase tracking-widest mb-1">{m.role}</p>
@@ -135,12 +149,21 @@ const Board = () => {
                         {/* Header */}
                         <div className="bg-primary p-6 flex items-start justify-between">
                             <div className="flex items-center gap-4">
-                                <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center">
-                                    <User size={32} className="text-white" />
+                                <div className="w-20 h-20 rounded-full flex items-center justify-center bg-white/10 overflow-hidden shadow-inner">
+                                    {selectedMember.image ? (
+                                        <img 
+                                            src={selectedMember.image} 
+                                            alt={selectedMember.name} 
+                                            loading="lazy" 
+                                            className="w-full h-full object-cover" 
+                                        />
+                                    ) : (
+                                        <User size={36} className="text-white" />
+                                    )}
                                 </div>
-                                <div>
+                                <div className="mt-2">
                                     <p className="text-white/80 font-bold text-xs uppercase tracking-widest mb-1">{selectedMember.role}</p>
-                                    <h2 className="text-2xl font-black text-white">{selectedMember.name}</h2>
+                                    <h2 className="text-3xl font-black text-white leading-none">{selectedMember.name}</h2>
                                 </div>
                             </div>
                             <button

@@ -17,7 +17,6 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(() => !!localStorage.getItem('login_email'));
-    const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const location = useLocation();
     const { t, i18n } = useTranslation();
@@ -29,7 +28,6 @@ const Navbar = () => {
     const closeAll = () => {
         setIsOpen(false);
         setIsLoginOpen(false);
-        setIsUserMenuOpen(false);
         setIsSettingsOpen(false);
     };
 
@@ -41,7 +39,7 @@ const Navbar = () => {
     const handleLogout = () => {
         localStorage.removeItem('login_email');
         setIsLoggedIn(false);
-        setIsUserMenuOpen(false);
+        window.location.href = '/'; // Redirect to /
     };
 
     const navLinks = [
@@ -51,6 +49,7 @@ const Navbar = () => {
         { name: t('nav.projects'), path: '/projekte' },
         { name: t('nav.about'), path: '/about' },
         { name: t('nav.contact'), path: '/kontakt' },
+        ...(isLoggedIn ? [{ name: 'Dashboard', path: '/dashboard' }] : [])
     ];
 
     return (
@@ -107,37 +106,13 @@ const Navbar = () => {
                                     <span>{i18n.language.split('-')[0] === 'de' ? 'Anmelden' : 'Login'}</span>
                                 </button>
                             ) : (
-                                <div className="relative ms-2">
-                                    <button
-                                        onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
-                                        className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center border-2 border-primary/20 hover:border-primary transition-colors font-bold"
-                                    >
-                                        TP
-                                    </button>
-
-                                    {isUserMenuOpen && (
-                                        <>
-                                            <div className="fixed inset-0 z-10" onClick={() => setIsUserMenuOpen(false)}></div>
-                                            <div className="absolute end-0 mt-2 w-48 bg-surface border border-border rounded-xl shadow-xl z-20 py-2 animate-in fade-in zoom-in-95 duration-200">
-                                                <div className="px-4 py-2 border-b border-border mb-2">
-                                                    <p className="font-bold text-foreground">Testperson</p>
-                                                    <p className="text-xs text-foreground/60">Administrator</p>
-                                                </div>
-                                                <Link to="/dashboard" onClick={() => setIsUserMenuOpen(false)} className="w-full text-left px-4 py-2 text-sm text-foreground/80 hover:bg-primary/5 hover:text-primary flex items-center gap-2">
-                                                    <Settings size={16} />
-                                                    {t('nav.profile')}
-                                                </Link>
-                                                <button
-                                                    onClick={handleLogout}
-                                                    className="w-full text-left px-4 py-2 text-sm text-destructive hover:bg-destructive/10 flex items-center gap-2"
-                                                >
-                                                    <LogOut size={16} />
-                                                    {t('nav.logout')}
-                                                </button>
-                                            </div>
-                                        </>
-                                    )}
-                                </div>
+                                <button
+                                    onClick={handleLogout}
+                                    className="px-4 py-2 bg-surface text-destructive hover:bg-destructive/10 rounded-full transition-colors flex items-center gap-2 font-medium"
+                                >
+                                    <LogOut size={16} />
+                                    {t('nav.logout', 'Logout')}
+                                </button>
                             )}
                         </div>
                     </div>
@@ -206,24 +181,13 @@ const Navbar = () => {
                                     {i18n.language.split('-')[0] === 'de' ? 'Anmelden' : 'Login'}
                                 </button>
                             ) : (
-                                <div className="space-y-2">
-                                    <Link to="/dashboard" onClick={closeAll} className="px-4 py-2 bg-surface-2 rounded-xl border border-border flex items-center gap-3 active:scale-[0.98] transition-transform">
-                                        <div className="h-10 w-10 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">
-                                            TP
-                                        </div>
-                                        <div>
-                                            <p className="font-bold">Testperson</p>
-                                            <p className="text-xs text-foreground/60">{t('nav.profile')} (Admin)</p>
-                                        </div>
-                                    </Link>
-                                    <button
-                                        onClick={handleLogout}
-                                        className="w-full flex items-center justify-center gap-2 text-destructive bg-destructive/10 p-4 rounded-xl font-bold"
-                                    >
-                                        <LogOut size={20} />
-                                        {t('nav.logout')}
-                                    </button>
-                                </div>
+                                <button
+                                    onClick={handleLogout}
+                                    className="w-full flex items-center justify-center gap-2 text-destructive bg-destructive/10 p-4 rounded-xl font-bold"
+                                >
+                                    <LogOut size={20} />
+                                    {t('nav.logout', 'Logout')}
+                                </button>
                             )}
                         </div>
                     </div>

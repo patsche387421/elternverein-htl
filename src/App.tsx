@@ -28,6 +28,14 @@ const Board = lazy(() => import('./pages/Board'));
 const Statutes = lazy(() => import('./pages/Statutes'));
 const Terms = lazy(() => import('./pages/Terms'));
 
+const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
+    const isLoggedIn = !!localStorage.getItem('login_email');
+    if (!isLoggedIn) {
+        return <Navigate to="/login" replace />;
+    }
+    return <>{children}</>;
+};
+
 function App() {
   return (
       <BrowserRouter>
@@ -62,7 +70,11 @@ function App() {
               </Route>
 
               {/* Dashboard Routes (Internal) */}
-              <Route path="/dashboard" element={<InternalLayout />}>
+              <Route path="/dashboard" element={
+                <ProtectedRoute>
+                  <InternalLayout />
+                </ProtectedRoute>
+              }>
                 <Route index element={<Dashboard />} />
                 <Route path="calendar" element={<CalendarPage />} />
                 <Route path="messages" element={<Messages />} />

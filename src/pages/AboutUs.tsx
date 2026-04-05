@@ -97,7 +97,7 @@ const AboutUs = () => {
                             onClick={() => setShowPaymentModal(true)}
                             className="bg-primary text-primary-foreground px-8 py-5 rounded-3xl shadow-2xl inline-flex items-center gap-3 transform hover:scale-105 hover:-translate-y-1 transition-all cursor-pointer active:scale-[0.98]"
                         >
-                            <span className="text-5xl font-black">€ 15,-</span>
+                            <span className="text-5xl font-black">€ 50,-</span>
                             <span className="text-primary-foreground/80 font-bold uppercase tracking-widest text-sm">/ {t('costs.membershipPerYear')}</span>
                         </button>
                         <p className="text-sm text-foreground/40 font-medium">
@@ -174,7 +174,7 @@ const AboutUs = () => {
                         {/* Content */}
                         <div className="p-6 space-y-4">
                             <div className="text-center py-4">
-                                <span className="text-5xl font-black text-primary">€ 15,-</span>
+                                <span className="text-5xl font-black text-primary">€ 50,-</span>
                                 <p className="text-foreground/50 font-bold text-sm uppercase tracking-widest mt-2">/ {t('costs.membershipPerYear')}</p>
                             </div>
 
