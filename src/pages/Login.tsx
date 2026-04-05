@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { User, Lock, ArrowLeft } from 'lucide-react';
+import { User, Lock, ArrowLeft, Info } from 'lucide-react';
 import SEO from '../components/SEO';
 
 const Login = () => {
@@ -9,6 +9,12 @@ const Login = () => {
     const { t } = useTranslation();
 
     const [email, setEmail] = useState('');
+    const [toast, setToast] = useState<string | null>(null);
+
+    const showToast = (message: string) => {
+        setToast(message);
+        setTimeout(() => setToast(null), 4000);
+    };
 
     const handleLogin = (e: React.FormEvent) => {
         e.preventDefault();
@@ -69,9 +75,13 @@ const Login = () => {
                             />
                         </div>
                         <div className="flex justify-end mt-2">
-                            <a href="#" className="text-xs font-black text-primary hover:text-primary/80 uppercase tracking-widest transition-colors mr-2">
+                            <button
+                                type="button"
+                                onClick={() => showToast(t('login.forgotToast', 'Bitte kontaktiere den Schuladministrator.'))}
+                                className="text-xs font-black text-primary hover:text-primary/80 uppercase tracking-widest transition-colors mr-2"
+                            >
                                 {t('login.forgot')}
-                            </a>
+                            </button>
                         </div>
                     </div>
 
@@ -83,6 +93,16 @@ const Login = () => {
                     </button>
                 </form>
             </div>
+
+            {/* Toast Notification */}
+            {toast && (
+                <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 animate-in slide-in-from-bottom-4 fade-in duration-300">
+                    <div className="flex items-center gap-3 bg-surface border border-border rounded-2xl px-6 py-4 shadow-2xl">
+                        <Info size={20} className="text-primary flex-shrink-0" />
+                        <p className="text-sm font-bold text-foreground">{toast}</p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

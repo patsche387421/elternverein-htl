@@ -1,5 +1,6 @@
 import { Heart, BookOpen, GraduationCap, CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const Services = () => {
@@ -13,7 +14,8 @@ const Services = () => {
             desc: t('services.supportDesc'),
             color: 'text-primary',
             bg: 'bg-primary/10',
-            features: t('services.supportPoints', { returnObjects: true }) as string[]
+            features: t('services.supportPoints', { returnObjects: true }) as string[],
+            contactSlug: 'unterstuetzung'
         },
         {
             id: 'tutoring',
@@ -22,7 +24,8 @@ const Services = () => {
             desc: t('services.tutoringDesc'),
             color: 'text-primary',
             bg: 'bg-primary/10',
-            features: t('services.tutoringPoints', { returnObjects: true }) as string[]
+            features: t('services.tutoringPoints', { returnObjects: true }) as string[],
+            contactSlug: 'nachhilfe'
         },
         {
             id: 'courses',
@@ -31,7 +34,8 @@ const Services = () => {
             desc: t('services.coursesDesc'),
             color: 'text-primary',
             bg: 'bg-primary/10',
-            features: t('services.coursesPoints', { returnObjects: true }) as string[]
+            features: t('services.coursesPoints', { returnObjects: true }) as string[],
+            contactSlug: 'kurse'
         }
     ];
 
@@ -86,10 +90,13 @@ const Services = () => {
                                 ))}
                             </ul>
 
-                            <button className="w-full py-5 rounded-2xl border-2 border-primary/20 font-black uppercase tracking-widest text-primary/60 hover:text-primary-foreground hover:bg-primary hover:border-primary transition-all duration-300 transform active:scale-95
-                                focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none">
+                            <Link
+                                to={`/kontakt?thema=${service.contactSlug}`}
+                                className="w-full py-5 rounded-2xl border-2 border-primary/20 font-black uppercase tracking-widest text-primary/60 hover:text-primary-foreground hover:bg-primary hover:border-primary transition-all duration-300 transform active:scale-95
+                                focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none block text-center"
+                            >
                                 {t('services.learnMore')}
-                            </button>
+                            </Link>
                         </article>
                     ))}
                 </div>

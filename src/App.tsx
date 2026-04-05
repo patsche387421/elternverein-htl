@@ -1,6 +1,5 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/Layout';
 import InternalLayout from './components/InternalLayout';
 import ScrollToTop from './components/ScrollToTop';
@@ -31,7 +30,6 @@ const Terms = lazy(() => import('./pages/Terms'));
 
 function App() {
   return (
-    <HelmetProvider>
       <BrowserRouter>
         <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
           <ScrollToTop />
@@ -74,7 +72,6 @@ function App() {
           </Suspense>
         </div>
       </BrowserRouter>
-    </HelmetProvider>
   );
 }
 

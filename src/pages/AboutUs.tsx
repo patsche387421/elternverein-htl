@@ -1,11 +1,39 @@
+import { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Target, CheckCircle, Euro, User, ArrowRight } from 'lucide-react';
+import { Target, CheckCircle, Euro, User, ArrowRight, X, Copy, Info } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const AboutUs = () => {
     const { t } = useTranslation();
     const points = t('about.points', { returnObjects: true }) as string[];
+    const [showPaymentModal, setShowPaymentModal] = useState(false);
+    const [copied, setCopied] = useState<string | null>(null);
+
+    const closeModal = useCallback(() => setShowPaymentModal(false), []);
+
+    useEffect(() => {
+        const handleEsc = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') closeModal();
+        };
+        if (showPaymentModal) window.addEventListener('keydown', handleEsc);
+        return () => window.removeEventListener('keydown', handleEsc);
+    }, [showPaymentModal, closeModal]);
+
+    useEffect(() => {
+        if (showPaymentModal) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => { document.body.style.overflow = 'unset'; };
+    }, [showPaymentModal]);
+
+    const handleCopy = (text: string, field: string) => {
+        navigator.clipboard.writeText(text);
+        setCopied(field);
+        setTimeout(() => setCopied(null), 2000);
+    };
 
     return (
         <main className="flex-grow">
@@ -65,10 +93,16 @@ const AboutUs = () => {
                                 {t('costs.details')}
                             </p>
                         </div>
-                        <div className="bg-primary text-primary-foreground px-8 py-5 rounded-3xl shadow-2xl inline-block transform hover:scale-105 transition-transform">
+                        <button
+                            onClick={() => setShowPaymentModal(true)}
+                            className="bg-primary text-primary-foreground px-8 py-5 rounded-3xl shadow-2xl inline-flex items-center gap-3 transform hover:scale-105 hover:-translate-y-1 transition-all cursor-pointer active:scale-[0.98]"
+                        >
                             <span className="text-5xl font-black">€ 15,-</span>
-                            <span className="text-primary-foreground/80 font-bold ms-2 uppercase tracking-widest text-sm">/ {t('costs.membershipPerYear')}</span>
-                        </div>
+                            <span className="text-primary-foreground/80 font-bold uppercase tracking-widest text-sm">/ {t('costs.membershipPerYear')}</span>
+                        </button>
+                        <p className="text-sm text-foreground/40 font-medium">
+                            {t('about.paymentHint', 'Klicken für Zahlungsdetails')}
+                        </p>
                     </div>
                 </section>
 
@@ -103,6 +137,111 @@ const AboutUs = () => {
                     </div>
                 </section>
             </div>
+
+            {/* Payment Details Modal */}
+            {showPaymentModal && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6"
+                    role="dialog"
+                    aria-modal="true"
+                >
+                    <div
+                        className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+                        onClick={closeModal}
+                    />
+
+                    <div className="relative z-10 w-full max-w-md bg-surface border border-border rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 fade-in duration-300">
+                        {/* Header */}
+                        <div className="bg-primary p-6 flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                                <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center">
+                                    <Euro size={24} className="text-white" />
+                                </div>
+                                <div>
+                                    <h2 className="text-xl font-black text-white">{t('costs.paymentTitle', 'Zahlungsdetails')}</h2>
+                                    <p className="text-white/70 text-sm font-medium">{t('costs.membershipPerYear', 'Jahr pro Familie')}</p>
+                                </div>
+                            </div>
+                            <button
+                                onClick={closeModal}
+                                className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
+                                aria-label="Schließen"
+                            >
+                                <X size={20} />
+                            </button>
+                        </div>
+
+                        {/* Content */}
+                        <div className="p-6 space-y-4">
+                            <div className="text-center py-4">
+                                <span className="text-5xl font-black text-primary">€ 15,-</span>
+                                <p className="text-foreground/50 font-bold text-sm uppercase tracking-widest mt-2">/ {t('costs.membershipPerYear')}</p>
+                            </div>
+
+                            {/* IBAN */}
+                            <div className="bg-background rounded-2xl p-4 border border-border space-y-1">
+                                <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">IBAN</p>
+                                <div className="flex items-center justify-between gap-2">
+                                    <p className="font-mono font-bold text-foreground text-sm">AT12 3456 7890 1234 5678</p>
+                                    <button
+                                        onClick={() => handleCopy('AT12345678901234567', 'iban')}
+                                        className="p-2 rounded-xl hover:bg-primary/10 text-foreground/40 hover:text-primary transition-colors"
+                                        aria-label="IBAN kopieren"
+                                    >
+                                        {copied === 'iban' ? <CheckCircle size={16} className="text-success" /> : <Copy size={16} />}
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* BIC */}
+                            <div className="bg-background rounded-2xl p-4 border border-border space-y-1">
+                                <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">BIC</p>
+                                <div className="flex items-center justify-between gap-2">
+                                    <p className="font-mono font-bold text-foreground text-sm">BKAUATWW</p>
+                                    <button
+                                        onClick={() => handleCopy('BKAUATWW', 'bic')}
+                                        className="p-2 rounded-xl hover:bg-primary/10 text-foreground/40 hover:text-primary transition-colors"
+                                        aria-label="BIC kopieren"
+                                    >
+                                        {copied === 'bic' ? <CheckCircle size={16} className="text-success" /> : <Copy size={16} />}
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Verwendungszweck */}
+                            <div className="bg-background rounded-2xl p-4 border border-border space-y-1">
+                                <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">{t('costs.reference', 'Verwendungszweck')}</p>
+                                <div className="flex items-center justify-between gap-2">
+                                    <p className="font-bold text-foreground text-sm">EV Mitgliedsbeitrag + Name + Klasse</p>
+                                    <button
+                                        onClick={() => handleCopy('EV Mitgliedsbeitrag', 'ref')}
+                                        className="p-2 rounded-xl hover:bg-primary/10 text-foreground/40 hover:text-primary transition-colors"
+                                        aria-label="Verwendungszweck kopieren"
+                                    >
+                                        {copied === 'ref' ? <CheckCircle size={16} className="text-success" /> : <Copy size={16} />}
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-3 p-4 bg-primary/5 border border-primary/10 rounded-2xl">
+                                <Info size={18} className="text-primary flex-shrink-0 mt-0.5" />
+                                <p className="text-sm text-foreground/60 font-medium leading-relaxed">
+                                    {t('costs.paymentNote', 'Die Daten sind Platzhalter. Bitte kontaktieren Sie den Vorstand für aktuelle Zahlungsinformationen.')}
+                                </p>
+                            </div>
+
+                            <Link
+                                to="/kontakt?thema=mitgliedschaft"
+                                onClick={closeModal}
+                                className="w-full py-4 rounded-2xl bg-primary text-primary-foreground font-black uppercase tracking-widest text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2 active:scale-[0.98]"
+                            >
+                                {t('contact.title', 'Kontakt')}
+                                <ArrowRight size={18} strokeWidth={2.5} />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            )}
         </main>
     );
 };

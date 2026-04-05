@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { X, User, LogIn } from 'lucide-react';
+import { X, User, LogIn, Info } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { createPortal } from 'react-dom';
 
@@ -12,6 +12,12 @@ interface LoginModalProps {
 const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLoginSuccess }) => {
     const { t } = useTranslation();
     const [email, setEmail] = useState('');
+    const [toast, setToast] = useState<string | null>(null);
+
+    const showToast = (message: string) => {
+        setToast(message);
+        setTimeout(() => setToast(null), 4000);
+    };
 
     // Prevent scrolling when modal is open
     useEffect(() => {
@@ -103,7 +109,11 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLoginSuccess
                                 <label className="text-sm font-medium text-foreground/80">
                                     {t('login.password')}
                                 </label>
-                                <button type="button" className="text-xs text-primary hover:underline">
+                                <button
+                                    type="button"
+                                    onClick={() => showToast(t('login.forgotToast', 'Bitte kontaktiere den Schuladministrator.'))}
+                                    className="text-xs text-primary hover:underline"
+                                >
                                     {t('login.forgot')}
                                 </button>
                             </div>
@@ -123,12 +133,28 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLoginSuccess
                         </button>
 
                         <div className="text-center pt-2">
-                            <button type="button" className="text-sm text-foreground/60 hover:text-primary transition-colors">
+                            <button
+                                type="button"
+                                onClick={() => showToast(t('login.registerToast', 'Registrierung erfolgt über die Schulverwaltung.'))}
+                                className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                            >
                                 {t('login.register')}
                             </button>
                         </div>
                     </form>
                 </div>
+
+
+
+                {/* Toast Notification */}
+                {toast && (
+                    <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-10 w-[calc(100%-3rem)] animate-in slide-in-from-bottom-4 fade-in duration-300">
+                        <div className="flex items-center gap-3 bg-background border border-border rounded-2xl px-5 py-3.5 shadow-2xl">
+                            <Info size={18} className="text-primary flex-shrink-0" />
+                            <p className="text-sm font-bold text-foreground">{toast}</p>
+                        </div>
+                    </div>
+                )}
 
                 {/* Footer */}
                 <div className="p-6 bg-background/50 text-center border-t border-border">

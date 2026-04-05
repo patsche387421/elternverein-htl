@@ -1,14 +1,65 @@
-import { Archive, Folder, ExternalLink, ArrowLeft } from 'lucide-react';
+import { useState } from 'react';
+import { Archive, Folder, ChevronDown, ArrowLeft, CheckCircle, Clock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 import SEO from '../components/SEO';
+
+function cn(...inputs: ClassValue[]) {
+    return twMerge(clsx(inputs));
+}
+
+interface ArchivedProject {
+    title: string;
+    department: string;
+    status: 'approved' | 'completed';
+}
+
+const archiveData: Record<string, ArchivedProject[]> = {
+    '2025/26': [
+        { title: 'Smartboard Austausch', department: 'IT', status: 'approved' },
+        { title: '3D-Drucker Filament', department: 'IT', status: 'completed' },
+        { title: 'Bibliotheks-Lounge Sitzmöbel', department: 'GEN', status: 'approved' },
+    ],
+    '2024/25': [
+        { title: 'Robotik-AG Starterset', department: 'ET', status: 'completed' },
+        { title: 'Chemie-Labor Glaswaren', department: 'GEN', status: 'completed' },
+        { title: 'Exkursion Wien Technikmuseum', department: 'ME', status: 'completed' },
+        { title: 'Sportgeräte Turnhalle', department: 'SP', status: 'completed' },
+    ],
+    '2023/24': [
+        { title: 'CNC-Fräse Wartung', department: 'ME', status: 'completed' },
+        { title: 'Schülerzeitung Druckkosten', department: 'GEN', status: 'completed' },
+        { title: 'Erste-Hilfe-Kurs Material', department: 'GEN', status: 'completed' },
+    ],
+    '2022/23': [
+        { title: 'Laptopwagen Klassenzimmer', department: 'IT', status: 'completed' },
+        { title: 'Barbarafeier Bautechnik', department: 'BAU', status: 'completed' },
+        { title: 'Volleyball-Netz & Bälle', department: 'SP', status: 'completed' },
+    ],
+    '2021/22': [
+        { title: 'Lötstation Elektronik', department: 'ET', status: 'completed' },
+        { title: 'Nachhilfe-Plattform Lizenz', department: 'GEN', status: 'completed' },
+        { title: 'Matura-Feier Zuschuss', department: 'GEN', status: 'completed' },
+    ],
+    '2020/21': [
+        { title: 'Webcams für Distance Learning', department: 'IT', status: 'completed' },
+        { title: 'Desinfektionsmittel & Masken', department: 'GEN', status: 'completed' },
+        { title: 'Online-Nachhilfe Pilotprojekt', department: 'GEN', status: 'completed' },
+        { title: 'Schulgarten Phase 1', department: 'BAU', status: 'completed' },
+    ],
+};
 
 const ProjectsArchive = () => {
     const { t } = useTranslation();
+    const [expandedYear, setExpandedYear] = useState<string | null>(null);
 
-    const years = [
-        "2025/26", "2024/25", "2023/24", "2022/23", "2021/22", "2020/21"
-    ];
+    const years = Object.keys(archiveData);
+
+    const toggleYear = (year: string) => {
+        setExpandedYear(prev => prev === year ? null : year);
+    };
 
     return (
         <main className="flex-grow">
@@ -41,23 +92,101 @@ const ProjectsArchive = () => {
 
                 {/* Archive Grid */}
                 <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" aria-label={t('projects.archive.ariaLabel', 'Archive Years')}>
-                    {years.map((year) => (
-                        <article key={year} className="bg-card p-10 rounded-3xl border border-border hover:border-primary/50 cursor-pointer group transition-all duration-500 hover:-translate-y-2 shadow-xl hover:shadow-2xl relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-700" />
+                    {years.map((year) => {
+                        const isExpanded = expandedYear === year;
+                        const projects = archiveData[year];
 
-                            <div className="flex items-center justify-between mb-8 relative z-10">
-                                <div className="p-4 bg-background rounded-2xl text-foreground/20 group-hover:text-primary transition-all duration-500 shadow-inner">
-                                    <Folder size={32} strokeWidth={2.5} />
-                                </div>
-                                <ExternalLink size={20} strokeWidth={3} className="text-foreground/20 group-hover:text-primary opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500" />
-                            </div>
+                        return (
+                            <article
+                                key={year}
+                                className={cn(
+                                    "bg-card rounded-3xl border cursor-pointer group transition-all duration-500 shadow-xl relative overflow-hidden",
+                                    isExpanded
+                                        ? "border-primary/50 shadow-2xl shadow-primary/10 sm:col-span-2 lg:col-span-3"
+                                        : "border-border hover:border-primary/50 hover:-translate-y-2 hover:shadow-2xl"
+                                )}
+                            >
+                                {/* Card Header — always visible */}
+                                <button
+                                    onClick={() => toggleYear(year)}
+                                    className="w-full p-10 text-left flex items-center justify-between gap-4 relative z-10"
+                                >
+                                    <div className="flex items-center gap-6">
+                                        <div className={cn(
+                                            "p-4 rounded-2xl shadow-inner transition-all duration-500",
+                                            isExpanded
+                                                ? "bg-primary text-primary-foreground"
+                                                : "bg-background text-foreground/20 group-hover:text-primary"
+                                        )}>
+                                            <Folder size={32} strokeWidth={2.5} />
+                                        </div>
+                                        <div>
+                                            <h3 className={cn(
+                                                "text-2xl font-black mb-1 transition-colors",
+                                                isExpanded ? "text-primary" : "text-foreground group-hover:text-primary"
+                                            )}>
+                                                {t('projects.year')} {year}
+                                            </h3>
+                                            <p className="text-sm font-bold uppercase tracking-widest text-foreground/40 group-hover:text-foreground/60 transition-colors">
+                                                {projects.length} {t('projects.fundedProjects')}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ChevronDown
+                                        size={24}
+                                        strokeWidth={2.5}
+                                        className={cn(
+                                            "text-foreground/30 transition-transform duration-300 flex-shrink-0",
+                                            isExpanded ? "rotate-180 text-primary" : "group-hover:text-primary"
+                                        )}
+                                    />
+                                </button>
 
-                            <div className="relative z-10">
-                                <h3 className="text-2xl font-black text-foreground mb-2 group-hover:text-primary transition-colors">{t('projects.year')} {year}</h3>
-                                <p className="text-sm font-bold uppercase tracking-widest text-foreground/40 group-hover:text-foreground/60 transition-colors">{t('projects.fundedProjects')}</p>
-                            </div>
-                        </article>
-                    ))}
+                                {/* Expanded content */}
+                                {isExpanded && (
+                                    <div className="px-10 pb-10 animate-in fade-in slide-in-from-top-4 duration-300">
+                                        <div className="border-t border-border pt-6 space-y-3">
+                                            {projects.map((project, i) => (
+                                                <div
+                                                    key={i}
+                                                    className="flex items-center justify-between gap-4 p-4 bg-background rounded-2xl border border-border hover:border-primary/20 transition-colors group/item"
+                                                >
+                                                    <div className="flex items-center gap-4 min-w-0">
+                                                        <div className="text-primary/60 group-hover/item:text-primary transition-colors flex-shrink-0">
+                                                            {project.status === 'completed'
+                                                                ? <CheckCircle size={18} strokeWidth={2.5} />
+                                                                : <Clock size={18} strokeWidth={2.5} />
+                                                            }
+                                                        </div>
+                                                        <span className="font-bold text-foreground truncate">{project.title}</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-3 flex-shrink-0">
+                                                        <span className="px-3 py-1 rounded-lg bg-surface border border-border text-[10px] font-black uppercase tracking-widest text-foreground/50">
+                                                            {t(`projects.overviewTable.departments.${project.department}`, project.department)}
+                                                        </span>
+                                                        <span className={cn(
+                                                            "px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest border shadow-sm",
+                                                            project.status === 'completed'
+                                                                ? "bg-success/10 text-success border-success/20"
+                                                                : "bg-warning/10 text-warning border-warning/20"
+                                                        )}>
+                                                            {project.status === 'completed'
+                                                                ? t('projects.overviewTable.status.approved', 'Abgeschlossen')
+                                                                : t('projects.overviewTable.status.pending', 'Offen')
+                                                            }
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Decorative blob */}
+                                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+                            </article>
+                        );
+                    })}
                 </section>
             </div>
         </main>

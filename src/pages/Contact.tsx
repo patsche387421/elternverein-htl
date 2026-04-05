@@ -1,12 +1,32 @@
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useState } from 'react';
+import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
 
 const Contact = () => {
     const { t } = useTranslation();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [toast, setToast] = useState<string | null>(null);
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        
+        // Mock successful form submission
+        setToast(t('contact.form.success', 'Ihre Nachricht wurde erfolgreich gesendet!'));
+        
+        // Reset form
+        setName('');
+        setEmail('');
+        setMessage('');
+
+        // Hide toast after 4s
+        setTimeout(() => setToast(null), 4000);
+    };
 
     return (
-        <main className="flex-grow">
+        <main className="flex-grow relative">
             <SEO
                 title={t('contact.title')}
                 description={t('contact.desc')}
@@ -73,7 +93,7 @@ const Contact = () => {
                     <div className="bg-card p-10 rounded-3xl shadow-2xl border border-border relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary/50 via-primary to-primary/50" />
 
-                        <form className="space-y-6 relative z-10" onSubmit={(e) => e.preventDefault()}>
+                        <form className="space-y-6 relative z-10" onSubmit={handleSubmit}>
                             <div className="space-y-2">
                                 <label className="block text-sm font-bold text-foreground/60 uppercase tracking-widest ml-2" htmlFor="name">
                                     {t('contact.form.name')}
@@ -81,6 +101,8 @@ const Contact = () => {
                                 <input
                                     id="name"
                                     type="text"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
                                     className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium"
                                     placeholder={t('contact.form.namePlaceholder')}
                                     required
@@ -93,6 +115,8 @@ const Contact = () => {
                                 <input
                                     id="email"
                                     type="email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                     className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium"
                                     placeholder={t('contact.form.emailPlaceholder')}
                                     required
@@ -104,13 +128,18 @@ const Contact = () => {
                                 </label>
                                 <textarea
                                     id="message"
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
                                     rows={5}
                                     className="w-full px-6 py-4 rounded-2xl border border-border bg-background text-foreground focus:ring-4 focus:ring-primary/10 outline-none transition-all font-medium resize-none"
                                     placeholder={t('contact.form.messagePlaceholder')}
                                     required
                                 ></textarea>
                             </div>
-                            <button className="w-full bg-primary text-primary-foreground py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-primary/90 transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-primary/20 transform hover:-translate-y-1">
+                            <button 
+                                type="submit"
+                                className="w-full bg-primary text-primary-foreground py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-primary/90 transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-primary/20 transform hover:-translate-y-1 active:scale-[0.98]"
+                            >
                                 <Send size={20} strokeWidth={2.5} />
                                 {t('home.getInvolved')}
                             </button>
@@ -118,6 +147,16 @@ const Contact = () => {
                     </div>
                 </section>
             </div>
+
+            {/* Success Toast */}
+            {toast && (
+                <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 animate-in slide-in-from-bottom-4 fade-in duration-300">
+                    <div className="flex items-center gap-3 bg-success text-white border border-success/20 rounded-2xl px-6 py-4 shadow-2xl">
+                        <CheckCircle size={20} className="flex-shrink-0" />
+                        <p className="text-sm font-bold">{toast}</p>
+                    </div>
+                </div>
+            )}
         </main>
     );
 };
