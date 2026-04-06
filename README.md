@@ -1,5 +1,11 @@
 # Projekt-Zusammenfassung: Elternverein HTL Mödling
 
+[![React](https://img.shields.io/badge/React-19.2.0-blue?style=flat&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.3.1-blueviolet?style=flat&logo=vite)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4.1-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com)
+[![i18next](https://img.shields.io/badge/i18next-25.8.4-brightgreen)](https://www.i18next.com/)
+
 Diese Website dient als zentrale Plattform für den Elternverein der HTL Mödling. Sie bietet Informationen, Projektverwaltung und News für Eltern, Schüler und Lehrer.
 
 ## Tech-Stack
@@ -47,15 +53,15 @@ Diese Website dient als zentrale Plattform für den Elternverein der HTL Mödlin
 
 ### 📱 Animations & UI Showcases
 
-Hier sind aktuell aufgezeichnete Browser-Replays unserer wichtigsten UI-Komponenten im Einsatz:
+Hier sind aktuelle Screenshots unserer wichtigsten UI-Komponenten im Einsatz:
 
 **1. RTL & Dark-Mode Integration (Arabisch)**
 *Das Settings-Modal steuert live das `dir="rtl"` Layout der Seite sowie das Tailwind Dark-Theme.*
-![RTL Dark Mode Showcase](docs/screenshots/rtl_dark_mode.webp)
+![RTL Dark Mode Showcase](docs/screenshots/rtl_dark_mode.png)
 
 **2. Mobile-First Layout & Navigation Overlay**
 *Korrekte Textausrichtung und ein reibungsloses Hamburger-Menü Overlay in der 400px mobilen Ansicht.*
-![Mobile UI Showcase](docs/screenshots/mobile_showcase.webp)
+![Mobile UI Showcase](docs/screenshots/mobile_showcase.png)
 
 ### 🔍 SEO & Structured Data
 
