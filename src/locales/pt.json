@@ -18,7 +18,8 @@
             "support": "Apoio Social",
             "tutoring": "Explicações",
             "courses": "Cursos"
-        }
+        },
+        "dashboard": "Painel"
     },
     "footer": {
         "links": "Links Rápidos",
@@ -41,7 +42,7 @@
             "agm": {
                 "title": "Assembleia Geral Anual 2025",
                 "desc": "Convite para a assembleia geral ordinária da Associação de Pais.",
-                "body": "Convidamo-vos cordialmente para a Assembleia Geral Anual da Associação de Pais da HTL Mödling. A reunião terá lugar a 15 de outubro de 2025, às 18h00, no salão de festas da HTL Mödling.\n\nA ordem de trabalhos inclui: o relatório anual da direção, o relatório do tesoureiro com a isenção de responsabilidade da direção, a eleição dos órgãos da associação e a determinação da quota de membro para o próximo ano letivo.\n\nA vossa participação é especialmente importante, uma vez que serão tomadas decisões essenciais para o ano letivo 2025/26 nesta assembleia. Em caso de ausência, é possível o voto por procuração. Solicitamos a inscrição até 10 de outubro de 2025."
+                "body": "Convidamo-vos cordialmente para a Assembleia Geral Anual da Associação de Pais da HTL Mödling. A reunião terá lugar a 15 de outubro de 2025, às 18h00, no salão de festas da HTL Mödling.\n\nA ordem de trabalhos inclui: o relatório anual da direção, o relatório do tesoureiro com a isenção de responsabilidade da direção, a eleição dos órgãos da associação e a determinação da quota de membro para o próximo ano letivo.\n\nA vossa participação é especialmente importante, uma vez que serão tomadas decisões essenciais for o ano letivo 2025/26 nesta assembleia. Em caso de ausência, é possível o voto por procuração. Solicitamos a inscrição até 10 de outubro de 2025."
             },
             "sga": {
                 "title": "Atas da Reunião SGA",
@@ -83,7 +84,7 @@
         "purposeDesc": "Salvaguardar os interesses dos parceiros da associação em relação ao ensino e trabalho educativo na escola, bem como promover a cooperação entre a casa e a escola."
     },
     "privacy": {
-        "intro": "Levamos muito a sério a proteção dos seus dados pessoais. Abaixo informamos sobre o processamento dos seus dados.",
+        "intro": "Levamos muito a sério a proteção dos seus datos pessoais. Abaixo informamos sobre o processamento dos seus dados.",
         "responsible": "1. Parte Responsável",
         "collection": "2. Recolha e Processamento de Dados",
         "collectionDesc": "Processamos dados pessoais que recebemos como parte da adesão ou através do seu contato.",
@@ -121,7 +122,19 @@
             "socLink": "/services",
             "comm": "Conectando pais, escola e empresas para uma comunidade escolar forte.",
             "commTitle": "Comunidade",
-            "commLink": "/kontakt"
+            "commLink": "/kontakt",
+            "suppTitle": "Apoiar",
+            "supp": "Ligação com diretoria e chefes",
+            "suppLink": "/services",
+            "helpTitle": "Ajudar",
+            "help": "Apoiar famílias desfavorecidas",
+            "helpLink": "/services",
+            "infoTitle": "Informar",
+            "info": "Explicações, cursos, apoio psicológico",
+            "infoLink": "/news",
+            "entTitle": "Entreter",
+            "ent": "Bailes, festas de finalistas",
+            "entLink": "/news"
         },
         "socialProof": {
             "title": "Vozes da nossa Comunidade",
@@ -140,7 +153,19 @@
             "q3": "Quem pode solicitar apoio?",
             "a3": "Todos os pais de alunos da HTL Mödling podem solicitar apoio em casos de carência social ou para projetos estudantis inovadores.",
             "q4": "Como a transparência é garantida?",
-            "a4": "Como associação sem fins lucrativos, estamos sujeitos a auditorias rigorosas. O uso dos fundos é monitorado anualmente por auditores e divulgado na assembleia geral."
+            "a4": "Como associação sem fins lucrativos, estamos sujeitos a auditorias rigorosas. O uso dos fundos é monitorado anualmente por auditores e divulgado na assembleia geral.",
+            "badge": "Bom saber"
+        },
+        "showcase1": {
+            "badge": "Apoio Prático",
+            "title": "Equipamento para o Futuro",
+            "desc": "Com os fundos dos pais, financiamos equipamentos modernos, materiais de laboratório e projetos que, de outra forma, não teriam espaço no orçamento escolar."
+        },
+        "showcase2": {
+            "badge": "Ajudar e Informar",
+            "title": "Fortalecer a Comunidade.<br/>Mostrar Presença.",
+            "desc": "Além do apoio financeiro, organizamos excursões, fortalecemos a união em viagens escolares e informamos ativamente sobre assuntos atuais.",
+            "link": "Os Nossos Serviços"
         }
     },
     "about": {
@@ -157,7 +182,8 @@
         ],
         "board": {
             "viewDetails": "Ver detalhes completos"
-        }
+        },
+        "paymentHint": "Clique para detalhes"
     },
     "costs": {
         "title": "Associação e Custos",
@@ -165,7 +191,15 @@
         "membership": "Quota de Sócio",
         "allocation": "Alocação de Fundos",
         "details": "A quota de sócio é utilizada 100% em benefício dos alunos.",
-        "membershipPerYear": "Ano por Família"
+        "membershipPerYear": "Ano por Família",
+        "paymentTitle": "Detalhes de Pagamento",
+        "copyIban": "Copiar IBAN",
+        "copyBic": "Copiar BIC",
+        "reference": "Descrição",
+        "referenceExample": "Quota EV + Nome + Turma",
+        "referenceExampleCopyTxt": "Quota EV",
+        "copyReference": "Copiar Descrição",
+        "paymentNote": "Os dados são exemplos. Por favor, contacte a direção para obter informações atualizadas de pagamento."
     },
     "contact": {
         "title": "Contate-nos",
@@ -224,7 +258,165 @@
             "Cursos de moldagem por injeção",
             "Preparação para exames"
         ],
-        "learnMore": "Saiba Mais"
+        "learnMore": "Saiba Mais",
+        "socialSupport": {
+            "title": "Apoio Social",
+            "subtitle": "Ajuda desburocratizada para alunos e famílias.",
+            "heroDesc": "O fundo de apoio social da Associação de Pais ajuda alunos da HTL Mödling em situações financeiras difíceis para permitir a participação em eventos escolares.",
+            "whoGetsHelp": "Quem recebe apoio?",
+            "whoGetsHelpDesc": "Todos os alunos da HTL Mödling cujos pais ou encarregados de educação se encontram numa situação financeira difícil.",
+            "whatIsFunded": "O que é financiado?",
+            "fundedItems": [
+                "Semanas de desporto e esqui",
+                "Semanas de línguas e viagens de estudo",
+                "Material de aprendizagem e equipamento básico",
+                "Contribuições para eventos escolares"
+            ],
+            "application": "Candidatura",
+            "applicationDesc": "A candidatura é feita de forma totalmente discreta e desburocratizada através da nossa direção.",
+            "contactPerson": "Pessoa de contacto",
+            "contactDesc": "A nossa tesouraria está à sua disposição para uma conversa confidencial.",
+            "ctaButton": "Candidatar-se agora",
+            "back": "Voltar",
+            "titleHighlight": "Ninguém fica para trás.",
+            "intro": "A Associação de Pais visa permitir que alunos de famílias carentes participem em eventos escolares. Ajudamos onde os subsídios não chegam.",
+            "points": [
+                "Subsídio para semanas escolares",
+                "Apoio com materiais",
+                "Ajuda de emergência"
+            ],
+            "whoTitle": "Quem pode pedir?",
+            "whoDesc": "Todos os encarregados de educação membros da Associação. O apoio é tratado com discrição após verificação da necessidade.",
+            "confidential": "* Tudo é estritamente confidencial.",
+            "processTitle": "Processo",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Submeter pedido",
+                    "desc": "Envie pelo formulário ou email."
+                },
+                {
+                    "step": "02",
+                    "title": "Análise",
+                    "desc": "A direção analisa com discrição."
+                },
+                {
+                    "step": "03",
+                    "title": "Pagamento",
+                    "desc": "Após aprovação, o pagamento vai direto para a escola."
+                }
+            ],
+            "qTitle": "Questões?",
+            "qDesc": "Aconselhamos sem compromisso.",
+            "contactBtn": "Contactar"
+        },
+        "tutoringPage": {
+            "title": "Ofertas de Explicações",
+            "subtitle": "Alunos ajudam alunos – Sucesso comum.",
+            "heroDesc": "O nosso sistema de explicações liga alunos experientes a alunos que necessitam de apoio em disciplinas específicas.",
+            "forStudents": "Para alunos",
+            "forStudentsDesc": "Procura ajuda em Matemática, Engenharia Mecânica ou Programação? Encontre o explicador certo.",
+            "forTutors": "Para explicadores",
+            "forTutorsDesc": "É bom numa disciplina e quer ajudar outros e ganhar algum dinheiro extra?",
+            "howItWorks": "Como funciona?",
+            "steps": [
+                "Escolha a disciplina e o curso",
+                "Contacte explicadores verificados",
+                "Combine horários e condições individualmente"
+            ],
+            "quality": "Garantia de qualidade",
+            "qualityDesc": "Todos os explicadores são verificados pela Associação de Pais e recomendados por professores da disciplina.",
+            "viewList": "Ver lista de explicadores",
+            "back": "Voltar",
+            "badge": "Sucesso Juntos",
+            "titleHighlight": "Rede de Explicações HTL",
+            "intro": "Ninguém sabe as dificuldades de um exame, senão quem o passou. O nosso sistema junta alunos mais velhos a quem precisa.",
+            "stats": [
+                {
+                    "title": "Mais de 50 explicadores",
+                    "desc": "Várias disciplinas"
+                },
+                {
+                    "title": "Preços Justos",
+                    "desc": "Dentro da Escola"
+                }
+            ],
+            "findTitle": "Como encontrar?",
+            "findSteps": [
+                "Veja a vitrine na escola.",
+                "Pergunte à associação de estudantes.",
+                "Use o formulário.",
+                "Junte-se ao Discord oficial."
+            ],
+            "popularTitle": "Disciplinas Populares",
+            "subjects": [
+                "Matemática",
+                "Informática",
+                "Eletrotécnica",
+                "Mecânica",
+                "Programação",
+                "Inglês",
+                "Economia",
+                "Laboratório"
+            ],
+            "ctaTitle": "Queres ser explicador?",
+            "ctaDesc": "Ajuda os outros e ganha algum dinheiro. Nós apoiamos no contacto.",
+            "ctaBtn": "Candidatar",
+            "noteTitle": "Aviso",
+            "noteDesc": "As explicações são a título privado. Aconselhamos entre 10€ e 15€/hora."
+        },
+        "coursesPage": {
+            "title": "Oferta de Cursos",
+            "subtitle": "Qualificações extras para o seu futuro.",
+            "heroDesc": "Em colaboração com a direção da escola, oferecemos cursos exclusivos que vão além do currículo normal.",
+            "currentCourses": "Cursos atuais",
+            "features": [
+                "Diretamente no recinto da escola após as aulas",
+                "Formação prática por especialistas",
+                "Certificados e diplomas oficiais"
+            ],
+            "suggestion": "Tem uma proposta de curso ou deseja inscrever-se?",
+            "registerBtn": "Inscrição e informações",
+            "back": "Voltar",
+            "titleHighlight": "Qualificações adicionais.",
+            "intro": "Apoiamos certificados reconhecidos e formação além do currículo normal.",
+            "items": [
+                {
+                    "title": "Certificação ECDL",
+                    "desc": "Carta Europeia de Computador.",
+                    "badge": "Início: Inverno 2025"
+                },
+                {
+                    "title": "Moldagem por Injeção",
+                    "desc": "Formação para eng. mecânica.",
+                    "badge": "Últimas Vagas"
+                },
+                {
+                    "title": "Formação em Segurança",
+                    "desc": "Formação para oficinas.",
+                    "badge": "Obrigatório"
+                }
+            ],
+            "detailsBtn": "Ver detalhes",
+            "whyBadge": "Porquê cursos extra?",
+            "whyTitle": "Uma mais valia no CV.",
+            "benefits": [
+                {
+                    "label": "Certificação",
+                    "detail": "Internacional"
+                },
+                {
+                    "label": "Vantagem",
+                    "detail": "No mercado de trabalho"
+                }
+            ],
+            "points": [
+                "Acesso económico",
+                "Aulas na escola",
+                "Formação prática",
+                "Certificados oficiais"
+            ]
+        }
     },
     "projects": {
         "title": "Projetos",
@@ -366,5 +558,157 @@
     },
     "common": {
         "required": "Campo obrigatório"
+    },
+    "dashboard": {
+        "internal": {
+            "brand": "EV Interno",
+            "role": "Membro da Direção",
+            "exit": "Para o site",
+            "footer": "Versão demo • Criada por Patrick K. & Antigravity"
+        },
+        "nav": {
+            "overview": "Visão Geral",
+            "calendar": "Calendário",
+            "messages": "Mensagens"
+        },
+        "calendar": {
+            "title": "Calendário partilhado",
+            "subtitle": "Todas as datas e eventos de relance",
+            "add": "Adicionar evento",
+            "edit": "Editar evento",
+            "delete": "Eliminar evento",
+            "exportIcs": "Exportar como .ics",
+            "exportAll": "Exportar",
+            "exportSuccess": "Ficheiro do calendário descarregado",
+            "exportAllSuccess": "Todos os eventos exportados",
+            "noEventsToExport": "Nenhum evento para exportar",
+            "updateSuccess": "Evento atualizado",
+            "createSuccess": "Evento criado",
+            "deleteSuccess": "Evento eliminado",
+            "days": {
+                "sun": "Dom",
+                "mon": "Seg",
+                "tue": "Ter",
+                "wed": "Qua",
+                "thu": "Qui",
+                "fri": "Sex",
+                "sat": "Sáb"
+            },
+            "form": {
+                "title": "Título *",
+                "titlePlaceholder": "ex. Reunião de pais",
+                "date": "Data *",
+                "time": "Hora",
+                "description": "Descrição",
+                "descriptionPlaceholder": "Detalhes opcionais...",
+                "save": "Guardar",
+                "create": "Criar",
+                "cancel": "Cancelar"
+            },
+            "mock": {
+                "evt1Title": "Reunião de Direção",
+                "evt1Desc": "Reunião mensal na sala de conferências.",
+                "evt2Title": "Festa de Verão",
+                "evt2Desc": "Festa anual no jardim da escola."
+            }
+        },
+        "overview": {
+            "title": "Visão Geral do Dashboard",
+            "welcome": "Bem-vindo de volta, {{name}}",
+            "stats": {
+                "events": "Projetos abertos",
+                "messages": "Projetos aprovados",
+                "members": "Notícias ativas",
+                "reports": "Próxima data"
+            },
+            "activity": {
+                "title": "Atividades recentes",
+                "viewAll": "Ver tudo",
+                "less": "Menos",
+                "showLess": "Mostrar menos",
+                "showMore": "mais {{count}}",
+                "by": "por"
+            },
+            "actions": {
+                "title": "Acesso rápido",
+                "post": "Nova candidatura",
+                "event": "Escrever Notícia",
+                "document": "Carregar Ata",
+                "newsTitle": "Compor Notícia",
+                "newsSuccess": "Demo: Rascunho de notícia guardado",
+                "newsPlaceholderTitle": "ex. Data do festival de verão",
+                "newsPlaceholderContent": "Insira o texto da notícia...",
+                "uploadTitle": "Carregar Ata",
+                "uploadSuccess": "Demo: Carregamento de ata simulado",
+                "uploadPlaceholderFile": "Arraste o ficheiro aqui ou clique",
+                "uploadHint": "PDF, DOCX, JPG • máx. 10 MB",
+                "uploadDate": "Data da sessão",
+                "cancel": "Cancelar",
+                "publish": "Publicar",
+                "uploadBtn": "Carregar",
+                "category": "Categoria"
+            },
+            "mock": {
+                "a1": "Proposta de computadores aprovada",
+                "a2": "Nova ata de reunião carregada",
+                "a3": "Notícia: Data do festival de verão",
+                "a4": "Projeto de jardim concluído",
+                "a5": "Reunião de conselho agendada",
+                "u1": "Direção",
+                "u2": "Secretário",
+                "u3": "Equipa de PR",
+                "u4": "Líder de projeto",
+                "u5": "Presidente",
+                "d1": "há 2 horas",
+                "d2": "Ontem",
+                "d3": "há 2 dias",
+                "d4": "há 3 dias",
+                "d5": "Semana passada",
+                "a6": "Entrada de teste 1",
+                "d6": "Hoje",
+                "a7": "Entrada de teste 2",
+                "d7": "Ontem"
+            }
+        },
+        "messages": {
+            "title": "Mensagens",
+            "placeholder": "Escrever uma mensagem...",
+            "send": "Enviar",
+            "empty": "Selecione uma conversa",
+            "mock": {
+                "c1": "Grupo da Direção",
+                "c2": "Contabilidade",
+                "c3": "Planeamento de projetos",
+                "m1": "O orçamento para o festival de verão já foi aprovado?",
+                "m2": "Fatura recebida para os novos portáteis.",
+                "m3": "Ainda precisamos de voluntários para o dia dos pais."
+            }
+        },
+        "settings": {
+            "title": "Definições",
+            "profile": {
+                "title": "Perfil",
+                "name": "Nome",
+                "email": "E-mail"
+            },
+            "notifications": {
+                "title": "Notificações",
+                "email": "Notificações de E-mail",
+                "push": "Notificações Push",
+                "weekly": "Resumo semanal"
+            },
+            "appearance": {
+                "title": "Aparência"
+            },
+            "security": {
+                "title": "Segurança",
+                "changePassword": "Mudar Palavra-passe",
+                "current": "Palavra-passe atual",
+                "new": "Nova Palavra-passe",
+                "confirm": "Confirmar Palavra-passe",
+                "success": "Palavra-passe alterada com sucesso!"
+            },
+            "save": "Guardar alterações"
+        }
     }
 }

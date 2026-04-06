@@ -29,8 +29,8 @@ const Dashboard = () => {
         { title: t('dashboard.overview.mock.a3'), date: t('dashboard.overview.mock.d3'), user: t('dashboard.overview.mock.u3') },
         { title: t('dashboard.overview.mock.a4'), date: t('dashboard.overview.mock.d4'), user: t('dashboard.overview.mock.u4') },
         { title: t('dashboard.overview.mock.a5'), date: t('dashboard.overview.mock.d5'), user: t('dashboard.overview.mock.u5') },
-        { title: 'Zusätzlicher Test-Eintrag 1', date: 'Heute', user: 'System' },
-        { title: 'Zusätzlicher Test-Eintrag 2', date: 'Gestern', user: 'System' },
+        { title: t('dashboard.overview.mock.a6', 'Zusätzlicher Test-Eintrag 1'), date: t('dashboard.overview.mock.d6', 'Heute'), user: 'System' },
+        { title: t('dashboard.overview.mock.a7', 'Zusätzlicher Test-Eintrag 2'), date: t('dashboard.overview.mock.d7', 'Gestern'), user: 'System' },
     ];
 
     const visibleActivity = showAll ? recentActivity : recentActivity.slice(0, 4);
@@ -41,9 +41,9 @@ const Dashboard = () => {
                 title={t('dashboard.overview.title')}
                 description="Dashboard"
             />
-            <div className="flex justify-between items-center px-4">
-                <h1 className="text-3xl font-black text-foreground tracking-tighter">{t('dashboard.overview.title')}</h1>
-                <div className="text-sm font-bold text-foreground/40 uppercase tracking-widest">{t('dashboard.overview.welcome', { name: 'Testperson' })}</div>
+            <div className="flex flex-col sm:flex-row sm:items-center items-start justify-between gap-2 md:gap-4 px-4">
+                <h1 className="text-2xl md:text-3xl font-black text-foreground tracking-tighter">{t('dashboard.overview.title')}</h1>
+                <div className="text-xs md:text-sm font-bold text-foreground/40 uppercase tracking-widest">{t('dashboard.overview.welcome', { name: 'Testperson' })}</div>
             </div>
 
             {/* Stats Grid */}
@@ -92,7 +92,7 @@ const Dashboard = () => {
                             onClick={() => setShowAll(!showAll)}
                             className="text-sm font-black text-primary uppercase tracking-widest hover:opacity-80 transition-opacity"
                         >
-                            {showAll ? 'Weniger' : t('dashboard.overview.activity.viewAll')}
+                            {showAll ? t('dashboard.overview.activity.less') : t('dashboard.overview.activity.viewAll')}
                         </button>
                     </div>
                     <div className="divide-y divide-border/50">
@@ -114,7 +114,10 @@ const Dashboard = () => {
                                 onClick={() => setShowAll(!showAll)}
                                 className="text-xs font-black text-foreground/40 hover:text-primary uppercase tracking-widest transition-colors"
                             >
-                                {showAll ? '▲ Weniger anzeigen' : `▼ ${recentActivity.length - 4} weitere anzeigen`}
+                                {showAll 
+                                    ? `▲ ${t('dashboard.overview.activity.showLess')}` 
+                                    : `▼ ${t('dashboard.overview.activity.showMore', { count: recentActivity.length - 4 })}`
+                                }
                             </button>
                         </div>
                     )}
@@ -129,35 +132,35 @@ const Dashboard = () => {
                         <div className="bg-success p-6 flex items-center justify-between">
                             <div className="flex items-center gap-3">
                                 <FileEdit size={22} className="text-white" />
-                                <h2 className="text-xl font-black text-white">News verfassen</h2>
+                                <h2 className="text-xl font-black text-white">{t('dashboard.overview.actions.newsTitle')}</h2>
                             </div>
                             <button onClick={() => setShowNewsModal(false)} className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors">
                                 <X size={20} />
                             </button>
                         </div>
-                        <form className="p-6 space-y-4" onSubmit={(e) => { e.preventDefault(); setShowNewsModal(false); showToast('Demo: News-Entwurf gespeichert'); }}>
+                        <form className="p-6 space-y-4" onSubmit={(e) => { e.preventDefault(); setShowNewsModal(false); showToast(t('dashboard.overview.actions.newsSuccess')); }}>
                             <div>
-                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Titel</label>
-                                <input type="text" placeholder="z.B. Sommerfest Termin" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" />
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">{t('dashboard.calendar.form.title').replace(' *', '')}</label>
+                                <input type="text" placeholder={t('dashboard.overview.actions.newsPlaceholderTitle')} className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" />
                             </div>
                             <div>
-                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Kategorie</label>
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">{t('dashboard.overview.actions.category')}</label>
                                 <select className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary outline-none transition-all">
-                                    <option>News</option>
-                                    <option>Event</option>
-                                    <option>Protokoll</option>
+                                    <option>{t('dashboard.overview.actions.event')}</option>
+                                    <option>{t('newsArticle.category')}</option>
+                                    <option>{t('dashboard.overview.actions.document')}</option>
                                 </select>
                             </div>
                             <div>
-                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Inhalt</label>
-                                <textarea rows={4} placeholder="News-Text eingeben..." className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" />
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">{t('dashboard.calendar.form.description')}</label>
+                                <textarea rows={4} placeholder={t('dashboard.overview.actions.newsPlaceholderContent')} className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none" />
                             </div>
                             <div className="flex gap-3 pt-2">
                                 <button type="button" onClick={() => setShowNewsModal(false)} className="flex-1 py-3 rounded-xl border border-border font-bold text-foreground/60 hover:bg-muted transition-all text-sm">
-                                    Abbrechen
+                                    {t('dashboard.overview.actions.cancel')}
                                 </button>
                                 <button type="submit" className="flex-1 py-3 rounded-xl bg-success text-white font-black uppercase tracking-widest text-sm hover:bg-success/90 transition-all">
-                                    Veröffentlichen
+                                    {t('dashboard.overview.actions.publish')}
                                 </button>
                             </div>
                         </form>
@@ -173,7 +176,7 @@ const Dashboard = () => {
                         <div className="bg-accent p-6 flex items-center justify-between">
                             <div className="flex items-center gap-3">
                                 <Upload size={22} className="text-white" />
-                                <h2 className="text-xl font-black text-white">Protokoll hochladen</h2>
+                                <h2 className="text-xl font-black text-white">{t('dashboard.overview.actions.uploadTitle')}</h2>
                             </div>
                             <button onClick={() => setShowUploadModal(false)} className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors">
                                 <X size={20} />
@@ -182,22 +185,22 @@ const Dashboard = () => {
                         <div className="p-6 space-y-4">
                             <div className="border-2 border-dashed border-border rounded-2xl p-10 text-center hover:border-primary/50 transition-colors cursor-pointer group">
                                 <Upload size={40} className="mx-auto text-foreground/20 group-hover:text-primary/50 transition-colors mb-4" />
-                                <p className="text-sm font-bold text-foreground/50 group-hover:text-foreground/70 transition-colors">Datei hierher ziehen oder klicken</p>
-                                <p className="text-[10px] text-foreground/30 font-black uppercase tracking-widest mt-2">PDF, DOCX, JPG • max. 10 MB</p>
+                                <p className="text-sm font-bold text-foreground/50 group-hover:text-foreground/70 transition-colors">{t('dashboard.overview.actions.uploadPlaceholderFile')}</p>
+                                <p className="text-[10px] text-foreground/30 font-black uppercase tracking-widest mt-2">{t('dashboard.overview.actions.uploadHint')}</p>
                             </div>
                             <div>
-                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Sitzungsdatum</label>
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">{t('dashboard.overview.actions.uploadDate')}</label>
                                 <input type="date" className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary outline-none transition-all" />
                             </div>
                             <div className="flex gap-3 pt-2">
                                 <button onClick={() => setShowUploadModal(false)} className="flex-1 py-3 rounded-xl border border-border font-bold text-foreground/60 hover:bg-muted transition-all text-sm">
-                                    Abbrechen
+                                    {t('dashboard.overview.actions.cancel')}
                                 </button>
                                 <button
-                                    onClick={() => { setShowUploadModal(false); showToast('Demo: Protokoll-Upload simuliert'); }}
+                                    onClick={() => { setShowUploadModal(false); showToast(t('dashboard.overview.actions.uploadSuccess')); }}
                                     className="flex-1 py-3 rounded-xl bg-accent text-white font-black uppercase tracking-widest text-sm hover:bg-accent/90 transition-all"
                                 >
-                                    Hochladen
+                                    {t('dashboard.overview.actions.uploadBtn')}
                                 </button>
                             </div>
                         </div>

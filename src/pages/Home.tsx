@@ -37,7 +37,7 @@ const Home = () => {
             />
 
             {/* ── Hero Section ── */}
-            <header className="relative w-full overflow-hidden bg-background min-h-[85svh] flex items-center">
+            <header className="relative w-full overflow-hidden bg-background min-h-[100svh] flex items-center">
                 {/* BACKGROUND LAYER: Image */}
                 <div className="absolute inset-0 z-0 bg-black">
                     <img
@@ -73,16 +73,16 @@ const Home = () => {
                         {/* Actions */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-10">
                             <Link to="/kontakt"
-                                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-black
-                                           rounded-xl font-black uppercase tracking-widest text-base hover:scale-105 hover:bg-white active:scale-95 transition-all shadow-xl shadow-primary/40
-                                           focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none">
+                                className="inline-flex items-center justify-center px-6 md:px-8 py-4 bg-primary text-black
+                                           rounded-xl font-black uppercase tracking-wider md:tracking-widest text-sm md:text-base hover:scale-105 hover:bg-white active:scale-95 transition-all shadow-xl shadow-primary/40
+                                           focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none text-center whitespace-normal leading-tight">
                                 {t('home.getInvolved')}
                             </Link>
                             <a href="#nutzen"
-                                className="inline-flex items-center justify-center px-8 py-4 rounded-xl font-black uppercase tracking-widest text-base
+                                className="inline-flex items-center justify-center px-6 md:px-8 py-4 rounded-xl font-black uppercase tracking-wider md:tracking-widest text-sm md:text-base
                                            bg-black/30 backdrop-blur-md text-white border border-white/20
                                            hover:bg-white/20 transition-all shadow-xl
-                                           focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none">
+                                           focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none text-center whitespace-normal leading-tight">
                                 {t('home.learnMore')}
                             </a>
                         </div>
@@ -176,9 +176,9 @@ const Home = () => {
                     {/* Showcase 1: Fördern & Labor */}
                     <div className="scroll-reveal opacity-0 translate-y-8 duration-1000">
                         <div className="text-center mb-10 max-w-2xl mx-auto">
-                            <span className="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">Fördern in der Praxis</span>
-                            <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-foreground mb-4">Ausrüstung für die Zukunft</h2>
-                            <p className="text-foreground/60 text-lg">Mit den Elternbeiträgen finanzieren wir modernste Ausstattung, Labormaterialien und Projekte, die sonst im regulären Schulbudget keinen Platz finden.</p>
+                            <span className="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">{t('home.showcase1.badge', 'Fördern in der Praxis')}</span>
+                            <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-foreground mb-4">{t('home.showcase1.title', 'Ausrüstung für die Zukunft')}</h2>
+                            <p className="text-foreground/60 text-lg">{t('home.showcase1.desc', 'Mit den Elternbeiträgen finanzieren wir modernste Ausstattung, Labormaterialien und Projekte, die sonst im regulären Schulbudget keinen Platz finden.')}</p>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <div className="rounded-2xl overflow-hidden aspect-square shadow-md group">
@@ -199,13 +199,13 @@ const Home = () => {
                     {/* Showcase 2: Helfen & Informieren (Split) */}
                     <div className="grid md:grid-cols-2 gap-16 items-center">
                         <div className="space-y-6 scroll-reveal opacity-0 translate-y-8 duration-700 delay-100 pr-8">
-                            <span className="text-primary font-bold tracking-widest text-xs uppercase block">Helfen & Informieren</span>
-                            <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-foreground leading-tight">Gemeinschaft stärken. <br/>Präsenz zeigen.</h2>
+                            <span className="text-primary font-bold tracking-widest text-xs uppercase block">{t('home.showcase2.badge', 'Helfen & Informieren')}</span>
+                            <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-foreground leading-tight" dangerouslySetInnerHTML={{ __html: t('home.showcase2.title', 'Gemeinschaft stärken. <br/>Präsenz zeigen.') }}></h2>
                             <p className="text-foreground/70 text-lg leading-relaxed">
-                                Neben der finanziellen Förderung organisieren wir Exkursionen, stärken den sozialen Zusammenhalt auf Schulfahrten und informieren aktiv in Präsentationen und Sitzungen über aktuelle Anliegen.
+                                {t('home.showcase2.desc', 'Neben der finanziellen Förderung organisieren wir Exkursionen, stärken den sozialen Zusammenhalt auf Schulfahrten und informieren aktiv in Präsentationen und Sitzungen über aktuelle Anliegen.')}
                             </p>
                             <Link to="/services" className="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all uppercase tracking-widest text-sm mt-4">
-                                Unsere Leistungen <ArrowRight size={18} />
+                                {t('home.showcase2.link', 'Unsere Leistungen')} <ArrowRight size={18} />
                             </Link>
                         </div>
                         <div className="grid grid-cols-2 gap-4 scroll-reveal opacity-0 translate-y-8 duration-700 delay-300">
@@ -321,7 +321,7 @@ const Home = () => {
                 <div className="container mx-auto px-6">
                     <div className="max-w-3xl mx-auto scroll-reveal opacity-0 translate-y-8 duration-700">
                         <div className="text-center mb-16">
-                            <span className="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">Gut zu wissen</span>
+                            <span className="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">{t('home.faq.badge', 'Gut zu wissen')}</span>
                             <h2 className="text-4xl font-black tracking-tighter mb-4">
                                 {t('home.faq.title')}
                             </h2>

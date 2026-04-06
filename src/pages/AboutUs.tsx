@@ -165,7 +165,7 @@ const AboutUs = () => {
                             <button
                                 onClick={closeModal}
                                 className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
-                                aria-label="Schließen"
+                                aria-label={t('common.close', 'Schließen')}
                             >
                                 <X size={20} />
                             </button>
@@ -186,7 +186,7 @@ const AboutUs = () => {
                                     <button
                                         onClick={() => handleCopy('AT12345678901234567', 'iban')}
                                         className="p-2 rounded-xl hover:bg-primary/10 text-foreground/40 hover:text-primary transition-colors"
-                                        aria-label="IBAN kopieren"
+                                        aria-label={t('costs.copyIban', 'IBAN kopieren')}
                                     >
                                         {copied === 'iban' ? <CheckCircle size={16} className="text-success" /> : <Copy size={16} />}
                                     </button>
@@ -201,7 +201,7 @@ const AboutUs = () => {
                                     <button
                                         onClick={() => handleCopy('BKAUATWW', 'bic')}
                                         className="p-2 rounded-xl hover:bg-primary/10 text-foreground/40 hover:text-primary transition-colors"
-                                        aria-label="BIC kopieren"
+                                        aria-label={t('costs.copyBic', 'BIC kopieren')}
                                     >
                                         {copied === 'bic' ? <CheckCircle size={16} className="text-success" /> : <Copy size={16} />}
                                     </button>
@@ -212,11 +212,11 @@ const AboutUs = () => {
                             <div className="bg-background rounded-2xl p-4 border border-border space-y-1">
                                 <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest">{t('costs.reference', 'Verwendungszweck')}</p>
                                 <div className="flex items-center justify-between gap-2">
-                                    <p className="font-bold text-foreground text-sm">EV Mitgliedsbeitrag + Name + Klasse</p>
+                                    <p className="font-bold text-foreground text-sm">{t('costs.referenceExample', 'EV Mitgliedsbeitrag + Name + Klasse')}</p>
                                     <button
-                                        onClick={() => handleCopy('EV Mitgliedsbeitrag', 'ref')}
+                                        onClick={() => handleCopy(t('costs.referenceExampleCopyTxt', 'EV Mitgliedsbeitrag'), 'ref')}
                                         className="p-2 rounded-xl hover:bg-primary/10 text-foreground/40 hover:text-primary transition-colors"
-                                        aria-label="Verwendungszweck kopieren"
+                                        aria-label={t('costs.copyReference', 'Verwendungszweck kopieren')}
                                     >
                                         {copied === 'ref' ? <CheckCircle size={16} className="text-success" /> : <Copy size={16} />}
                                     </button>

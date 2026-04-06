@@ -1,0 +1,134 @@
+{
+  "home": {
+    "benefits": {
+      "suppTitle": "Unterstützen",
+      "supp": "Bindeglied zu Direktion & Abteilungsleitern",
+      "suppLink": "/services",
+      "helpTitle": "Helfen",
+      "help": "Sozial schwache Familien entlasten",
+      "helpLink": "/services",
+      "infoTitle": "Informieren",
+      "info": "Nachhilfe, Kurse, psychologische Hilfe",
+      "infoLink": "/news",
+      "entTitle": "Unterhalten",
+      "ent": "Bälle, Maturafeiern, Barbarafeier",
+      "entLink": "/news"
+    }
+  },
+  "services": {
+    "socialSupport": {
+      "back": "Zur Übersicht",
+      "titleHighlight": "Niemand wird im Stich gelassen.",
+      "intro": "Ein zentrales Anliegen des Elternvereins ist es, Schülern aus finanziell schlechter gestellten Familien die Teilnahme an Schulveranstaltungen zu ermöglichen. Wir helfen dort, wo staatliche Förderungen nicht ausreichen oder zu spät kommen.",
+      "points": [
+        "Zuschuss zu Schulwochen (Sport- & Projektwochen)",
+        "Unterstützung bei Materialkosten",
+        "Individuelle Soforthilfe"
+      ],
+      "whoTitle": "Wer kann ansuchen?",
+      "whoDesc": "Ansuchen können alle Erziehungsberechtigten von Schülern der HTL Mödling, die Mitglied im Elternverein sind. Die Unterstützung erfolgt diskret und unbürokratisch nach Prüfung der sozialen Bedürftigkeit.",
+      "confidential": "* Alle Anträge werden streng vertraulich behandelt.",
+      "processTitle": "Ablauf der Förderung",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Antrag stellen",
+          "desc": "Senden Sie uns eine Anfrage über das Kontaktformular oder per E-Mail."
+        },
+        {
+          "step": "02",
+          "title": "Prüfung",
+          "desc": "Der Vorstand prüft Ihr Ansuchen zeitnah und diskret auf Übereinstimmung mit unseren Richtlinien."
+        },
+        {
+          "step": "03",
+          "title": "Auszahlung",
+          "desc": "Nach Genehmigung wird der Betrag direkt an die Schule oder den Veranstalter überwiesen."
+        }
+      ],
+      "qTitle": "Haben Sie Fragen zur Förderung?",
+      "qDesc": "Wir beraten Sie gerne unverbindlich und unterstützen Sie beim Antragsprozess.",
+      "contactBtn": "Jetzt Kontaktieren"
+    },
+    "tutoringPage": {
+      "back": "Zur Übersicht",
+      "badge": "Gemeinsam zum Erfolg",
+      "titleHighlight": "Das HTL Tutoren-Netzwerk",
+      "intro": "Niemand kennt die Tücken einer Prüfung besser als jemand, der sie bereits bestanden hat. Unser Peer-to-Peer Nachhilfesystem bringt motivierte Oberstufenschüler mit Schülern zusammen, die Unterstützung in bestimmten Fächern benötigen.",
+      "stats": [
+        {
+          "title": "Über 50 Tutoren",
+          "desc": "Fächerübergreifend"
+        },
+        {
+          "title": "Faire Preise",
+          "desc": "Innerhalb der HTL"
+        }
+      ],
+      "findTitle": "Wie finde ich Nachhilfe?",
+      "findSteps": [
+        "Schauen Sie in den aktuellen Aushang in der Aula.",
+        "Fragen Sie direkt bei der Schülervertretung (SV).",
+        "Nutzen Sie unser Kontaktformular zur Vermittlung.",
+        "Treten Sie der offiziellen Discord/Messenger-Gruppe bei."
+      ],
+      "popularTitle": "Beliebte Fächer",
+      "subjects": [
+        "Mathematik",
+        "Angewandte Informatik",
+        "Elektrotechnik",
+        "Mechanik",
+        "Programmierung",
+        "Englisch",
+        "Wirtschaft",
+        "Laborübungen"
+      ],
+      "ctaTitle": "Du willst selbst Tutor werden?",
+      "ctaDesc": "Hilf deinen Mitschülern, vertiefe dein eigenes Wissen und verdiene dir etwas dazu. Wir unterstützen dich bei der Vermittlung.",
+      "ctaBtn": "Jetzt als Tutor bewerben",
+      "noteTitle": "Wichtiger Hinweis",
+      "noteDesc": "Die Nachhilfe erfolgt auf privater Basis zwischen den Schülern. Der Elternverein stellt lediglich die Plattform und die Kontakte zur Verfügung. Wir empfehlen faire Honorare zwischen 10€ und 15€ pro Stunde."
+    },
+    "coursesPage": {
+      "back": "Zur Übersicht",
+      "titleHighlight": "Zusatzqualifikationen für den Vorsprung.",
+      "intro": "Wir unterstützen den Erwerb von international anerkannten Zertifikaten und Spezialausbildungen, die über den regulären Lehrplan hinausgehen. Damit stärken wir die Jobchancen unserer Absolventen.",
+      "items": [
+        {
+          "title": "ECDL Zertifizierung",
+          "desc": "Der Europäische Computer Führerschein für alle Jahrgänge.",
+          "badge": "Start: WS 2025"
+        },
+        {
+          "title": "Spritzgusstechnik",
+          "desc": "Spezialausbildung für Maschinenbau und Kunststofftechnik.",
+          "badge": "Restplätze"
+        },
+        {
+          "title": "Sicherheitsschulung",
+          "desc": "Zusatzqualifikation für den Werkstattbetrieb der Oberstufe.",
+          "badge": "Pflichtmodul"
+        }
+      ],
+      "detailsBtn": "Details anfragen",
+      "whyBadge": "Warum Zusatzkurse?",
+      "whyTitle": "Dein Plus im Lebenslauf.",
+      "benefits": [
+        {
+          "label": "Zertifizierung",
+          "detail": "Internationale Gültigkeit"
+        },
+        {
+          "label": "Vorteile",
+          "detail": "Job-Markt-Vorteil"
+        }
+      ],
+      "points": [
+        "Kostengünstiger Zugang durch den Elternverein",
+        "Direkt am Schulstandort nach dem Unterricht",
+        "Praxisnahe Ausbildung durch Fachexperten",
+        "Offizielle Zeugnisse und Zertifikate"
+      ]
+    }
+  }
+}

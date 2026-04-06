@@ -54,7 +54,7 @@ const NewsArticle = () => {
             <div className="container mx-auto px-4 py-6 md:py-8">
                 <Link
                     to="/news"
-                    className="inline-flex items-center gap-2 text-foreground/50 hover:text-primary font-bold transition-all uppercase tracking-widest text-xs mb-6 md:mb-8 group"
+                    className="inline-flex items-center gap-2 text-foreground/50 hover:text-primary font-bold transition-all uppercase tracking-widest text-xs mb-6 md:mb-8 group no-print"
                 >
                     <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
                     {t('nav.news')}
@@ -96,22 +96,22 @@ const NewsArticle = () => {
                                 EV
                             </div>
                             <div>
-                                <p className="font-bold text-foreground text-sm">{t('newsArticle.authorName')}</p>
+                                <p className="font-bold text-foreground text-sm">{t('newsArticle.authorName', 'Vorstand Elternverein')}</p>
                                 <p className="text-xs text-foreground/40 font-medium">{article.date}</p>
                             </div>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 no-print">
                             <button
                                 onClick={handleShare}
                                 className="w-10 h-10 rounded-xl bg-surface border border-border flex items-center justify-center text-foreground/60 hover:text-primary hover:border-primary transition-all active:scale-95"
-                                aria-label={t('newsArticle.share')}
+                                aria-label={t('newsArticle.share', 'Teilen')}
                             >
                                 {copied ? <Check size={18} className="text-success" /> : <Share2 size={18} />}
                             </button>
                             <button
                                 onClick={handlePrint}
                                 className="w-10 h-10 rounded-xl bg-surface border border-border flex items-center justify-center text-foreground/60 hover:text-primary hover:border-primary transition-all active:scale-95"
-                                aria-label={t('newsArticle.print')}
+                                aria-label={t('newsArticle.print', 'Drucken')}
                             >
                                 <Printer size={18} />
                             </button>
@@ -120,32 +120,32 @@ const NewsArticle = () => {
 
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
                         {/* Sidebar info — hidden on mobile, shown on desktop */}
-                        <aside className="hidden lg:block lg:col-span-1 space-y-8 animate-in fade-in slide-in-from-left-8 duration-1000 delay-300">
+                        <aside className="hidden lg:block lg:col-span-1 space-y-8 animate-in fade-in slide-in-from-left-8 duration-1000 delay-300 no-print">
                             <div className="p-6 bg-surface rounded-3xl border border-border space-y-6 sticky top-8">
                                 <div className="space-y-4">
-                                    <h4 className="text-xs font-black uppercase tracking-widest text-foreground/40">{t('newsArticle.author')}</h4>
-                                    <p className="font-bold text-foreground">{t('newsArticle.authorName')}</p>
+                                    <h4 className="text-xs font-black uppercase tracking-widest text-foreground/40">{t('newsArticle.author', 'Autor')}</h4>
+                                    <p className="font-bold text-foreground">{t('newsArticle.authorName', 'Vorstand Elternverein')}</p>
                                 </div>
                                 <div className="space-y-4 pt-4 border-t border-border">
-                                    <h4 className="text-xs font-black uppercase tracking-widest text-foreground/40">{t('newsArticle.category')}</h4>
+                                    <h4 className="text-xs font-black uppercase tracking-widest text-foreground/40">{t('newsArticle.category', 'Kategorie')}</h4>
                                     <p className="font-bold text-primary capitalize">{t(`news.filters.${article.type}`)}</p>
                                 </div>
                                 <div className="flex gap-3 pt-4 border-t border-border">
                                     <button
                                         onClick={handleShare}
                                         className="flex-1 h-10 rounded-xl bg-background border border-border flex items-center justify-center gap-2 text-foreground/60 hover:text-primary hover:border-primary transition-all text-xs font-bold uppercase tracking-widest"
-                                        aria-label={t('newsArticle.share')}
+                                        aria-label={t('newsArticle.share', 'Teilen')}
                                     >
                                         {copied ? <Check size={16} className="text-success" /> : <Share2 size={16} />}
-                                        <span>{copied ? t('newsArticle.shareCopied') : t('newsArticle.share')}</span>
+                                        <span>{copied ? t('newsArticle.shareCopied', 'Kopiert!') : t('newsArticle.share', 'Teilen')}</span>
                                     </button>
                                     <button
                                         onClick={handlePrint}
                                         className="flex-1 h-10 rounded-xl bg-background border border-border flex items-center justify-center gap-2 text-foreground/60 hover:text-primary hover:border-primary transition-all text-xs font-bold uppercase tracking-widest"
-                                        aria-label={t('newsArticle.print')}
+                                        aria-label={t('newsArticle.print', 'Drucken')}
                                     >
                                         <Printer size={16} />
-                                        <span>{t('newsArticle.print')}</span>
+                                        <span>{t('newsArticle.print', 'Drucken')}</span>
                                     </button>
                                 </div>
                             </div>
@@ -154,10 +154,10 @@ const NewsArticle = () => {
                                 <div className="p-6 bg-primary/5 rounded-3xl border border-primary/10 space-y-4">
                                     <div className="flex items-center gap-3 text-primary">
                                         <MapPin size={20} />
-                                        <span className="font-bold">{t('newsArticle.locationTitle')}</span>
+                                        <span className="font-bold">{t('newsArticle.locationTitle', 'Veranstaltungsort')}</span>
                                     </div>
                                     <p className="text-sm font-medium text-foreground/60 leading-relaxed">
-                                        {t('newsArticle.locationDesc')}
+                                        {t('newsArticle.locationDesc', 'Festsaal der HTL Mödling')}
                                     </p>
                                 </div>
                             )}
@@ -177,25 +177,25 @@ const NewsArticle = () => {
                                 ))}
 
                                 <h3 className="text-xl md:text-2xl font-black tracking-tight text-foreground mt-10 md:mt-12 mb-4 md:mb-6">
-                                    {t('newsArticle.details')}
+                                    {t('newsArticle.details', 'Wichtige Details zur Veranstaltung')}
                                 </h3>
                                 <ul className="space-y-3 md:space-y-4 list-none ps-0">
                                     <li className="flex items-start gap-3 md:gap-4">
                                         <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                                        <span>{t('newsArticle.detailStart')}</span>
+                                        <span>{t('newsArticle.detailStart', 'Datum laut Ankündigung')}</span>
                                     </li>
                                     <li className="flex items-start gap-3 md:gap-4">
                                         <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                                        <span>{t('newsArticle.detailLocation')}</span>
+                                        <span>{t('newsArticle.detailLocation', 'Zugang über den Haupteingang')}</span>
                                     </li>
                                     <li className="flex items-start gap-3 md:gap-4">
                                         <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                                        <span>{t('newsArticle.detailRegistration')}</span>
+                                        <span>{t('newsArticle.detailRegistration', 'Um Anmeldung wird gebeten')}</span>
                                     </li>
                                 </ul>
 
                                 <p className="mt-10 md:mt-12 text-sm italic opacity-50">
-                                    {t('newsArticle.contactNote')}
+                                    {t('newsArticle.contactNote', 'Bei Rückfragen stehen wir Ihnen gerne zur Verfügung.')}
                                 </p>
                             </div>
 
@@ -204,22 +204,22 @@ const NewsArticle = () => {
                                 <div className="p-5 md:p-6 bg-primary/5 rounded-2xl md:rounded-3xl border border-primary/10 space-y-3 md:space-y-4 lg:hidden">
                                     <div className="flex items-center gap-3 text-primary">
                                         <MapPin size={20} />
-                                        <span className="font-bold">{t('newsArticle.locationTitle')}</span>
+                                        <span className="font-bold">{t('newsArticle.locationTitle', 'Veranstaltungsort')}</span>
                                     </div>
                                     <p className="text-sm font-medium text-foreground/60 leading-relaxed">
-                                        {t('newsArticle.locationDesc')}
+                                        {t('newsArticle.locationDesc', 'Festsaal der HTL Mödling')}
                                     </p>
                                 </div>
                             )}
 
                             {/* Call to Action */}
-                            <div className="mt-12 md:mt-16 p-6 md:p-8 lg:p-12 bg-surface rounded-2xl md:rounded-[2.5rem] border border-border shadow-inner flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+                            <div className="mt-12 md:mt-16 p-6 md:p-8 lg:p-12 bg-surface rounded-2xl md:rounded-[2.5rem] border border-border shadow-inner flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 no-print">
                                 <div className="space-y-2 text-center md:text-start">
-                                    <h4 className="text-xl md:text-2xl font-black tracking-tight">{t('newsArticle.ctaTitle')}</h4>
-                                    <p className="text-foreground/60 font-medium">{t('newsArticle.ctaDesc')}</p>
+                                    <h4 className="text-xl md:text-2xl font-black tracking-tight">{t('newsArticle.ctaTitle', 'Fragen oder Anliegen?')}</h4>
+                                    <p className="text-foreground/60 font-medium">{t('newsArticle.ctaDesc', 'Wir sind für Sie da. Kontaktieren Sie den Vorstand für weitere Details.')}</p>
                                 </div>
                                 <Link to="/kontakt" className="w-full md:w-auto text-center px-8 py-4 bg-primary text-primary-foreground rounded-2xl font-bold hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/20 whitespace-nowrap">
-                                    {t('newsArticle.ctaButton')}
+                                    {t('newsArticle.ctaButton', 'Kontakt aufnehmen')}
                                 </Link>
                             </div>
                         </article>

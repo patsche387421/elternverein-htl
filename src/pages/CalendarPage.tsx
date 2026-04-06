@@ -30,8 +30,8 @@ const CalendarPage = () => {
 
     // Custom events state
     const [customEvents, setCustomEvents] = useState<CalendarEvent[]>([
-        { id: 'mock-1', title: 'Vorstandssitzung', date: `${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}-12`, time: '18:00', description: 'Monatliche Vorstandssitzung im Konferenzraum.' },
-        { id: 'mock-2', title: 'Sommerfest', date: `${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}-20`, time: '15:00', description: 'Jährliches Sommerfest im Schulgarten.' },
+        { id: 'mock-1', title: t('dashboard.calendar.mock.evt1Title', 'Vorstandssitzung'), date: `${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}-12`, time: '18:00', description: t('dashboard.calendar.mock.evt1Desc', 'Monatliche Vorstandssitzung im Konferenzraum.') },
+        { id: 'mock-2', title: t('dashboard.calendar.mock.evt2Title', 'Sommerfest'), date: `${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}-20`, time: '15:00', description: t('dashboard.calendar.mock.evt2Desc', 'Jährliches Sommerfest im Schulgarten.') },
     ]);
 
     const showToastMessage = (msg: string) => {
@@ -76,7 +76,7 @@ const CalendarPage = () => {
                     ? { ...e, title: formTitle, date: formDate, time: formTime, description: formDesc }
                     : e
             ));
-            showToastMessage('Termin aktualisiert');
+            showToastMessage(t('dashboard.calendar.updateSuccess'));
         } else {
             // Create new
             const newEvent: CalendarEvent = {
@@ -87,7 +87,7 @@ const CalendarPage = () => {
                 description: formDesc,
             };
             setCustomEvents(prev => [...prev, newEvent]);
-            showToastMessage('Termin erstellt');
+            showToastMessage(t('dashboard.calendar.createSuccess'));
         }
         closeModal();
     };
@@ -95,7 +95,7 @@ const CalendarPage = () => {
     const handleDeleteEvent = (id: string) => {
         setCustomEvents(prev => prev.filter(e => e.id !== id));
         closeModal();
-        showToastMessage('Termin gelöscht');
+        showToastMessage(t('dashboard.calendar.deleteSuccess'));
     };
 
     // ── ICS Export ──
@@ -133,12 +133,12 @@ const CalendarPage = () => {
         a.download = `${event.title.replace(/\s+/g, '_')}.ics`;
         a.click();
         URL.revokeObjectURL(url);
-        showToastMessage('Kalender-Datei heruntergeladen');
+        showToastMessage(t('dashboard.calendar.exportSuccess'));
     };
 
     const exportAllAsICS = () => {
         if (customEvents.length === 0) {
-            showToastMessage('Keine Termine zum Exportieren');
+            showToastMessage(t('dashboard.calendar.noEventsToExport'));
             return;
         }
 
@@ -171,7 +171,7 @@ const CalendarPage = () => {
         a.download = 'elternverein_kalender.ics';
         a.click();
         URL.revokeObjectURL(url);
-        showToastMessage('Alle Termine exportiert');
+        showToastMessage(t('dashboard.calendar.exportAllSuccess'));
     };
 
     useEffect(() => {
@@ -234,23 +234,23 @@ const CalendarPage = () => {
             />
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 px-4">
                 <div>
-                    <h1 className="text-3xl font-black text-foreground tracking-tighter">{t('dashboard.calendar.title', 'Shared Calendar')}</h1>
-                    <p className="text-sm font-extrabold text-foreground/40 uppercase tracking-widest mt-1">{t('dashboard.calendar.subtitle', 'View and manage all events')}</p>
+                    <h1 className="text-3xl font-black text-foreground tracking-tighter">{t('dashboard.calendar.title')}</h1>
+                    <p className="text-sm font-extrabold text-foreground/40 uppercase tracking-widest mt-1">{t('dashboard.calendar.subtitle')}</p>
                 </div>
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row w-full sm:w-auto gap-3">
                     <button
                         onClick={exportAllAsICS}
-                        className="bg-surface text-foreground/70 px-5 py-3 rounded-2xl font-bold text-sm border border-border hover:border-primary/30 hover:text-primary transition-all flex items-center gap-2"
+                        className="w-full sm:w-auto bg-surface text-foreground/70 px-5 py-3 rounded-2xl font-bold text-sm border border-border hover:border-primary/30 hover:text-primary transition-all flex items-center justify-center gap-2"
                     >
                         <Download size={18} />
-                        Exportieren
+                        {t('dashboard.calendar.exportAll')}
                     </button>
                     <button
                         onClick={openNewEventModal}
-                        className="bg-primary text-primary-foreground px-8 py-3 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-1 flex items-center gap-2"
+                        className="w-full sm:w-auto bg-primary text-primary-foreground px-8 py-3 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 transform hover:-translate-y-1 flex items-center justify-center gap-2"
                     >
                         <Plus size={20} strokeWidth={3} />
-                        {t('dashboard.calendar.add', 'Add Event')}
+                        {t('dashboard.calendar.add')}
                     </button>
                 </div>
             </div>
@@ -278,8 +278,8 @@ const CalendarPage = () => {
                 {/* Calendar Grid Days */}
                 <div className="grid grid-cols-7 border-b border-border bg-muted/10">
                     {days.map(day => (
-                        <div key={day} className="py-4 text-center text-[10px] font-black text-foreground/30 uppercase tracking-[0.2em] border-r border-border last:border-0">
-                            {t(`dashboard.calendar.days.${day.toLowerCase()}`, day)}
+                        <div key={day} className="py-2 md:py-4 text-center text-[8px] md:text-[10px] font-black text-foreground/30 uppercase tracking-[0.1em] md:tracking-[0.2em] border-r border-border last:border-0">
+                            {t(`dashboard.calendar.days.${day.toLowerCase()}`)}
                         </div>
                     ))}
                 </div>
@@ -287,9 +287,9 @@ const CalendarPage = () => {
                     {calendarDays.map((date, i) => (
                         <div
                             key={i}
-                            className={`min-h-[140px] p-4 border-r border-b border-border last:border-r-0 transition-colors relative group ${!date.isCurrentMonth ? 'bg-muted/10 text-foreground/20' : 'text-foreground/80 hover:bg-primary/5 cursor-pointer'}`}
+                            className={`min-h-[80px] md:min-h-[140px] p-2 md:p-4 border-r border-b border-border last:border-r-0 transition-colors relative group ${!date.isCurrentMonth ? 'bg-muted/10 text-foreground/20' : 'text-foreground/80 hover:bg-primary/5 cursor-pointer'}`}
                         >
-                            <span className="text-sm font-black tracking-tighter">{date.day}</span>
+                            <span className="text-xs md:text-sm font-black tracking-tighter">{date.day}</span>
                             <div className="mt-1 space-y-1">
                                 {date.events.map((event) => (
                                     <button
@@ -314,7 +314,7 @@ const CalendarPage = () => {
                     <div className="relative z-10 w-full max-w-md bg-surface border border-border rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 fade-in duration-300">
                         <div className="bg-primary p-6 flex items-center justify-between">
                             <h2 className="text-xl font-black text-white">
-                                {editingEvent ? 'Termin bearbeiten' : t('dashboard.calendar.add', 'Add Event')}
+                                {editingEvent ? t('dashboard.calendar.edit') : t('dashboard.calendar.add')}
                             </h2>
                             <button onClick={closeModal} className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors">
                                 <X size={20} />
@@ -322,18 +322,18 @@ const CalendarPage = () => {
                         </div>
                         <div className="p-6 space-y-4">
                             <div>
-                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Titel *</label>
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">{t('dashboard.calendar.form.title')}</label>
                                 <input
                                     type="text"
                                     value={formTitle}
                                     onChange={e => setFormTitle(e.target.value)}
-                                    placeholder="z.B. Elternabend"
+                                    placeholder={t('dashboard.calendar.form.titlePlaceholder')}
                                     className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                                 />
                             </div>
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
-                                    <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Datum *</label>
+                                    <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">{t('dashboard.calendar.form.date')}</label>
                                     <input
                                         type="date"
                                         value={formDate}
@@ -342,7 +342,7 @@ const CalendarPage = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Uhrzeit</label>
+                                    <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">{t('dashboard.calendar.form.time')}</label>
                                     <input
                                         type="time"
                                         value={formTime}
@@ -352,12 +352,12 @@ const CalendarPage = () => {
                                 </div>
                             </div>
                             <div>
-                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">Beschreibung</label>
+                                <label className="block text-xs font-black text-foreground/50 uppercase tracking-widest mb-2">{t('dashboard.calendar.form.description')}</label>
                                 <textarea
                                     rows={3}
                                     value={formDesc}
                                     onChange={e => setFormDesc(e.target.value)}
-                                    placeholder="Optionale Details..."
+                                    placeholder={t('dashboard.calendar.form.descriptionPlaceholder')}
                                     className="w-full bg-background border border-border rounded-xl px-4 py-3 text-sm font-medium focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
                                 />
                             </div>
@@ -366,7 +366,7 @@ const CalendarPage = () => {
                                     <button
                                         onClick={() => handleDeleteEvent(editingEvent.id)}
                                         className="p-3 rounded-xl border border-danger/30 text-danger hover:bg-danger/10 transition-all"
-                                        title="Termin löschen"
+                                        title={t('dashboard.calendar.delete')}
                                     >
                                         <Trash2 size={18} />
                                     </button>
@@ -375,7 +375,7 @@ const CalendarPage = () => {
                                     <button
                                         onClick={() => exportEventAsICS(editingEvent)}
                                         className="p-3 rounded-xl border border-border text-foreground/60 hover:text-primary hover:border-primary/30 transition-all"
-                                        title="Als .ics exportieren"
+                                        title={t('dashboard.calendar.exportIcs')}
                                     >
                                         <Download size={18} />
                                     </button>
@@ -384,13 +384,13 @@ const CalendarPage = () => {
                                     onClick={closeModal}
                                     className="flex-1 py-3 rounded-xl border border-border font-bold text-foreground/60 hover:bg-muted transition-all text-sm"
                                 >
-                                    Abbrechen
+                                    {t('dashboard.calendar.form.cancel')}
                                 </button>
                                 <button
                                     onClick={handleSaveEvent}
                                     className="flex-1 py-3 rounded-xl bg-primary text-primary-foreground font-black uppercase tracking-widest text-sm hover:bg-primary/90 transition-all"
                                 >
-                                    {editingEvent ? 'Speichern' : 'Erstellen'}
+                                    {editingEvent ? t('dashboard.calendar.form.save') : t('dashboard.calendar.form.create')}
                                 </button>
                             </div>
                         </div>

@@ -49,7 +49,7 @@ const Navbar = () => {
         { name: t('nav.projects'), path: '/projekte' },
         { name: t('nav.about'), path: '/about' },
         { name: t('nav.contact'), path: '/kontakt' },
-        ...(isLoggedIn ? [{ name: 'Dashboard', path: '/dashboard' }] : [])
+        ...(isLoggedIn ? [{ name: t('nav.dashboard', 'Dashboard'), path: '/dashboard' }] : [])
     ];
 
     return (

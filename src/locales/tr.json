@@ -18,7 +18,8 @@
             "support": "Sosyal Destek",
             "tutoring": "Özel Ders",
             "courses": "Kurslar"
-        }
+        },
+        "dashboard": "Panel"
     },
     "footer": {
         "links": "Hızlı Bağlantılar",
@@ -97,12 +98,12 @@
         "heroDesc": "Okul Aile Birliği, aktif katılım, finansman ve açık iletişim yoluyla okul topluluğunu desteklemeye kendini adamıştır.",
         "servicesLabel": "Hizmetlerimiz",
         "servicesSub": "İnovasyon toplulukla buluşuyor – avantajlarımızı keşfedin.",
+        "welcomeBadge": "Hoş Geldiniz",
         "getInvolved": "Katılın",
         "learnMore": "Daha Fazla Bilgi",
         "latestNews": "Son Haberler",
         "insightsUpdates": "Görüşler & Güncellemeler",
         "viewAll": "Hepsini Görüntüle",
-        "welcomeBadge": "Hoş Geldiniz",
         "tags": {
             "event": "Etkinlik",
             "protocol": "Protokol",
@@ -121,7 +122,19 @@
             "socLink": "/services",
             "comm": "Güçlü bir okul topluluğu için velilerin, okulun ve işletmelerin ağ oluşturması.",
             "commTitle": "Topluluk",
-            "commLink": "/kontakt"
+            "commLink": "/kontakt",
+            "suppTitle": "Destekle",
+            "supp": "Yönetim ile bağlantı",
+            "suppLink": "/services",
+            "helpTitle": "Yardım Et",
+            "help": "Dar gelirli ailelere destek",
+            "helpLink": "/services",
+            "infoTitle": "Bilgilendir",
+            "info": "Özel ders, kurslar, psikolojik destek",
+            "infoLink": "/news",
+            "entTitle": "Eğlendir",
+            "ent": "Mezuniyet baloları, etkinlikler",
+            "entLink": "/news"
         },
         "socialProof": {
             "title": "Topluluğumuzdan Sesler",
@@ -140,14 +153,26 @@
             "q3": "Kimler destek başvurusunda bulunabilir?",
             "a3": "HTL Mödling öğrencilerinin tüm velileri, sosyal zorluk durumlarında veya yenilikçi öğrenci projeleri için destek başvurusunda bulunabilir.",
             "q4": "Şeffaflık nasıl sağlanıyor?",
-            "a4": "Kar amacı gütmeyen bir kuruluş olarak sıkı denetimlere tabiyiz. Fonların kullanımı yıllık olarak denetçiler tarafından kontrol edilir ve genel kurulda açıklanır."
+            "a4": "Kar amacı gütmeyen bir kuruluş olarak sıkı denetimlere tabiyiz. Fonların kullanımı yıllık olarak denetçiler tarafından kontrol edilir ve genel kurulda açıklanır.",
+            "badge": "Bunu Bilmek İyi"
+        },
+        "showcase1": {
+            "badge": "Pratikte Destek",
+            "title": "Gelecek İçin Ekipman",
+            "desc": "Veli bağışlarıyla, normal okul bütçesinde yer almayan son teknoloji ekipmanları ve laboratuvar malzemelerini finanse ediyoruz."
+        },
+        "showcase2": {
+            "badge": "Yardım ve Bilgi",
+            "title": "Toplumu Güçlendir.<br/>Varlığını Göster.",
+            "desc": "Maddi desteğin yanı sıra, geziler düzenliyor, okul seyahatlerinde sosyal bağları güçlendiriyor ve toplantılarda aktif olarak güncel konularda bilgilendiriyoruz.",
+            "link": "Hizmetlerimiz"
         }
     },
     "about": {
         "title": "Elternverein Hakkında",
         "desc": "Veliler Birliği, öğrencilerin ve okulun refahını artırmaya adanmış veliler ve vasilerin gönüllü bir kuruluşudur.",
         "mission": "Misyonumuz",
-        "missionDesc": "Ev ve okul arasında yakın bir ilişki kurarak velilerin ve öğretmenlerin çocuklarının eğitiminde akıllıca işbirliği yapmalarını sağlamak.",
+        "missionDesc": "Ev ve okul arasında yakın bir ilişki kurarak velilerin và öğretmenlerin çocuklarının eğitiminde akıllıca işbirliği yapmalarını sağlamak.",
         "whatWeDo": "Neler Yapıyoruz",
         "points": [
             "Etkinlikler ve bağış kampanyaları düzenlemek",
@@ -157,7 +182,8 @@
         ],
         "board": {
             "viewDetails": "Tüm detayları gör"
-        }
+        },
+        "paymentHint": "Ödeme detayları için tıkla"
     },
     "costs": {
         "title": "Üyelik & Maliyetler",
@@ -165,7 +191,15 @@
         "membership": "Üyelik Ücreti",
         "allocation": "Fon Tahsisi",
         "details": "Üyelik ücreti %100 öğrencilerin yararı için kullanılır.",
-        "membershipPerYear": "Yıl / Aile"
+        "membershipPerYear": "Yıl / Aile",
+        "paymentTitle": "Ödeme Bilgileri",
+        "copyIban": "IBAN Kopyala",
+        "copyBic": "BIC Kopyala",
+        "reference": "Açıklama",
+        "referenceExample": "EV Aidatı + İsim + Sınıf",
+        "referenceExampleCopyTxt": "EV Aidatı",
+        "copyReference": "Açıklamayı Kopyala",
+        "paymentNote": "Veriler sadece temsilidir. Güncel ödeme bilgileri için yönetimle iletişime geçin."
     },
     "contact": {
         "title": "İletişim",
@@ -192,7 +226,6 @@
         "email": "E-posta Adresi",
         "password": "Şifre",
         "emailPlaceholder": "isim@ornek.com",
-        "passwordPlaceholder": "••••••••",
         "submit": "Giriş Yap",
         "register": "Hesabınız yok mu? Kayıt olun",
         "forgot": "Şifremi unuttum?",
@@ -203,7 +236,7 @@
     },
     "services": {
         "title": "Hizmetlerimiz",
-        "desc": "Öğrencileri ve aileleri mali yardım, ders programları ve eğitim kursları ile destekliyoruz.",
+        "desc": "Öğrencileri ve aileleri mali yardım, özel ders programları ve eğitim kursları ile destekliyoruz.",
         "support": "Sosyal Destek",
         "supportDesc": "Okul etkinlikleri ve materyalleri için finansal yardım.",
         "supportPoints": [
@@ -225,7 +258,165 @@
             "Enjeksiyon kalıplama kursları",
             "Sınav hazırlığı"
         ],
-        "learnMore": "Daha Fazla Bilgi"
+        "learnMore": "Daha Fazla Bilgi",
+        "socialSupport": {
+            "title": "Sosyal Destek",
+            "subtitle": "Öğrenciler ve aileler için bürokratik olmayan yardım.",
+            "heroDesc": "Veli Derneği'nin sosyal destek fonu, HTL Mödling öğrencilerine okul etkinliklerine katılımı sağlamak amacıyla mali açıdan zor durumlarda yardımcı olur.",
+            "whoGetsHelp": "Kimler destek alır?",
+            "whoGetsHelpDesc": "Ebeveynleri veya vasileri mali açıdan zor durumda olan tüm HTL Mödling öğrencileri.",
+            "whatIsFunded": "Neler finanse edilir?",
+            "fundedItems": [
+                "Spor ve kayak haftaları",
+                "Dil haftaları ve okul gezileri",
+                "Öğrenim materyalleri ve temel ekipman",
+                "Okul etkinlikleri katkı payları"
+            ],
+            "application": "Başvuru",
+            "applicationDesc": "Başvuru, yönetim kurulumuz aracılığıyla tamamen gizli ve bürokratik olmayan bir şekilde yapılır.",
+            "contactPerson": "İletişim Kişisi",
+            "contactDesc": "Saymanlığımız gizli bir görüşme için hizmetinizdedir.",
+            "ctaButton": "Şimdi başvur",
+            "back": "Geri Dön",
+            "titleHighlight": "Kimse geride kalmaz.",
+            "intro": "Veliler Derneği, maddi sıkıntı çeken ailelerin öğrencilerinin okul etkinliklerine katılmasını sağlamayı amaçlar.",
+            "points": [
+                "Okul haftaları için hibe",
+                "Kırtasiye ve materyal desteği",
+                "Bireysel acil yardım"
+            ],
+            "whoTitle": "Kimler başvurabilir?",
+            "whoDesc": "Okul velileri derneği üyesi olan herkes başvurabilir. Destek gizlilikle sağlanır.",
+            "confidential": "* Tüm başvurular kesinlikle gizlidir.",
+            "processTitle": "Destek Süreci",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Başvuru Yap",
+                    "desc": "Form veya e-posta yoluyla bize ulaşın."
+                },
+                {
+                    "step": "02",
+                    "title": "İnceleme",
+                    "desc": "Yönetim başvurunuzu hızla ve gizlilikle inceler."
+                },
+                {
+                    "step": "03",
+                    "title": "Ödeme",
+                    "desc": "Onaydan sonra okul veya organizatöre ödeme yapılır."
+                }
+            ],
+            "qTitle": "Sorularınız mı var?",
+            "qDesc": "Size ücretsiz danışmanlık yapmaktan mutluluk duyarız.",
+            "contactBtn": "Şimdi İletişime Geçin"
+        },
+        "tutoringPage": {
+            "title": "Özel Ders Teklifleri",
+            "subtitle": "Öğrenciler öğrencilere yardım ediyor – Ortak Başarı.",
+            "heroDesc": "Özel ders sistemimiz, deneyimli öğrencileri belirli konularda desteğe ihtiyaç duyan öğrencilerle buluşturur.",
+            "forStudents": "Öğrenciler için",
+            "forStudentsDesc": "Matematik, Makine Mühendisliği veya Programlama konularında yardım mı arıyorsunuz? Doğru öğretmeni bulun.",
+            "forTutors": "Öğretmenler için",
+            "forTutorsDesc": "Bir konuda iyi misiniz ve başkalarına yardım ederken biraz para kazanmak mı istiyorsunuz?",
+            "howItWorks": "Nasıl çalışır?",
+            "steps": [
+                "Konu ve sınıf seçin",
+                "Onaylanmış öğretmenlerle iletişime geçin",
+                "Randevu ve koşulları bireysel olarak belirleyin"
+            ],
+            "quality": "Kalite Garantisi",
+            "qualityDesc": "Tüm öğretmenler Veli Derneği tarafından doğrulanır ve ders öğretmenleri tarafından önerilir.",
+            "viewList": "Öğretmen listesini gör",
+            "back": "Geri Dön",
+            "badge": "Birlikte Başarı",
+            "titleHighlight": "HTL Özel Ders Ağı",
+            "intro": "Sınav stresini en iyi o sınavı geçmiş biri bilir. Akran özel ders sistemimiz üst sınıf öğrencileriyle yardıma ihtiyacı olanları buluşturur.",
+            "stats": [
+                {
+                    "title": "50'den fazla eğitmen",
+                    "desc": "Tüm derslerde"
+                },
+                {
+                    "title": "Adil Fiyatlar",
+                    "desc": "Okul içi"
+                }
+            ],
+            "findTitle": "Nasıl özel ders bulurum?",
+            "findSteps": [
+                "Panodaki ilanlara bakın.",
+                "Öğrenci temsilcisine (SV) sorun.",
+                "İletişim formumuzu kullanın.",
+                "Discord grubumuza katılın."
+            ],
+            "popularTitle": "Popüler Dersler",
+            "subjects": [
+                "Matematik",
+                "Uygulamalı Bilişim",
+                "Elektroteknik",
+                "Mekanik",
+                "Programlama",
+                "İngilizce",
+                "Ekonomi",
+                "Laboratuvar Dersleri"
+            ],
+            "ctaTitle": "Eğitmen olmak ister misin?",
+            "ctaDesc": "Sınıf arkadaşlarına yardım et, bilgilerini pekiştir ve para kazan.",
+            "ctaBtn": "Eğitmen Olarak Başvur",
+            "noteTitle": "Önemli Not",
+            "noteDesc": "Özel dersler öğrenciler arası özel bir anlaşmadır. Tavsiye edilen ücret saati 10€ - 15€ arasıdır."
+        },
+        "coursesPage": {
+            "title": "Kurs Teklifleri",
+            "subtitle": "Geleceğiniz için ek nitelikler.",
+            "heroDesc": "Okul yönetimiyle işbirliği içinde, normal müfredatın ötesine geçen özel kurslar sunuyoruz.",
+            "currentCourses": "Mevcut Kurslar",
+            "features": [
+                "Derslerden sonra doğrudan okul alanında",
+                "Uzmanlar tarafından pratik eğitim",
+                "Resmi sertifikalar ve diplomalar"
+            ],
+            "suggestion": "Kurs öneriniz mi var veya kayıt mı olmak istiyorsunuz?",
+            "registerBtn": "Kayıt ve Bilgi",
+            "back": "Geri Dön",
+            "titleHighlight": "Öne çıkmak için ek nitelikler.",
+            "intro": "Düzenli müfredatın ötesine geçen sertifika ve eğitimleri destekleyerek mezunlarımızın iş imkanlarını güçlendiriyoruz.",
+            "items": [
+                {
+                    "title": "ECDL Sertifikası",
+                    "desc": "Avrupa Bilgisayar Ehliyeti.",
+                    "badge": "Başlangıç: Kış 2025"
+                },
+                {
+                    "title": "Enjeksiyon Kalıplama",
+                    "desc": "Makine mühendisliği için özel eğitim.",
+                    "badge": "Son Kontenjanlar"
+                },
+                {
+                    "title": "Güvenlik Eğitimi",
+                    "desc": "Atölye çalışmaları için ek nitelik.",
+                    "badge": "Zorunlu Modül"
+                }
+            ],
+            "detailsBtn": "Detay İste",
+            "whyBadge": "Neden ek kurslar?",
+            "whyTitle": "CV'niz için bir artı.",
+            "benefits": [
+                {
+                    "label": "Sertifika",
+                    "detail": "Uluslararası Geçerlilik"
+                },
+                {
+                    "label": "Avantajlar",
+                    "detail": "İş Piyasasında Avantaj"
+                }
+            ],
+            "points": [
+                "Dernek üzerinden uygun fiyatlı katılım",
+                "Okulda ders sonrası yerinde eğitim",
+                "Uzmanlardan uygulamalı eğitim",
+                "Resmi sertifikalar"
+            ]
+        }
     },
     "projects": {
         "title": "Projeler",
@@ -367,5 +558,157 @@
     },
     "common": {
         "required": "Zorunlu alan"
+    },
+    "dashboard": {
+        "internal": {
+            "brand": "EV Dahili",
+            "role": "Yönetim Kurulu Üyesi",
+            "exit": "Web sitesine",
+            "footer": "Demo Sürümü • Patrick K. & Antigravity tarafından oluşturuldu"
+        },
+        "nav": {
+            "overview": "Genel Bakış",
+            "calendar": "Takvim",
+            "messages": "Mesajlar"
+        },
+        "calendar": {
+            "title": "Paylaşılan takvim",
+            "subtitle": "Tüm tarihler ve etkinlikler bir bakışta",
+            "add": "Etkinlik ekle",
+            "edit": "Etkinliği düzenle",
+            "delete": "Etkinliği sil",
+            "exportIcs": ".ics olarak dışa aktar",
+            "exportAll": "Dışa aktar",
+            "exportSuccess": "Takvim dosyası indirildi",
+            "exportAllSuccess": "Tüm etkinlikler dışa aktarıldı",
+            "noEventsToExport": "Dışa aktarılacak etkinlik yok",
+            "updateSuccess": "Etkinlik güncellendi",
+            "createSuccess": "Etkinlik oluşturuldu",
+            "deleteSuccess": "Etkinlik silindi",
+            "days": {
+                "sun": "Paz",
+                "mon": "Pzt",
+                "tue": "Sal",
+                "wed": "Çar",
+                "thu": "Per",
+                "fri": "Cum",
+                "sat": "Cmt"
+            },
+            "form": {
+                "title": "Başlık *",
+                "titlePlaceholder": "örn. Veli toplantısı",
+                "date": "Tarih *",
+                "time": "Saat",
+                "description": "Açıklama",
+                "descriptionPlaceholder": "İsteğe bağlı ayrıntılar...",
+                "save": "Kaydet",
+                "create": "Oluştur",
+                "cancel": "İptal"
+            },
+            "mock": {
+                "evt1Title": "Yönetim Toplantısı",
+                "evt1Desc": "Konferans salonunda aylık yönetim toplantısı.",
+                "evt2Title": "Yaz Şenliği",
+                "evt2Desc": "Okul bahçesinde geleneksel yaz şenliği."
+            }
+        },
+        "overview": {
+            "title": "Dashboard'a Genel Bakış",
+            "welcome": "Hoş geldin, {{name}}",
+            "stats": {
+                "events": "Açık projeler",
+                "messages": "Onaylanan projeler",
+                "members": "Aktif haberler",
+                "reports": "Sıradaki tarih"
+            },
+            "activity": {
+                "title": "Son aktiviteler",
+                "viewAll": "Tümünü gör",
+                "less": "Daha az",
+                "showLess": "Daha az göster",
+                "showMore": "{{count}} daha fazla",
+                "by": "tarafından"
+            },
+            "actions": {
+                "title": "Hızlı Erişim",
+                "post": "Yeni proje başvurusu",
+                "event": "Haber Yaz",
+                "document": "Protokol Yükle",
+                "newsTitle": "Haber Oluştur",
+                "newsSuccess": "Demo: Haber taslağı kaydedildi",
+                "newsPlaceholderTitle": "örn. Yaz şenliği tarihi",
+                "newsPlaceholderContent": "Haber metnini girin...",
+                "uploadTitle": "Protokol Yükle",
+                "uploadSuccess": "Demo: Protokol yükleme simüle edildi",
+                "uploadPlaceholderFile": "Dosyayı buraya sürükleyin veya tıklayın",
+                "uploadHint": "PDF, DOCX, JPG • maks. 10 MB",
+                "uploadDate": "Oturum tarihi",
+                "cancel": "İptal",
+                "publish": "Yayınla",
+                "uploadBtn": "Yükle",
+                "category": "Kategori"
+            },
+            "mock": {
+                "a1": "IT laptop projesi onaylandı",
+                "a2": "Yeni toplantı protokolü yüklendi",
+                "a3": "Haber: Yaz şenliği tarihi",
+                "a4": "Bahçe bakım projesi tamamlandı",
+                "a5": "Yönetim kurulu toplantısı planlandı",
+                "u1": "Kurul",
+                "u2": "Sekreter",
+                "u3": "PR Ekibi",
+                "u4": "Proje Lideri",
+                "u5": "Başkan",
+                "d1": "2 saat önce",
+                "d2": "Dün",
+                "d3": "2 gün önce",
+                "d4": "3 gün önce",
+                "d5": "Geçen hafta",
+                "a6": "Ek Test Girişi 1",
+                "d6": "Bugün",
+                "a7": "Ek Test Girişi 2",
+                "d7": "Dün"
+            }
+        },
+        "messages": {
+            "title": "Mesajlar",
+            "placeholder": "Bir mesaj yazın...",
+            "send": "Gönder",
+            "empty": "Bir sohbet seçin",
+            "mock": {
+                "c1": "Yönetim Grubu",
+                "c2": "Muhasebe",
+                "c3": "Proje Planlama",
+                "m1": "Yaz şenliği bütçesi onaylandı mı?",
+                "m2": "Yeni laptoplar için fatura alındı.",
+                "m3": "Veli günü için hala yardımcılara ihtiyacımız var."
+            }
+        },
+        "settings": {
+            "title": "Ayarlar",
+            "profile": {
+                "title": "Profil",
+                "name": "İsim",
+                "email": "E-posta"
+            },
+            "notifications": {
+                "title": "Bildirimler",
+                "email": "E-posta Bildirimleri",
+                "push": "Push Bildirimleri",
+                "weekly": "Haftalık özet"
+            },
+            "appearance": {
+                "title": "Görünüm"
+            },
+            "security": {
+                "title": "Güvenlik",
+                "changePassword": "Şifre Değiştir",
+                "current": "Mevcut şifre",
+                "new": "Yeni şifre",
+                "confirm": "Şifreyi onayla",
+                "success": "Şifre başarıyla değiştirildi!"
+            },
+            "save": "Değişiklikleri Kaydet"
+        }
     }
 }

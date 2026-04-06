@@ -45,6 +45,18 @@ Diese Website dient als zentrale Plattform für den Elternverein der HTL Mödlin
 
 ![Design Vorschau](docs/screenshots/design_preview.png)
 
+### 📱 Animations & UI Showcases
+
+Hier sind aktuell aufgezeichnete Browser-Replays unserer wichtigsten UI-Komponenten im Einsatz:
+
+**1. RTL & Dark-Mode Integration (Arabisch)**
+*Das Settings-Modal steuert live das `dir="rtl"` Layout der Seite sowie das Tailwind Dark-Theme.*
+![RTL Dark Mode Showcase](docs/screenshots/rtl_dark_mode.webp)
+
+**2. Mobile-First Layout & Navigation Overlay**
+*Korrekte Textausrichtung und ein reibungsloses Hamburger-Menü Overlay in der 400px mobilen Ansicht.*
+![Mobile UI Showcase](docs/screenshots/mobile_showcase.webp)
+
 ### 🔍 SEO & Structured Data
 
 - **React Helmet Async**: Jede Seite setzt individuelle `<title>`, `<meta description>`, Open Graph- und Twitter Card-Tags.
@@ -188,6 +200,13 @@ Elternverein/
 ```
 
 ## Changelog
+
+### 2026-04-06 — Mobile-First Polish & Full i18n Coverage
+
+- **100% Locale Coverage**: Vollständige Skript-generierte Übersetzungen aller 10 Sprachen inklusive der tiefen Interface-Keys (Dashboard-Kalender Mockdaten, Modals für Zahlungsverkehr, News-Fallback, Settings).
+- **Mobile-Fixes**: Dynamische Button-Höhen (`whitespace-normal`), korrekte Hero-Cover Heights (`100svh`) und sauberes Umbrechen auf sehr schmalen Screens.
+- **Print-Optimierungen**: Ein Print-Stylesheet (`@media print`) für sauberes Ausdrucken von Inhalten (z. B. News-Artikel, ohne störende Navigationselemente).
+- **Navigation & Dashboard**: Fixes für korrekte Auslösung von UI-Events (inklusive Dark-Mode Einstellungen, Passwort-Reset Abbruch-Texte).
 
 ### 2026-03-30 — README auf aktuellen Stand gebracht
 

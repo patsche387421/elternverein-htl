@@ -18,7 +18,8 @@
             "support": "Social Support",
             "tutoring": "Tutoring",
             "courses": "Courses"
-        }
+        },
+        "dashboard": "Dashboard"
     },
     "footer": {
         "links": "Quick Links",
@@ -117,16 +118,16 @@
             "proj": "Financially support projects & education",
             "projLink": "/projekte",
             "suppTitle": "Support",
-            "supp": "Liaison to administration & department heads",
+            "supp": "Link to management & department heads",
             "suppLink": "/services",
             "helpTitle": "Help",
             "help": "Relieve socially disadvantaged families",
             "helpLink": "/services",
-            "infoTitle": "Information",
+            "infoTitle": "Inform",
             "info": "Tutoring, courses, psychological help",
             "infoLink": "/news",
-            "entTitle": "Entertainment",
-            "ent": "Balls, graduation parties, Barbara celebration",
+            "entTitle": "Entertain",
+            "ent": "Proms, graduation parties, Barbara celebration",
             "entLink": "/news"
         },
         "socialProof": {
@@ -146,7 +147,19 @@
             "q3": "Who can apply for support?",
             "a3": "All parents of students at HTL Mödling can apply for support in cases of social hardship or for innovative student projects.",
             "q4": "How is transparency ensured?",
-            "a4": "As a non-profit association, we are subject to strict audits. The use of funds is monitored annually by auditors and disclosed at the general assembly."
+            "a4": "As a non-profit association, we are subject to strict audits. The use of funds is monitored annually by auditors and disclosed at the general assembly.",
+            "badge": "Good to know"
+        },
+        "showcase1": {
+            "badge": "Support in Practice",
+            "title": "Equipment for the Future",
+            "desc": "With parents' contributions, we finance state-of-the-art equipment, lab materials, and projects that otherwise have no place in the regular school budget."
+        },
+        "showcase2": {
+            "badge": "Help & Inform",
+            "title": "Strengthen Community.<br/>Show Presence.",
+            "desc": "In addition to financial support, we organize excursions, strengthen social cohesion on school trips, and actively inform about current concerns in presentations and meetings.",
+            "link": "Our Services"
         }
     },
     "about": {
@@ -163,7 +176,8 @@
         ],
         "board": {
             "viewDetails": "View full details"
-        }
+        },
+        "paymentHint": "Click for payment details"
     },
     "costs": {
         "title": "Membership & Costs",
@@ -171,7 +185,15 @@
         "membership": "Membership Fee",
         "allocation": "Funds Allocation",
         "details": "The membership fee is used 100% for the benefit of the students.",
-        "membershipPerYear": "Year per Family"
+        "membershipPerYear": "Year per Family",
+        "paymentTitle": "Payment Details",
+        "copyIban": "Copy IBAN",
+        "copyBic": "Copy BIC",
+        "reference": "Reference",
+        "referenceExample": "EV Membership Fee + Name + Class",
+        "referenceExampleCopyTxt": "EV Membership Fee",
+        "copyReference": "Copy Reference",
+        "paymentNote": "The data are placeholders. Please contact the board for current payment information."
     },
     "contact": {
         "title": "Contact Us",
@@ -230,7 +252,125 @@
             "Injection molding courses",
             "Exam preparation"
         ],
-        "learnMore": "Learn More"
+        "learnMore": "Learn More",
+        "socialSupport": {
+            "back": "Back to Overview",
+            "titleHighlight": "Nobody is left behind.",
+            "intro": "A central concern of the Parents' Association is to enable students from financially disadvantaged families to participate in school events. We help where state subsidies are insufficient or arrive too late.",
+            "points": [
+                "Grant for school weeks (sports & project weeks)",
+                "Support with material costs",
+                "Individual emergency aid"
+            ],
+            "whoTitle": "Who can apply?",
+            "whoDesc": "All legal guardians of students at HTL Mödling who are members of the Parents' Association can apply. Support is provided discreetly and unbureaucratically after verification of social need.",
+            "confidential": "* All applications are strictly confidential.",
+            "processTitle": "Funding Process",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Submit Application",
+                    "desc": "Send us a request via the contact form or email."
+                },
+                {
+                    "step": "02",
+                    "title": "Review",
+                    "desc": "The board will review your application promptly and discreetly."
+                },
+                {
+                    "step": "03",
+                    "title": "Payment",
+                    "desc": "Upon approval, the amount will be transferred directly to the school or organizer."
+                }
+            ],
+            "qTitle": "Questions about funding?",
+            "qDesc": "We are happy to advise you without obligation and support you with the application process.",
+            "contactBtn": "Contact Us Now"
+        },
+        "tutoringPage": {
+            "back": "Back to Overview",
+            "subtitle": "By students for students",
+            "badge": "Success Together",
+            "titleHighlight": "The HTL Tutoring Network",
+            "intro": "Nobody knows the pitfalls of an exam better than someone who has already passed it. Our peer-to-peer tutoring system pairs motivated upper-school students with students who need support in specific subjects.",
+            "stats": [
+                {
+                    "title": "Over 50 Tutors",
+                    "desc": "Across all subjects"
+                },
+                {
+                    "title": "Fair Prices",
+                    "desc": "Within the HTL"
+                }
+            ],
+            "findTitle": "How do I find tutoring?",
+            "findSteps": [
+                "Check the current notice board in the hall.",
+                "Ask the student council (SV) directly.",
+                "Use our contact form for mediation.",
+                "Join the official Discord/Messenger group."
+            ],
+            "popularTitle": "Popular Subjects",
+            "subjects": [
+                "Mathematics",
+                "Applied Computer Science",
+                "Electrical Engineering",
+                "Mechanics",
+                "Programming",
+                "English",
+                "Economics",
+                "Laboratory Exercises"
+            ],
+            "ctaTitle": "Want to become a tutor yourself?",
+            "ctaDesc": "Help your classmates, deepen your own knowledge, and earn some extra money. We support you with the mediation.",
+            "ctaBtn": "Apply as a Tutor Now",
+            "noteTitle": "Important Notice",
+            "noteDesc": "Tutoring takes place on a private basis between students. The Parents' Association only provides the platform and contacts. We recommend fair fees between €10 and €15 per hour."
+        },
+        "coursesPage": {
+            "back": "Back to Overview",
+            "subtitle": "More than just teaching",
+            "titleHighlight": "Additional qualifications for a head start.",
+            "intro": "We support the acquisition of internationally recognized certificates and special training that go beyond the regular curriculum. This strengthens the job prospects of our graduates.",
+            "items": [
+                {
+                    "title": "ECDL Certification",
+                    "desc": "The European Computer Driving Licence for all grades.",
+                    "badge": "Start: WS 2025"
+                },
+                {
+                    "title": "Injection Molding Tech",
+                    "desc": "Special training for mechanical and plastics engineering.",
+                    "badge": "Remaining Places"
+                },
+                {
+                    "title": "Safety Training",
+                    "desc": "Additional qualification for upper-school workshop operations.",
+                    "badge": "Mandatory Module"
+                }
+            ],
+            "detailsBtn": "Request Details",
+            "whyBadge": "Why Additional Courses?",
+            "whyTitle": "Your Resume Plus.",
+            "benefits": [
+                {
+                    "label": "Certification",
+                    "detail": "International Validity"
+                },
+                {
+                    "label": "Advantages",
+                    "detail": "Job Market Advantage"
+                }
+            ],
+            "points": [
+                "Cost-effective access through the Parents' Association",
+                "Directly at the school site after classes",
+                "Practical training by experts",
+                "Official certificates and diplomas"
+            ],
+            "suggestion": "Do you have a course suggestion or would like to register?",
+            "registerBtn": "Registration & Info"
+        }
     },
     "projects": {
         "title": "Projects",
@@ -374,6 +514,12 @@
         "required": "Required field"
     },
     "dashboard": {
+        "internal": {
+            "brand": "EV Internal",
+            "role": "Board Member",
+            "exit": "To Website",
+            "footer": "Demo Version • Created by Patrick K. & Antigravity"
+        },
         "nav": {
             "overview": "Overview",
             "calendar": "Calendar",
@@ -383,6 +529,16 @@
             "title": "Shared Calendar",
             "subtitle": "View and manage all events",
             "add": "Add Event",
+            "edit": "Edit Event",
+            "delete": "Delete Event",
+            "exportIcs": "Export as .ics",
+            "exportAll": "Export",
+            "exportSuccess": "Calendar file downloaded",
+            "exportAllSuccess": "All events exported",
+            "noEventsToExport": "No events to export",
+            "updateSuccess": "Event updated",
+            "createSuccess": "Event created",
+            "deleteSuccess": "Event deleted",
             "days": {
                 "sun": "Sun",
                 "mon": "Mon",
@@ -391,6 +547,23 @@
                 "thu": "Thu",
                 "fri": "Fri",
                 "sat": "Sat"
+            },
+            "form": {
+                "title": "Title *",
+                "titlePlaceholder": "e.g. Parents Evening",
+                "date": "Date *",
+                "time": "Time",
+                "description": "Description",
+                "descriptionPlaceholder": "Optional details...",
+                "save": "Save",
+                "create": "Create",
+                "cancel": "Cancel"
+            },
+            "mock": {
+                "evt1Title": "Board Meeting",
+                "evt1Desc": "Monthly board meeting in the conference room.",
+                "evt2Title": "Summer Party",
+                "evt2Desc": "Annual summer party in the school garden."
             }
         },
         "overview": {
@@ -405,13 +578,29 @@
             "activity": {
                 "title": "Recent Activity",
                 "viewAll": "View All",
+                "less": "Less",
+                "showLess": "Show Less",
+                "showMore": "{{count}} more",
                 "by": "by"
             },
             "actions": {
                 "title": "Quick Actions",
                 "post": "New Project Proposal",
                 "event": "Write News",
-                "document": "Upload Protocol"
+                "document": "Upload Protocol",
+                "newsTitle": "Compose News",
+                "newsSuccess": "Demo: News draft saved",
+                "newsPlaceholderTitle": "e.g. Summer Festival Date",
+                "newsPlaceholderContent": "Enter news text...",
+                "uploadTitle": "Upload Protocol",
+                "uploadSuccess": "Demo: Protocol upload simulated",
+                "uploadPlaceholderFile": "Drag and drop file here or click",
+                "uploadHint": "PDF, DOCX, JPG • max. 10 MB",
+                "uploadDate": "Session Date",
+                "cancel": "Cancel",
+                "publish": "Publish",
+                "uploadBtn": "Upload",
+                "category": "Category"
             },
             "mock": {
                 "a1": "IT Laptops proposal approved",
@@ -428,7 +617,11 @@
                 "d2": "Yesterday",
                 "d3": "2 days ago",
                 "d4": "3 days ago",
-                "d5": "Last week"
+                "d5": "Last week",
+                "a6": "Additional Test Entry 1",
+                "d6": "Today",
+                "a7": "Additional Test Entry 2",
+                "d7": "Yesterday"
             }
         },
         "messages": {

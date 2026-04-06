@@ -34,7 +34,7 @@ const InternalLayout = () => {
             <aside className="w-64 bg-surface border-r border-border hidden md:flex flex-col">
                 <div className="p-6 border-b border-border space-y-6">
                     <Link to="/" className="text-xl font-bold text-primary block">
-                        EV Intern
+                        {t('dashboard.internal.brand', 'EV Intern')}
                     </Link>
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold border border-primary/20">
@@ -42,7 +42,7 @@ const InternalLayout = () => {
                         </div>
                         <div>
                             <p className="text-sm font-bold text-foreground">Testperson</p>
-                            <p className="text-xs text-foreground/50">Vorstandsmitglied</p>
+                            <p className="text-xs text-foreground/50">{t('dashboard.internal.role', 'Vorstandsmitglied')}</p>
                         </div>
                     </div>
                 </div>
@@ -76,21 +76,21 @@ const InternalLayout = () => {
                         className="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-bold text-primary bg-primary/5 hover:bg-primary/10 transition-colors border border-primary/10"
                     >
                         <Globe size={18} />
-                        Zur Website
+                        {t('dashboard.internal.exit', 'Zur Website')}
                     </Link>
                     <Link
                         to="/dashboard/settings"
                         className="flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium text-foreground/70 hover:bg-primary/5 hover:text-primary"
                     >
                         <Settings size={18} />
-                        {t('dashboard.settings.title', 'Settings')}
+                        {t('dashboard.settings.title')}
                     </Link>
                     <button
                         onClick={handleLogout}
                         className="w-full flex items-center gap-3 px-4 py-2 rounded-lg text-sm font-medium text-danger hover:bg-danger/10 transition-colors"
                     >
                         <LogOut size={18} />
-                        {t('nav.logout', 'Logout')}
+                        {t('nav.logout')}
                     </button>
                 </div>
             </aside>
@@ -107,7 +107,7 @@ const InternalLayout = () => {
                     <aside className="absolute inset-y-0 start-0 w-72 bg-surface border-e border-border flex flex-col shadow-2xl animate-in slide-in-from-left duration-300">
                         <div className="p-5 border-b border-border flex items-center justify-between">
                             <Link to="/" className="text-lg font-bold text-primary" onClick={closeMobileMenu}>
-                                EV Intern
+                                {t('dashboard.internal.brand', 'EV Intern')}
                             </Link>
                             <button
                                 onClick={closeMobileMenu}
@@ -122,9 +122,9 @@ const InternalLayout = () => {
                                 <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold border border-primary/20">
                                     T
                                 </div>
-                                <div>
+                                <div className="flex flex-col">
                                     <p className="text-sm font-bold text-foreground">Testperson</p>
-                                    <p className="text-xs text-foreground/50">Vorstandsmitglied</p>
+                                    <p className="text-xs text-foreground/50">{t('dashboard.internal.role', 'Vorstandsmitglied')}</p>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@ const InternalLayout = () => {
                                 className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-bold text-primary bg-primary/5 hover:bg-primary/10 transition-colors border border-primary/10"
                             >
                                 <Globe size={20} />
-                                Zur Website
+                                {t('dashboard.internal.exit', 'Zur Website')}
                             </Link>
                             <Link
                                 to="/dashboard/settings"
@@ -168,14 +168,14 @@ const InternalLayout = () => {
                                 className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold text-foreground/70 hover:bg-primary/5 hover:text-primary"
                             >
                                 <Settings size={20} />
-                                {t('dashboard.settings.title', 'Settings')}
+                                {t('dashboard.settings.title')}
                             </Link>
                             <button
                                 onClick={() => { closeMobileMenu(); handleLogout(); }}
                                 className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold text-danger hover:bg-danger/10 transition-colors"
                             >
                                 <LogOut size={20} />
-                                {t('nav.logout', 'Logout')}
+                                {t('nav.logout')}
                             </button>
                         </div>
                     </aside>
@@ -208,7 +208,7 @@ const InternalLayout = () => {
                     </div>
                     {/* Internal Footer */}
                     <footer className="mt-8 pt-4 border-t border-border text-center text-[10px] text-foreground/40 font-bold tracking-[0.2em] uppercase shrink-0">
-                        Demo-Version • Erstellt von Patrick K. & Antigravity
+                        {t('dashboard.internal.footer', 'Demo-Version • Erstellt von Patrick K. & Antigravity')}
                     </footer>
                 </main>
             </div>

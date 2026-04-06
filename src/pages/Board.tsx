@@ -169,7 +169,7 @@ const Board = () => {
                             <button
                                 onClick={closeModal}
                                 className="p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors"
-                                aria-label="Schließen"
+                                aria-label={t('common.close', 'Schließen')}
                             >
                                 <X size={20} />
                             </button>
@@ -179,7 +179,7 @@ const Board = () => {
                         <div className="p-6 space-y-6">
                             <div className="bg-background rounded-2xl p-5 border border-border space-y-4">
                                 <div>
-                                    <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest mb-1">Amtszeit</p>
+                                    <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest mb-1">{t('board.termTitle', 'Amtszeit')}</p>
                                     <div className="flex items-center gap-2 text-foreground font-bold text-sm">
                                         <Calendar size={16} className="text-primary" />
                                         {selectedMember.term}
@@ -189,7 +189,7 @@ const Board = () => {
                                 <div className="w-full h-px bg-border"></div>
                                 
                                 <div>
-                                    <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest mb-2">Über {selectedMember.name}</p>
+                                    <p className="text-[10px] font-black text-foreground/40 uppercase tracking-widest mb-2">{t('board.aboutMember', 'Über {{name}}', { name: selectedMember.name })}</p>
                                     <p className="text-foreground/80 font-medium leading-relaxed text-sm">
                                         {selectedMember.bio}
                                     </p>
@@ -201,7 +201,7 @@ const Board = () => {
                                 onClick={closeModal}
                                 className="w-full py-4 rounded-2xl bg-primary text-primary-foreground font-black uppercase tracking-widest text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2 active:scale-[0.98]"
                             >
-                                Nachricht an {selectedMember.name.split(' ')[0]} senden
+                                {t('board.sendMessage', 'Nachricht an {{name}} senden', { name: selectedMember.name.split(' ')[0] })}
                                 <ArrowRight size={18} strokeWidth={2.5} />
                             </Link>
                         </div>

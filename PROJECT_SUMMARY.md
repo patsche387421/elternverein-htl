@@ -5,36 +5,31 @@ Diese Website dient als zentrale Plattform für den Elternverein der HTL Mödlin
 ## Technische Highlights
 
 ### 🌍 Internationalisierung (i18next)
-- **Vollständige Mehrsprachigkeit**: Die gesamte Seite ist auf Deutsch und Englisch verfügbar.
-- **Dynamic Translation**: Einfache Erweiterbarkeit durch strukturierte JSON-Dateien (`de.json`, `en.json`).
-- **Spracherkennung**: Merkt sich die bevorzugte Sprache des Nutzers.
+- **Vollständige Mehrsprachigkeit**: Die Navigation, Startseite, Services, das Dashboard, "Über uns" Modals und alle News-Artikel sind lückenlos in **10 Sprachen** übersetzt (Deutsch, Englisch, Französisch, Spanisch, Italienisch, Ukrainisch, Polnisch, Türkisch, Portugiesisch, Arabisch).
+- **Fallback-Sicherheit**: Ein robustes Automatisierungs-System (JSON-Merges) stellt sicher, dass tief verschachtelte `t()`-Referenzen (wie z.B. Kontodaten im Modal) nicht mehr auf deutsche Fallbacks zurückfallen.
+- **RTL-UI**: Vollständige Unterstützung von Right-to-Left (RTL) Layouts durch Tailwind CSS Logical Properties für Arabisch.
 
-### 🎨 Design System (Tailwind CSS 4.0 & Flat Design)
-- **Modernes Interface**: Einsatz von Tailwind CSS für ein responsives, performantes und ästhetisch ansprechendes Design.
-- **Flat Design**: Konsequente Nutzung von klaren, kontrastreichen Farben für News-Kategorien und UI-Elemente.
-- **Dark Mode**: Vollständige Unterstützung für ein angenehmes Seherlebnis bei wenig Licht.
+### 🎨 Design System & Mobile First (Tailwind CSS 3.4.1)
+- **Mobile-First Optimization**: Layouts reagieren dynamisch auf kleine Screens. Lange Übersetzungen brechen durch `whitespace-normal` flexibel um und der Scroll-View wird durch `100svh` Height-Fixes ("Above the fold") sauber abgeschlossen.
+- **Print-Ready Styles**: Speziell ausgearbeitetes CSS für saubere, tinte-sparende Ausdrucke von Dokumenten und Artikeln über nativen Print-Button.
+- **Modernes Flat-Design**: Klare Typografie, saubere Staggered-Grids ohne Überschneidungen und kohärentes Farbsystem (via HSL).
 
-### ⚡ Live-Theming (Beta)
-- **Dynamische Anpassung**: Primärfarbe und Ecken-Radius können live im Browser getestet werden.
-- **CSS-Variablen**: Echtzeit-Updates über `--primary` und `--radius` Steuerung auf dem `:root`-Element.
-- **Theme-Konfiguration**: Globale Standardwerte werden über die `theme-config.json` gesteuert.
+### 📂 Struktur & Funktionalitäten
+- **Services & Projekte**: Dynamische Dashboards für Nachhilfevermittlung, soziale Unterstützung und Zusatzqualifikationen.
+- **Mock-Kalender Dashboard**: Das Vorstands-Dashboard liefert interaktive Event-Mocks, die direkt in `.ics` Dateien zur persönlichen Kalendereinbindung exportiert werden können.
+- **Nutzerkontrollen**: Settings- und Login-Modals unterstützen Dark-Mode Switcheing, Sprachwechsel und "Abbruch"-Flows.
 
-### 📂 Dynamisches Filtern & Suche
-- **Projektübersicht**: Client-seitiges Filtern nach Abteilung (z.B. Bautechnik, Elektrotechnik) und Status (Offen, Abgeschlossen).
-- **News-Feed**: Kategorisierung und Filterung von Nachrichten (Event, Protokoll, News).
+### 🔐 Authentifizierung
+- **Dev-Bypass**: Der Login ins interne Dashboard wird per Client-seitiger Persistenz (Local Storage) simuliert, um die Funktionalitäten für das Vorstandsteam (Uploads, News Posten, Settings) barrierefrei zu testen. (Datenbankanbindung / Supabase ist pausiert).
 
-### 🔐 Authentifizierung & Sicherheit
-- **Supabase Integration**: Vorbereitet für sichere Benutzerverwaltung und Datenbank-Anbindung.
-- **Dev-Bypass**: Entwickler-Modus für schnelles Testen ohne Login-Barriere während der Entwicklung.
-
-## Feature-Übersicht
+## Kern-Features (Status-Check)
 | Feature | Status | Beschreibung |
 | :--- | :--- | :--- |
-| News-Filter | ✅ Aktiv | Filtern von Nachrichten nach Kategorien. |
-| Projekt-Antrag | ✅ Aktiv | Formular zur Einreichung von Förderanträgen. |
-| Design-Vorschau | ✅ Aktiv | Live-Anpassung von Farbe und Radius im Footer. |
-| Language Switcher | ✅ Aktiv | Nahtloser Wechsel zwischen DE/EN. |
-| Dashboard | ✅ Aktiv | Interne Übersicht für Vorstandsmitglieder. |
+| **I18n (10 Sprachen)** | ✅ Aktiv | 100% Locale Code-Coverage; inklusive aller Popups und dynamischem Content. |
+| **News & Kalender** | ✅ Aktiv | Dedizierte Artikelseiten, Mock-Events mit ICS-Export, Print-Ansicht. |
+| **Mobile UX** | ✅ Aktiv | Responsive Menü-Overlays, abgesicherte Textumbrüche, `100svh` Korrektur. |
+| **Vorstands-Dashboard**| ✅ Aktiv | Geschlossener Bereich für Activity Tracking & App/Web-Settings. |
+| **Theme System** | ✅ Aktiv | Dark/Light Mode + Color Picker (im Entwicklermodus). |
 
 ---
-*Erstellt von Antigravity für den Elternverein HTL Mödling.*
+*Erstellt & gepflegt von Antigravity für den Elternverein HTL Mödling.*

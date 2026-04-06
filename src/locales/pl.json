@@ -18,7 +18,8 @@
             "support": "Wsparcie Społeczne",
             "tutoring": "Korepetycje",
             "courses": "Kursy"
-        }
+        },
+        "dashboard": "Panel"
     },
     "footer": {
         "links": "Szybkie Linki",
@@ -121,7 +122,19 @@
             "socLink": "/services",
             "comm": "Networking rodziców, szkoły i firm dla silnej społeczności szkolnej.",
             "commTitle": "Społeczność",
-            "commLink": "/kontakt"
+            "commLink": "/kontakt",
+            "suppTitle": "Wspierać",
+            "supp": "Łącznik z dyrekcją i wydziałami",
+            "suppLink": "/services",
+            "helpTitle": "Pomagać",
+            "help": "Odciążenie rodzin w trudnej sytuacji",
+            "helpLink": "/services",
+            "infoTitle": "Informować",
+            "info": "Korepetycje, kursy, pomoc psychologiczna",
+            "infoLink": "/news",
+            "entTitle": "Bawić",
+            "ent": "Bale, imprezy maturalne",
+            "entLink": "/news"
         },
         "socialProof": {
             "title": "Głosy z naszej społeczności",
@@ -140,7 +153,19 @@
             "q3": "Kto może ubiegać się o wsparcie?",
             "a3": "Wszyscy rodzice uczniów HTL Mödling mogą ubiegać się o wsparcie w przypadkach trudności społecznych lub na innowacyjne projekty.",
             "q4": "Jak zapewniona jest przejrzystość?",
-            "a4": "Jako stowarzyszenie non-profit podlegamy ścisłym kontrolom. Wykorzystanie funduszy jest monitorowane corocznie przez biegłych rewidentów."
+            "a4": "Jako stowarzyszenie non-profit podlegamy ścisłym kontrolom. Wykorzystanie funduszy jest monitorowane corocznie przez biegłych rewidentów.",
+            "badge": "Warto wiedzieć"
+        },
+        "showcase1": {
+            "badge": "Wsparcie w Praktyce",
+            "title": "Sprzęt na Przyszłość",
+            "desc": "Z funduszy rodziców finansujemy nowoczesny sprzęt, materiały laboratoryjne i projekty, na które nie ma miejsca w budżecie szkolnym."
+        },
+        "showcase2": {
+            "badge": "Pomagać i Informować",
+            "title": "Wzmacniać Społeczność.<br/>Być Obecnym.",
+            "desc": "Oprócz wsparcia finansowego organizujemy wycieczki, wzmacniamy więzi społeczne i aktywnie informujemy o aktualnych sprawach na spotkaniach.",
+            "link": "Nasze Usługi"
         }
     },
     "about": {
@@ -157,7 +182,8 @@
         ],
         "board": {
             "viewDetails": "Zobacz pełne szczegóły"
-        }
+        },
+        "paymentHint": "Kliknij po szczegóły"
     },
     "costs": {
         "title": "Członkostwo i Koszty",
@@ -165,7 +191,15 @@
         "membership": "Składka Członkowska",
         "allocation": "Przeznaczenie Środków",
         "details": "Składka członkowska w 100% wykorzystywana jest dla dobra uczniów.",
-        "membershipPerYear": "Rok na rodzinę"
+        "membershipPerYear": "Rok na rodzinę",
+        "paymentTitle": "Dane do Przelewu",
+        "copyIban": "Kopiuj IBAN",
+        "copyBic": "Kopiuj BIC",
+        "reference": "Tytuł przelewu",
+        "referenceExample": "Składka EV + Imię + Klasa",
+        "referenceExampleCopyTxt": "Składka EV",
+        "copyReference": "Kopiuj Tytuł",
+        "paymentNote": "Dane są przykładowe. Skontaktuj się z zarządem w celu uzyskania aktualnych danych."
     },
     "contact": {
         "title": "Kontakt z Nami",
@@ -224,7 +258,165 @@
             "Kursy formowania wtryskowego",
             "Przygotowanie do egzaminów"
         ],
-        "learnMore": "Dowiedz się więcej"
+        "learnMore": "Dowiedz się więcej",
+        "socialSupport": {
+            "title": "Wsparcie Społeczne",
+            "subtitle": "Bezbiurokratyczne wsparcie dla uczniów i rodzin.",
+            "heroDesc": "Fundusz wsparcia społecznego Stowarzyszenia Rodziców pomaga uczniom HTL Mödling w trudnych sytuacjach finansowych, umożliwiając uczestnictwo w wydarzeniach szkolnych.",
+            "whoGetsHelp": "Kto otrzymuje wsparcie?",
+            "whoGetsHelpDesc": "Wszyscy uczniowie HTL Mödling, których rodzice lub opiekunowie znajdują się w trudnej sytuacji finansowej.",
+            "whatIsFunded": "Co jest finansowane?",
+            "fundedItems": [
+                "Tygodnie sportowe i narciarskie",
+                "Tygodnie językowe i wycieczki edukacyjne",
+                "Materiały do nauki i podstawowe wyposażenie",
+                "Składki na wydarzenia szkolne"
+            ],
+            "application": "Wniosek",
+            "applicationDesc": "Wniosek składa się w sposób całkowicie dyskretny i bezbiurokratyczny za pośrednictwem naszego zarządu.",
+            "contactPerson": "Osoba kontaktowa",
+            "contactDesc": "Nasz skarbnik jest do Państwa dyspozycji w celu przeprowadzenia poufnej rozmowy.",
+            "ctaButton": "Złóż wniosek teraz",
+            "back": "Powrót",
+            "titleHighlight": "Nikt nie zostaje z tyłu.",
+            "intro": "Głównym celem Stowarzyszenia Rodziców jest umożliwienie uczniom z uboższych rodzin udziału w życiu szkoły. Pomagamy tam, gdzie brakuje dotacji państwowych.",
+            "points": [
+                "Dofinansowanie tygodni szkolnych",
+                "Wsparcie w kosztach materiałów",
+                "Indywidualna pomoc w nagłych wypadkach"
+            ],
+            "whoTitle": "Kto może aplikować?",
+            "whoDesc": "Wszyscy prawni opiekunowie uczniów HTL Mödling, będący członkami Stowarzyszenia. Pomoc udzielana jest dyskretnie.",
+            "confidential": "* Wszystkie wnioski są ściśle tajne.",
+            "processTitle": "Proces finansowania",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Złóż wniosek",
+                    "desc": "Wyślij zapytanie przez formularz lub e-mail."
+                },
+                {
+                    "step": "02",
+                    "title": "Weryfikacja",
+                    "desc": "Zarząd dyskretnie rozpatrzy Twój wniosek."
+                },
+                {
+                    "step": "03",
+                    "title": "Wypłata",
+                    "desc": "Po zatwierdzeniu kwota trafi do szkoły."
+                }
+            ],
+            "qTitle": "Pytania o dofinansowanie?",
+            "qDesc": "Chętnie doradzimy i pomożemy.",
+            "contactBtn": "Skontaktuj się z nami"
+        },
+        "tutoringPage": {
+            "title": "Oferty Korepetycji",
+            "subtitle": "Uczniowie pomagają uczniom – Wspólny sukces.",
+            "heroDesc": "Nasz system korepetycji łączy doświadczonych uczniów z uczniami potrzebującymi wsparcia w konkretnych przedmiotach.",
+            "forStudents": "Dla uczniów",
+            "forStudentsDesc": "Szukasz pomocy z matematyki, budowy maszyn czy programowania? Znajdź odpowiedniego korepetytora.",
+            "forTutors": "Dla korepetytorów",
+            "forTutorsDesc": "Jesteś dobry z jakiegoś przedmiotu i chcesz pomóc innym, zarabiając przy tym trochę pieniędzy?",
+            "howItWorks": "Jak to działa?",
+            "steps": [
+                "Wybierz przedmiot i kurs",
+                "Skontaktuj się ze zweryfikowanymi korepetytorami",
+                "Ustal termin i warunki indywidualnie"
+            ],
+            "quality": "Gwarancja jakości",
+            "qualityDesc": "Wszyscy korepetytorzy są weryfikowani przez Stowarzyszenie Rodziców i polecani przez nauczycieli przedmiotu.",
+            "viewList": "Zobacz listę korepetytorów",
+            "back": "Powrót",
+            "badge": "Sukces Razem",
+            "titleHighlight": "Sieć Korepetycji HTL",
+            "intro": "Nikt nie zna pułapek egzaminu lepiej niż ten, kto go już zdał. Nasz system łączy zmotywowanych uczniów starszych klas z potrzebującymi wsparcia.",
+            "stats": [
+                {
+                    "title": "Ponad 50 korepetytorów",
+                    "desc": "Przekrój przedmiotów"
+                },
+                {
+                    "title": "Uczciwe ceny",
+                    "desc": "Wewnątrz HTL"
+                }
+            ],
+            "findTitle": "Jak znaleźć korepetycje?",
+            "findSteps": [
+                "Sprawdź tablicę ogłoszeń.",
+                "Zapytaj samorząd uczniowski.",
+                "Użyj naszego formularza.",
+                "Dołącz do grupy na Discordzie."
+            ],
+            "popularTitle": "Popularne Przedmioty",
+            "subjects": [
+                "Matematyka",
+                "Informatyka",
+                "Elektrotechnika",
+                "Mechanika",
+                "Programowanie",
+                "Angielski",
+                "Ekonomia",
+                "Laboratoria"
+            ],
+            "ctaTitle": "Chcesz zostać korepetytorem?",
+            "ctaDesc": "Pomagaj innym i zarabiaj. Zapewniamy platformę.",
+            "ctaBtn": "Zgłoś się",
+            "noteTitle": "Ważna Informacja",
+            "noteDesc": "Korepetycje odbywają się na zasadach prywatnych. Zalecamy uczciwą stawkę 10€ - 15€ za godzinę."
+        },
+        "coursesPage": {
+            "title": "Oferta Kursów",
+            "subtitle": "Dodatkowe kwalifikacje dla Twojej przyszłości.",
+            "heroDesc": "We współpracy z dyrekcją szkoły oferujemy ekskluzywne kursy, które wykraczają poza normalny program nauczania.",
+            "currentCourses": "Aktualne kursy",
+            "features": [
+                "Bezpośrednio na terenie szkoły po lekcjach",
+                "Praktyczne szkolenie prowadzone przez ekspertów",
+                "Oficjalne certyfikaty i dyplomy"
+            ],
+            "suggestion": "Masz propozycję kursu lub chcesz się zapisać?",
+            "registerBtn": "Rejestracja i informacje",
+            "back": "Powrót",
+            "titleHighlight": "Dodatkowe kwalifikacje na start.",
+            "intro": "Wspieramy zdobywanie certyfikatów i szkoleń poza programem nauczania, wzmacniając perspektywy zawodowe absolwentów.",
+            "items": [
+                {
+                    "title": "Certyfikat ECDL",
+                    "desc": "Europejskie Prawo Jazdy na Komputer.",
+                    "badge": "Start: Zima 2025"
+                },
+                {
+                    "title": "Technika wtryskowa",
+                    "desc": "Szkolenie z inżynierii tworzyw.",
+                    "badge": "Ostatnie miejsca"
+                },
+                {
+                    "title": "Szkolenie BHP",
+                    "desc": "Dodatkowa kwalifikacja do warsztatów.",
+                    "badge": "Moduł obowiązkowy"
+                }
+            ],
+            "detailsBtn": "Pokaż szczegóły",
+            "whyBadge": "Po co dodatkowe kursy?",
+            "whyTitle": "Plus do Twojego CV.",
+            "benefits": [
+                {
+                    "label": "Certyfikacja",
+                    "detail": "Ważność międzynarodowa"
+                },
+                {
+                    "label": "Korzyści",
+                    "detail": "Przewaga na rynku pracy"
+                }
+            ],
+            "points": [
+                "Przystępny dostęp",
+                "Zajęcia na terenie szkoły",
+                "Praktyczne szkolenia z ekspertami",
+                "Oficjalne certyfikaty"
+            ]
+        }
     },
     "projects": {
         "title": "Projekty",
@@ -366,5 +558,157 @@
     },
     "common": {
         "required": "Pole wymagane"
+    },
+    "dashboard": {
+        "internal": {
+            "brand": "EV Wewnątrz",
+            "role": "Członek Zarządu",
+            "exit": "Do strony",
+            "footer": "Wersja demo • Utworzona przez Patrick K. & Antigravity"
+        },
+        "nav": {
+            "overview": "Przegląd",
+            "calendar": "Kalendarz",
+            "messages": "Wiadomości"
+        },
+        "calendar": {
+            "title": "Wspólny kalendarz",
+            "subtitle": "Wszystkie terminy i wydarzenia w jednym miejscu",
+            "add": "Dodaj wydarzenie",
+            "edit": "Edytuj wydarzenie",
+            "delete": "Usuń wydarzenie",
+            "exportIcs": "Eksportuj jako .ics",
+            "exportAll": "Eksportuj",
+            "exportSuccess": "Plik kalendarza pobrany",
+            "exportAllSuccess": "Wszystkie wydarzenia wyeksportowane",
+            "noEventsToExport": "Brak wydarzeń do eksportu",
+            "updateSuccess": "Zaktualizowano wydarzenie",
+            "createSuccess": "Utworzono wydarzenie",
+            "deleteSuccess": "Usunięto wydarzenie",
+            "days": {
+                "sun": "Ndz",
+                "mon": "Pon",
+                "tue": "Wt",
+                "wed": "Śr",
+                "thu": "Czw",
+                "fri": "Pt",
+                "sat": "Sob"
+            },
+            "form": {
+                "title": "Tytuł *",
+                "titlePlaceholder": "np. Wieczór rodzicielski",
+                "date": "Data *",
+                "time": "Godzina",
+                "description": "Opis",
+                "descriptionPlaceholder": "Dodatkowe szczegóły...",
+                "save": "Zapisz",
+                "create": "Utwórz",
+                "cancel": "Anuluj"
+            },
+            "mock": {
+                "evt1Title": "Zebranie Zarządu",
+                "evt1Desc": "Comiesięczne zebranie w sali konferencyjnej.",
+                "evt2Title": "Piknik Letni",
+                "evt2Desc": "Coroczny piknik letni na terenie szkoły."
+            }
+        },
+        "overview": {
+            "title": "Przegląd Dashboardu",
+            "welcome": "Witaj ponownie, {{name}}",
+            "stats": {
+                "events": "Otwarte projekty",
+                "messages": "Zatwierdzone projekty",
+                "members": "Aktywne newsy",
+                "reports": "Następny termin"
+            },
+            "activity": {
+                "title": "Ostatnia aktywność",
+                "viewAll": "Pokaż wszystko",
+                "less": "Mniej",
+                "showLess": "Pokaż mniej",
+                "showMore": "jeszcze {{count}}",
+                "by": "przez"
+            },
+            "actions": {
+                "title": "Szybki dostęp",
+                "post": "Nowy wniosek projektowy",
+                "event": "Napisz newsa",
+                "document": "Prześlij protokół",
+                "newsTitle": "Utwórz newsa",
+                "newsSuccess": "Demo: Szkic newsa zapisany",
+                "newsPlaceholderTitle": "np. Termin festynu letniego",
+                "newsPlaceholderContent": "Wpisz treść newsa...",
+                "uploadTitle": "Prześlij protokół",
+                "uploadSuccess": "Demo: Przesyłanie protokołu zasymulowane",
+                "uploadPlaceholderFile": "Przeciągnij plik tutaj lub kliknij",
+                "uploadHint": "PDF, DOCX, JPG • maks. 10 MB",
+                "uploadDate": "Data posiedzenia",
+                "cancel": "Anuluj",
+                "publish": "Publikuj",
+                "uploadBtn": "Wyślij",
+                "category": "Kategoria"
+            },
+            "mock": {
+                "a1": "Wniosek o laptopy IT zatwierdzony",
+                "a2": "Przesłano nowy protokół z posiedzenia",
+                "a3": "News: Termin festynu letniego",
+                "a4": "Projekt utrzymania ogrodu zakończony",
+                "a5": "Zaplanowano posiedzenie zarządu",
+                "u1": "Zarząd",
+                "u2": "Sekretarz",
+                "u3": "Zespół PR",
+                "u4": "Lider projektu",
+                "u5": "Przewodniczący/a",
+                "d1": "2 godziny temu",
+                "d2": "Wczoraj",
+                "d3": "2 dni temu",
+                "d4": "3 dni temu",
+                "d5": "W zeszłym tygodniu",
+                "a6": "Wpis testowy 1",
+                "d6": "Dzisiaj",
+                "a7": "Wpis testowy 2",
+                "d7": "Wczoraj"
+            }
+        },
+        "messages": {
+            "title": "Wiadomości",
+            "placeholder": "Napisz wiadomość...",
+            "send": "Wyślij",
+            "empty": "Wybierz rozmowę",
+            "mock": {
+                "c1": "Grupa Zarządu",
+                "c2": "Księgowość",
+                "c3": "Planowanie projektów",
+                "m1": "Czy budżet na festyn letni jest zatwierdzony?",
+                "m2": "Otrzymano fakturę za nowe laptopy.",
+                "m3": "Wciąż potrzebujemy pomocników na dzień rodziców."
+            }
+        },
+        "settings": {
+            "title": "Ustawienia",
+            "profile": {
+                "title": "Profil",
+                "name": "Imię",
+                "email": "E-mail"
+            },
+            "notifications": {
+                "title": "Powiadomienia",
+                "email": "Powiadomienia e-mail",
+                "push": "Powiadomienia push",
+                "weekly": "Tygodniowe podsumowanie"
+            },
+            "appearance": {
+                "title": "Wygląd"
+            },
+            "security": {
+                "title": "Bezpieczeństwo",
+                "changePassword": "Zmień hasło",
+                "current": "Obecne hasło",
+                "new": "Nowe hasło",
+                "confirm": "Potwierdź hasło",
+                "success": "Hasło zostało pomyślnie zmienione!"
+            },
+            "save": "Zapisz zmiany"
+        }
     }
 }

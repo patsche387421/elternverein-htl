@@ -18,7 +18,8 @@
             "support": "Soutien Social",
             "tutoring": "Tutorat",
             "courses": "Cours"
-        }
+        },
+        "dashboard": "Tableau de bord"
     },
     "footer": {
         "links": "Liens Rapides",
@@ -121,7 +122,19 @@
             "socLink": "/services",
             "comm": "Mise en réseau des parents, de l'école et des entreprises pour une communauté scolaire forte.",
             "commTitle": "Communauté",
-            "commLink": "/kontakt"
+            "commLink": "/kontakt",
+            "suppTitle": "Soutenir",
+            "supp": "Lien avec la direction et les chefs de département",
+            "suppLink": "/services",
+            "helpTitle": "Aider",
+            "help": "Soulager les familles socialement défavorisées",
+            "helpLink": "/services",
+            "infoTitle": "Informer",
+            "info": "Tutorat, cours, aide psychologique",
+            "infoLink": "/news",
+            "entTitle": "Divertir",
+            "ent": "Bals, fêtes de remise des diplômes",
+            "entLink": "/news"
         },
         "socialProof": {
             "title": "Les voix de notre Communauté",
@@ -140,7 +153,19 @@
             "q3": "Qui peut demander un soutien ?",
             "a3": "Tous les parents d'élèves de la HTL Mödling peuvent demander un soutien en cas de difficultés sociales ou pour des projets innovants.",
             "q4": "Comment la transparence est-elle assurée ?",
-            "a4": "En tant qu'association à but non lucratif, nous sommes soumis à des audits stricts. L'utilisation des fonds est contrôlée annuellement."
+            "a4": "En tant qu'association à but non lucratif, nous sommes soumis à des audits stricts. L'utilisation des fonds est contrôlée annuellement.",
+            "badge": "Bon à savoir"
+        },
+        "showcase1": {
+            "badge": "Soutien Pratique",
+            "title": "De l'équipement pour l'Avenir",
+            "desc": "Avec les contributions des parents, nous finançons des équipements de pointe, du matériel de laboratoire et des projets qui n'auraient autrement pas leur place dans le budget scolaire."
+        },
+        "showcase2": {
+            "badge": "Aider & Informer",
+            "title": "Renforcer la Communauté.<br/>Être Présent.",
+            "desc": "Outre le soutien financier, nous organisons des excursions, renforçons la cohésion sociale lors des voyages scolaires et informons activement de nos préoccupations actuelles.",
+            "link": "Nos Services"
         }
     },
     "about": {
@@ -157,7 +182,8 @@
         ],
         "board": {
             "viewDetails": "Voir tous les détails"
-        }
+        },
+        "paymentHint": "Cliquer pour les détails"
     },
     "costs": {
         "title": "Adhésion et Coûts",
@@ -165,7 +191,15 @@
         "membership": "Cotisation",
         "allocation": "Allocation des fonds",
         "details": "La cotisation est utilisée à 100 % au profit des élèves.",
-        "membershipPerYear": "Année par famille"
+        "membershipPerYear": "Année par famille",
+        "paymentTitle": "Détails de Paiement",
+        "copyIban": "Copier IBAN",
+        "copyBic": "Copier BIC",
+        "reference": "Motif",
+        "referenceExample": "Cotisation EV + Nom + Classe",
+        "referenceExampleCopyTxt": "Cotisation EV",
+        "copyReference": "Copier le Motif",
+        "paymentNote": "Ces données sont à titre indicatif. Veuillez contacter le conseil pour les informations actuelles."
     },
     "contact": {
         "title": "Contactez-nous",
@@ -224,7 +258,165 @@
             "Cours de moulage par injection",
             "Préparation aux examens"
         ],
-        "learnMore": "En savoir plus"
+        "learnMore": "En savoir plus",
+        "socialSupport": {
+            "title": "Soutien Social",
+            "subtitle": "Aide non bureaucratique pour les élèves et les familles.",
+            "heroDesc": "Le fonds de soutien social de l'Association des Parents aide les élèves de la HTL Mödling dans des situations financières difficiles pour permettre la participation aux événements scolaires.",
+            "whoGetsHelp": "Qui reçoit du soutien ?",
+            "whoGetsHelpDesc": "Tous les élèves de la HTL Mödling dont les parents ou tuteurs se trouvent dans une situation financière difficile.",
+            "whatIsFunded": "Qu'est-ce qui est financé ?",
+            "fundedItems": [
+                "Semaines de sport et de ski",
+                "Semaines de langues et voyages d'études",
+                "Matériel d'apprentissage et équipement de base",
+                "Contributions aux événements scolaires"
+            ],
+            "application": "Demande",
+            "applicationDesc": "La demande se fait de manière totalement discrète et non bureaucratique via notre conseil d'administration.",
+            "contactPerson": "Personne de contact",
+            "contactDesc": "Notre trésorerie est à votre disposition pour un entretien confidentiel.",
+            "ctaButton": "Postuler maintenant",
+            "back": "Retour à l'aperçu",
+            "titleHighlight": "Personne n'est laissé pour compte.",
+            "intro": "L'Association des Parents tient à permettre aux élèves de familles modestes de participer aux activités scolaires. Nous aidons là où les subventions de l'État sont insuffisantes ou tardent.",
+            "points": [
+                "Aide pour les semaines scolaires (sport et projets)",
+                "Soutien pour le coût du matériel",
+                "Aide d'urgence individuelle"
+            ],
+            "whoTitle": "Qui peut faire une demande ?",
+            "whoDesc": "Tous les tuteurs légaux des élèves du HTL Mödling membres de l'Association des Parents. Le soutien est discret et non bureaucratique après vérification.",
+            "confidential": "* Toutes les demandes sont strictement confidentielles.",
+            "processTitle": "Processus de financement",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Soumettre",
+                    "desc": "Envoyez-nous une demande via le formulaire ou par email."
+                },
+                {
+                    "step": "02",
+                    "title": "Examen",
+                    "desc": "Le conseil examinera votre demande rapidement et discrètement."
+                },
+                {
+                    "step": "03",
+                    "title": "Paiement",
+                    "desc": "Après approbation, le montant sera transféré à l'école."
+                }
+            ],
+            "qTitle": "Des questions sur l'aide ?",
+            "qDesc": "Nous vous conseillons et vous accompagnons sans engagement.",
+            "contactBtn": "Nous Contacter"
+        },
+        "tutoringPage": {
+            "title": "Offres de Tutorat",
+            "subtitle": "Les élèves aident les élèves – Succès commun.",
+            "heroDesc": "Notre système de tutorat connecte des élèves expérimentés avec des élèves ayant besoin de soutien dans des matières spécifiques.",
+            "forStudents": "Pour les élèves",
+            "forStudentsDesc": "Vous cherchez de l'aide en Mathématiques, Génie Mécanique ou Programmation ? Trouvez le bon tuteur.",
+            "forTutors": "Pour les tuteurs",
+            "forTutorsDesc": "Vous êtes doué dans une matière et voulez aider les autres tout en gagnant un peu d'argent ?",
+            "howItWorks": "Comment ça marche ?",
+            "steps": [
+                "Choisir la matière et le cours",
+                "Contacter des tuteurs vérifiés",
+                "Convenir d'un rendez-vous et des conditions individuellement"
+            ],
+            "quality": "Garantie de qualité",
+            "qualityDesc": "Tous les tuteurs sont vérifiés par l'Association des Parents et recommandés par les professeurs de la matière.",
+            "viewList": "Voir la liste des tuteurs",
+            "back": "Retour à l'aperçu",
+            "badge": "Le succès ensemble",
+            "titleHighlight": "Le réseau de tutorat HTL",
+            "intro": "Personne ne connaît mieux les pièges d'un examen que celui qui l'a déjà réussi. Notre système de tutorat par les pairs associe des élèves motivés avec ceux qui ont besoin de soutien.",
+            "stats": [
+                {
+                    "title": "Plus de 50 tuteurs",
+                    "desc": "Toutes matières"
+                },
+                {
+                    "title": "Prix équitables",
+                    "desc": "Au sein de l'école"
+                }
+            ],
+            "findTitle": "Comment trouver un tuteur ?",
+            "findSteps": [
+                "Consultez le panneau d'affichage.",
+                "Demandez au conseil des élèves.",
+                "Utilisez notre formulaire de contact.",
+                "Rejoignez le groupe Discord officiel."
+            ],
+            "popularTitle": "Matières Populaires",
+            "subjects": [
+                "Mathématiques",
+                "Informatique",
+                "Électrotechnique",
+                "Mécanique",
+                "Programmation",
+                "Anglais",
+                "Économie",
+                "Laboratoires"
+            ],
+            "ctaTitle": "Envie de devenir tuteur ?",
+            "ctaDesc": "Aidez vos camarades et gagnez un peu d'argent. Nous vous soutenons dans vos démarches.",
+            "ctaBtn": "Postuler comme tuteur",
+            "noteTitle": "Avis Important",
+            "noteDesc": "Le tutorat se fait à titre privé. L'Association des Parents ne fournit que la plateforme. Nous recommandons un tarif entre 10€ et 15€/heure."
+        },
+        "coursesPage": {
+            "title": "Offre de Cours",
+            "subtitle": "Qualifications supplémentaires pour votre avenir.",
+            "heroDesc": "En collaboration avec la direction de l'école, nous proposons des cours exclusifs qui vont au-delà du programme normal.",
+            "currentCourses": "Cours actuels",
+            "features": [
+                "Directement sur le site de l'école après les cours",
+                "Formation pratique par des experts",
+                "Certificats et diplômes officiels"
+            ],
+            "suggestion": "Vous avez une proposition de cours ou souhaitez vous inscrire ?",
+            "registerBtn": "Inscription et informations",
+            "back": "Retour à l'aperçu",
+            "titleHighlight": "Des qualifications pour prendre de l'avance.",
+            "intro": "Nous soutenons l'acquisition de certificats reconnus au-delà du programme scolaire, renforçant ainsi les perspectives d'emploi de nos diplômés.",
+            "items": [
+                {
+                    "title": "Certification ECDL",
+                    "desc": "Passeport de Compétences Informatique Européen.",
+                    "badge": "Début : Hiv. 2025"
+                },
+                {
+                    "title": "Moulage par injection",
+                    "desc": "Formation pour génie mécanique et plastiques.",
+                    "badge": "Places restantes"
+                },
+                {
+                    "title": "Formation Sécurité",
+                    "desc": "Qualification obligatoire pour les ateliers.",
+                    "badge": "Module Obligatoire"
+                }
+            ],
+            "detailsBtn": "Demander des détails",
+            "whyBadge": "Pourquoi des cours ? ",
+            "whyTitle": "Un plus pour votre CV.",
+            "benefits": [
+                {
+                    "label": "Certification",
+                    "detail": "Validité Internationale"
+                },
+                {
+                    "label": "Avantages",
+                    "detail": "Avantage sur le marché"
+                }
+            ],
+            "points": [
+                "Accès économique via l'Association",
+                "Directement à l'école après les cours",
+                "Formation par des experts",
+                "Certificats officiels"
+            ]
+        }
     },
     "projects": {
         "title": "Projets",
@@ -366,5 +558,157 @@
     },
     "common": {
         "required": "Champ obligatoire"
+    },
+    "dashboard": {
+        "internal": {
+            "brand": "EV Interne",
+            "role": "Membre du Conseil",
+            "exit": "Vers le site",
+            "footer": "Version démo • Créé par Patrick K. & Antigravity"
+        },
+        "nav": {
+            "overview": "Aperçu",
+            "calendar": "Calendrier",
+            "messages": "Messages"
+        },
+        "calendar": {
+            "title": "Calendrier partagé",
+            "subtitle": "Toutes les dates et événements en un coup d'œil",
+            "add": "Ajouter un événement",
+            "edit": "Modifier l'événement",
+            "delete": "Supprimer l'événement",
+            "exportIcs": "Exporter en .ics",
+            "exportAll": "Exporter",
+            "exportSuccess": "Fichier calendrier téléchargé",
+            "exportAllSuccess": "Tous les événements exportés",
+            "noEventsToExport": "Aucun événement à exporter",
+            "updateSuccess": "Événement mis à jour",
+            "createSuccess": "Événement créé",
+            "deleteSuccess": "Événement supprimé",
+            "days": {
+                "sun": "Dim",
+                "mon": "Lun",
+                "tue": "Mar",
+                "wed": "Mer",
+                "thu": "Jeu",
+                "fri": "Ven",
+                "sat": "Sam"
+            },
+            "form": {
+                "title": "Titre *",
+                "titlePlaceholder": "ex. Soirée des parents",
+                "date": "Date *",
+                "time": "Heure",
+                "description": "Description",
+                "descriptionPlaceholder": "Détails optionnels...",
+                "save": "Enregistrer",
+                "create": "Créer",
+                "cancel": "Annuler"
+            },
+            "mock": {
+                "evt1Title": "Réunion du Conseil",
+                "evt1Desc": "Réunion mensuelle dans la salle de conférence.",
+                "evt2Title": "Fête de l'Été",
+                "evt2Desc": "Fête annuelle dans le jardin de l'école."
+            }
+        },
+        "overview": {
+            "title": "Aperçu du Dashboard",
+            "welcome": "Bon retour, {{name}}",
+            "stats": {
+                "events": "Projets ouverts",
+                "messages": "Projets approuvés",
+                "members": "Actus actives",
+                "reports": "Prochaine date"
+            },
+            "activity": {
+                "title": "Activités récentes",
+                "viewAll": "Tout afficher",
+                "less": "Moins",
+                "showLess": "Afficher moins",
+                "showMore": "{{count}} de plus",
+                "by": "par"
+            },
+            "actions": {
+                "title": "Accès rapide",
+                "post": "Nouveau projet",
+                "event": "Écrire une News",
+                "document": "Téléverser PV",
+                "newsTitle": "Rédiger une News",
+                "newsSuccess": "Démo : Brouillon de news enregistré",
+                "newsPlaceholderTitle": "ex. Date de la fête d'été",
+                "newsPlaceholderContent": "Entrez le texte de la news...",
+                "uploadTitle": "Téléverser PV",
+                "uploadSuccess": "Démo : Téléversement de PV simulé",
+                "uploadPlaceholderFile": "Glissez le fichier ici ou cliquez",
+                "uploadHint": "PDF, DOCX, JPG • max. 10 Mo",
+                "uploadDate": "Date de la séance",
+                "cancel": "Annuler",
+                "publish": "Publier",
+                "uploadBtn": "Téléverser",
+                "category": "Catégorie"
+            },
+            "mock": {
+                "a1": "Projet laptops IT approuvé",
+                "a2": "Nouveau PV de réunion mis en ligne",
+                "a3": "News : Date de la fête d'été",
+                "a4": "Projet d'entretien du jardin terminé",
+                "a5": "Réunion du conseil programmée",
+                "u1": "Conseil",
+                "u2": "Secrétaire",
+                "u3": "Équipe PR",
+                "u4": "Chef de projet",
+                "u5": "Président(e)",
+                "d1": "Il y a 2 heures",
+                "d2": "Hier",
+                "d3": "Il y a 2 jours",
+                "d4": "Il y a 3 jours",
+                "d5": "La semaine dernière",
+                "a6": "Entrée de test 1",
+                "d6": "Aujourd'hui",
+                "a7": "Entrée de test 2",
+                "d7": "Hier"
+            }
+        },
+        "messages": {
+            "title": "Messages",
+            "placeholder": "Écrire un message...",
+            "send": "Envoyer",
+            "empty": "Sélectionnez une conversation",
+            "mock": {
+                "c1": "Groupe du Conseil",
+                "c2": "Comptabilité",
+                "c3": "Planification de projets",
+                "m1": "Le budget de la fête d'été est-il approuvé ?",
+                "m2": "Facture pour les nouveaux laptops reçue.",
+                "m3": "On cherche encore des bénévoles pour la fête de l'école."
+            }
+        },
+        "settings": {
+            "title": "Paramètres",
+            "profile": {
+                "title": "Profil",
+                "name": "Nom",
+                "email": "E-mail"
+            },
+            "notifications": {
+                "title": "Notifications",
+                "email": "Notifications par e-mail",
+                "push": "Notifications push",
+                "weekly": "Résumé hebdomadaire"
+            },
+            "appearance": {
+                "title": "Apparence"
+            },
+            "security": {
+                "title": "Sécurité",
+                "changePassword": "Changer le mot de passe",
+                "current": "Mot de passe actuel",
+                "new": "Nouveau mot de passe",
+                "confirm": "Confirmer le mot de passe",
+                "success": "Mot de passe changé avec succès !"
+            },
+            "save": "Enreg. modifications"
+        }
     }
 }

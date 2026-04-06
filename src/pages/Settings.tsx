@@ -258,7 +258,7 @@ const Settings = () => {
                                             onClick={() => setIsChangingPassword(false)}
                                             className="flex-1 bg-muted text-foreground py-3 rounded-xl font-bold hover:bg-muted/80 transition-colors"
                                         >
-                                            Abbrechen
+                                            {t('dashboard.overview.actions.cancel', 'Abbrechen')}
                                         </button>
                                         <button
                                             type="submit"
