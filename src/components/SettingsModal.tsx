@@ -19,6 +19,11 @@ const LANGUAGES = [
     { code: 'pl', label: 'Polski', flag: '🇵🇱' },
     { code: 'pt', label: 'Português', flag: '🇵🇹' },
     { code: 'ar', label: 'العربية', flag: '🇦🇪' },
+    { code: 'ro', label: 'Română', flag: '🇷🇴' },
+    { code: 'hr', label: 'Hrvatski', flag: '🇭🇷' },
+    { code: 'sr', label: 'Srpski', flag: '🇷🇸' },
+    { code: 'sl', label: 'Slovenščina', flag: '🇸🇮' },
+    { code: 'hu', label: 'Magyar', flag: '🇭🇺' }
 ];
 
 const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {

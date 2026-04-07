@@ -1,0 +1,668 @@
+{
+    "nav": {
+        "home": "Acasă",
+        "news": "Noutăți",
+        "services": "Servicii",
+        "projects": "Proiecte",
+        "about": "Despre noi",
+        "contact": "Contact",
+        "login": "Autentificare",
+        "logout": "Deconectare",
+        "profile": "Profilul meu",
+        "aria": {
+            "menuToggle": "Comutare meniu",
+            "languageToggle": "Comutare limbă",
+            "themeToggle": "Comutare temă"
+        },
+        "serviceItems": {
+            "support": "Sprijin social",
+            "tutoring": "Meditații",
+            "courses": "Cursuri"
+        },
+        "dashboard": "Panou de control"
+    },
+    "footer": {
+        "links": "Linkuri rapide",
+        "legal": "Legal",
+        "socials": "Conectează-te cu noi",
+        "impressum": "Impressum",
+        "privacy": "Politica de confidențialitate",
+        "terms": "Termeni și condiții"
+    },
+    "news": {
+        "title": "Noutăți și evenimente",
+        "desc": "Fii la curent cu ultimele noutăți de la Asociația Părinților la HTL Mödling.",
+        "filters": {
+            "all": "Toate",
+            "news": "Noutăți",
+            "event": "Evenimente",
+            "protocol": "Protocoale"
+        },
+        "items": {
+            "agm": {
+                "title": "Adunarea Generală Anuală 2025",
+                "desc": "Invitație la adunarea generală ordinară a Asociației Părinților.",
+                "body": "Vă invităm cordial la Adunarea Generală Anuală a Asociației Părinților de la HTL Mödling. Întâlnirea va avea loc pe 15 octombrie 2025, la ora 18:00, în sala de festivități a HTL Mödling.\n\nOrdinea de zi include raportul anual al consiliului, raportul trezorierului cu descărcarea de gestiune a consiliului, alegerea ofițerilor asociației și stabilirea cotizației de membru pentru anul școlar următor.\n\nParticiparea dumneavoastră este deosebit de importantă, deoarece la această întâlnire se vor lua decizii esențiale pentru anul școlar 2025/26. Un vot prin procură este posibil în caz de absență. Vă rugăm să vă înregistrați până cel târziu la 10 octombrie 2025."
+            },
+            "sga": {
+                "title": "Procese Verbale ale Întâlnirii SGA",
+                "desc": "Procesele verbale de la ultima ședință a Comitetului Comunității Școlare sunt acum online.",
+                "body": "Procesele verbale de la cea mai recentă ședință a Comitetului Comunității Școlare (SGA) sunt acum disponibile pentru descărcare. S-au discutat subiecte importante privind operațiunile școlare în timpul sesiunii.\n\nPrincipalele rezoluții includ: aprobarea bugetului pentru evenimentele școlare din anul școlar curent, actualizări ale regulamentului școlar privind utilizarea telefoanelor mobile și planificarea serilor viitoare cu părinții și a evenimentelor informative.\n\nToți părinții sunt invitați să consulte procesele verbale complete și să contacteze Asociația Părinților cu orice întrebări. Următoarea întâlnire SGA este programată pentru decembrie 2025."
+            },
+            "funding": {
+                "title": "Noi oportunități de finanțare",
+                "desc": "Cererile de finanțare a proiectelor pot fi acum depuse digital.",
+                "body": "Cererile de finanțare pentru proiecte inovatoare ale elevilor pot fi depuse acum digital prin noul nostru portal online. Asociația Părinților a crescut bugetul pentru finanțarea proiectelor pentru anul școlar 2025/26.\n\nProiectele din toate departamentele HTL Mödling sunt eligibile pentru finanțare – de la Tehnologia Informației și Inginerie Mecanică la Inginerie Electrică, Inginerie Civilă și Chimie. Salutăm în special proiectele de colaborare inter-departamentale.\n\nCererile sunt analizate de consiliul Asociației Părinților și procesate în termen de trei săptămâni. La aprobare, fondurile sunt puse la dispoziție prompt. Toate informațiile despre procesul de aplicare pot fi găsite pe pagina noastră de proiecte."
+            },
+            "parentsDay": {
+                "title": "Ziua Părinților",
+                "desc": "Informații despre Ziua Părinților viitoare și rezervarea programărilor.",
+                "body": "Următoarea Zi a Părinților va avea loc pe 10 decembrie 2025 la HTL Mödling. Profitați de această oportunitate pentru a discuta despre progresul academic actual al copiilor dumneavoastră în conversații personale cu profesorii lor.\n\nRezervarea programărilor pentru întâlnirile individuale se face prin portalul școlii. Vă rugăm să rezervați din timp intervalele de timp preferate, deoarece acestea tind să se ocupe rapid. Fiecare întâlnire durează aproximativ zece minute.\n\nAsociația Părinților va fi prezentă cu un stand de informații. Suntem bucuroși să vă răspundem la întrebări despre serviciile noastre de asistență, oportunitățile de finanțare și evenimentele viitoare. Vor fi asigurate cafea și băuturi răcoritoare."
+            },
+            "festival": {
+                "title": "Excursie la Fabrica Fantasie",
+                "desc": "O vizită interesantă oferind perspective practice pentru elevi și părinți.",
+                "body": "Pe 15 octombrie 2026, Asociația Părinților organizează o excursie la Fabrica Fantasie. Elevii din toate departamentele și părinții lor sunt invitați cordial să obțină o perspectivă practică asupra industriei timp de o zi.\n\nFabrica Fantasie este o întreprindere tehnologică lider în regiune, oferind tururi exclusive ale unităților sale de producție, ateliere interactive și oportunități de networking cu profesioniști. Va fi asigurat catering la fața locului.\n\nÎnregistrarea este disponibilă prin portalul intern al Asociației Părinților. Locurile sunt limitate, astfel încât înregistrarea timpurie este recomandată. Transportul cu autobuzul de la HTL Mödling va fi organizat de Asociația Părinților și este gratuit pentru toți participanții."
+            },
+            "jhv": {
+                "title": "Procese verbale AGA 2025",
+                "desc": "Procese verbale de la ultima Adunare Generală Anuală. Rezultate importante ale votului.",
+                "body": "Procesele verbale complete ale Adunării Generale Anuale desfășurate pe 22 septembrie 2025 sunt acum disponibile pentru descărcare pentru toți membrii.\n\nLa voturi, raportul anual a fost aprobat în unanimitate, s-a confirmat cotizația de membru pentru anul școlar 2025/26, iar consiliul a fost descărcat de gestiune. Alegerile pentru consiliu au dus la numirea a trei noi membri cooptați.\n\nConsiliul mulțumește tuturor membrilor prezenți pentru discuția constructivă și interesul manifestat. Următoarele procese verbale vor fi publicate după sesiunea de toamnă."
+            },
+            "mentalHealth": {
+                "title": "Ziua Porților Deschise 2026",
+                "desc": "Vizitați atelierele și laboratoarele noastre de Ziua Porților Deschise.",
+                "body": "De Ziua Porților Deschise 2026, HTL Mödling își deschide porțile tuturor vizitatorilor interesați. Explorați atelierele, laboratoarele și sălile noastre de clasă și experimentați diversitatea educației noastre tehnice.\n\nAsociația Părinților va fi prezentă cu propriul stand de informații și vă stă la dispoziție pentru a răspunde la întrebări despre sprijinul școlar, oportunitățile de finanțare și activitățile asociației. În plus, vor fi oferite ateliere interactive pentru copii și tineri.\n\nAșteptăm cu nerăbdare vizita dumneavoastră și să vă prezentăm oportunitățile de la HTL Mödling. Cantina școlii, susținută de Asociația Părinților, va oferi băuturi răcoritoare."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Proprietar și editor media",
+        "contact": "Contact",
+        "zvr": "Număr ZVR",
+        "purpose": "Scopul asociației",
+        "purposeDesc": "Protejarea intereselor partenerilor asociației cu privire la activitatea de predare și educațională la școală, precum și promovarea cooperării dintre casă și școală."
+    },
+    "privacy": {
+        "intro": "Luăm foarte în serios protecția datelor dumneavoastră personale. Mai jos vă informăm despre prelucrarea datelor dumneavoastră.",
+        "responsible": "1. Partea Responsabilă",
+        "collection": "2. Colectarea și prelucrarea datelor",
+        "collectionDesc": "Prelucrăm date cu caracter personal pe care le obținem în cadrul calității de membru sau prin contactul dvs.",
+        "rights": "3. Drepturile dumneavoastră",
+        "rightsDesc": "În general, aveți dreptul la informare, rectificare, ștergere, restricționare, portabilitatea datelor, revocare și opoziție."
+    },
+    "home": {
+        "heroTitle": "Conectând părinții, profesorii și elevii",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Asociația Părinților",
+        "heroDesc": "Asociația Părinților este dedicată susținerii comunității școlare prin participare activă, finanțare și comunicare deschisă.",
+        "servicesLabel": "Serviciile noastre",
+        "servicesSub": "Inovația întâlnește comunitatea – Descoperă beneficiile noastre.",
+        "welcomeBadge": "Bun venit",
+        "getInvolved": "Implică-te",
+        "learnMore": "Află mai multe",
+        "latestNews": "Ultimele noutăți",
+        "insightsUpdates": "Informații și actualizări",
+        "viewAll": "Vezi tot",
+        "tags": {
+            "event": "Eveniment",
+            "protocol": "Protocol",
+            "news": "Noutate"
+        },
+        "heroBadge": "Activi pentru peste 3.000 de elevi",
+        "heroTitleFluid": "Modelăm viitorul împreună – pentru copiii noștri la HTL Mödling.",
+        "heroSubtitleFluid": "De la granturi pentru proiecte la asistență socială – suntem rețeaua puternică din spatele elevilor.",
+        "learnMoreScroll": "Află mai multe",
+        "benefits": {
+            "projTitle": "Finanțare",
+            "proj": "Sustinem financiar proiectele și educația",
+            "projLink": "/proiecte",
+            "suppTitle": "Suport",
+            "supp": "Legătura cu conducerea și șefii de departamente",
+            "suppLink": "/servicii",
+            "helpTitle": "Ajutor",
+            "help": "Sprijinim familiile dezavantajate social",
+            "helpLink": "/servicii",
+            "infoTitle": "Informare",
+            "info": "Meditații, cursuri, ajutor psihologic",
+            "infoLink": "/news",
+            "entTitle": "Divertisment",
+            "ent": "Balul de absolvire, petreceri, sărbătoarea Barbarei",
+            "entLink": "/news"
+        },
+        "socialProof": {
+            "title": "Voci din comunitatea noastră",
+            "s1": "\"Datorită Asociației Părinților, fiul nostru a putut să-și implementeze proiectul de diplomă.\"",
+            "a1": "- Mama unui elev de clasa a 5-a",
+            "s2": "\"Sprijinul rapid ne-a ajutat foarte mult.\"",
+            "a2": "- Familia unui elev"
+        },
+        "faq": {
+            "title": "Întrebări frecvente (FAQ)",
+            "subtitle": "Aici veți găsi răspunsuri la cele mai importante întrebări despre Asociația Părinților.",
+            "q1": "Pot ajuta chiar și fără o funcție în consiliu?",
+            "a1": "Da, cu siguranță! Primim cu bucurie fiecare ajutor la evenimentele sau proiectele noastre, fără a fi nevoie de un rol formal pe board.",
+            "q2": "Cât este taxa de membru?",
+            "a2": "Taxa de membru este stabilită anual la adunarea generală și beneficiază direct elevilor.",
+            "q3": "Cine poate aplica pentru sprijin?",
+            "a3": "Toți părinții elevilor de la HTL Mödling pot solicita ajutor în cazurile de dificultate socială sau pentru proiecte inovatoare ale elevilor.",
+            "q4": "Cum este asigurată transparența?",
+            "a4": "Ca asociație non-profit, suntem supuși unor audituri stricte. Utilizarea fondurilor este monitorizată anual de auditori și prezentată la adunarea generală.",
+            "badge": "Bine de știut"
+        },
+        "showcase1": {
+            "badge": "Suport în practică",
+            "title": "Echipamente pentru viitor",
+            "desc": "Prin contribuțiile părinților, finanțăm echipamente de ultimă generație, materiale de laborator și proiecte care altfel nu și-ar avea locul în bugetul școlar obișnuit."
+        },
+        "showcase2": {
+            "badge": "Ajută și Informează",
+            "title": "Consolidăm Comunitatea.<br/>Arătăm Prezența.",
+            "desc": "Pe lângă sprijinul financiar, organizăm excursii, consolidăm coeziunea socială în excursiile școlare și informăm activ despre preocupările curente în prezentări și întâlniri.",
+            "link": "Serviciile noastre"
+        }
+    },
+    "about": {
+        "title": "Despre Asociația Părinților",
+        "desc": "Asociația Părinților este o organizație voluntară a părinților și tutorilor dedicată promovării bunăstării elevilor și a școlii.",
+        "mission": "Misiunea Noastră",
+        "missionDesc": "Promovarea unei relații strânse între casă și școală, astfel încât părinții și profesorii să coopereze inteligent în educarea copiilor lor.",
+        "whatWeDo": "Ce Facem Noi",
+        "points": [
+            "Organizăm evenimente și strângeri de fonduri",
+            "Susținem financiar proiectele școlare",
+            "Reprezentăm interesele părinților în comitetele școlare",
+            "Facilităm comunicarea între părinți și școală"
+        ],
+        "board": {
+            "viewDetails": "Vedeți detaliile complete"
+        },
+        "paymentHint": "Faceți clic pentru detaliile de plată"
+    },
+    "costs": {
+        "title": "Calitatea de membru și costuri",
+        "desc": "Gestionarea transparentă a contribuțiilor dumneavoastră.",
+        "membership": "Taxă de membru",
+        "allocation": "Alocarea fondurilor",
+        "details": "Taxa de membru este folosită 100% în beneficiul elevilor.",
+        "membershipPerYear": "An pe familie",
+        "paymentTitle": "Detalii de plată",
+        "copyIban": "Copiază IBAN",
+        "copyBic": "Copiază BIC",
+        "reference": "Referință",
+        "referenceExample": "Cotizație de membru EV + Nume + Clasă",
+        "referenceExampleCopyTxt": "Cotizație de membru EV",
+        "copyReference": "Copiază Referința",
+        "paymentNote": "Datele sunt orientative. Vă rugăm să contactați consiliul pentru informațiile actuale de plată."
+    },
+    "contact": {
+        "title": "Contactați-ne",
+        "subtitle": "Intrați în legătură",
+        "desc": "Aveți întrebări sau doriți să vă implicați? Contactați-ne direct sau completați formularul.",
+        "form": {
+            "name": "Nume",
+            "email": "E-mail",
+            "message": "Mesaj",
+            "send": "Trimite mesaj",
+            "namePlaceholder": "Numele dumneavoastră",
+            "emailPlaceholder": "nume@exemplu.com",
+            "messagePlaceholder": "Cum te putem ajuta?",
+            "infoText": "Suntem aici pentru tine. Contactează-ne direct prin e-mail, telefon sau vizitează-ne în timpul orelor de program.",
+            "officeLabel": "Birou",
+            "officeLocation": "Clădirea principală a școlii, Sala 101",
+            "phoneLabel": "Telefon",
+            "emailLabel": "E-mail"
+        }
+    },
+    "login": {
+        "title": "Autentificare",
+        "subtitle": "Accesați zona internă pentru părinți și profesori.",
+        "email": "Adresă de e-mail",
+        "password": "Parolă",
+        "emailPlaceholder": "nume@exemplu.com",
+        "submit": "Conectare",
+        "register": "Nu ai cont? Înregistrează-te",
+        "forgot": "Ai uitat parola?",
+        "closeButton": "Închide"
+    },
+    "newsAria": {
+        "categories": "Categorii Noutăți"
+    },
+    "services": {
+        "title": "Serviciile noastre",
+        "desc": "Susținem elevii și familiile cu ajutor financiar, programe de meditații și cursuri educaționale.",
+        "support": "Sprijin social",
+        "supportDesc": "Asistență financiară pentru evenimente și materiale școlare.",
+        "supportPoints": [
+            "Granturi pentru săptămânile școlare",
+            "Sprijin pentru costurile materialelor",
+            "Ajutor financiar discret"
+        ],
+        "tutoring": "Listă meditații",
+        "tutoringDesc": "Conectează-te cu tutori calificați.",
+        "tutoringPoints": [
+            "Rețea de meditații peer-to-peer",
+            "Tutori elevi verificați",
+            "Condiții echitabile"
+        ],
+        "courses": "Cursuri",
+        "coursesDesc": "Oportunități educaționale suplimentare.",
+        "coursesPoints": [
+            "Certificări ECDL",
+            "Cursuri de turnare prin injecție",
+            "Pregătire pentru examene"
+        ],
+        "learnMore": "Află mai multe",
+        "socialSupport": {
+            "back": "Înapoi la Prezentare",
+            "titleHighlight": "Nimeni nu este lăsat în urmă.",
+            "intro": "O preocupare centrală a Asociației Părinților este de a permite elevilor din familii dezavantajate financiar să participe la evenimentele școlare. Noi ajutăm acolo unde subvențiile de stat sunt insuficiente.",
+            "points": [
+                "Grant pentru săptămâni de școală (sport și proiecte)",
+                "Suport pentru costurile materialelor",
+                "Ajutor individual de urgență"
+            ],
+            "whoTitle": "Cine poate aplica?",
+            "whoDesc": "Toți tutorii legali ai elevilor de la HTL Mödling care sunt membri ai Asociației Părinților pot aplica. Sprijinul este oferit discret și nebirocratic.",
+            "confidential": "* Toate cererile sunt strict confidențiale.",
+            "processTitle": "Procesul de finanțare",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Trimiteți cererea",
+                    "desc": "Trimiteți o solicitare prin formularul de contact sau e-mail."
+                },
+                {
+                    "step": "02",
+                    "title": "Revizuire",
+                    "desc": "Consiliul va revizui cererea prompt și discret."
+                },
+                {
+                    "step": "03",
+                    "title": "Plată",
+                    "desc": "La aprobare, suma va fi transferată direct școlii sau organizatorului."
+                }
+            ],
+            "qTitle": "Întrebări despre finanțare?",
+            "qDesc": "Suntem bucuroși să te consiliem și să te sprijinim în procesul de aplicare.",
+            "contactBtn": "Contactați-ne acum"
+        },
+        "tutoringPage": {
+            "back": "Înapoi la Prezentare",
+            "subtitle": "De la elevi pentru elevi",
+            "badge": "Succes împreună",
+            "titleHighlight": "Rețeaua de meditații HTL",
+            "intro": "Nimeni nu cunoaște capcanele unui examen mai bine decât cineva care l-a promovat deja. Sistemul nostru de meditații peer-to-peer conectează elevi motivați din anii mari cu elevi care au nevoie de sprijin.",
+            "stats": [
+                {
+                    "title": "Peste 50 de tutori",
+                    "desc": "În toate materiile"
+                },
+                {
+                    "title": "Prețuri corecte",
+                    "desc": "În cadrul HTL"
+                }
+            ],
+            "findTitle": "Cum găsesc meditații?",
+            "findSteps": [
+                "Verificați avizierul actual din hol.",
+                "Întrebați direct consiliul elevilor (SV).",
+                "Utilizați formularul nostru de contact.",
+                "Alăturați-vă grupului oficial de Discord/Messenger."
+            ],
+            "popularTitle": "Materii populare",
+            "subjects": [
+                "Matematică",
+                "Informatică Aplicată",
+                "Inginerie Electrică",
+                "Mecanică",
+                "Programare",
+                "Engleză",
+                "Economie",
+                "Exerciții de Laborator"
+            ],
+            "ctaTitle": "Vrei să devii chiar tu tutore?",
+            "ctaDesc": "Ajută-ți colegii, aprofundează-ți cunoștințele și câștigă niște bani în plus. Te sprijinim cu medierea.",
+            "ctaBtn": "Aplică acum ca tutore",
+            "noteTitle": "Notă importantă",
+            "noteDesc": "Meditațiile se desfășoară în regim privat între elevi. Asociația Părinților oferă doar platforma și contactele. Recomandăm tarife corecte între 10 € și 15 € pe oră."
+        },
+        "coursesPage": {
+            "back": "Înapoi la Prezentare",
+            "subtitle": "Mai mult decât simplă predare",
+            "titleHighlight": "Calificări suplimentare pentru un avans.",
+            "intro": "Susținem dobândirea de certificate recunoscute internațional și cursuri speciale care depășesc curriculumul obișnuit. Acest lucru întărește perspectivele de angajare ale absolvenților noștri.",
+            "items": [
+                {
+                    "title": "Certificare ECDL",
+                    "desc": "Permisul european de conducere a computerului pentru toate clasele.",
+                    "badge": "Start: WS 2025"
+                },
+                {
+                    "title": "Tehnologia turnării prin injecție",
+                    "desc": "Instruire specială pentru inginerie mecanică și a maselor plastice.",
+                    "badge": "Locuri rămase"
+                },
+                {
+                    "title": "Instruire de siguranță",
+                    "desc": "Calificare suplimentară pentru operațiunile de atelier din anii mari.",
+                    "badge": "Modul obligatoriu"
+                }
+            ],
+            "detailsBtn": "Solicită detalii",
+            "whyBadge": "De ce cursuri suplimentare?",
+            "whyTitle": "Plusul din CV-ul tău.",
+            "benefits": [
+                {
+                    "label": "Certificare",
+                    "detail": "Valabilitate internațională"
+                },
+                {
+                    "label": "Avantaje",
+                    "detail": "Avantaj pe piața muncii"
+                }
+            ],
+            "points": [
+                "Acces eficient prin Asociația Părinților",
+                "Direct la școală după ore",
+                "Instruire practică de către experți",
+                "Certificate și diplome oficiale"
+            ],
+            "suggestion": "Ai o sugestie de curs sau dorești să te înregistrezi?",
+            "registerBtn": "Înregistrare și Info"
+        }
+    },
+    "projects": {
+        "title": "Proiecte",
+        "currentTitle": "Proiecte curente",
+        "desc": "Un istoric al proiectelor și inițiativelor finanțate.",
+        "archive": "Arhiva proiectelor",
+        "viewArchive": "Vezi arhiva",
+        "ariaLabel": "Anii arhivei",
+        "overview": "Prezentare proiect",
+        "viewOverview": "Starea cererii",
+        "backToCurrent": "Înapoi la Prezentare",
+        "archiveDesc": "Istoricul anilor școlari trecuți.",
+        "year": "An",
+        "fundedProjects": "Proiecte finanțate",
+        "items": {
+            "physics": {
+                "title": "Echipament nou lab fizică",
+                "status": "În curs"
+            },
+            "library": {
+                "title": "Modernizarea bibliotecii",
+                "status": "Aprobat"
+            },
+            "garden": {
+                "title": "Locuri de relaxare în grădina școlii",
+                "status": "Finalizat"
+            }
+        },
+        "apply": {
+            "title": "Trimite un proiect",
+            "desc": "Utilizați acest formular pentru a depune digital cererea de finanțare.",
+            "button": "Începe o cerere nouă",
+            "dashboardTitle": "Cereri depuse (2025/26)",
+            "dashboardDesc": "Gestionează și urmărește starea proiectelor tale",
+            "form": {
+                "title": "Titlu proiect",
+                "applicant": "Solicitant / Departament",
+                "description": "Descriere detaliată a proiectului",
+                "costs": "Finanțare necesară (€)",
+                "placeholderCosts": "0.00",
+                "files": "Atașamente (Oferte, Planuri)",
+                "submit": "Trimite propunerea",
+                "success": "Propunerea ta a fost trimisă cu succes!",
+                "titlePlaceholder": "ex: Upgrade IT Lab",
+                "applicantPlaceholder": "Numele tău / Clasa",
+                "descriptionPlaceholder": "Descrie proiectul tău...",
+                "uploadText": "Trage și plasează fișierele aici sau dă clic",
+                "successSEO": "Propunerea ta de proiect a fost trimisă cu succes."
+            }
+        },
+        "overviewTable": {
+            "title": "Propuneri depuse (2025/26)",
+            "headers": {
+                "project": "Proiect",
+                "applicant": "Solicitant",
+                "department": "Departament",
+                "date": "Data",
+                "cost": "Cost",
+                "status": "Stare"
+            },
+            "filters": {
+                "label": "Filtre:",
+                "ariaLabel": "Acțiuni Proiect",
+                "search": "Caută proiecte...",
+                "allStatus": "Toate stările",
+                "allDepts": "Toate departamentele"
+            },
+            "departments": {
+                "IT": "Tehnologia Informației",
+                "ME": "Inginerie Mecanică",
+                "ET": "Inginerie Electrică",
+                "GEN": "General",
+                "BAU": "Inginerie Civilă",
+                "EL": "Electronică",
+                "CH": "Chimie",
+                "SP": "Sport",
+                "FIN": "Finanțe"
+            },
+            "noResults": "Nicio cerere găsită.",
+            "status": {
+                "approved": "Aprobat",
+                "pending": "În așteptare",
+                "rejected": "Respins"
+            }
+        }
+    },
+    "board": {
+        "title": "Consiliul nostru",
+        "desc": "Echipa dedicată din spatele Asociației Părinților.",
+        "roles": {
+            "chair": "Președinte",
+            "viceChair": "Vicepreședinte",
+            "treasurer": "Trezorier",
+            "secretary": "Secretar",
+            "member": "Membru cooptat",
+            "auditor": "Auditor"
+        }
+    },
+    "statutes": {
+        "title": "Statute",
+        "desc": "Fundamentul juridic al asociației noastre.",
+        "download": "Descarcă PDF"
+    },
+    "terms": {
+        "title": "Termeni și condiții",
+        "desc": "Reguli și reglementări."
+    },
+    "cookieBanner": {
+        "text": "Folosim doar cookie-uri tehnic necesare pentru a activa setările de limbă și autentificarea.",
+        "accept": "Am înțeles",
+        "privacyLink": "Politica de confidențialitate"
+    },
+    "settings": {
+        "title": "Setări",
+        "language": "Limbă",
+        "theme": "Design",
+        "lightMode": "Luminat",
+        "darkMode": "Întunecat",
+        "note": "Modificările sunt aplicate imediat."
+    },
+    "newsArticle": {
+        "readArticle": "Citește articolul",
+        "author": "Autor",
+        "authorName": "Consiliul Asociației Părinților",
+        "category": "Categorie",
+        "share": "Partajează",
+        "shareCopied": "Link copiat!",
+        "print": "Imprimă",
+        "details": "Detalii și date importante",
+        "detailStart": "Start: Conform invitației",
+        "detailLocation": "Locație: Sala de festivități sau online",
+        "detailRegistration": "Înregistrare: Obligatorie prin portalul intern",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "Evenimentul are loc în clădirea principală sau în atelierele respective.",
+        "ctaTitle": "Ai întrebări despre asta?",
+        "ctaDesc": "Suntem bucuioși să te ajutăm cu orice nelămurire.",
+        "ctaButton": "Contactează-ne",
+        "contactNote": "Pentru întrebări, contactați biroul nostru la office@elternverein.today"
+    },
+    "common": {
+        "required": "Câmp obligatoriu"
+    },
+    "dashboard": {
+        "internal": {
+            "brand": "EV Intern",
+            "role": "Membru Consiliu",
+            "exit": "Spre Website",
+            "footer": "Versiune Demo • Creat de Patrick K. & Antigravity"
+        },
+        "nav": {
+            "overview": "Prezentare",
+            "calendar": "Calendar",
+            "messages": "Mesaje"
+        },
+        "calendar": {
+            "title": "Calendar comun",
+            "subtitle": "Vezi și gestionează toate evenimentele",
+            "add": "Adaugă eveniment",
+            "edit": "Editează",
+            "delete": "Șterge",
+            "exportIcs": "Exportă ca .ics",
+            "exportAll": "Exportă tot",
+            "exportSuccess": "Fișier descărcat",
+            "exportAllSuccess": "Toate evenimentele exportate",
+            "noEventsToExport": "Niciun eveniment de exportat",
+            "updateSuccess": "Eveniment actualizat",
+            "createSuccess": "Eveniment creat",
+            "deleteSuccess": "Eveniment șters",
+            "days": {
+                "sun": "Dum",
+                "mon": "Lun",
+                "tue": "Mar",
+                "wed": "Mie",
+                "thu": "Joi",
+                "fri": "Vin",
+                "sat": "Sâm"
+            },
+            "form": {
+                "title": "Titlu *",
+                "titlePlaceholder": "ex: Seara Părinților",
+                "date": "Data *",
+                "time": "Ora",
+                "description": "Descriere",
+                "descriptionPlaceholder": "Detalii opționale...",
+                "save": "Salvează",
+                "create": "Creează",
+                "cancel": "Anulează"
+            },
+            "mock": {
+                "evt1Title": "Ședință Consiliu",
+                "evt1Desc": "Ședință lunară în sala de consiliu.",
+                "evt2Title": "Petrecerea de vară",
+                "evt2Desc": "Petrecere anuală în grădina școlii."
+            }
+        },
+        "overview": {
+            "title": "Panou de control",
+            "welcome": "Bine ai revenit, {{name}}",
+            "stats": {
+                "events": "Proiecte deschise",
+                "messages": "Proiecte aprobate",
+                "members": "Noutăți active",
+                "reports": "Următorul eveniment"
+            },
+            "activity": {
+                "title": "Activitate recentă",
+                "viewAll": "Vezi tot",
+                "less": "Mai puțin",
+                "showLess": "Arată mai puțin",
+                "showMore": "+ încă {{count}}",
+                "by": "de"
+            },
+            "actions": {
+                "title": "Acțiuni rapide",
+                "post": "Proiect nou",
+                "event": "Scrie noutăți",
+                "document": "Skenare protocol",
+                "newsTitle": "Compune noutate",
+                "newsSuccess": "Demo: Draft salvat",
+                "newsPlaceholderTitle": "ex: Data festivalului",
+                "newsPlaceholderContent": "Introdu textul...",
+                "uploadTitle": "Încarcă protocol",
+                "uploadSuccess": "Demo: Simulare upload",
+                "uploadPlaceholderFile": "Trage fișierul aici sau dă clic",
+                "uploadHint": "PDF, DOCX, JPG • max. 10 MB",
+                "uploadDate": "Data sesiunii",
+                "cancel": "Anulează",
+                "publish": "Publică",
+                "uploadBtn": "Încarcă",
+                "category": "Categorie"
+            },
+            "mock": {
+                "a1": "Proiect laptopuri IT aprobat",
+                "a2": "Proces verbal nou încărcat",
+                "a3": "Noutate: Data petrecerii de vară",
+                "a4": "Proiect grădină finalizat",
+                "a5": "Ședință consiliu programată",
+                "u1": "Consiliu",
+                "u2": "Secretar",
+                "u3": "Echipa PR",
+                "u4": "Lead Proiect",
+                "u5": "Președinte",
+                "d1": "acum 2 ore",
+                "d2": "Ieri",
+                "d3": "acum 2 zile",
+                "d4": "acum 3 zile",
+                "d5": "Săptămâna trecută",
+                "a6": "Test intrare 1",
+                "d6": "Azi",
+                "a7": "Test intrare 2",
+                "d7": "Ieri"
+            }
+        },
+        "messages": {
+            "title": "Mesaje",
+            "placeholder": "Scrie un mesaj...",
+            "send": "Trimite",
+            "empty": "Selectează o conversație",
+            "mock": {
+                "c1": "Grup Consiliu",
+                "c2": "Contabilitate",
+                "c3": "Planificare Proiecte",
+                "m1": "S-a aprobat bugetul?",
+                "m2": "Factura primită.",
+                "m3": "Mai avem nevoie de voluntari."
+            }
+        },
+        "settings": {
+            "title": "Setări",
+            "profile": {
+                "title": "Profil",
+                "name": "Nume",
+                "email": "E-mail"
+            },
+            "notifications": {
+                "title": "Notificări",
+                "email": "E-mail",
+                "push": "Push",
+                "weekly": "Sumar săptămânal"
+            },
+            "appearance": {
+                "title": "Aspect"
+            },
+            "security": {
+                "title": "Securitate",
+                "changePassword": "Schimbă parola",
+                "current": "Parola curentă",
+                "new": "Parola nouă",
+                "confirm": "Confirmă parola",
+                "success": "Parolă schimbată!"
+            },
+            "save": "Salvează modificările"
+        }
+    }
+}

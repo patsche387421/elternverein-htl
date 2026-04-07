@@ -1,0 +1,668 @@
+{
+    "nav": {
+        "home": "Kezdőlap",
+        "news": "Hírek",
+        "services": "Szolgáltatások",
+        "projects": "Projektek",
+        "about": "Rólunk",
+        "contact": "Kapcsolat",
+        "login": "Bejelentkezés",
+        "logout": "Kijelentkezés",
+        "profile": "Profilom",
+        "aria": {
+            "menuToggle": "Menü váltása",
+            "languageToggle": "Nyelv váltása",
+            "themeToggle": "Téma váltása"
+        },
+        "serviceItems": {
+            "support": "Szociális támogatás",
+            "tutoring": "Korrepetálás",
+            "courses": "Tanfolyamok"
+        },
+        "dashboard": "Vezérlőpult"
+    },
+    "footer": {
+        "links": "Gyorslinkek",
+        "legal": "Jogi információk",
+        "socials": "Lépjen kapcsolatba velünk",
+        "impressum": "Impresszum",
+        "privacy": "Adatvédelmi nyilatkozat",
+        "terms": "Általános szerződési feltételek"
+    },
+    "news": {
+        "title": "Hírek és események",
+        "desc": "Maradjon naprakész a HTL Mödling Szülői Munkaközösségének legfrissebb híreivel.",
+        "filters": {
+            "all": "Összes",
+            "news": "Hírek",
+            "event": "Események",
+            "protocol": "Jegyzőkönyvek"
+        },
+        "items": {
+            "agm": {
+                "title": "Éves Közgyűlés 2025",
+                "desc": "Meghívó a Szülői Munkaközösség rendes közgyűlésére.",
+                "body": "Szeretettel meghívjuk Önt a HTL Mödling Szülői Munkaközösségének éves közgyűlésére. A találkozó 2025. október 15-én 18:00-kor lesz a HTL Mödling dísztermében.\n\nA napirend tartalmazza a vezetőség éves beszámolóját, a pénztáros jelentését, a vezetőség tisztújítását és a következő tanév tagdíjának megállapítását.\n\nAz Ön részvétele rendkívül fontos, mivel ezen a találkozón születnek meg a 2025/26-os tanév alapvető döntései. Kérjük, regisztráljon legkésőbb 2025. október 10-ig."
+            },
+            "sga": {
+                "title": "SGA ülés jegyzőkönyve",
+                "desc": "Az Iskolaszék legutóbbi ülésének jegyzőkönyve már elérhető online.",
+                "body": "Az Iskolaszék (SGA) legutóbbi ülésének jegyzőkönyve letölthető. Az ülésen fontos iskolai működési kérdéseket vitattak meg.\n\nA főbb határozatok közé tartozik: a folyó tanév iskolai rendezvényeinek költségvetési jóváhagyása, a mobiltelefon-használatra vonatkozó iskolai házirend frissítése, valamint a jövőbeni szülői értekezletek és tájékoztatók tervezése.\n\nKérjük a szülőket, tekintsék meg a teljes jegyzőkönyvet, és kérdés esetén forduljanak a Szülői Munkaközösséghez."
+            },
+            "funding": {
+                "title": "Új pályázati lehetőségek",
+                "desc": "A projektfinanszírozási kérelmek mostantól digitálisan is benyújthatók.",
+                "body": "Az innovatív diákprojektek támogatási kérelmei már digitálisan is benyújthatók az új online portálunkon keresztül. A Szülői Munkaközösség növelte a projektfinanszírozási keretet a 2025/26-os tanévre.\n\nA HTL Mödling összes tanszékének projektjei pályázhatnak – az informatikától és a gépészettől az elektrotechnikáig, az építőmérnöki szakig és a kémiáig. Különösen üdvözöljük a tanszékek közötti együttműködési projekteket.\n\nA kérelmeket három héten belül feldolgozzuk, és jóváhagyás esetén a források azonnal rendelkezésre állnak."
+            },
+            "parentsDay": {
+                "title": "Szülői Nap",
+                "desc": "Információk a közelgő Szülői Napról és időpontfoglalásról.",
+                "body": "A következő Szülői Nap 2025. december 10-én lesz a HTL Mödlingben. Használja ki ezt a lehetőséget, hogy személyesen egyeztessen a tanárokkal gyermeke tanulmányi előmeneteléről.\n\nAz egyéni megbeszélésekre az iskolai portálon keresztül lehet időpontot foglalni. Javasoljuk a korai foglalást, mert az időpontok hamar betelnek.\n\nA Szülői Munkaközösség információs pulttal várja Önöket, ahol válaszolunk a támogatási lehetőségekkel kapcsolatos kérdésekre. Kávé és frissítők biztosítottak."
+            },
+            "festival": {
+                "title": "Kirándulás a Fantasie vállalathoz",
+                "desc": "Izgalmas üzemlátogatás gyakorlati betekintéssel diákoknak és szülőknek.",
+                "body": "2026. október 15-én a Szülői Munkaközösség szakmai kirándulást szervez a Fantasie vállalathoz. Minden tanszék diákját és szüleit szeretettel várjuk, hogy egy napra bepillantást nyerjenek az ipari gyakorlatba.\n\nA Fantasie vállalat a régió egyik vezető technológiai cége, amely exkluzív üzemlátogatást, interaktív workshopokat és kapcsolatépítési lehetőségeket kínál. A buszos utazás ingyenes minden résztvevő számára."
+            },
+            "jhv": {
+                "title": "Közgyűlési jegyzőkönyv 2025",
+                "desc": "A legutóbbi éves közgyűlés jegyzőkönyve. Fontos szavazási eredmények.",
+                "body": "A 2025. szeptember 22-én tartott éves közgyűlés hitelesített jegyzőkönyve letölthető minden tag számára.\n\nAz éves beszámolót egyhangúlag elfogadták, megerősítették a következő tanév tagdíját, és megválasztották az új tisztségviselőket. Köszönjük a jelenlévőknek a konstruktív vitát."
+            },
+            "mentalHealth": {
+                "title": "Nyílt Nap 2026",
+                "desc": "Látogassa meg műhelyeinket és laboratóriumainkat a Nyílt Napon.",
+                "body": "A 2026-os Nyílt Napon a HTL Mödling megnyitja kapuit minden érdeklődő előtt. Fedezze fel műhelyeinket, laboratóriumainkat és tantermeinket, és ismerje meg technikai képzésünk sokszínűségét.\n\nA Szülői Munkaközösség saját standdal lesz jelen, ahol válaszolunk az iskolai támogatásokkal és az egyesület tevékenységével kapcsolatos kérdésekre. Iskolai büfénk frissítőkkel várja Önöket."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Médiatulajdonos és kiadó",
+        "contact": "Kapcsolat",
+        "zvr": "ZVR szám",
+        "purpose": "Az egyesület célja",
+        "purposeDesc": "A szülők érdekeinek képviselete az iskolai oktatási és nevelési munkával kapcsolatban, valamint az iskola és a szülői ház közötti együttműködés elősegítése."
+    },
+    "privacy": {
+        "intro": "Személyes adatainak védelmét nagyon komolyan vesszük. Az alábbiakban tájékoztatjuk Önt adatainak kezeléséről.",
+        "responsible": "1. Felelős fél",
+        "collection": "2. Adatgyűjtés és feldolgozás",
+        "collectionDesc": "A tagság keretében vagy a kapcsolatfelvétel során kapott személyes adatokat dolgozzuk fel.",
+        "rights": "3. Az Ön jogai",
+        "rightsDesc": "Önnek joga van a tájékoztatáshoz, helyesbítéshez, törléshez, a feldolgozás korlátozásához, az adathordozhatósághoz és a tiltakozáshoz."
+    },
+    "home": {
+        "heroTitle": "Szülők, tanárok és diákok összekapcsolása",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Szülői Munkaközösség",
+        "heroDesc": "A Szülői Munkaközösség az iskolai közösség támogatása mellett köteleződött el aktív részvétellel, finanszírozással és nyílt kommunikációval.",
+        "servicesLabel": "Szolgáltatásaink",
+        "servicesSub": "Az innováció találkozik a közösséggel – Fedezze fel előnyeinket.",
+        "welcomeBadge": "Üdvözöljük",
+        "getInvolved": "Vegyen részt",
+        "learnMore": "Tudjon meg többet",
+        "latestNews": "Legfrissebb hírek",
+        "insightsUpdates": "Betekintések és frissítések",
+        "viewAll": "Összes megtekintése",
+        "tags": {
+            "event": "Esemény",
+            "protocol": "Jegyzőkönyv",
+            "news": "Hír"
+        },
+        "heroBadge": "Aktív segítség több mint 3000 diáknak",
+        "heroTitleFluid": "Együtt tesszük lehetővé a jövőt – gyermekeinkért a HTL Mödlingben.",
+        "heroSubtitleFluid": "A projektpályázatoktól a szociális támogatásokig – mi vagyunk az erős hálózat a diákok mögött.",
+        "learnMoreScroll": "Tudjon meg többet",
+        "benefits": {
+            "projTitle": "Finanszírozás",
+            "proj": "Projektek és oktatás pénzügyi támogatása",
+            "projLink": "/projektek",
+            "suppTitle": "Támogatás",
+            "supp": "Kapcsolat a vezetőséggel és a tanszékvezetőkkel",
+            "suppLink": "/szolgaltatasok",
+            "helpTitle": "Segítség",
+            "help": "Szociálisan hátrányos helyzetű családok segítése",
+            "helpLink": "/szolgaltatasok",
+            "infoTitle": "Tájékoztatás",
+            "info": "Korrepetálás, tanfolyamok, pszichológiai segítség",
+            "infoLink": "/news",
+            "entTitle": "Szórakozás",
+            "ent": "Érettségi bálok, ünnepségek, Borbála-napi est",
+            "entLink": "/news"
+        },
+        "socialProof": {
+            "title": "Hangok a közösségünkből",
+            "s1": "\"A Szülői Munkaközösségnek köszönhetően a fiunk meg tudta valósítani a diplomamunkáját.\"",
+            "a1": "- Egy ötödikes diák édesanyja",
+            "s2": "\"A gyors támogatás sokat segített nekünk.\"",
+            "a2": "- Egy diák családja"
+        },
+        "faq": {
+            "title": "Gyakran Ismételt Kérdések (FAQ)",
+            "subtitle": "Itt választ talál a legfontosabb kérdésekre a Szülői Munkaközösségről.",
+            "q1": "Segíthetek akkor is, ha nincs tisztségem a vezetőségben?",
+            "a1": "Igen, természetesen! Minden segítséget szívesen fogadunk rendezvényeinken vagy projektjeinknél, formális tisztség nélkül is.",
+            "q2": "Mennyi a tagdíj?",
+            "a2": "A tagdíjat évente a közgyűlésen állapítják meg, és közvetlenül a diákok javát szolgálja.",
+            "q3": "Ki igényelhet támogatást?",
+            "a3": "Minden HTL Mödling diák szülei kérhetnek segítséget szociális rászorultság esetén vagy innovatív diákprojektekhez.",
+            "q4": "Hogyan biztosított az átláthatóság?",
+            "a4": "Non-profit szervezetként szigorú ellenőrzéseknek vetnek alá minket. A források felhasználását évente könyvvizsgálók ellenőrzik.",
+            "badge": "Jó tudni"
+        },
+        "showcase1": {
+            "badge": "Gyakorlati támogatás",
+            "title": "Felszerelés a jövőhöz",
+            "desc": "A szülői hozzájárulásokból korszerű berendezéseket, laboratóriumi anyagokat és projekteket finanszírozunk."
+        },
+        "showcase2": {
+            "badge": "Segítség és Tájékoztatás",
+            "title": "Erősítse a közösséget.<br/>Mutasson jelenlétet.",
+            "desc": "A pénzügyi támogatás mellett kirándulásokat szervezünk, erősítjük a szociális összetartást és aktívan tájékoztatunk." ,
+            "link": "Szolgáltatásaink"
+        }
+    },
+    "about": {
+        "title": "A Szülői Munkaközösségről",
+        "desc": "A Szülői Munkaközösség a szülők önkéntes szervezete, amely a diákok és az iskola jólétének előmozdításáért dolgozik.",
+        "mission": "Küldetésünk",
+        "missionDesc": "Az iskola és a szülői ház közötti szoros kapcsolat elősegítése, hogy a szülők és a tanárok együttműködjenek a gyermekek nevelésében.",
+        "whatWeDo": "Mit csinálunk",
+        "points": [
+            "Rendezvényeket és adománygyűjtéseket szervezünk",
+            "Pénzügyileg támogatjuk az iskolai projekteket",
+            "Képviseljük a szülők érdekeit az iskolai bizottságokban",
+            "Segítjük a szülők és az iskola közötti kommunikációt"
+        ],
+        "board": {
+            "viewDetails": "Részletek megtekintése"
+        },
+        "paymentHint": "Kattintson a fizetési részletekért"
+    },
+    "costs": {
+        "title": "Tagság és költségek",
+        "desc": "Hozzájárulásainak átlátható kezelése.",
+        "membership": "Tagdíj",
+        "allocation": "Források felhasználása",
+        "details": "A tagdíjat 100%-ban a diákok javára fordítjuk.",
+        "membershipPerYear": "Évente / család",
+        "paymentTitle": "Fizetési részletek",
+        "copyIban": "IBAN másolása",
+        "copyBic": "BIC másolása",
+        "reference": "Közlemény",
+        "referenceExample": "EV tagdíj + Név + Osztály",
+        "referenceExampleCopyTxt": "EV tagdíj",
+        "copyReference": "Közlemény másolása",
+        "paymentNote": "Az adatok mintaadatok. Kérjük, forduljon a vezetőséghez az aktuális fizetési információkért."
+    },
+    "contact": {
+        "title": "Kapcsolat",
+        "subtitle": "Vegye fel velünk a kapcsolatot",
+        "desc": "Kérdése van vagy szeretne részt venni? Keressen minket közvetlenül vagy töltse ki az űrlapot.",
+        "form": {
+            "name": "Név",
+            "email": "E-mail",
+            "message": "Üzenet",
+            "send": "Üzenet küldése",
+            "namePlaceholder": "Az Ön neve",
+            "emailPlaceholder": "nev@pelda.hu",
+            "messagePlaceholder": "Miben segíthetünk?",
+            "infoText": "Itt vagyunk Önnek. Keressen minket e-mailben, telefonon vagy látogasson el hozzánk fogadóidőben.",
+            "officeLabel": "Iroda",
+            "officeLocation": "Főépület, 101-es terem",
+            "phoneLabel": "Telefon",
+            "emailLabel": "E-mail"
+        }
+    },
+    "login": {
+        "title": "Bejelentkezés",
+        "subtitle": "Hozzáférés a belső szülői és tanári felülethez.",
+        "email": "E-mail cím",
+        "password": "Jelszó",
+        "emailPlaceholder": "nev@pelda.hu",
+        "submit": "Bejelentkezés",
+        "register": "Nincs még fiókja? Regisztráljon",
+        "forgot": "Elfelejtette jelszavát?",
+        "closeButton": "Bezárás"
+    },
+    "newsAria": {
+        "categories": "Hír kategóriák"
+    },
+    "services": {
+        "title": "Szolgáltatásaink",
+        "desc": "Pénzügyi segéllyel, korrepetálási programokkal és tanfolyamokkal támogatjuk a diákokat és családokat.",
+        "support": "Szociális támogatás",
+        "supportDesc": "Pénzügyi segítség iskolai rendezvényekhez és eszközökhöz.",
+        "supportPoints": [
+            "Iskolai hetek támogatása",
+            "Anyagköltség támogatás",
+            "Diszkrét pénzügyi segítség"
+        ],
+        "tutoring": "Korrepetálási lista",
+        "tutoringDesc": "Lépjen kapcsolatba képzett korrepetitorokkal.",
+        "tutoringPoints": [
+            "Diák-diák korrepetálási hálózat",
+            "Ellenőrzött diák korrepetitorok",
+            "Tisztességes feltételek"
+        ],
+        "courses": "Tanfolyamok",
+        "coursesDesc": "További oktatási lehetőségek.",
+        "coursesPoints": [
+            "ECDL minősítés",
+            "Műszaki képzések",
+            "Vizsgafelkészítés"
+        ],
+        "learnMore": "Tudjon meg többet",
+        "socialSupport": {
+            "back": "Vissza az áttekintéshez",
+            "titleHighlight": "Senki nem maradhat le.",
+            "intro": "A Szülői Munkaközösség egyik központi célja, hogy a szociálisan hátrányos helyzetű diákok is részt vehessenek az iskolai rendezvényeken. Ott segítünk, ahol az állami támogatások nem elegendőek.",
+            "points": [
+                "Iskolai hetek támogatása (sport, projekt)",
+                "Eszközköltség támogatás",
+                "Egyéni gyorssegély"
+            ],
+            "whoTitle": "Ki pályázhat?",
+            "whoDesc": "Minden HTL Mödling diák szülője pályázhat, aki tagja az egyesületnek. A támogatást diszkréten és bürokráciamentesen nyújtjuk.",
+            "confidential": "* Minden kérelem szigorúan bizalmas.",
+            "processTitle": "A támogatás folyamata",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Igény benyújtása",
+                    "desc": "Küldjön nekünk egy megkeresést az űrlapon vagy e-mailben."
+                },
+                {
+                    "step": "02",
+                    "title": "Felülvizsgálat",
+                    "desc": "A vezetőség gyorsan és diszkréten megvizsgálja a kérelmet."
+                },
+                {
+                    "step": "03",
+                    "title": "Kifizetés",
+                    "desc": "Jóváhagyás után az összeget közvetlenül az iskolának utaljuk."
+                }
+            ],
+            "qTitle": "Kérdése van?",
+            "qDesc": "Szívesen adunk tanácsot kötelezettség nélkül.",
+            "contactBtn": "Lépjen kapcsolatba velünk"
+        },
+        "tutoringPage": {
+            "back": "Vissza az áttekintéshez",
+            "subtitle": "Diákok a diákokért",
+            "badge": "Siker együtt",
+            "titleHighlight": "HTL Korrepetálási Hálózat",
+            "intro": "Senki nem ismeri jobban egy vizsga nehézségeit, mint az, aki már sikeresen letette. Rendszerünk összehozza a felsőbb éveseket a segítséget igénylőkkel.",
+            "stats": [
+                {
+                    "title": "Több mint 50 oktató",
+                    "desc": "Minden tantárgyból"
+                },
+                {
+                    "title": "Korrekt árak",
+                    "desc": "Iskolán belül"
+                }
+            ],
+            "findTitle": "Hogyan találok korrepetálást?",
+            "findSteps": [
+                "Nézze meg az aktuális hirdetőtáblát az aulában.",
+                "Kérdezze közvetlenül a diákönkormányzatot.",
+                "Használja a kapcsolatfelvételi űrlapunkat.",
+                "Csatlakozzon a hivatalos Discord/Messenger spoporthoz."
+            ],
+            "popularTitle": "Népszerű tantárgyak",
+            "subjects": [
+                "Matematika",
+                "Informatika",
+                "Elektrotechnika",
+                "Gépészet",
+                "Programozás",
+                "Angol nyelv",
+                "Gazdaságtan",
+                "Laboratóriumi gyakorlatok"
+            ],
+            "ctaTitle": "Szeretne Ön is korrepetitor lenni?",
+            "ctaDesc": "Segítsen társainak, mélyítse el saját tudását és keressen egy kis zsebpénzt.",
+            "ctaBtn": "Jelentkezzen oktatónak",
+            "noteTitle": "Fontos megjegyzés",
+            "noteDesc": "A korrepetálás magánúton jön létre. Az egyesület csak a platformot biztosítja. Javasolt óradíj 10-15€."
+        },
+        "coursesPage": {
+            "back": "Vissza az áttekintéshez",
+            "subtitle": "Több mint puszta tanítás",
+            "titleHighlight": "Plusz minősítések a startnál.",
+            "intro": "Támogatjuk nemzetközileg elismert tanúsítványok és speciális képzések megszerzését.",
+            "items": [
+                {
+                    "title": "ECDL vizsga",
+                    "desc": "Európai Számítógép-használói Jogosítvány minden évfolyamnak.",
+                    "badge": "Kezdés: 2025"
+                },
+                {
+                    "title": "Műanyag fröccsöntő tech",
+                    "desc": "Speciális képzés gépészeknek.",
+                    "badge": "Maradék helyek"
+                },
+                {
+                    "title": "Biztonságtechnikai képzés",
+                    "desc": "Plusz minősítés a műhelyi munkákhoz.",
+                    "badge": "Kötelező modul"
+                }
+            ],
+            "detailsBtn": "Részletek",
+            "whyBadge": "Miért külön tanfolyamok?",
+            "whyTitle": "Plusz a CV-dben.",
+            "benefits": [
+                {
+                    "label": "Minősítés",
+                    "detail": "Nemzetközi érvényesség"
+                },
+                {
+                    "label": "Előnyök",
+                    "detail": "Előny a munkaerőpiacon"
+                }
+            ],
+            "points": [
+                "Kedvezményes hozzáférés az egyesületen keresztül",
+                "Közvetlenül az iskolában tanítás után",
+                "Gyakorlati képzés szakértőktől",
+                "Hivatalos oklevelek és diplomák"
+            ],
+            "suggestion": "Van javaslata tanfolyamra vagy regisztrálna?",
+            "registerBtn": "Regisztráció és infó"
+        }
+    },
+    "projects": {
+        "title": "Projektek",
+        "currentTitle": "Aktuális projektek",
+        "desc": "A támogatott projektek és kezdeményezések története.",
+        "archive": "Projekt archívum",
+        "viewArchive": "Archívum megtekintése",
+        "ariaLabel": "Archív évek",
+        "overview": "Projekt áttekintés",
+        "viewOverview": "Pályázati állapot",
+        "backToCurrent": "Vissza az áttekintéshez",
+        "archiveDesc": "Az elmúlt tanévek története.",
+        "year": "Év",
+        "fundedProjects": "Támogatott projektek",
+        "items": {
+            "physics": {
+                "title": "Új fizika labor felszerelés",
+                "status": "Folyamatban"
+            },
+            "library": {
+                "title": "Könyvtár modernizáció",
+                "status": "Jóváhagyva"
+            },
+            "garden": {
+                "title": "Kerti padok az udvaron",
+                "status": "Lezárva"
+            }
+        },
+        "apply": {
+            "title": "Projektjavaslat benyújtása",
+            "desc": "Használja ezt az űrlapot a támogatási kérelem digitális benyújtásához.",
+            "button": "Új kérelem indítása",
+            "dashboardTitle": "Benyújtott pályázatok (2025/26)",
+            "dashboardDesc": "Kezelje és kövesse nyomon projektjei állapotát",
+            "form": {
+                "title": "Projekt címe",
+                "applicant": "Pályázó / Tanszék",
+                "description": "Részletes projektleírás",
+                "costs": "Szükséges források (€)",
+                "placeholderCosts": "0.00",
+                "files": "Mellékletek (Ajánlatok, Tervek)",
+                "submit": "Javaslat beküldése",
+                "success": "Javaslatát sikeresen elküldtük!",
+                "titlePlaceholder": "pl. IT Lab Upgrade",
+                "applicantPlaceholder": "Az Ön neve / Osztály",
+                "descriptionPlaceholder": "Írja le projektjét...",
+                "uploadText": "Húzza ide a fájlokat vagy kattintson",
+                "successSEO": "Projektjavaslatát sikeresen benyújtották."
+            }
+        },
+        "overviewTable": {
+            "title": "Benyújtott javaslatok (2025/26)",
+            "headers": {
+                "project": "Projekt",
+                "applicant": "Pályázó",
+                "department": "Tanszék",
+                "date": "Dátum",
+                "cost": "Költség",
+                "status": "Állapot"
+            },
+            "filters": {
+                "label": "Szűrők:",
+                "ariaLabel": "Akciók",
+                "search": "Keresés...",
+                "allStatus": "Minden állapot",
+                "allDepts": "Minden tanszék"
+            },
+            "departments": {
+                "IT": "Informatika",
+                "ME": "Gépészet",
+                "ET": "Elektrotechnika",
+                "GEN": "Általános",
+                "BAU": "Építőmérnöki",
+                "EL": "Elektronika",
+                "CH": "Kémia",
+                "SP": "Sport",
+                "FIN": "Pénzügy"
+            },
+            "noResults": "Nem található pályázat.",
+            "status": {
+                "approved": "Jóváhagyva",
+                "pending": "Függőben",
+                "rejected": "Elutasítva"
+            }
+        }
+    },
+    "board": {
+        "title": "Vezetőségünk",
+        "desc": "Az egyesület mögött álló elkötelezett szülői csapat.",
+        "roles": {
+            "chair": "Elnök",
+            "viceChair": "Alelnök",
+            "treasurer": "Pénztáros",
+            "secretary": "Jegyző",
+            "member": "Kooptált tag",
+            "auditor": "Ellenőr"
+        }
+    },
+    "statutes": {
+        "title": "Alapszabály",
+        "desc": "Egyesületünk jogi alapjai.",
+        "download": "PDF letöltése"
+    },
+    "terms": {
+        "title": "Feltételek",
+        "desc": "Szabályok és szabályozások."
+    },
+    "cookieBanner": {
+        "text": "Csak technikailag szükséges sütiket használunk a portál működéséhez.",
+        "accept": "Értem",
+        "privacyLink": "Adatvédelem"
+    },
+    "settings": {
+        "title": "Beállítások",
+        "language": "Nyelv",
+        "theme": "Téma",
+        "lightMode": "Világos",
+        "darkMode": "Sötét",
+        "note": "A változások azonnal életbe lépnek."
+    },
+    "newsArticle": {
+        "readArticle": "Cikk elolvasása",
+        "author": "Szerző",
+        "authorName": "Szülői Munkaközösség Vezetősége",
+        "category": "Kategória",
+        "share": "Megosztás",
+        "shareCopied": "Link másolva!",
+        "print": "Nyomtatás",
+        "details": "Fontos részletek és dátumok",
+        "detailStart": "Kezdés: A meghívó szerint",
+        "detailLocation": "Helyszín: Díszterem vagy online",
+        "detailRegistration": "Regisztráció: Kötelező a belső felületen",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "A rendezvény a főépületben vagy a megfelelő műhelyekben lesz.",
+        "ctaTitle": "Kérdése van?",
+        "ctaDesc": "Szívesen segítünk bármilyen kérdésben.",
+        "ctaButton": "Kapcsolatfelvétel",
+        "contactNote": "Kérdés esetén írjon az office@elternverein.today címre"
+    },
+    "common": {
+        "required": "Kötelező mező"
+    },
+    "dashboard": {
+        "internal": {
+            "brand": "EV Belső",
+            "role": "Vezetőségi tag",
+            "exit": "Vissza a weboldalra",
+            "footer": "Demo verzió • Készítette: Patrick K. & Antigravity"
+        },
+        "nav": {
+            "overview": "Áttekintés",
+            "calendar": "Naptár",
+            "messages": "Üzenetek"
+        },
+        "calendar": {
+            "title": "Közös naptár",
+            "subtitle": "Események kezelése és megtekintése",
+            "add": "Esemény hozzáadása",
+            "edit": "Szerkesztés",
+            "delete": "Törlés",
+            "exportIcs": "Exportálás .ics-ként",
+            "exportAll": "Exportálás",
+            "exportSuccess": "Fájl letöltve",
+            "exportAllSuccess": "Összes esemény exportálva",
+            "noEventsToExport": "Nincs exportálható esemény",
+            "updateSuccess": "Frissítve",
+            "createSuccess": "Létrehozva",
+            "deleteSuccess": "Törölve",
+            "days": {
+                "sun": "Vas",
+                "mon": "Hét",
+                "tue": "Kedd",
+                "wed": "Szer",
+                "thu": "Csüt",
+                "fri": "Pént",
+                "sat": "Szom"
+            },
+            "form": {
+                "title": "Cím *",
+                "titlePlaceholder": "pl. Szülői értekezlet",
+                "date": "Dátum *",
+                "time": "Időpont",
+                "description": "Leírás",
+                "descriptionPlaceholder": "részletek...",
+                "save": "Mentés",
+                "create": "Létrehozás",
+                "cancel": "Mégse"
+            },
+            "mock": {
+                "evt1Title": "Vezetőségi ülés",
+                "evt1Desc": "Havi rendszeres ülés.",
+                "evt2Title": "Nyári ünnepség",
+                "evt2Desc": "Éves kerti parti."
+            }
+        },
+        "overview": {
+            "title": "Vezérlőpult",
+            "welcome": "Üdvözöljük újra, {{name}}",
+            "stats": {
+                "events": "Nyitott projektek",
+                "messages": "Jóváhagyott projektek",
+                "members": "Aktuális hírek",
+                "reports": "Következő esemény"
+            },
+            "activity": {
+                "title": "Legutóbbi tevékenység",
+                "viewAll": "Összes megtekintése",
+                "less": "Kevesebb",
+                "showLess": "Kevesebb mutatása",
+                "showMore": "+ további {{count}}",
+                "by": "-"
+            },
+            "actions": {
+                "title": "Gyors műveletek",
+                "post": "Új projekt",
+                "event": "Hír írása",
+                "document": "Jegyzőkönyv feltöltés",
+                "newsTitle": "Hír szerkesztése",
+                "newsSuccess": "Piszkozat mentve",
+                "newsPlaceholderTitle": "Cím...",
+                "newsPlaceholderContent": "Tartalom...",
+                "uploadTitle": "Jegyzőkönyv",
+                "uploadSuccess": "Szimulálva",
+                "uploadPlaceholderFile": "Húzza ide a fájlt",
+                "uploadHint": "PDF, DOCX, JPG",
+                "uploadDate": "Dátum",
+                "cancel": "Mégse",
+                "publish": "Közzététel",
+                "uploadBtn": "Feltöltés",
+                "category": "Kategória"
+            },
+            "mock": {
+                "a1": "IT laptop projekt jóváhagyva",
+                "a2": "Új jegyzőkönyv feltöltve",
+                "a3": "Hír: Nyári ünnepség időpontja",
+                "a4": "Kertépítés befejezve",
+                "a5": "Vezetőségi ülés kitűzve",
+                "u1": "Vezetőség",
+                "u2": "Jegyző",
+                "u3": "PR csapat",
+                "u4": "Projektvezető",
+                "u5": "Elnök",
+                "d1": "2 órája",
+                "d2": "Tegnap",
+                "d3": "2 napja",
+                "d4": "3 napja",
+                "d5": "Múlt héten",
+                "a6": "Teszt 1",
+                "d6": "Ma",
+                "a7": "Teszt 2",
+                "d7": "Tegnap"
+            }
+        },
+        "messages": {
+            "title": "Üzenetek",
+            "placeholder": "Írjon üzenetet...",
+            "send": "Küldés",
+            "empty": "Válasszon beszélgetést",
+            "mock": {
+                "c1": "Vezetőségi csoport",
+                "c2": "Könyvelés",
+                "c3": "Projekttervezés",
+                "m1": "Jóváhagyták a keretet?",
+                "m2": "Számla beérkezett.",
+                "m3": "Önkéntesekre van szükség."
+            }
+        },
+        "settings": {
+            "title": "Beállítások",
+            "profile": {
+                "title": "Profil",
+                "name": "Név",
+                "email": "E-mail"
+            },
+            "notifications": {
+                "title": "Értesítések",
+                "email": "E-mail",
+                "push": "Push",
+                "weekly": "Heti összefoglaló"
+            },
+            "appearance": {
+                "title": "Megjelenés"
+            },
+            "security": {
+                "title": "Biztonság",
+                "changePassword": "Jelszó módosítása",
+                "current": "Jelenlegi jelszó",
+                "new": "Új jelszó",
+                "confirm": "Új jelszó megerősítése",
+                "success": "Jelszó sikeresen megváltoztatva!"
+            },
+            "save": "Módosítások mentése"
+        }
+    }
+}

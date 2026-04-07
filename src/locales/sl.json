@@ -1,0 +1,668 @@
+{
+    "nav": {
+        "home": "Domov",
+        "news": "Novice",
+        "services": "Storitve",
+        "projects": "Projekti",
+        "about": "O nas",
+        "contact": "Kontakt",
+        "login": "Prijava",
+        "logout": "Odjava",
+        "profile": "Moj profil",
+        "aria": {
+            "menuToggle": "Preklopi meni",
+            "languageToggle": "Spremeni jezik",
+            "themeToggle": "Spremeni temo"
+        },
+        "serviceItems": {
+            "support": "Socialna podpora",
+            "tutoring": "Inštrukcije",
+            "courses": "Tečaji"
+        },
+        "dashboard": "Nadzorna plošča"
+    },
+    "footer": {
+        "links": "Hitre povezave",
+        "legal": "Pravne informacije",
+        "socials": "Povežite se z nami",
+        "impressum": "Kolofon",
+        "privacy": "Politika zasebnosti",
+        "terms": "Splošni pogoji"
+    },
+    "news": {
+        "title": "Novice in dogodki",
+        "desc": "Bodite na tekočem z najnovejšimi novicami Sveta staršev HTL Mödling.",
+        "filters": {
+            "all": "Vse",
+            "news": "Novice",
+            "event": "Dogodki",
+            "protocol": "Zapisniki"
+        },
+        "items": {
+            "agm": {
+                "title": "Letna generalna skupščina 2025",
+                "desc": "Vabilo na redno generalno skupščino Sveta staršev.",
+                "body": "Vljudno vas vabimo na letno generalno skupščino Sveta staršev HTL Mödling. Srečanje bo 15. oktobra 2025 ob 18.00 v dvorani HTL Mödling.\n\nDnevni red vključuje letno poročilo odbora, blagajniško poročilo, volitve članov odbora in določitev članarine za naslednje šolsko leto.\n\nVaša udeležba je zelo pomembna, saj bodo na tem srečanju sprejete ključne odločitve za šolsko leto 2025/26. Prosimo za prijavo do 10. oktobra 2025."
+            },
+            "sga": {
+                "title": "Zapisnik seje SGA",
+                "desc": "Zapisnik zadnje seje šolskega odbora je zdaj na voljo na spletu.",
+                "body": "Zapisnik zadnje seje šolskega odbora (SGA) je na voljo za prenos. Na seji so bile obravnavane pomembne teme glede šolskega delovanja.\n\nKljučni sklepi vključujejo: potrditev proračuna za šolske dogodke, posodobitev šolskih pravil o uporabi mobilnih telefonov in načrtovanje prihodnjih roditeljskih sestankov.\n\nVabimo vse starše, da si ogledajo celoten zapisnik in se obrnejo na Svet staršev v primeru vprašanj."
+            },
+            "funding": {
+                "title": "Nove možnosti financiranja",
+                "desc": "Vloge za financiranje projektov lahko zdaj oddate digitalno.",
+                "body": "Vloge za financiranje inovativnih dijaških projektov lahko zdaj oddate digitalno preko našega novega spletnega portala. Svet staršev je povečal proračun za projekte za šolsko leto 2025/26.\n\nProjekti z vseh oddelkov HTL Mödling so upravičeni do financiranja – od informacijskih tehnologij do strojništva in kemije. Posebno spodbujamo medoddelčne projekte sodelovanja.\n\nVloge bodo obdelane v treh tednih, sredstva pa so ob odobritvi na voljo takoj."
+            },
+            "parentsDay": {
+                "title": "Dan staršev",
+                "desc": "Informacije o prihajajočem dnevu staršev in rezervacija terminov.",
+                "body": "Prihajajoči dan staršev bo 10. decembra 2025. Izkoristite priložnost za osebni pogovor z učitelji o uspehu vaših otrok.\n\nRezervacija terminov poteka preko šolskega portala. Priporočamo zgodnjo rezervacijo, saj se termini hitro zapolnijo.\n\nSvet staršev bo imel informacijsko stojnico, kjer bomo odgovarjali na vaša vprašanja. Na voljo bosta kava in osvežitev."
+            },
+            "festival": {
+                "title": "Ekskurzija v podjetje Fantasie",
+                "desc": "Zanimiv obisk podjetja, ki nudi praktičen vpogled za dijake in starše.",
+                "body": "Svet staršev 15. oktobra 2026 organizira ekskurzijo v podjetje Fantasie. Dijaki in starši so vabljeni, da za en dan spoznajo industrijsko prakso.\n\nPodjetje Fantasie nudi ekskluzivne oglede proizvodnih obratov, delavnice in priložnosti za mreženje. Prevoz z avtobusom je za vse udeležence brezplačen."
+            },
+            "jhv": {
+                "title": "Zapisnik GGS 2025",
+                "desc": "Zapisnik zadnje letne generalne skupščine. Pomembni rezultati glasovanja.",
+                "body": "Celoten zapisnik letne generalne skupščine z dne 22. septembra 2025 je na voljo za prenos vsem članom.\n\nLetno poročilo je bilo soglasno sprejeto, potrjena je bila članarina za prihodnje leto in izvoljeni novi člani odbora. Hvala vsem prisotnim za konstruktivno razpravo."
+            },
+            "mentalHealth": {
+                "title": "Informativni dan 2026",
+                "desc": "Obiščite naše delavnice in laboratorije na informativnem dnevu.",
+                "body": "HTL Mödling odpira svoja vrata vsem obiskovalcem na informativnem dnevu 2026. Raziščite naše delavnice, laboratorije in učilnice ter doživite raznolikost tehničnega izobraževanja.\n\nSvet staršev bo prisoten s stojnico, kjer boste prejeli informacije o podpori šoli in aktivnostih društva. Šolska menza bo ob podpori društva poskrbela za osvežitev."
+            }
+        }
+    },
+    "impressum": {
+        "owner": "Lastnik medija in izdajatelj",
+        "contact": "Kontakt",
+        "zvr": "ZVR številka",
+        "purpose": "Namen društva",
+        "purposeDesc": "Zaščita interesov staršev v zvezi s poučevanjem in vzgojnim delom v šoli ter spodbujanje sodelovanja med domom in šolo."
+    },
+    "privacy": {
+        "intro": "Varstvo vaših osebnih podatkov jemljemo zelo resno. V nadaljevanju vas obveščamo o obdelavi vaših podatkov.",
+        "responsible": "1. Odgovorna oseba",
+        "collection": "2. Zbiranje in obdelava podatkov",
+        "collectionDesc": "Obdelujemo osebne podatke, ki jih prejmemo v okviru članstva ali preko vašega kontakta.",
+        "rights": "3. Vaše pravice",
+        "rightsDesc": "Na splošno imate pravico do informacij, popravka, izbrisa, omejitve obdelave, prenosljivosti podatkov in ugovora."
+    },
+    "home": {
+        "heroTitle": "Povezovanje staršev, učiteljev in dijakov",
+        "heroTitleSub": "HTL Mödling",
+        "heroTitleMain": "Svet staršev",
+        "heroDesc": "Svet staršev je predan podpori šolski skupnosti s pomočjo aktivnega sodelovanja, financiranja in odprte komunikacije.",
+        "servicesLabel": "Naše storitve",
+        "servicesSub": "Inovacija sreča skupnost – Odkrijte naše ugodnosti.",
+        "welcomeBadge": "Dobrodošli",
+        "getInvolved": "Sodelujte",
+        "learnMore": "Izvedite več",
+        "latestNews": "Najnovejše novice",
+        "insightsUpdates": "Uvpogledi in novosti",
+        "viewAll": "Prikaži vse",
+        "tags": {
+            "event": "Dogodek",
+            "protocol": "Protokol",
+            "news": "Novica"
+        },
+        "heroBadge": "Aktivni za več kot 3.000 dijakov",
+        "heroTitleFluid": "Skupaj omogočamo prihodnost – za naše otroke v HTL Mödling.",
+        "heroSubtitleFluid": "Od subvencij za projekte do socialne podpore – smo močna mreža za dijaki.",
+        "learnMoreScroll": "Preberi več",
+        "benefits": {
+            "projTitle": "Financiranje",
+            "proj": "Financijska podpora projektom in izobraževanju",
+            "projLink": "/projekti",
+            "suppTitle": "Podpora",
+            "supp": "Povezava z vodstvom in predstojniki oddelkov",
+            "suppLink": "/storitve",
+            "helpTitle": "Pomoč",
+            "help": "Razbremenitev socialno ogroženih družin",
+            "helpLink": "/storitve",
+            "infoTitle": "Informiranje",
+            "info": "Inštrukcije, tečaji, psihološka pomoč",
+            "infoLink": "/news",
+            "entTitle": "Zabava",
+            "ent": "Maturantski plesi, praznovanja, Barbarin večer",
+            "entLink": "/news"
+        },
+        "socialProof": {
+            "title": "Glasovi naše skupnosti",
+            "s1": "\"Zahvaljujoč Svetu staršev je naš sin uspel izvesti svoj diplomski projekt.\"",
+            "a1": "- Mama dijaka 5. letnika",
+            "s2": "\"Hitra podpora nam je zelo pomagala.\"",
+            "a2": "- Družina dijaka"
+        },
+        "faq": {
+            "title": "Pogosta vprašanja (FAQ)",
+            "subtitle": "Tukaj boste našli odgovore na najpomembnejša vprašanja o Svetu staršev.",
+            "q1": "Ali lahko pomagam tudi brez funkcije v odboru?",
+            "a1": "Da, seveda! Vsaka pomoč pri naših dogodkih je dobrodošla, ne glede na formalno vlogo.",
+            "q2": "Kolikšna je članarina?",
+            "a2": "Članarina se določi vsako leto na generalni skupščini in gre neposredno v korist dijakov.",
+            "q3": "Kdo lahko zaprosi za podporo?",
+            "a3": "Vsi starši dijakov HTL Mödling lahko zaprosijo za pomoč v primeru socialne stiske ali za inovativne dijaške projekte.",
+            "q4": "Kako je zagotovljena preglednost?",
+            "a4": "Kot neprofitno društvo smo podvrženi strogim revizijam. Poraba sredstev se objavi na letni skupščini.",
+            "badge": "Dobro je vedeti"
+        },
+        "showcase1": {
+            "badge": "Podpora v praksi",
+            "title": "Oprema za prihodnost",
+            "desc": "S prispevki staršev financiramo najsodobnejšo opremo, laboratorijske materiale in projekte."
+        },
+        "showcase2": {
+            "badge": "Pomoč in informacije",
+            "title": "Okrepite skupnost.<br/>Pokažite prisotnost.",
+            "desc": "Organiziramo ekskurzije, krepimo socialno povezanost in aktivno informiramo o aktualnih temah.",
+            "link": "Naše storitve"
+        }
+    },
+    "about": {
+        "title": "O Svetu staršev",
+        "desc": "Svet staršev je prostovoljna organizacija, namenjena spodbujanju dobrega počutja dijakov in šole.",
+        "mission": "Naše poslanstvo",
+        "missionDesc": "Spodbujanje tesnega sodelovanja med domom in šolo, da starši in učitelji skupaj sodelujejo pri vzgoji dijakov.",
+        "whatWeDo": "Kaj počnemo",
+        "points": [
+            "Organiziramo dogodke in zbiranje sredstev",
+            "Financijsko podpiramo šolske projekte",
+            "Zastopamo interese staršev v šolskih odborih",
+            "Lajšamo komunikacijo med starši in šolo"
+        ],
+        "board": {
+            "viewDetails": "Prikaži vse podrobnosti"
+        },
+        "paymentHint": "Kliknite za podrobnosti o plačilu"
+    },
+    "costs": {
+        "title": "Članstvo in stroški",
+        "desc": "Pregledno upravljanje vaših prispevkov.",
+        "membership": "Članarina",
+        "allocation": "Razdelitev sredstev",
+        "details": "Članarina se v celoti porabi za dobrobit dijakov.",
+        "membershipPerYear": "Letno na družino",
+        "paymentTitle": "Podatki o plačilu",
+        "copyIban": "Kopiraj IBAN",
+        "copyBic": "Kopiraj BIC",
+        "reference": "Namen plačila",
+        "referenceExample": "Članarina EV + Ime + Razred",
+        "referenceExampleCopyTxt": "Članarina EV",
+        "copyReference": "Kopiraj namen plačila",
+        "paymentNote": "Podatki so vzorčni. Prosimo, kontaktirajte odbor za trenutne informacije o plačilih."
+    },
+    "contact": {
+        "title": "Kontaktirajte nas",
+        "subtitle": "Stopite v stik",
+        "desc": "Imate vprašanja? Se želite vključiti? Pišite nam neposredno ali izpolnite obrazec.",
+        "form": {
+            "name": "Ime",
+            "email": "E-pošta",
+            "message": "Sporočilo",
+            "send": "Pošlji sporočilo",
+            "namePlaceholder": "Vaše ime",
+            "emailPlaceholder": "ime@primer.si",
+            "messagePlaceholder": "Kako vam lahko pomagamo?",
+            "infoText": "Tu smo za vas. Pišite nam, pokličite ali nas obiščite v času uradnih ur.",
+            "officeLabel": "Pisarna",
+            "officeLocation": "Glavna šolska stavba, soba 101",
+            "phoneLabel": "Telefon",
+            "emailLabel": "E-pošta"
+        }
+    },
+    "login": {
+        "title": "Prijava",
+        "subtitle": "Dostop do internega področja za starše in učitelje.",
+        "email": "E-poštni naslov",
+        "password": "Geslo",
+        "emailPlaceholder": "ime@primer.si",
+        "submit": "Prijava",
+        "register": "Nimate računa? Registrirajte se",
+        "forgot": "Ste pozabili geslo?",
+        "closeButton": "Zapri"
+    },
+    "newsAria": {
+        "categories": "Kategorije novic"
+    },
+    "services": {
+        "title": "Naše storitve",
+        "desc": "Dijakom in družinam pomagamo s financijsko podporo, inštrukcijami in izobraževalnimi tečaji.",
+        "support": "Socialna podpora",
+        "supportDesc": "Financijska pomoč za šolske dogodke in materiale.",
+        "supportPoints": [
+            "Subvencije za šolske tedne",
+            "Podpora pri stroških materiala",
+            "Diskretna financijska pomoč"
+        ],
+        "tutoring": "Seznam inštrukcij",
+        "tutoringDesc": "Povežite se s kvalificiranimi inštruktorji.",
+        "tutoringPoints": [
+            "Mreža vrstniškega učenja",
+            "Preverjeni dijaški inštruktorji",
+            "Pošteni pogoji"
+        ],
+        "courses": "Tečaji",
+        "coursesDesc": "Dodatne izobraževalne možnosti.",
+        "coursesPoints": [
+            "ECDL certificiranje",
+            "Tehnično usposabljanje",
+            "Priprava na izpite"
+        ],
+        "learnMore": "Izvedite več",
+        "socialSupport": {
+            "back": "Nazaj na pregled",
+            "titleHighlight": "Nihče ne sme biti zapostavljen.",
+            "intro": "Osrednji cilj Sveta staršev je omogočiti socialno ogroženim dijakom udeležbo na šolskih dogodkih. Pomagamo tam, kjer državne subvencije niso zadostne.",
+            "points": [
+                "Subvencije za šolske tedne (športi, projekti)",
+                "Podpora pri stroških materiala",
+                "Hitna financijska pomoč"
+            ],
+            "whoTitle": "Kdo lahko zaprosi?",
+            "whoDesc": "Zaprosijo lahko vsi starši in skrbniki dijakov HTL Mödling, ki so člani društva. Podpora je diskretna in brez odvečne birokracije.",
+            "confidential": "* Vse vloge so strogo zaupne.",
+            "processTitle": "Postopek dodelitve sredstev",
+            "steps": [
+                {
+                    "step": "01",
+                    "title": "Oddajte vlogo",
+                    "desc": "Pošljite povpraševanje preko kontaktnega obrazca ali e-pošte."
+                },
+                {
+                    "step": "02",
+                    "title": "Pregled",
+                    "desc": "Odbor bo hitro in diskretno pregledal vašo vlogo."
+                },
+                {
+                    "step": "03",
+                    "title": "Izplačilo",
+                    "desc": "Po odobritvi se sredstva nakažejo neposredno šoli ali organizatorju."
+                }
+            ],
+            "qTitle": "Imate vprašanja?",
+            "qDesc": "Z veseljem vam bomo svetovali brez obveznosti.",
+            "contactBtn": "Kontaktirajte nas"
+        },
+        "tutoringPage": {
+            "back": "Nazaj na pregled",
+            "subtitle": "Dijaki za dijake",
+            "badge": "Skupaj do uspeha",
+            "titleHighlight": "HTL mreža inštrukcij",
+            "intro": "Nihče ne pozna pasti izpita bolje kot nekdo, ki ga je že opravil. Naš sistem vrstniškega učenja združuje izkušene dijake s tistimi, ki potrebujejo podporo.",
+            "stats": [
+                {
+                    "title": "Več kot 50 inštruktorjev",
+                    "desc": "Za vse predmete"
+                },
+                {
+                    "title": "Poštene cene",
+                    "desc": "V okviru šole"
+                }
+            ],
+            "findTitle": "Kako najti inštrukcije?",
+            "findSteps": [
+                "Preverite oglasno desko v avli.",
+                "Vprašajte neposredno dijaško skupnost (SV).",
+                "Uporabite naš kontaktni obrazec.",
+                "Pridružite se uradni skupini na Discord/Messenger."
+            ],
+            "popularTitle": "Najbolj iskani predmeti",
+            "subjects": [
+                "Matematika",
+                "Informatika",
+                "Elektrotehnika",
+                "Strojništvo",
+                "Programiranje",
+                "Angleščina",
+                "Gospodarstvo",
+                "Laboratorijske vaje"
+            ],
+            "ctaTitle": "Želite tudi sami postati inštruktor?",
+            "ctaDesc": "Pomagajte sošolcem, poglobite znanje in si prislužite nekaj dodatnega žepnina.",
+            "ctaBtn": "Prijavi se kot inštruktor",
+            "noteTitle": "Pomembno obvestilo",
+            "noteDesc": "Inštrukcije se dogovarjajo zasebno. Svet staršev nudi le platformo. Priporočamo ceno od 10€ do 15€ na uro."
+        },
+        "coursesPage": {
+            "back": "Nazaj na pregled",
+            "subtitle": "Več kot le pouk",
+            "titleHighlight": "Dodatne kvalifikacije za prednost na trgu.",
+            "intro": "Podpiramo pridobivanje mednarodnih certifikatov in specializiranih usposabljanj, ki presegajo učni načrt.",
+            "items": [
+                {
+                    "title": "ECDL certificiranje",
+                    "desc": "Evropsko računalniško vozniško dovoljenje za vse razrede.",
+                    "badge": "Začetek: WS 2025"
+                },
+                {
+                    "title": "Tehnologija brizganja plastike",
+                    "desc": "Posebno usposabljanje za strojništvo in plastiko.",
+                    "badge": "Še nekaj mest"
+                },
+                {
+                    "title": "Varnostno usposabljanje",
+                    "desc": "Dodatna kvalifikacija za delo v delavnicah.",
+                    "badge": "Obvezen modul"
+                }
+            ],
+            "detailsBtn": "Več informacij",
+            "whyBadge": "Zakaj dodatni tečaji?",
+            "whyTitle": "Plus za vaš CV.",
+            "benefits": [
+                {
+                    "label": "Certificiranje",
+                    "detail": "Mednarodna veljavnost"
+                },
+                {
+                    "label": "Prednosti",
+                    "detail": "Prednost pri zaposlovanju"
+                }
+            ],
+            "points": [
+                "Ugoden dostop preko Sveta staršev",
+                "Neposredno na šoli po pouku",
+                "Praktično usposabljanje strokovnjakov",
+                "Uradni certifikati in diplome"
+            ],
+            "suggestion": "Imate idejo za tečaj ali se želite prijaviti?",
+            "registerBtn": "Registracija in info"
+        }
+    },
+    "projects": {
+        "title": "Projekti",
+        "currentTitle": "Trenutni projekti",
+        "desc": "Zgodovina financiranih projektov in pobud.",
+        "archive": "Arhiv projektov",
+        "viewArchive": "Prikaži arhiv",
+        "ariaLabel": "Arhivska leta",
+        "overview": "Pregled projekta",
+        "viewOverview": "Status prijave",
+        "backToCurrent": "Nazaj na pregled",
+        "archiveDesc": "Zgodovina preteklih šolskih let.",
+        "year": "Leto",
+        "fundedProjects": "Financirani projekti",
+        "items": {
+            "physics": {
+                "title": "Nova oprema za fizikalni lab",
+                "status": "V teku"
+            },
+            "library": {
+                "title": "Posodobitev knjižnice",
+                "status": "Odobreno"
+            },
+            "garden": {
+                "title": "Klipe za šolsko dvorišče",
+                "status": "Zaključeno"
+            }
+        },
+        "apply": {
+            "title": "Oddajte predlog projekta",
+            "desc": "Uporabite ta obrazec za digitalno oddajo zahtevka za financiranje.",
+            "button": "Začni novo prijavo",
+            "dashboardTitle": "Oddane prijave (2025/26)",
+            "dashboardDesc": "Upravljajte in spremljajte status vaših projektov",
+            "form": {
+                "title": "Naslov projekta",
+                "applicant": "Vlagatelj / Oddelek",
+                "description": "Podroben opis projekta",
+                "costs": "Potrebna sredstva (€)",
+                "placeholderCosts": "0.00",
+                "files": "Priloge (Ponudbe, Načrti)",
+                "submit": "Oddaj predlog",
+                "success": "Vaš predlog je bil uspešno poslan!",
+                "titlePlaceholder": "npr. Nadgradnja IT laboratorija",
+                "applicantPlaceholder": "Vaše ime / Razred",
+                "descriptionPlaceholder": "opišite vaš projekt...",
+                "uploadText": "Povlecite datoteke sem ali kliknite",
+                "successSEO": "Vaš projektni predlog je bil uspešno oddan."
+            }
+        },
+        "overviewTable": {
+            "title": "Oddani predlogi (2025/26)",
+            "headers": {
+                "project": "Projekt",
+                "applicant": "Vlagatelj",
+                "department": "Oddelek",
+                "date": "Datum",
+                "cost": "Strošek",
+                "status": "Status"
+            },
+            "filters": {
+                "label": "Filtri:",
+                "ariaLabel": "Akcije",
+                "search": "Išči projekte...",
+                "allStatus": "Vsi statusi",
+                "allDepts": "Vsi oddelki"
+            },
+            "departments": {
+                "IT": "Informacijska tehnologija",
+                "ME": "Strojništvo",
+                "ET": "Elektrotehnika",
+                "GEN": "Splošno",
+                "BAU": "Gradbeništvo",
+                "EL": "Elektronika",
+                "CH": "Kemija",
+                "SP": "Šport",
+                "FIN": "Finance"
+            },
+            "noResults": "Nobena prijava ni bila najdena.",
+            "status": {
+                "approved": "Odobreno",
+                "pending": "Na čakanju",
+                "rejected": "Zavrnjeno"
+            }
+        }
+    },
+    "board": {
+        "title": "Naš odbor",
+        "desc": "Ekipa predanih staršev, ki stoji za društvom.",
+        "roles": {
+            "chair": "Predsednik",
+            "viceChair": "Podpredsednik",
+            "treasurer": "Blagajnik",
+            "secretary": "Sekretar",
+            "member": "Član odbora",
+            "auditor": "Revizor"
+        }
+    },
+    "statutes": {
+        "title": "Statut",
+        "desc": "Pravna osnova našega društva.",
+        "download": "Prenesi PDF"
+    },
+    "terms": {
+        "title": "Splošni pogoji",
+        "desc": "Pravila in predpisi."
+    },
+    "cookieBanner": {
+        "text": "Uporabljamo samo tehnično nujne piškotke za delovanje portala.",
+        "accept": "Razumem",
+        "privacyLink": "Politika zasebnosti"
+    },
+    "settings": {
+        "title": "Nastavitve",
+        "language": "Jezik",
+        "theme": "Tema",
+        "lightMode": "Svetla",
+        "darkMode": "Temna",
+        "note": "Spremembe se uveljavijo takoj."
+    },
+    "newsArticle": {
+        "readArticle": "Preberi članek",
+        "author": "Avtor",
+        "authorName": "Odbor Sveta staršev",
+        "category": "Kategorija",
+        "share": "Deli",
+        "shareCopied": "Povezava kopirana!",
+        "print": "Natisni",
+        "details": "Pomembne podrobnosti in datumi",
+        "detailStart": "Začetek: Po vabilu",
+        "detailLocation": "Lokacija: Dvorana ali online",
+        "detailRegistration": "Registracija: Obvezna preko portala",
+        "locationTitle": "HTL Mödling",
+        "locationDesc": "Dogodek poteka v glavni stavbi ali delavnicah.",
+        "ctaTitle": "Imate vprašanja?",
+        "ctaDesc": "Z veseljem vam bomo pomagali.",
+        "ctaButton": "Stopite v stik",
+        "contactNote": "Za vprašanja pišite na office@elternverein.today"
+    },
+    "common": {
+        "required": "Obvezno polje"
+    },
+    "dashboard": {
+        "internal": {
+            "brand": "EV Interno",
+            "role": "Član odbora",
+            "exit": "Na stran",
+            "footer": "Demo verzija • Patrick K. & Antigravity"
+        },
+        "nav": {
+            "overview": "Pregled",
+            "calendar": "Koledar",
+            "messages": "Sporočila"
+        },
+        "calendar": {
+            "title": "Skupni koledar",
+            "subtitle": "Pregledujte in upravljajte dogodke",
+            "add": "Dodaj dogodek",
+            "edit": "Uredi",
+            "delete": "Izbriši",
+            "exportIcs": "Izvozi kot .ics",
+            "exportAll": "Izvoz",
+            "exportSuccess": "Koledar prenesen",
+            "exportAllSuccess": "Vsi dogodki izvoženi",
+            "noEventsToExport": "Ni dogodkov",
+            "updateSuccess": "Posodobljeno",
+            "createSuccess": "Ustvarjeno",
+            "deleteSuccess": "Izbrisano",
+            "days": {
+                "sun": "Ned",
+                "mon": "Pon",
+                "tue": "Tor",
+                "wed": "Sre",
+                "thu": "Čet",
+                "fri": "Pet",
+                "sat": "Sob"
+            },
+            "form": {
+                "title": "Naslov *",
+                "titlePlaceholder": "npr. Roditeljski sestanek",
+                "date": "Datum *",
+                "time": "Ura",
+                "description": "Opis",
+                "descriptionPlaceholder": "podrobnosti...",
+                "save": "Shrani",
+                "create": "Ustvari",
+                "cancel": "Prekliči"
+            },
+            "mock": {
+                "evt1Title": "Seja odbora",
+                "evt1Desc": "Mesečna seja odbora.",
+                "evt2Title": "Poletna zabava",
+                "evt2Desc": "Godišnja zabava na dvorišču."
+            }
+        },
+        "overview": {
+            "title": "Nadzorna plošča",
+            "welcome": "Dobrodošli nazaj, {{name}}",
+            "stats": {
+                "events": "Odprti projekti",
+                "messages": "Odobreni projekti",
+                "members": "Aktivne novice",
+                "reports": "Naslednji dogodek"
+            },
+            "activity": {
+                "title": "Nedavne aktivnosti",
+                "viewAll": "Prikaži vse",
+                "less": "Manj",
+                "showLess": "Prikaži manj",
+                "showMore": "+ še {{count}}",
+                "by": "-"
+            },
+            "actions": {
+                "title": "Hitre akcije",
+                "post": "Nov projekt",
+                "event": "Napiši novico",
+                "document": "Skeniraj protokol",
+                "newsTitle": "Nova novica",
+                "newsSuccess": "Osnutek shranjen",
+                "newsPlaceholderTitle": "Naslov...",
+                "newsPlaceholderContent": "Vsebina...",
+                "uploadTitle": "Protokol",
+                "uploadSuccess": "Simulirano",
+                "uploadPlaceholderFile": "Povlecite datoteko",
+                "uploadHint": "PDF, DOCX, JPG",
+                "uploadDate": "Datum",
+                "cancel": "Prekliči",
+                "publish": "Objavi",
+                "uploadBtn": "Upload",
+                "category": "Kategorija"
+            },
+            "mock": {
+                "a1": "Projekt prenosnikov odobren",
+                "a2": "Zapisnik seje naložen",
+                "a3": "Novica o poletnem festivalu",
+                "a4": "Vzdrževanje vrta zaključeno",
+                "a5": "Seja odbora sklicana",
+                "u1": "Odbor",
+                "u2": "Sekretar",
+                "u3": "PR ekipa",
+                "u4": "Projektni vodja",
+                "u5": "Predsednik",
+                "d1": "pred 2 urama",
+                "d2": "Včeraj",
+                "d3": "pred 2 dnevoma",
+                "d4": "pred 3 dnevoma",
+                "d5": "Prejšnji teden",
+                "a6": "Testni vnos 1",
+                "d6": "Danes",
+                "a7": "Testni vnos 2",
+                "d7": "Včeraj"
+            }
+        },
+        "messages": {
+            "title": "Sporočila",
+            "placeholder": "Napiši sporočilo...",
+            "send": "Pošlji",
+            "empty": "Izberi pogovor",
+            "mock": {
+                "c1": "Skupinski klepet Odbor",
+                "c2": "Računovodstvo",
+                "c3": "Načrtovanje projektov",
+                "m1": "Proračun odobren?",
+                "m2": "Račun prejet.",
+                "m3": "Potrebujemo prostovoljce."
+            }
+        },
+        "settings": {
+            "title": "Nastavitve",
+            "profile": {
+                "title": "Profil",
+                "name": "Ime",
+                "email": "E-pošta"
+            },
+            "notifications": {
+                "title": "Obvestila",
+                "email": "E-pošta",
+                "push": "Push",
+                "weekly": "Tedenski povzetek"
+            },
+            "appearance": {
+                "title": "Videz"
+            },
+            "security": {
+                "title": "Varnost",
+                "changePassword": "Sprememba gesla",
+                "current": "Trenutno geslo",
+                "new": "Novo geslo",
+                "confirm": "Potrdi geslo",
+                "success": "Geslo zamenjano!"
+            },
+            "save": "Shrani spremembe"
+        }
+    }
+}

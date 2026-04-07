@@ -12,6 +12,11 @@ import pl from './locales/pl.json';
 
 import ar from './locales/ar.json';
 import pt from './locales/pt.json';
+import ro from './locales/ro.json';
+import hr from './locales/hr.json';
+import sr from './locales/sr.json';
+import sl from './locales/sl.json';
+import hu from './locales/hu.json';
 
 i18n
     .use(LanguageDetector)
@@ -32,7 +37,12 @@ i18n
             fr: { translation: fr },
             pl: { translation: pl },
             ar: { translation: ar },
-            pt: { translation: pt }
+            pt: { translation: pt },
+            ro: { translation: ro },
+            hr: { translation: hr },
+            sr: { translation: sr },
+            sl: { translation: sl },
+            hu: { translation: hu }
         }
     });
 
