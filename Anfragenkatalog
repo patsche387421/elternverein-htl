@@ -1,0 +1,45 @@
+## Anforderungskatalog: Projekt EV
+
+**Kontext:** MEDT (2. Semester)
+
+**Zielsetzung:** Erstellung einer flexiblen, anpassbaren Vorlage für alle Eventualitäten.
+
+---
+
+### 1. Technische Basis & Design (Essentials)
+
+- **Template-Auswahl:** Identifikation und Festlegung einer geeigneten Design-Vorlage.
+- **Strukturelle Planung:** Erarbeitung und Definition der Menüstruktur.
+- **Vergleichsanalyse:** Dokumentation von Name, Vorteilen und Nachteilen der evaluierten Vorlagen.
+
+### 2. Inhaltsanforderungen (Content)
+
+Für die Befüllung der Plattform müssen folgende Inhalte definiert und bereitgestellt werden:
+
+- **Visuelle Medien:** Hochwertige Bilder sowie Videomaterial.
+- **Texte:** Redaktionelle Inhalte für alle Seitenbereiche.
+
+### 3. Datenmanagement & Historie
+
+- **Datenimport:** Prüfung und Umsetzung von Importmöglichkeiten für historische Daten.
+
+### 4. Client-Checkliste (Beistellung durch den Kunden)
+
+Im Rahmen der Zusammenarbeit ist zu klären: **"Was brauchen wir vom Kunden?"**.
+
+- Bereitstellung von Bild-, Video- und Textmaterial.
+- Lieferung historischer Datensätze für den Import.
+- Freigabe der vorgeschlagenen Menüstruktur und Template-Wahl.
+
+---
+
+## Vergleich potenzieller WordPress-Vorlagen
+
+| **Name** | **Vorteile** | **Nachteile** |
+| --- | --- | --- |
+| **Astra** | Extrem leichtgewichtig, riesige Auswahl an fertigen „Starter-Sites“, tief integriert in Gutenberg und Elementor. | Viele Profi-Funktionen sind erst in der kostenpflichtigen Pro-Version enthalten. |
+| **GeneratePress** | Fokus auf maximale Performance und sauberen Code; sehr stabil für langfristige Projekte. | Design-Anpassungen erfordern am Anfang eine steilere Lernkurve als bei reinen Design-Themes. |
+| **Hello Elementor** | Perfekt, wenn Sie die Seite komplett visuell mit dem Elementor-Builder gestalten wollen; maximale Freiheit. | Ohne den Elementor Page Builder ist das Theme quasi leer; Abhängigkeit von einem Plugin. |
+| **Twenty Twenty-Four** | Modernes Block-Theme (Full Site Editing); zukunftssicher, da es direkt auf den WordPress-Kern setzt; keine Zusatzkosten. | Für sehr komplexe Layouts sind Block-Themes aktuell noch weniger intuitiv als klassische Page Builder. |
+
+Für ein universell anpassbares Projekt im akademischen Kontext (MEDT) ist **Astra** oft die effizienteste Wahl, da die Menüstruktur und Inhalte  durch die Import-Funktion von Demo-Daten sehr schnell prototypisch erstellt werden können.
