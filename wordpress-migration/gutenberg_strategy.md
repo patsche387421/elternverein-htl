@@ -1,198 +1,125 @@
-# WordPress Gutenberg Strategie – Elternverein HTL Mödling
+# WordPress Gutenberg Strategie – Elternverein HTL Mödling (V2 - Block Theme)
 
 > **Projekt:** Website-Redesign Elternverein HTL Mödling  
-> **Kontext:** Bestehendes WordPress-Theme → **Child Theme** das nur überschreibt  
+> **Kontext:** Migration von Legacy-Theme (FirmaSite/Bootstrap) → **Modernes Block-basiertes Parent Theme (z.B. Twenty Twenty-Four)** + Child Theme  
 > **Team:** 4 Schüler + 1 Lehrer  
-> **Ziel:** Schnelle, qualitativ hochwertige Ergebnisse  
-> **Datum:** 27. April 2026 (aktualisiert)
+> **Ziel:** Zukunftsfähige, performante Gutenberg-Architektur unter Beibehaltung der Kernlogik (MailPoet-Integration)  
+> **Datum:** 29. April 2026 (Aktualisiert nach Legacy-Analyse)
 
 ---
 
-## 1. Grundprinzip: Child Theme = Überschreiben, nicht Neubauen
+## 1. Architektur-Wechsel: Weg von Bootstrap, hin zu Block Themes
 
-> [!IMPORTANT]
-> Wir bauen **keine neue Seite von Grund auf**. Die bestehende WordPress-Installation bleibt. Das Child Theme überschreibt gezielt das Aussehen (CSS, Templates, `theme.json`), während die bestehenden Inhalte und Formulare erhalten bleiben.
+> [!WARNING]
+> **Kritische Erkenntnis aus der Legacy-Analyse:** Das alte Parent-Theme (`FirmaSite`) basiert massiv auf Twitter Bootstrap, BuddyPress und bbPress. Es ist ein veraltetes, klassisches PHP-Template-Theme. Ein neues Gutenberg-Child-Theme auf diesem Fundament aufzubauen, würde zu massiven CSS-Konflikten führen.
 
-### Was ein Child Theme tut
+**Die neue Architektur:**
+Wir verwerfen das `FirmaSite` Theme komplett. Stattdessen nutzen wir ein modernes, natives WordPress Block Theme (z.B. *Twenty Twenty-Four*) als Parent Theme.
 
+```text
+Neues Parent Theme (z. B. Twenty Twenty-Four)
+  └── Elternverein-Gutenberg-Child (Unser Child Theme)
+       ├── style.css          → Gutenberg-spezifische CSS-Overrides
+       ├── functions.php      → Laden der Styles UND Migration der Legacy-Logik (MailPoet)
+       └── theme.json         → Zentrale Steuerung von Farben, Fonts und Spacing im Editor
 ```
-Bestehendes Theme (Parent)
-  └── Elternverein-Child (Child Theme)
-       ├── style.css          → Überschreibt / ergänzt CSS des Parent
-       ├── functions.php      → Lädt Child-CSS, registriert eigene Funktionen
-       ├── theme.json         → Überschreibt Farben, Fonts, Spacing im Editor
-       └── /templates         → Nur wenn ein Template komplett anders sein soll
-```
-
-**Wichtig:** Alles was im Child Theme NICHT definiert ist, wird automatisch vom Parent Theme übernommen. Man überschreibt also nur das, was sich ändern soll.
 
 ### Was bleibt, was ändert sich?
 
-| Element | Bleibt bestehen | Wird überschrieben |
-|---------|:-:|:-:|
-| WordPress-Installation & Datenbank | ✅ | – |
-| Bestehende Seiteninhalte | ✅ | – |
-| Formulare (Kontakt, Projektantrag etc.) | ✅ | Nur das **Styling** |
-| Menüstruktur | ✅ | Optional anpassbar |
-| Plugins | ✅ | – |
-| Farben, Fonts, Abstände | – | ✅ via `style.css` + `theme.json` |
-| Header / Footer Layout | – | ✅ via Child-Templates oder CSS |
-| Seitenlayouts (Hero, Spalten etc.) | – | ✅ via CSS + Gutenberg-Blöcke |
+| Element | Status | Maßnahme / Änderung |
+|---------|:-:|---|
+| WordPress-Installation & Datenbank | ✅ | Bleibt bestehen. |
+| Parent Theme (`FirmaSite`) | ❌ | Wird durch ein modernes Block Theme ersetzt. |
+| Bestehende Seiteninhalte | ⚠️ | Bleiben erhalten, müssen aber in Gutenberg-Blöcke konvertiert/gestylt werden. |
+| Foren / Community (BuddyPress/bbPress) | ❓ | Klärungsbedarf: Werden diese Features noch genutzt? |
+| Mitglieds-Daten (`Cimy User Extra Fields`) | ❌ | Cimy ist veraltet. Migration zu *Advanced Custom Fields (ACF)* oder nativem User Meta notwendig. |
+| Newsletter-Logik (`MailPoet`) | 🔄 | Die Zahlungsstatus-Logik in der alten `functions.php` muss für das neue Child-Theme umgeschrieben werden. |
 
 ---
 
-## 2. Realitätscheck: Was ist mit Gutenberg realistisch?
+## 2. Legacy-Logik: Die MailPoet-Zahlungsstatus-Migration
 
-### ✅ Sofort umsetzbar (Gutenberg Core-Blöcke)
+Die Analyse des alten `elternverein` Child Themes (`functions.php`) zeigte eine kritische Integration:
+Die Website prüft via `[custom:status]` und `[custom:text]` Shortcodes in MailPoet, ob ein Mitglied seinen Beitrag (`EV_BEITRAG_BEZAHLT`) bezahlt hat, und fügt Zahlungsverweise (`ZAHLUNGSINFORMATION`) in Newsletter ein.
 
-Diese Features können **mit Standard-Gutenberg-Blöcken** abgebildet werden – ohne zusätzliche Plugins:
-
-| Feature | Gutenberg-Block | Aufwand |
-|---------|----------------|---------|
-| Hero-Bereich mit Text + Bild | `Cover`-Block + `Heading` + `Button` | ⏱️ 30 Min |
-| Navigationsmenü anpassen | `Navigation`-Block oder Menü-Einstellungen | ⏱️ 45 Min |
-| News/Aktuelles-Seite | `Query Loop`-Block + Beitrags-Template | ⏱️ 1-2 Std |
-| Über uns / Vorstand | `Columns` + `Image` + `Paragraph` | ⏱️ 1 Std |
-| FAQ-Akkordeon | `Details`-Block (nativ seit WP 6.3) | ⏱️ 30 Min |
-| Kontaktseite mit Karte | `Custom HTML` (Google Maps Embed) | ⏱️ 45 Min |
-| Footer anpassen | Site Editor → Footer Template Part | ⏱️ 1 Std |
-| Statuten / Geschäftsordnung | `Heading` + `Paragraph` + `List` | ⏱️ 30 Min |
-
-### ✅ Bestehende Formulare – nur Restyling
-
-Die Formulare (Kontakt, Projektantrag etc.) funktionieren bereits und bleiben bestehen. Was sich ändert:
-
-| Was | Wie |
-|-----|-----|
-| Formular-Felder (Inputs, Textareas, Selects) | CSS-Override im Child Theme |
-| Buttons (Submit, Reset) | CSS-Override im Child Theme |
-| Fehlermeldungen / Validierung | CSS-Override im Child Theme |
-| Formular-Layout (Spalten, Abstände) | CSS-Override im Child Theme |
-
-> [!TIP]
-> **Alle Formular-Anpassungen passieren rein über CSS.** Kein Formular-Plugin muss gewechselt oder neu konfiguriert werden. Siehe dazu den separaten **[CSS-Guide](file:///c:/Users/PatrickKroeger/Documents/HTL Kolleg/Projects/Elternverein/wordpress-migration/gutenberg_css_guide.md)**.
-
-### ⚠️ Mit leichtem Zusatzaufwand (falls noch nicht vorhanden)
-
-| Feature | Plugin-Empfehlung |
-|---------|-------------------|
-| Cookie-Banner (DSGVO) | **Complianz** (kostenlos) oder bestehendes Plugin behalten |
-| SEO / Meta-Tags | **Yoast SEO** (kostenlos) oder bestehendes Plugin behalten |
-| Bildkompression | **Smush** (kostenlos) |
-
-### ❌ NICHT im Zeitrahmen (weglassen / war nur Demo)
-
-| Feature aus React-Version | Status |
-|--------------------------|--------|
-| Live-Theming (Color Picker) | ❌ War nur Demo-Feature, irrelevant |
-| 10 Sprachen (i18n) | ❌ Max. 2 Sprachen (DE + EN) falls gewünscht |
-| Custom Dashboard für Vorstand | ❌ WordPress Admin-Backend reicht |
-| Dark Mode Toggle | ❌ Weglassen, sauberes Light-Design |
+> [!IMPORTANT]
+> **Technischer Umbau:** Da das alte Plugin *Cimy User Extra Fields* veraltet ist, muss diese Logik neu geschrieben werden.
+> 1. Anlage von User-Meta-Feldern (z.B. mit ACF) für Zahlungsstatus.
+> 2. Übernahme und Modernisierung der `mailpoet_newsletter_shortcode` Filterfunktion in die neue `functions.php`.
 
 ---
 
-## 3. Prioritätsmatrix: Worauf zuerst fokussieren?
+## 3. Realitätscheck: Was ist mit Gutenberg realistisch?
 
-> **Prinzip:** Maximale Wirkung bei minimalem Aufwand → **Impact/Effort-Matrix**
+### ✅ Gutenberg Core-Blöcke (Nativ)
 
-### 🔴 Priorität 1 — „Quick Wins" (Woche 1)
+| Feature | Umsetzung (Ohne Plugins) |
+|---------|--------------------------|
+| Hero-Bereich | `Cover`-Block + `Heading` + `Button` |
+| Navigationsmenü | Site Editor → `Navigation`-Block |
+| News/Aktuelles | `Query Loop`-Block + Post Template |
+| Über uns / Vorstand | `Columns` (Spalten) + `Image` + `Paragraph` |
+| FAQ | `Details`-Block (Akkordeon) |
+| Footer | Site Editor → Footer Template Part |
 
-| # | Aufgabe | Warum zuerst? | Aufwand |
-|---|---------|---------------|---------|
-| 1 | **Child Theme erstellen** (style.css + functions.php + theme.json) | Basis für alle Änderungen | 1 Std |
-| 2 | **Farbschema definieren** in `theme.json` + `style.css` | Sofort sichtbare Veränderung | 1 Std |
-| 3 | **Typografie anpassen** (Google Font laden, auf alle Elemente anwenden) | Professioneller Eindruck | 30 Min |
-| 4 | **Startseite restylen** (Hero, Abstände, Buttons) | Erster Eindruck = alles | 3 Std |
-| 5 | **Header / Navigation** restylen | Seitenübergreifend sichtbar | 2 Std |
-| 6 | **Footer** restylen | Seitenübergreifend sichtbar | 1 Std |
+### ⚠️ Formulardesign & Plugins
 
-**→ Ergebnis nach Woche 1:** Die Website sieht auf den ersten Blick komplett anders aus – neues Branding, neue Fonts, neuer Look.
-
-### 🟡 Priorität 2 — „Kerninhalte restylen" (Woche 2)
-
-| # | Aufgabe | Aufwand |
-|---|---------|---------|
-| 7 | **Formulare restylen** (Inputs, Buttons, Labels) | 2 Std |
-| 8 | **Über uns / Vorstand** anpassen (Inhalte + Layout) | 2 Std |
-| 9 | **Angebote/Services** Seiten restylen | 2 Std |
-| 10 | **News-Bereich** restylen (Beitragsliste + Einzelansicht) | 2 Std |
-| 11 | **Kontaktseite** Layout verbessern | 1 Std |
-
-**→ Ergebnis nach Woche 2:** Alle Kernseiten haben den neuen Look. Formulare funktionieren und sehen modern aus.
-
-### 🟢 Priorität 3 — „Polish & Extras" (Woche 3)
-
-| # | Aufgabe | Aufwand |
-|---|---------|---------|
-| 12 | **Projekte-Bereich** restylen | 2 Std |
-| 13 | **FAQ-Sektion** mit Details-Block aufbauen | 45 Min |
-| 14 | **Responsive-Feinschliff** (Mobile-Tests, Breakpoints) | 2 Std |
-| 15 | **Performance-Check** (Bilder optimieren, Caching) | 1 Std |
-| 16 | **Cross-Browser-Test** (Chrome, Firefox, Safari, Edge) | 1 Std |
-| 17 | **Dokumentation** finalisieren (JIRA, Figma) | 2 Std |
+Die bestehenden Formulare (Kontakt etc.) bleiben. Das Styling erfolgt **rein über CSS** im neuen Child Theme. Da wir kein Bootstrap mehr haben, ist das Styling der Inputs und Buttons über unser neues CSS sogar sauberer und konfliktfreier.
 
 ---
 
-## 4. Gutenberg-Skills: Was muss das Team können?
+## 4. Prioritätsmatrix & Sprint-Plan: Worauf zuerst fokussieren?
 
-### 4.1 Skill-Level-Übersicht
+### 🔴 Sprint 1 (Woche 1): Fundament & Backend-Logik
 
-```
-Level 0: WordPress-Basics           ← ALLE müssen das können (Tag 1)
-Level 1: Gutenberg Core-Blöcke      ← ALLE müssen das können (Tag 1-2)
-Level 2: CSS im Child Theme         ← 1-2 Personen (Tech Lead + Design)
-Level 3: theme.json + Site Editor   ← 1 Person (Tech Lead)
-```
+| # | Aufgabe | Details | Wer |
+|---|---------|---------|-----|
+| 1 | **Parent Theme Wechsel** | Neues Block Theme installieren (Twenty Twenty-Four) und Child Theme anlegen. | Schüler A |
+| 2 | **`theme.json` Setup** | Farben, Typografie (Inter) und Abstände für den Block Editor definieren. | Schüler A |
+| 3 | **Startseite umbauen** | Alte Inhalte in saubere Gutenberg-Blöcke transferieren und via `style.css` anpassen. | Schüler B + C |
+| 4 | **Backend: User Fields** | *Cimy User Extra Fields* durch ACF ersetzen. Felder für `EV_BEITRAG_BEZAHLT` anlegen. | Schüler A (Tech Lead) |
+| 5 | **Backend: MailPoet Logik** | Die alte Shortcode-Logik aus der alten `functions.php` umschreiben und in die neue übernehmen. | Schüler A (Tech Lead) |
 
-### 4.2 Skill-Matrix pro Rolle
+### 🟡 Sprint 2 (Woche 2): Layouts & Kerninhalte
 
-| Skill | Schüler A (Tech Lead) | Schüler B (Design) | Schüler C (Content) | Schüler D (Content) | Lehrer (PM/QA) |
-|-------|:----:|:----:|:----:|:----:|:----:|
-| Child Theme erstellen + pflegen | ✅ | – | – | – | 🔍 |
-| CSS schreiben (style.css) | ✅ | ✅ | – | – | – |
-| `theme.json` konfigurieren | ✅ | – | – | – | 🔍 |
-| Gutenberg: Text-Blöcke | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Gutenberg: Layout-Blöcke (Columns, Cover, Group) | ✅ | ✅ | – | – | – |
-| Gutenberg: Media-Blöcke (Image, Gallery) | – | ✅ | ✅ | ✅ | – |
-| Site Editor: Header/Footer | ✅ | ✅ | – | – | – |
-| Formular-Restyling (CSS) | ✅ | ✅ | – | – | – |
-| Inhalte einpflegen & aktualisieren | – | – | ✅ | ✅ | 🔍 |
-| Bilder beschaffen & optimieren | – | ✅ | ✅ | – | – |
-| Qualitätskontrolle & Mobiltest | – | – | – | – | ✅ |
+| # | Aufgabe | Details | Wer |
+|---|---------|---------|-----|
+| 6 | **Header & Footer** | Im Site Editor (Full Site Editing) neu aufbauen und an das Design anpassen. | Schüler B |
+| 7 | **Formular-Styling** | CSS-Overrides für Inputs, Buttons und Validation-Errors schreiben. | Schüler B |
+| 8 | **Inhaltsseiten** | Über uns, Vorstand, Angebote mit Gutenberg Spalten und Cover-Blöcken restylen. | Schüler C + D |
+| 9 | **News-Bereich** | Query-Loop Block für die Beitragsübersicht einrichten. | Schüler B |
 
-> **Legende:** ✅ = Verantwortlich | 🔍 = Überprüft/Unterstützt | – = Nicht nötig
+### 🟢 Sprint 3 (Woche 3): Polish & Extras
 
----
-
-## 5. Aufgabenverteilung: Sprint-Plan
-
-### Sprint 1 (Woche 1): Visuelles Fundament
-
-| Aufgabe | Wer | Status |
-|---------|-----|--------|
-| Child Theme erstellen (style.css, functions.php, theme.json) | Schüler A | `[ ]` |
-| Farbpalette in `theme.json` + CSS-Custom-Properties definieren | Schüler A | `[ ]` |
-| Google Font (Inter) laden und global anwenden | Schüler A | `[ ]` |
-| Startseite restylen (Hero, CTAs, Abstände) | Schüler B | `[ ]` |
-| Header / Navigation CSS-Override | Schüler A + B | `[ ]` |
-| Footer CSS-Override | Schüler B | `[ ]` |
-| Bestehende Texte prüfen & verbessern | Schüler C + D | `[ ]` |
-| Bildmaterial sammeln & optimieren (Squoosh) | Schüler D | `[ ]` |
-| Texte aus React-Prototyp (`de.json`) als Referenz aufbereiten | Schüler C | `[ ]` |
-| **Review & Feedback** | Lehrer | `[ ]` |
+| # | Aufgabe | Details | Wer |
+|---|---------|---------|-----|
+| 10 | **Responsive-Feinschliff** | Mobile-Tests, Breakpoints in der `style.css` anpassen. | Alle |
+| 11 | **MailPoet Tests** | Test-Newsletter versenden, um zu prüfen, ob die Zahlungsstatus-Shortcodes korrekt greifen. | Lehrer / QA |
+| 12 | **Performance & SEO** | Bildkompression (Smush), Metadaten prüfen. | Schüler C + D |
+| 13 | **Cross-Browser-Test** | Funktionalität in Safari, Chrome, Firefox sicherstellen. | Alle |
 
 ---
 
-## 6. Zusammenfassung: Die 5 Kernerkenntnisse
+## 5. Erweiterte Skill-Matrix pro Rolle
 
-| # | Erkenntnis |
-|---|-----------|
-| 1 | **Child Theme = nur überschreiben.** Bestehende Inhalte, Formulare und Plugins bleiben. Wir ändern nur das Aussehen via CSS + `theme.json`. |
-| 2 | **Formulare bleiben bestehen – nur neuer Look.** Kein Plugin-Wechsel, kein Umbau. Rein CSS-basiertes Restyling der Inputs, Buttons und Layouts. |
-| 3 | **~80% der Arbeit ist CSS-Styling + Inhaltspflege.** Die technische Hürde ist gering. Fokus auf gute Texte, optimierte Bilder und saubere Abstände. |
-| 4 | **Team-Split: 1 Tech + 1 Design + 2 Content.** Schüler A = Child Theme & CSS-Architektur, B = visuelles Design & Responsive, C+D = Inhalte einpflegen. Lehrer = Review. |
-| 5 | **CSS-Technik im Detail:** Siehe separaten **[CSS-Guide für Gutenberg](file:///c:/Users/PatrickKroeger/Documents/HTL Kolleg/Projects/Elternverein/wordpress-migration/gutenberg_css_guide.md)** für `theme.json`, Custom Properties, Block-Selektoren und Formular-Restyling. |
+Durch die Legacy-Logik verschieben sich die Anforderungen leicht:
+
+| Skill | Schüler A (Tech Lead) | Schüler B (Design) | Schüler C/D (Content) | Lehrer (QA) |
+|-------|:----:|:----:|:----:|:----:|
+| Child Theme / `theme.json` | ✅ | – | – | 🔍 |
+| Gutenberg Full Site Editing (Header/Footer) | 🔍 | ✅ | – | – |
+| CSS für Blöcke & Formulare | ✅ | ✅ | – | – |
+| **PHP: MailPoet Custom Shortcodes** | ✅ | – | – | 🔍 |
+| **Datenbank: User Meta Migration (ACF)**| ✅ | – | – | – |
+| Block-Gestaltung (Inhalte einpflegen) | – | 🔍 | ✅ | – |
 
 ---
 
+## 6. Fazit der Neuausrichtung
+
+1. **Ein sauberer Schnitt:** Der Wechsel weg von `FirmaSite` und Bootstrap zu einem reinen Block-Theme garantiert eine performante und zukunftssichere Website.
+2. **Backend-Logik bewahren:** Der wichtigste technische Task ist nicht das Design, sondern die Sicherstellung, dass die MailPoet-Mitgliedsbeitrag-Logik im neuen System weiter funktioniert.
+3. **Volle Gutenberg-Macht:** Durch `theme.json` und Full Site Editing entfällt viel PHP-Template-Arbeit. Die Layouts entstehen direkt im Editor.
+
+---
 *Erstellt im Rahmen des MEDT-Projekts – HTL Mödling, April 2026*
